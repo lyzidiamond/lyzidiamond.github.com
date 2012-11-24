@@ -4,13 +4,23 @@
  <title>Jekyll Bootstrap</title>
  <link href="http://username.github.com/atom.xml" rel="self"/>
  <link href="http://username.github.com"/>
- <updated>2012-10-31T01:07:44-07:00</updated>
+ <updated>2012-11-23T19:33:59-08:00</updated>
  <id>http://username.github.com</id>
  <author>
    <name>Name Lastname</name>
    <email>blah@email.test</email>
  </author>
 
+ 
+ <entry>
+   <title>This Is A Test Post</title>
+   <link href="http://username.github.com/2012/11/23/test"/>
+   <updated>2012-11-23T00:00:00-08:00</updated>
+   <id>http://username.github.com/2012/11/23/test</id>
+   <content type="html">&lt;h3 id='this_is_a_test_post'&gt;This is a test post.&lt;/h3&gt;
+
+&lt;p&gt;I&amp;#8217;m not sure I&amp;#8217;m doing this right, but we&amp;#8217;ll see.&lt;/p&gt;</content>
+ </entry>
  
  <entry>
    <title>Jekyll Introduction</title>
