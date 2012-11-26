@@ -5,7 +5,7 @@ tagline: Making, taking, shaking
 ---
 {% include JB/setup %}
 
-My name is Lyzi Diamond. I'm a geographer, college football enthusiast, would-be statistician, and hopeful newbie developer. This is where I put things I make and write. My interests include:
+My name is Lyzi. I'm a geographer / cartographer / amateur programmer / would-be statistician / writer / GIS technician / college football fan / human being. This is where I put things I make and write. My interests include:
 
 * College football
 * Geography and geoscience
