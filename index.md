@@ -1,46 +1,31 @@
 ---
 layout: page
-title: Hello World!
-tagline: Supporting tagline
+title: Victory Formation
+tagline: Making, taking, shaking
 ---
 {% include JB/setup %}
 
-Read [Jekyll Quick Start](http://jekyllbootstrap.com/usage/jekyll-quick-start.html)
+My name is Lyzi Diamond. I'm a geographer, college football enthusiast, would-be statistician, and hopeful newbie developer. This is where I put things I make and write. My interests include:
 
-Complete usage and documentation available at: [Jekyll Bootstrap](http://jekyllbootstrap.com)
+* College football
+* Geography and geoscience
+* Marketing and copywriting
+* Research and technical writing
+* Technology in nonprofits and nonprofit management
+* Social media
+* Python and JavaScript
+* Most things
 
-## Update Author Attributes
+During the day, I work at the [Oregon Department of Geology and Mineral Industries](http://oregongeology.org) as  GIS Technician, working on flood mapping projects for Oregon's coastal counties. I also volunteer for [ChickTech](http://chicketch.org) doing writing for their website and helping coordinate events. I'm a proud member of [PyLadies PDX](http://www.meetup.com/PyLadies-PDX/), the [Portland Python User Group](http://www.meetup.com/pdxpython), the [ORURISA Young Professionals](http://www.orurisa.org/ORURISAYP), and I do some work for the [Northwest GIS User Group](http://www.nwgis.org/). I don't have a lot of free time, but when I do, I want to help people out with anything listed above. Email  me: <lyzidiamond@gmail.com>.
 
-In `_config.yml` remember to specify your own data:
-    
-    title : My Blog =)
-    
-    author :
-      name : Name Lastname
-      email : blah@email.test
-      github : username
-      twitter : username
+## Current Projects
 
-The theme should reference these variables whenever needed.
-    
-## Sample Posts
-
-This blog contains sample posts which help stage pages and blog data.
-When you don't need the samples anymore just delete the `_posts/core-samples` folder.
-
-    $ rm -rf _posts/core-samples
-
-Here's a sample "posts list".
+Right now, I'm working on learning Django, Python, JavaScript, HTML, and marrying all these things with college football. Updates on any and all of these things can be found in these here posts:
 
 <ul class="posts">
   {% for post in site.posts %}
     <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></li>
   {% endfor %}
 </ul>
-
-## To-Do
-
-This theme is still unfinished. If you'd like to be added as a contributor, [please fork](http://github.com/plusjade/jekyll-bootstrap)!
-We need to clean up the themes, make theme usage guides with theme-specific markup examples.
 
 
