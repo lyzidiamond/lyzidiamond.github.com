@@ -13,9 +13,9 @@ title : Victory Formation
 tagline: All day every day
 author :
   name : Lyzi Diamond
-  email : 
+  email : lyzidiamond@gmail.com
   github : 
-  twitter :
+  twitter : lyzidiamond
 
 # The production_url is only used when full-domain names are needed
 # such as sitemap.txt 
@@ -80,7 +80,7 @@ JB :
   comments :
     provider : disqus
     disqus :
-      short_name : lyzidiamond
+      short_name : jekyllbootstrap
     livefyre :
       site_id : 
     intensedebate :
