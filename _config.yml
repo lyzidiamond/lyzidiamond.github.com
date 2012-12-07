@@ -80,7 +80,7 @@ JB :
   comments :
     provider : disqus
     disqus :
-      short_name : jekyllbootstrap
+      short_name : lyzidiamond
     livefyre :
       site_id : 
     intensedebate :
