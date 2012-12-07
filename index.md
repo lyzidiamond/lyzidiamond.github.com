@@ -1,9 +1,10 @@
 ---
 layout: default
 title: Victory Formation
-tagline: Making, taking, shaking
 ---
 {% include JB/setup %}
+
+## Victory Formation
 
 My name is Lyzi. I'm a geographer / cartographer / amateur programmer / would-be statistician / writer / GIS technician / college football fan / human being living in Portland, Oregon. This is where I put things I make and write. My interests include:
 
