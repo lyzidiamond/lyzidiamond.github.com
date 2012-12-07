@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 title: Victory Formation
 tagline: Making, taking, shaking
 ---
