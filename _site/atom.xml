@@ -1,25 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
  
- <title>Jekyll Bootstrap</title>
- <link href="http://username.github.com/atom.xml" rel="self"/>
- <link href="http://username.github.com"/>
- <updated>2012-11-24T18:41:53-08:00</updated>
- <id>http://username.github.com</id>
+ <title>Victory Formation</title>
+ <link href="http://lyzidiamond.com/atom.xml" rel="self"/>
+ <link href="http://lyzidiamond.com/"/>
+ <updated>2013-01-26T15:58:57-05:00</updated>
+ <id>http://lyzidiamond.com</id>
  <author>
-   <name>Name Lastname</name>
-   <email>blah@email.test</email>
+   <name>Victory Formation</name>
  </author>
-
+ 
  
  <entry>
-   <title>This Is A Test Post</title>
-   <link href="http://username.github.com/2012/11/23/test"/>
-   <updated>2012-11-23T00:00:00-08:00</updated>
-   <id>http://username.github.com/2012/11/23/test</id>
-   <content type="html">&lt;h3 id='this_is_a_test_post'&gt;This is a test post.&lt;/h3&gt;
+   <title>Left</title>
+   <link href="http://lyzidiamond.com/posts/left"/>
+   <updated>2012-12-12T00:00:00-05:00</updated>
+   <id>http://lyzidiamond.com/posts/left</id>
+   <content type="html">&lt;p&gt;Left is a clean, whitespace-happy layout for &lt;a href=&quot;https://github.com/mojombo/jekyll&quot;&gt;Jekyll&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;I&amp;#8217;m not sure I&amp;#8217;m doing this right, but we&amp;#8217;ll see.&lt;/p&gt;</content>
+&lt;p&gt;This is designed to be an easy layout to modify for your own blog. It was
+extracted from &lt;a href=&quot;http://zachholman.com&quot;&gt;zachholman.com&lt;/a&gt;, which means it was battle-hardened from
+years of posting serious blog posts about emoji and swear words.&lt;/p&gt;
+
+&lt;p&gt;You&amp;rsquo;re actually reading an example post right now. See how cool it is? Oh, be
+quiet, you&amp;rsquo;re making me blush.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;You&amp;rsquo;ll want to &lt;a href=&quot;https://github.com/holman/left#readme&quot;&gt;get the code&lt;/a&gt; and read the README to learn how to
+install and set up Left for your own purposes.&lt;/p&gt;
+
+&lt;p&gt;If you have any questions, follow and ping me on Twitter- I&amp;rsquo;m
+&lt;a href=&quot;https://twitter.com/holman&quot;&gt;@holman&lt;/a&gt;.&lt;/p&gt;
+</content>
  </entry>
  
  

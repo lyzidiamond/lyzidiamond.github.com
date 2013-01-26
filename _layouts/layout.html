@@ -3,14 +3,14 @@
 <head>
   <meta charset="utf-8">
   <title>
-    
-      Posts &ndash;
-    
-    Victory Formation
+    {% if page.title %}
+      {{ page.title }} &ndash;
+    {% endif %}
+    {{ site.name }}
   </title>
 
-  <meta name="author" content="Victory Formation" />
-  <meta name="description" content="Victory formation." />
+  <meta name="author" content="{{ site.name }}" />
+  <meta name="description" content="{{ site.description }}" />
 
   <link rel="alternate" type="application/rss+xml" href="/atom.xml" />
 
@@ -28,19 +28,19 @@
 <body>
   <section class="sidebar">
     <a href="/">
-      <img src="http://gravatar.com/avatar/029f8c0e50e126f91562b126af9f22dd?s=150" height="75" width="75" class="avatar" />
+      <img src="{{ site.gravatar_url }}?s=150" height="75" width="75" class="avatar" />
     </a>
 
     <section class="name">
       <a href="/">
-        <span id="fname">Victory</span>
-        <span id="lname">Formation</span>
+        <span id="fname">{{ site.name|split:' '|first }}</span>
+        <span id="lname">{{ site.name|split:' '|last }}</span>
       </a>
     </section>
 
     <section class="meta">
-      <a href="https://github.com/lyzidiamond" target="_blank"><img src="/images/github.png" /></a>
-      <a href="https://twitter.com/lyzidiamond" target="_blank"><img src="/images/twitter.png"></a>
+      <a href="https://github.com/{{ site.github }}" target="_blank"><img src="/images/github.png" /></a>
+      <a href="https://twitter.com/{{ site.twitter }}" target="_blank"><img src="/images/twitter.png"></a>
       <a href="/atom.xml"><img src="/images/rss.png" /></a>
     </section>
 
@@ -52,15 +52,7 @@
     </section>
   </section>
 
-  <section class="content">
-  <ul class="listing">
-    
-    <li>
-      <span>December 12, 2012</span> <a href="/posts/left">Left</a>
-    </li>
-    
-  </ul>
-</section>
+  {{ content }}
 </body>
 
 </html>
