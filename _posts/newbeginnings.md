@@ -1,6 +1,7 @@
 ---
 layout: post
 title: New Beginnings
+category: posts
 --- 
 
 Once upon a time, there was a girl who wasn't sure what she should do with her life. She tried a bunch of different things... and then still wasn't sure what to do. So she made a blog, and decided to start writing things down.
