@@ -1,6 +1,6 @@
 @charset "UTF-8";
 body {
-  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  font-family: "Droid Serif", "Book Antiqua", Palatino, serif;
   margin: 0;
   -webkit-font-smoothing: antialiased; }
 
@@ -43,7 +43,7 @@ a {
     margin-left: 0px;
     color: black; }
     .sidebar .meta a:hover {
-      color: #227ce8; }
+      color: #a561ea; }
   .sidebar .sections {
     margin: 15px 0 0 0; }
     .sidebar .sections a {
@@ -53,7 +53,7 @@ a {
       font-size: 12px;
       display: block; }
       .sidebar .sections a:hover {
-        color: #227ce8; }
+        color: #a561ea; }
     .sidebar .sections ul {
       margin: 0;
       padding: 0; }
