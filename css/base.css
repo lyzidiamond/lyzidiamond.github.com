@@ -158,7 +158,7 @@ a {
     line-height: 1.6em; }
   .content .listing {
     margin: 10px 0 0 0;
-    padding: 0;
+    padding: 10;
     font-family: Helvetica, sans-serif; }
     .content .listing ul {
       margin: 0;

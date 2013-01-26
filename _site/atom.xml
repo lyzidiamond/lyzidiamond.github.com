@@ -4,7 +4,7 @@
  <title>Victory Formation</title>
  <link href="http://lyzidiamond.com/atom.xml" rel="self"/>
  <link href="http://lyzidiamond.com/"/>
- <updated>2013-01-26T17:06:42-05:00</updated>
+ <updated>2013-01-26T18:08:22-05:00</updated>
  <id>http://lyzidiamond.com</id>
  <author>
    <name>Victory Formation</name>
@@ -12,26 +12,17 @@
  
  
  <entry>
-   <title>Left</title>
-   <link href="http://lyzidiamond.com/posts/left"/>
-   <updated>2012-12-12T00:00:00-05:00</updated>
-   <id>http://lyzidiamond.com/posts/left</id>
-   <content type="html">&lt;p&gt;Left is a clean, whitespace-happy layout for &lt;a href=&quot;https://github.com/mojombo/jekyll&quot;&gt;Jekyll&lt;/a&gt;.&lt;/p&gt;
+   <title>New Beginnings</title>
+   <link href="http://lyzidiamond.com/posts/newbeginnings"/>
+   <updated>2013-01-26T00:00:00-05:00</updated>
+   <id>http://lyzidiamond.com/posts/newbeginnings</id>
+   <content type="html">&lt;p&gt;Once upon a time, there was a girl who wasn&amp;rsquo;t sure what she should do with her life. She tried a bunch of different things&amp;hellip; and then still wasn&amp;rsquo;t sure what to do. So she made a blog, and decided to start writing things down.&lt;/p&gt;
 
-&lt;p&gt;This is designed to be an easy layout to modify for your own blog. It was
-extracted from &lt;a href=&quot;http://zachholman.com&quot;&gt;zachholman.com&lt;/a&gt;, which means it was battle-hardened from
-years of posting serious blog posts about emoji and swear words.&lt;/p&gt;
+&lt;p&gt;That girl is Lyzi Diamond, and that blog is here.&lt;/p&gt;
 
-&lt;p&gt;You&amp;rsquo;re actually reading an example post right now. See how cool it is? Oh, be
-quiet, you&amp;rsquo;re making me blush.&lt;/p&gt;
+&lt;p&gt;So this is the first post on that blog, and I&amp;rsquo;m sure it&amp;rsquo;ll evolve over time. I hope I figure out &lt;em&gt;something&lt;/em&gt; interesting to put here, but for now, take a look at my &lt;a href=&quot;&quot; title=&quot;/about.html&quot;&gt;about&lt;/a&gt; page, and &lt;a href=&quot;&quot; title=&quot;mailto:lyzidiamond@gmail.com&quot;&gt;holler at me&lt;/a&gt; if you can think of something interesting for me to do.&lt;/p&gt;
 
-&lt;hr /&gt;
-
-&lt;p&gt;You&amp;rsquo;ll want to &lt;a href=&quot;https://github.com/holman/left#readme&quot;&gt;get the code&lt;/a&gt; and read the README to learn how to
-install and set up Left for your own purposes.&lt;/p&gt;
-
-&lt;p&gt;If you have any questions, follow and ping me on Twitter- I&amp;rsquo;m
-&lt;a href=&quot;https://twitter.com/holman&quot;&gt;@holman&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;For the moment, I&amp;rsquo;m going to go back to writing a volunteer handbook for &lt;a href=&quot;&quot; title=&quot;http://codescouts.org&quot;&gt;Code Scouts&lt;/a&gt;, sipping coffee, and braving the cold Philadelphia weather. I look forward to hearing from you.&lt;/p&gt;
 </content>
  </entry>
  
