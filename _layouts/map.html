@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <title>
+    {% if page.title %}
+      {{ page.title }} &ndash;
+    {% endif %}
+    {{ site.name }}
+  </title>
+  <script src='wax/ext/modestmaps.min.js' type='text/javascript'></script>
+  <script src='wax/dist/wax.mm.js' type='text/javascript'></script>
+  <link href='wax/tehme/controls.css' rel='stylesheet' type='text/css' />
+
+  <meta name="author" content="Lyzi Diamond" />
+  <meta name="description" content="{{ site.description }}" />
+
+  <link rel="alternate" type="application/rss+xml" href="/atom.xml" />
+
+  <link rel="stylesheet" href="/css/base.css" type="text/css" media="screen, projection" />
+  <link rel="stylesheet" href="/css/pygments.css" type="text/css" />
+  <link media="only screen and (max-device-width: 480px)" href="/css/iphone.css" type="text/css" rel="stylesheet" />
+  <link media="only screen and (device-width: 768px)" href="/css/iphone.css" type="text/css" rel="stylesheet" />
+  <link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Ovo' rel='stylesheet' type='text/css'>
+  <link rel="apple-touch-icon" href="{{ site.gravatar_url }}?s=142" />
+
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script type="text/javascript" src="/js/application.js"></script>
+</head>
+
+<body>
+  <section class="sidebar">
+    <a href="/">
+      <img src="{{ site.gravatar_url }}?s=150" height="75" width="75" class="avatar" />
+    </a>
+
+    <section class="name">
+      <a href="/">
+        <span id="fname">{{ site.name|split:' '|first }}</span>
+        <span id="lname">{{ site.name|split:' '|last }}</span>
+      </a>
+    </section>
+
+    <section class="meta">
+      <a href="https://github.com/{{ site.github }}" target="_blank"><img src="/images/github.png" /></a>
+      <a href="https://twitter.com/{{ site.twitter }}" target="_blank"><img src="/images/twitter.png"></a>
+      <a href="/atom.xml"><img src="/images/rss.png" /></a>
+    </section>
+
+    <section class="sections">
+      <ul>
+        <li><a href="/about.html">about</a></li>
+        <li><a href="/resume.html">resume</a></li>
+        <li><a href="/projects.html">projects</a></li>
+      </ul>
+    </section>
+  </section>
+
+  <div id='modestmaps-setup'>
+    var url= 'http://api.tiles.mapbox.com/v3/mapbox.world-light.jsonp';
+    wax.tilejson(url, function(tilejson) {
+      var m = new MM.Map('modestmaps-setup',
+        new wax.mm.connector(tilejson),
+        new MM.Point(240,120));
+      m.setCenterZoom({ lat: 39, lon: -98 }, 2);
+    });
+  </div>
+
+</body>
+
+</html>

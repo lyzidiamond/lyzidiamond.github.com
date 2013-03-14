@@ -67,21 +67,21 @@ a {
   margin-bottom: 10px; }
   .content h1 {
     color: #333;
-    font-family: Helvetica, sans-serif;
+    font-family: 'Chivo', Helvetica, sans-serif;
     font-weight: 600; }
   .content h1 a {
     color: #111;
     text-decoration: none; }
   .content h2 {
     color: #333;
-    font-family: Helvetica, sans-serif;
+    font-family: 'Chivo', Helvetica, sans-serif;
     font-weight: 600; }
   .content h2 a {
     color: #111;
     text-decoration: none; }
   .content h3 {
     color: #000;
-    font-family: Helvetica, sans-serif;
+    font-family: 'Chivo', Helvetica, sans-serif;
     font-weight: 600;
     line-height: 10%; }
   .content h3 a {
@@ -89,7 +89,7 @@ a {
     text-decoration: none; }
   .content h4 {
     color: #111;
-    font-family: Helvetica, sans-serif;
+    font-family: 'Chivo', Helvetica, sans-serif;
     font-weight: 600;
     line-height: 10%; }
   .content h4 a {
@@ -200,7 +200,7 @@ a {
     margin-right: 10px;
     padding: 5px 15px;
     border: 1px solid #000;
-    font-family: Helvetica, sans-serif;
+    font-family: 'Chivo', Helvetica, sans-serif;
     font-size: 12px;
     font-weight: bold; }
   .content .talk-design .color .white {
