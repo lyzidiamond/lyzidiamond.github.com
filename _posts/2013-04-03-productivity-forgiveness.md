@@ -1,3 +1,10 @@
+---
+layout: post
+title: The Secret To Productivity? Forgiveness.
+category: posts
+---
+
+
 I have often been given the advice, "Don't try to do everything. You will never succeed. Instead, try to do one or two things at a time, really well."
 
 I have also been given the advice, "Don't succumb to fear of missing out. Whatever you're imagining is probably ten times cooler than what's actually going on."
