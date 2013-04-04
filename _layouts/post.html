@@ -4,9 +4,9 @@ comments: true
 ---
 
 <section class="content">
-  <h2>
+  <h1>
     <a href="{{ page.url }}">{{ page.title }}</a>
-  </h2>
+  </h1>
 
   <section class="byline">
     {{ page.date | date: "%B %e, %Y" }}
@@ -15,7 +15,7 @@ comments: true
   {{ content }}
 
   <section class="meta">
-    <h3>About Lyzi</h3>
+    <h2>About Lyzi</h2>
     <section class="copy">
       <a href="https://twitter.com/{{ site.twitter }}" target="_blank">
         <img src="{{ site.gravatar_url }}?s=142" height="50" width="50" />

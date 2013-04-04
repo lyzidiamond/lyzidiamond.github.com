@@ -73,11 +73,12 @@ a {
     color: #111;
     text-decoration: none; }
   .content h2 {
-    color: #333;
+    color: #000;
     font-family: 'Chivo', Helvetica, sans-serif;
-    font-weight: 600; }
+    font-weight: 600;
+    line-height: 10%;}
   .content h2 a {
-    color: #111;
+    color: #a561ea;
     text-decoration: none; }
   .content h3 {
     color: #000;
@@ -96,11 +97,11 @@ a {
     color: #a561ea;
     text-decoration: none; }
   .content h1 {
-    font-size: 36px;
-    margin: 18px 0 5px 0; }
-  .content h2 {
     font-size: 30px;
     margin-bottom: 15px; }
+  .content h2 {
+    color: #111;
+    font-size: 20px;}
   .content h3 {
     color: #111;
     font-size: 20px;
