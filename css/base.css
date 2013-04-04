@@ -14,7 +14,7 @@ a {
   left: 15px;
   top: 15px;
   width: 80px;
-  font-family: 'Chivo', Helvetica, sans-serif; }
+  font-family: Helvetica, sans-serif; }
   .sidebar a {
     text-decoration: none; }
   .sidebar img {
@@ -97,11 +97,11 @@ a {
     color: #a561ea;
     text-decoration: none; }
   .content h1 {
+    font-size: 36px;
+    margin: 18px 0 5px 0; }
+  .content h2 {
     font-size: 30px;
     margin-bottom: 15px; }
-  .content h2 {
-    color: #111;
-    font-size: 20px;}
   .content h3 {
     color: #111;
     font-size: 20px;
