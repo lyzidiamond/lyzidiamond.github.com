@@ -10,7 +10,7 @@ We've all experienced those moments when we can't remember a word. It's on the t
 
 > "I met this guy yesterday who had the most interesting job. He is a zoologist who focuses on birds!"
 > "You mean an ornithologist?"
-> "Right, and ornithologist. Anyway, he had the cutest accent..."
+> "Right, an ornithologist. Anyway, he had the cutest accent..."
 
 This practice is common in university language courses, where students are instructed to speak only in their language of study and not to utter a word of English. In these cases, where students do not have a command of the vocabulary in the new language, the conversations tend to consist of talking _around_ the actual words in order to foster meaning. For example:
 
