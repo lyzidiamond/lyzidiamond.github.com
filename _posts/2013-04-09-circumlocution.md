@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Make It Work: Circumlocution and Code
+title: Circumlocution and Code
 category: posts
 ---
 
