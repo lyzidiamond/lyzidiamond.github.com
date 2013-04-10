@@ -1,3 +1,9 @@
+---
+layout: post
+title: Make It Work: Circumlocution and Code
+category: posts
+---
+
 _"¿Cómo se dice 'roommate' en español?"_
 
 We've all experienced those moments when we can't remember a word. It's on the tips of our tongues, and we try, but we can't seem to find it. Remarkably (or not-so-remarkably), this does not prevent us from communicating our idea. We just use other words to describe what we're talking about, describing it instead of picking the exact word.
