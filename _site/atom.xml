@@ -4,12 +4,72 @@
  <title>Victory Formation</title>
  <link href="http://lyzidiamond.com/atom.xml" rel="self"/>
  <link href="http://lyzidiamond.com/"/>
- <updated>2013-01-27T23:38:12-08:00</updated>
+ <updated>2013-04-22T20:58:53-07:00</updated>
  <id>http://lyzidiamond.com</id>
  <author>
    <name>Victory Formation</name>
  </author>
  
+ 
+ <entry>
+   <title>Circumlocution and Code</title>
+   <link href="http://lyzidiamond.com/posts/circumlocution"/>
+   <updated>2013-04-09T00:00:00-07:00</updated>
+   <id>http://lyzidiamond.com/posts/circumlocution</id>
+   <content type="html">&lt;p&gt;&lt;em&gt;&amp;ldquo;¿Cómo se dice &amp;lsquo;roommate&amp;rsquo; en español?&amp;rdquo;&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;We&amp;rsquo;ve all experienced those moments when we can&amp;rsquo;t remember a word. It&amp;rsquo;s on the tips of our tongues, and we try, but we can&amp;rsquo;t seem to find it. Remarkably (or not-so-remarkably), this does not prevent us from communicating our idea. We just use other words to describe what we&amp;rsquo;re talking about, describing it instead of picking the exact word.&lt;/p&gt;
+
+&lt;blockquote&gt;&lt;p&gt;&amp;ldquo;I met this guy yesterday who had the most interesting job. He is a zoologist who focuses on birds!&amp;rdquo;
+&amp;ldquo;You mean an ornithologist?&amp;rdquo;
+&amp;ldquo;Right, an ornithologist. Anyway, he had the cutest accent&amp;hellip;&amp;rdquo;&lt;/p&gt;&lt;/blockquote&gt;
+
+&lt;p&gt;This practice is common in university language courses, where students are instructed to speak only in their language of study and not to utter a word of English. In these cases, where students do not have a command of the vocabulary in the new language, the conversations tend to consist of talking &lt;em&gt;around&lt;/em&gt; the actual words in order to foster meaning. For example:&lt;/p&gt;
+
+&lt;blockquote&gt;&lt;p&gt;&amp;ldquo;¿Quién es ella?&amp;rdquo;
+&amp;ldquo;Ella vive en mi casa.&amp;rdquo;
+[Translation: Who is she? She lives in my house.]&lt;/p&gt;&lt;/blockquote&gt;
+
+&lt;p&gt;The term for &amp;ldquo;roommate&amp;rdquo; in Spanish is &amp;ldquo;compañero de casa,&amp;rdquo; but &amp;ldquo;alquien que vive en mi casa&amp;rdquo; (someone who lives in my house) works just as well. The student in the example didn&amp;rsquo;t know the word for roommate, so he talked &lt;em&gt;around&lt;/em&gt; it. This is called &lt;strong&gt;circumlocution.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;As a newbie coder, I find myself frequently circumlocuting when writing code. My Python vocabulary is limited, but even with the small amount of knowledge I have obtained and the few methods I know, I can still effectively write scripts that execute without error. They&amp;rsquo;re not beautiful or concise, necessarily, but they &lt;em&gt;work&lt;/em&gt;. As a beginner, this is extremely empowering.&lt;/p&gt;
+
+&lt;p&gt;For example, I have been writing a Python scraper to pull some data from an HTML page. (I&amp;rsquo;ll write a post dedicated to it with more specifics when it&amp;rsquo;s done.) A part of the data I&amp;rsquo;m trying to gather requires me to break apart a string into pieces and insert those pieces into separate columns. Using my limited Pythonic vocabulary and the help of an external library, I was able to isolate the string I needed to break apart&amp;hellip; but then I was stuck. Cursory Google searches instructed me to use regular expressions, but that required knowledge I didn&amp;rsquo;t have, and time I didn&amp;rsquo;t have to acquire said knowledge. Instead, I used a piece of vocabulary I already knew: Python&amp;rsquo;s built in partition() method. By selecting elements from resulting tuples and using partition() a few times, I finally got the pieces I wanted into my database. I talked &lt;em&gt;around&lt;/em&gt; the problem, circumlocuting using the vocabulary I knew to achieve my desired end.&lt;/p&gt;
+
+&lt;p&gt;And it worked. Just as &amp;ldquo;person who lives in my house&amp;rdquo; and &amp;ldquo;roommate&amp;rdquo; mean roughly the same thing when communicating with a peer, the partition() method and the result of a regular expression mean roughly the same thing to the computer. And it worked. And that felt &lt;em&gt;awesome&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;Will I continue using this roundabout method forever? Certainly not. But I bet knowing the long way around and writing too many lines of code will be helpful when I learn the shortcuts that are used by more proficient programmers to achieve the same ends. Not only will I understand what I&amp;rsquo;m doing better, I will have made the mistake myself and be more encouraged to try it another way in order to make progress.&lt;/p&gt;
+
+&lt;p&gt;I vote that experienced developers encourage beginners to write code this way, to try the long way, to solve problems using the tools they have. Too often novice coders are afraid to show what they have created for fear of being belittled by those who know how to do it &amp;ldquo;better.&amp;rdquo; If we turn circumlocution into an accepted learning tool and begin to see it as part of the process, I believe that more beginners will feel confident showing the world their code and will later relish the opportunity to see where they&amp;rsquo;ve been and how far they&amp;rsquo;ve come.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>The Secret To Productivity? Forgiveness.</title>
+   <link href="http://lyzidiamond.com/posts/productivity-forgiveness"/>
+   <updated>2013-04-03T00:00:00-07:00</updated>
+   <id>http://lyzidiamond.com/posts/productivity-forgiveness</id>
+   <content type="html">&lt;p&gt;I have often been given the advice, &amp;ldquo;Don&amp;rsquo;t try to do everything. You will never succeed. Instead, try to do one or two things at a time, really well.&amp;rdquo;&lt;/p&gt;
+
+&lt;p&gt;I have also been given the advice, &amp;ldquo;Don&amp;rsquo;t succumb to fear of missing out. Whatever you&amp;rsquo;re imagining is probably ten times cooler than what&amp;rsquo;s actually going on.&amp;rdquo;&lt;/p&gt;
+
+&lt;p&gt;But still, I find myself committing to everything and actually doing nothing because I don&amp;rsquo;t know what to prioritize. And it sucks.&lt;/p&gt;
+
+&lt;p&gt;Take, for example, this website. I made it in two days when I was visiting the east coast during a horrendous cold snap this January. Since then there have been no blog posts, no maintenance. I have learned so much about HTML and CSS since then, and yet I haven&amp;rsquo;t put any of it into practice.&lt;/p&gt;
+
+&lt;p&gt;Why? Because I&amp;rsquo;m paralyzed. I have seventeen different things pulling my attention at any given moment, and it is impossible to focus on any one of them at a given time. There&amp;rsquo;s a little voice telling me in the back of my head that I should be doing something else, that something else is more important. So I don&amp;rsquo;t do anything at all, because I can&amp;rsquo;t decide what it is that I should do.&lt;/p&gt;
+
+&lt;p&gt;On the rare occasion that I can bring myself to do something, I am not actually thinking about whatever I&amp;rsquo;m doing; I&amp;rsquo;m thinking about all of the things I&amp;rsquo;m not doing and should be doing. Paralysis.&lt;/p&gt;
+
+&lt;p&gt;I have been introspecting and meditating on this for a while. I&amp;rsquo;ve been trying to figure out why it is that I feel so guilty all the time, why I feel like I need to do things in a specific order or I&amp;rsquo;m doing it wrong. The answer is convoluted, but ultimately I have found that I hold myself to an impossibly high standard. The need for order in a mind that is predisposed to chaos is another way that I can move the goalposts and never be satisfied.&lt;/p&gt;
+
+&lt;p&gt;In light of that, I have decided to set some simple goals for myself. The individual tasks are irrelevant, because they all center around the same thing: &lt;strong&gt;forgiveness&lt;/strong&gt;. I need to forgive myself. Since I&amp;rsquo;ve started forgiving myself, I have actually gotten things done. I&amp;rsquo;ve figured out the things I like to do and the things I&amp;rsquo;d rather not do (there&amp;rsquo;s always the stuff you &lt;em&gt;have&lt;/em&gt; to do regardless of whether or not you want to, but that&amp;rsquo;s irrelevant here). And I have on the whole felt better.&lt;/p&gt;
+
+&lt;p&gt;Forgiveness also means removing the &amp;ldquo;should&amp;rdquo; from my internal dialogue and focusing instead on the &amp;ldquo;want.&amp;rdquo; &lt;em&gt;Forget what you &lt;strong&gt;should&lt;/strong&gt; do,&lt;/em&gt; I tell myself. &lt;em&gt;What do you &lt;strong&gt;want&lt;/strong&gt; to do?&lt;/em&gt; The answers didn&amp;rsquo;t surprise me, but the way I have felt after acting on them was certainly startling.&lt;/p&gt;
+
+&lt;p&gt;This is still hard for me. I am still trying to navigate using this new compass. But I&amp;rsquo;m hoping that with some work, dedication, and practice, it will lead me to places previously thought unreachable.&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>New Beginnings</title>

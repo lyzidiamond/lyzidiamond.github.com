@@ -1,8 +1,10 @@
 @charset "UTF-8";
 body {
   font-family: 'Ovo', serif;
-  margin: 0;
-  -webkit-font-smoothing: antialiased; }
+  margin: 75px 0 0 0;
+  -webkit-font-smoothing: antialiased; 
+  background-color: #eee;
+}
 
 a {
   color: #a561ea;
@@ -11,8 +13,8 @@ a {
 
 .sidebar {
   position: fixed;
-  left: 15px;
-  top: 15px;
+  left: 40px;
+  top: 75px;
   width: 80px;
   font-family: Helvetica, sans-serif; }
   .sidebar a {
@@ -22,7 +24,8 @@ a {
     border: 0; }
   .sidebar .avatar {
     padding: 0;
-    margin-left: 2px;
+    margin-left: 0px;
+    margin-bottom: 0px;
     border-radius: 5px; }
   .sidebar .name {
     text-transform: uppercase;
@@ -39,6 +42,9 @@ a {
       font-size: 17px;
       font-weight: bold;
       color: black; } 
+  .sidebar .meta {
+    margin: 15px 0 0 0;
+  }
   .sidebar .meta a {
     margin-left: 0px;
     color: black; }
@@ -62,28 +68,35 @@ a {
       margin-bottom: 7px; }
 
 .content {
-  margin-left: 150px;
-  width: 650px;
-  margin-bottom: 10px; }
+  margin-left: 200px;
+  width: 700px;
+  margin-bottom: 10px;
+  background-color: #eee; }
   .content h1 {
     color: #333;
     font-family: 'Chivo', Helvetica, sans-serif;
-    font-weight: 600; }
+    font-weight: 600;
+    font-size: 38px;
+    margin: 15px 0 18px 0; }
   .content h1 a {
     color: #111;
     text-decoration: none; }
   .content h2 {
-    color: #333;
-    font-family: 'Chivo', Helvetica, sans-serif;
-    font-weight: 600; }
-  .content h2 a {
-    color: #111;
-    text-decoration: none; }
-  .content h3 {
     color: #000;
     font-family: 'Chivo', Helvetica, sans-serif;
     font-weight: 600;
-    line-height: 10%; }
+    line-height: 10%;
+    font-size: 30px;
+    margin-bottom: 15px;}
+  .content h2 a {
+    color: #a561ea;
+    text-decoration: none; }
+  .content h3 {
+    font-family: 'Chivo', Helvetica, sans-serif;
+    font-weight: 600;
+    line-height: 10%;
+    color: #111;
+    font-size: 20px; }
   .content h3 a {
     color: #a561ea;
     text-decoration: none; }
@@ -95,22 +108,10 @@ a {
   .content h4 a {
     color: #a561ea;
     text-decoration: none; }
-  .content h1 {
-    font-size: 36px;
-    margin: 18px 0 5px 0; }
-  .content h2 {
-    font-size: 30px;
-    margin-bottom: 15px; }
-  .content h3 {
-    color: #111;
-    font-size: 20px;
-    /*padding-bottom: 5px;
-    margin-bottom: 10px;*/ }
   .content p {
-    font-size: 16px;
+    font-size: 19px;
     margin-top: 0;
     margin-bottom: 1.2em;
-    padding-left: 20px;
     line-height: 1.25em; }
     .content p code {
       font-size: 12px;
@@ -160,7 +161,7 @@ a {
     line-height: 1.6em; }
   .content .listing {
     margin: 10px 0 0 0;
-    padding: 19px;
+    padding: 0px;
     font-family: 'Ovo', serif; }
     .content .listing ul {
       margin: 0;
