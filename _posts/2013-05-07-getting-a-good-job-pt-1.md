@@ -6,7 +6,7 @@ title: Getting a Good (GIS) Job, Part 1
 Last week, I was asked by the [ORURISA Young Professionals](http://orurisayp.org) to give a short talk about the transition from completing a geogrpahy or GIS degree to becoming employed in the field of geospatial. There were around eight of us who gave short talks, and each of us had good pieces of advice to share. I thought the whole thing was very valuable, albeit poorly-attended, so I'm going to attempt to recreate some of that advice here. Although the talk was GIS-oriented and some of the conversation was specific to geospatial careers, I feel that a lot of the advice is applicable to job hunters regardless of field.
 
 Part 1 is included here. Parts 2 and 3 will be included in future blog posts, which I will link to from this blog post when they're up.
-
+<br>
 ## Part 1: Taking Stock
 <br>
 ### The Life Inventory
@@ -48,5 +48,5 @@ For more information and advice about what to do once you've identified which le
 Look at you! Now you know all about yourself, and you're starting to identify jobs that will give you what you want. I've often heard from people when I've given this advice, "But there are so few jobs in my field! Who am I to be picky when I'm just out of school?" It is true, we all need to make money to eat and drink beer and pay rent and so on. Ideally, this process doesn't limit your job prospects, but actually helps you to **realize the totality of your skillset** which can open the field a bit. I have seen many of my friends take the first job in the field that they were qualified for without considering what they really wanted, and most of them are now pretty sad to be in that situation. I have also seen friends take jobs that were seemingly out of their ideal career field that ended up being great investments: they learned a lot about what they enjoyed in a work environment, they learned new skills, they made new friends, and even if it didn't work out in the end, they ended up learning a lot about themselves in the process.
 
 Taking stock is hard, but it helps you figure out who you are and what you want, which in turn can help in making decisions and generating a plan for moving forward. Take a deep breath: you're on the right track, and you're doing just fine.
-
+<br>
 **Stay tuned for Part 2: The Paper Presentation, which should be up next week. If you have any questions/comments/concerns, feel free to contact me via the link at the left.**
