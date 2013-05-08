@@ -5,7 +5,7 @@ title: Getting a Good (GIS) Job, Part 1
 
 Last week, I was asked by the [ORURISA Young Professionals](http://orurisayp.org) to give a short talk about the transition from completing a geogrpahy or GIS degree to becoming employed in the field of geospatial. There were around eight of us who gave short talks, and each of us had good pieces of advice to share. I thought the whole thing was very valuable, albeit poorly-attended, so I'm going to attempt to recreate some of that advice here. Although the talk was GIS-oriented and some of the conversation was specific to geospatial careers, I feel that a lot of the advice is applicable to job hunters regardless of field.
 
-Part 1 is included here. Parts 2 and 3 will be included in future blog posts, which I will link to from this blog post when they're up.
+Part 1 is included here. Parts 2, 3, and 4 will be included in future blog posts, which I will link to from this blog post when they're up.
 <br>
 ## Part 1: Taking Stock
 <br>
@@ -49,4 +49,4 @@ Look at you! Now you know all about yourself, and you're starting to identify jo
 
 Taking stock is hard, but it helps you figure out who you are and what you want, which in turn can help in making decisions and generating a plan for moving forward. Take a deep breath: you're on the right track, and you're doing just fine.
 <br>
-**Stay tuned for Part 2: The Paper Presentation, which should be up next week. If you have any questions/comments/concerns, feel free to contact me via the link at the left.**
+**Stay tuned for Part 2: Grabbing Onto It, which should be up next week. If you have any questions/comments/concerns, feel free to contact me via the link at the left.**
