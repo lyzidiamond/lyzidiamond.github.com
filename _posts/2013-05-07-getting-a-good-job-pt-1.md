@@ -10,7 +10,7 @@ Part 1 is included here. Parts 2 and 3 will be included in future blog posts, wh
 ## Part 1: Taking Stock
 <br>
 ### The Life Inventory
-<br>
+
 For me, and it sounds like most people, the hardest part about applying for jobs is **actually sitting down and starting.** You don't know what to include, you can't remember the full scope of that project you worked on junior year that would be _perfect_ to include in this cover letter, etc. One thing that helped me get started when I was looking for a job was to do a little **life inventory**. I opened a Google Doc and started writing down everything about me: skills I have, projects I've worked on, jobs I've had, volunteer experiences, interests (both personal and professional), places I've lived, everything. _This inventory became my repository for job applications, and remains to this day._ Whenever I do something new, I put it in the inventory for posterity, and whenever I'm applying to a job, this list is the first place I go. Your list does not have to be organized at all at first; just add stuff to it as it comes to mind. Whenever you feel like you have some time and want to tackle it, you can organize your thoughts into some categories. My categories are:
 
 * Things I've Made/Written
@@ -27,9 +27,9 @@ My **skills** sections are broken into skills I am proficient at and skills I ha
 The next step is to **add in all the things you want to do**, the project ideas, the skillsets you'd like to have, the places you'd like to go, the things you want to learn. This list has two purposes. First, it'll help you identify some of the things you want to get out of a job (the ones related to job function, anyway -- for more on this, see the section below), which can help to determine whether or not you're legitimately interested in the job for which you're applying. Second, this list becomes the list of questions you ask at the end of the interview. You know, when the interviewer says, "Do you have any questions for us?" You should always have at least a few questions prepared, and those questions can come from this list of goals. (You should also make sure you have at least one question to ask that demonstrates how thoroughly you read the organization/company's website; I usually ask about the methodology of a specific project, or to inquire about a recent change in the organization/company.
 
 Creating a life inventory not only helps you figure out where you're at and what you want, but once you've created it, it makes applying for jobs so much easier.
-
-### The Job Search
 <br>
+### The Job Search
+
 So now you've figured out where you're at and where you want to go. How do you figure out what jobs to apply for? Even in geospatial, there are a multitude of options: GIS Technician, GIS Developer, Cartographer, GIS Databse Administrator, government, private sector, nonprofits... the list goes on and on. [Idealist](http://idealist.org) has identified what it calls the ["Five Lens Framework"](http://www.idealist.org/info/Careers/SelfKnowledge/Lenses) for determining the frames through which individuals see their careers. That list is specifically geared toward nonprofit job seekers, so it doesn't include what I think is an important part of many job searches: money. The framework (with my addendum) involves the following six lenses:
 
 * Organization: You want to work at Specific Company X. It is less important what you do there, so long as you are working there.
@@ -42,9 +42,9 @@ So now you've figured out where you're at and where you want to go. How do you f
 In the exercise above, when you were taking a life inventory, one of the things you wrote down was a list of what you want to get out of a job. Take a look at this list and try to identify which of these categories your goals fit into. **It's also okay to want more than one thing.** For me, it is a combination of role, system, and population: I want to conduct specific job tasks, I like certain types of organizations and work environments, and I care that my work is affecting a certain population. The spcific company I work for, the problems I'm solving, and my compensation are less important. Still important, but less so. Identifying which of these lenses is more prevalent for you can be extremely helpful in deciding which jobs to apply for, and if you get lucky enough to have to choose between multiple offers, your self-knowledge about these lenses will certainly come in handy.
 
 For more information and advice about what to do once you've identified which lenses you value, see the [Idealist page on the Five Lenses Framework.](http://www.idealist.org/info/Careers/SelfKnowledge/Lenses)
-
-### Take A Deep Breath
 <br>
+### Take A Deep Breath
+
 Look at you! Now you know all about yourself, and you're starting to identify jobs that will give you what you want. I've often heard from people when I've given this advice, "But there are so few jobs in my field! Who am I to be picky when I'm just out of school?" It is true, we all need to make money to eat and drink beer and pay rent and so on. Ideally, this process doesn't limit your job prospects, but actually helps you to **realize the totality of your skillset** which can open the field a bit. I have seen many of my friends take the first job in the field that they were qualified for without considering what they really wanted, and most of them are now pretty sad to be in that situation. I have also seen friends take jobs that were seemingly out of their ideal career field that ended up being great investments: they learned a lot about what they enjoyed in a work environment, they learned new skills, they made new friends, and even if it didn't work out in the end, they ended up learning a lot about themselves in the process.
 
 Taking stock is hard, but it helps you figure out who you are and what you want, which in turn can help in making decisions and generating a plan for moving forward. Take a deep breath: you're on the right track, and you're doing just fine.
