@@ -8,9 +8,9 @@ Last week, I was asked by the [ORURISA Young Professionals](http://orurisayp.org
 Part 1 is included here. Parts 2 and 3 will be included in future blog posts, which I will link to from this blog post when they're up.
 
 ## Part 1: Taking Stock
-<br><br>
+<br>
 ### The Life Inventory
-<br><br>
+<br>
 For me, and it sounds like most people, the hardest part about applying for jobs is **actually sitting down and starting.** You don't know what to include, you can't remember the full scope of that project you worked on junior year that would be _perfect_ to include in this cover letter, etc. One thing that helped me get started when I was looking for a job was to do a little **life inventory**. I opened a Google Doc and started writing down everything about me: skills I have, projects I've worked on, jobs I've had, volunteer experiences, interests (both personal and professional), places I've lived, everything. _This inventory became my repository for job applications, and remains to this day._ Whenever I do something new, I put it in the inventory for posterity, and whenever I'm applying to a job, this list is the first place I go. Your list does not have to be organized at all at first; just add stuff to it as it comes to mind. Whenever you feel like you have some time and want to tackle it, you can organize your thoughts into some categories. My categories are:
 
 * Things I've Made/Written
@@ -29,7 +29,7 @@ The next step is to **add in all the things you want to do**, the project ideas,
 Creating a life inventory not only helps you figure out where you're at and what you want, but once you've created it, it makes applying for jobs so much easier.
 
 ### The Job Search
-<br><br>
+<br>
 So now you've figured out where you're at and where you want to go. How do you figure out what jobs to apply for? Even in geospatial, there are a multitude of options: GIS Technician, GIS Developer, Cartographer, GIS Databse Administrator, government, private sector, nonprofits... the list goes on and on. [Idealist](http://idealist.org) has identified what it calls the ["Five Lens Framework"](http://www.idealist.org/info/Careers/SelfKnowledge/Lenses) for determining the frames through which individuals see their careers. That list is specifically geared toward nonprofit job seekers, so it doesn't include what I think is an important part of many job searches: money. The framework (with my addendum) involves the following six lenses:
 
 * Organization: You want to work at Specific Company X. It is less important what you do there, so long as you are working there.
@@ -44,7 +44,7 @@ In the exercise above, when you were taking a life inventory, one of the things 
 For more information and advice about what to do once you've identified which lenses you value, see the [Idealist page on the Five Lenses Framework.](http://www.idealist.org/info/Careers/SelfKnowledge/Lenses)
 
 ### Take A Deep Breath
-<br><br>
+<br>
 Look at you! Now you know all about yourself, and you're starting to identify jobs that will give you what you want. I've often heard from people when I've given this advice, "But there are so few jobs in my field! Who am I to be picky when I'm just out of school?" It is true, we all need to make money to eat and drink beer and pay rent and so on. Ideally, this process doesn't limit your job prospects, but actually helps you to **realize the totality of your skillset** which can open the field a bit. I have seen many of my friends take the first job in the field that they were qualified for without considering what they really wanted, and most of them are now pretty sad to be in that situation. I have also seen friends take jobs that were seemingly out of their ideal career field that ended up being great investments: they learned a lot about what they enjoyed in a work environment, they learned new skills, they made new friends, and even if it didn't work out in the end, they ended up learning a lot about themselves in the process.
 
 Taking stock is hard, but it helps you figure out who you are and what you want, which in turn can help in making decisions and generating a plan for moving forward. Take a deep breath: you're on the right track, and you're doing just fine.
