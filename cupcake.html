@@ -8,7 +8,7 @@
  	<![endif]-->
  	<style type="text/css">
  		#map {
- 			height: 960px;
+ 			height: 500px;
  		}
  	</style>
  	<!-- End CSS -->
@@ -29,8 +29,8 @@
 		});
  
 		function onEachFeature(feature, layer) {
-			if(feature.properties && feature.properties.Proj_Name) {
-				layer.bindPopup(feature.properties.Proj_Name);
+			if(feature.properties && feature.properties.name) {
+				layer.bindPopup(feature.properties.name);
 			}
 			layer.on('mouseover click', function(e) {
 				layer.setStyle( { fillOpacity: 0.9 })
@@ -53,7 +53,7 @@
 			} */
 		};
  
-		var projects = [{
+		var cupcakes = [{
 			"type": "Feature",
 			"properties": {
 				"Proj_Typ": "Make Big Streets Safe", 
@@ -936,23 +936,15 @@
 
 		var info = L.control({position: 'topright'});
 		var project_type = feature.properties.Proj_Typ;
-
-		info.onAdd = function(map) {
-			this._div = L.DomUtil.create('div', 'info');
-			switch (feature.properties.Proj_Typ) {
-				case 'Build Trails': this.div.innerHTML = '<h2>Build Inspiring Trails</h2><br><p>An inspiring network of trails will connect town centers, residential neighborhoods, and outdoor destinations with smooth, paved space for everyone including daily commuters, families headed to the park, and senior citizens on a stroll.</p>';
-				case 'Make Big Streets Safe': this.div.innerHTML - '<h2>Make Big Streets Safe</h2>'
-			}
-			return this._div;
  		
  		// Add tile layer
-		L.tileLayer('http://a.tiles.mapbox.com/v3/lyzidiamond.map-ukqu0krr/{z}/{x}/{y}.png', {
+		L.tileLayer('http://a.tiles.mapbox.com/v3/lyzidiamond.map-ietb6srb/{z}/{x}/{y}.png', {
 			maxZoom: 13,
 			minZoom: 11,
 		}).addTo(map);
 
 		// Add GeoJSON
-		L.geoJson(projects, 
+		L.geoJson(cupcakes, 
 		{
 			style: function(feature) {
 				switch (feature.properties.Proj_Typ) {
