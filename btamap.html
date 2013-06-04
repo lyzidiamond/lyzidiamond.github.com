@@ -22,37 +22,7 @@
 <body>
 	<div id="map"></div>
 	<script>
-		
-		var map = new L.Map("map", {
-    	center: new L.LatLng(45.443272,-122.754364),
-    	zoom: 11
-		});
- 
-		function onEachFeature(feature, layer) {
-			if(feature.properties && feature.properties.Proj_Name) {
-				layer.bindPopup(feature.properties.Proj_Name);
-			}
-			layer.on('mouseover click', function(e) {
-				layer.setStyle( { fillOpacity: 0.9 })
-			});
-			layer.on('mouseout', function(e) {
-				layer.setStyle( { fillOpacity: 0.6 })
-			});
-			var info = L.control({position: 'topright'});
-			var project_type = feature.properties.Proj_Typ;
 
-		/*	info.onAdd = function(map) {
-				this._div = L.DomUtil.create('div', 'info');
-				switch (feature.properties.Proj_Typ) {
-					case 'Build Trails': this.div.innerHTML = '<h2>Build Inspiring Trails</h2><br><p>An inspiring network of trails will connect town centers, residential neighborhoods, and outdoor destinations with smooth, paved space for everyone including daily commuters, families headed to the park, and senior citizens on a stroll.</p>';
-					case 'Make Big Streets Safe': this.div.innerHTML = '<h2>Make Big Streets Safe</h2><br><p>A robust, protected facility, frequently called a “cycle track,” is the only way to provide safe bicycle access to destinations on big streets. Cycle tracks also give guidance to people on bicycles, helping them ride more predictably with other traffic.</p>';
-					case 'Neighborhood Greenways': this.div.innerHTML = '<h2>Create Neighborhood Greenways</h2><br><p>We want to build on the success of Portland’s neighborhood greenway network. Everyone should have access to safe streets with a mix of traffic control such as speed bumps, bulb outs and traffic diverters.</p>';
-					case 'Fix It': this.div.innerHTML = "<h2>Let's Fix It</h2><br><p>No one would accept an uncontrolled intersection on a freeway, a dead-end travel lane for motor vehicles, or a major street that was too narrow for opposing directions of car traffic. All types of transportation deserve the same basic considerations that motor vehicle traffic already enjoys.</p>";
-				}
-				return this._div;
-			} */
-		};
- 
 		var projects = [{
 			"type": "Feature",
 			"properties": {
@@ -933,17 +903,43 @@
 				] 
 			} 
 		}];
-
-		var info = L.control({position: 'topright'});
+		
+		var map = new L.Map("map", {
+    	center: new L.LatLng(45.443272,-122.754364),
+    	zoom: 11
+		});
+ 
+		function onEachFeature(feature, layer) {
+			if(feature.properties && feature.properties.Proj_Name) {
+				layer.bindPopup(feature.properties.Proj_Name);
+			}
+			layer.on('mouseover click', function(e) {
+				layer.setStyle( { fillOpacity: 0.9 })
+			});
+			layer.on('mouseout', function(e) {
+				layer.setStyle( { fillOpacity: 0.6 })
+			});
+		}
+		var info = L.control();
 		var project_type = feature.properties.Proj_Typ;
 
 		info.onAdd = function(map) {
 			this._div = L.DomUtil.create('div', 'info');
-			switch (feature.properties.Proj_Typ) {
-				case 'Build Trails': this.div.innerHTML = '<h2>Build Inspiring Trails</h2><br><p>An inspiring network of trails will connect town centers, residential neighborhoods, and outdoor destinations with smooth, paved space for everyone including daily commuters, families headed to the park, and senior citizens on a stroll.</p>';
-				case 'Make Big Streets Safe': this.div.innerHTML - '<h2>Make Big Streets Safe</h2>'
-			}
+			this.update();
 			return this._div;
+		}
+
+		info.update = function(props) {
+			var description = ''
+			switch (props.Proj_typ) {
+				case 'Build Trails': description = '<h2>Build Inspiring Trails</h2><br><p>An inspiring network of trails will connect town centers, residential neighborhoods, and outdoor destinations with smooth, paved space for everyone including daily commuters, families headed to the park, and senior citizens on a stroll.</p>';
+				case 'Make Big Streets Safe': description = '<h2>Make Big Streets Safe</h2><br><p>A robust, protected facility, frequently called a “cycle track,” is the only way to provide safe bicycle access to destinations on big streets. Cycle tracks also give guidance to people on bicycles, helping them ride more predictably with other traffic.</p>';
+				case 'Neighborhood Greenways': description = "<h2>Create Neighborhood Greenways</h2><br><p>We want to build on the success of Portland’s neighborhood greenway network. Everyone should have access to safe streets with a mix of traffic control such as speed bumps, bulb outs and traffic diverters.</p>";
+				case 'Fix It': description = "<h2>Let's Fix It</h2><br><p>No one would accept an uncontrolled intersection on a freeway, a dead-end travel lane for motor vehicles, or a major street that was too narrow for opposing directions of car traffic. All types of transportation deserve the same basic considerations that motor vehicle traffic already enjoys.</p>"
+				default: 'This string contains two sentences '
+			}
+			this._div.innerHtml = '<h2>Blueprint for World Class Bicycling</h2>' + (props ? '<b>' + )
+		}
  		
  		// Add tile layer
 		L.tileLayer('http://a.tiles.mapbox.com/v3/lyzidiamond.map-ukqu0krr/{z}/{x}/{y}.png', {
