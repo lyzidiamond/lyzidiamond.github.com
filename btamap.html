@@ -22,6 +22,26 @@
 <body>
 	<div id="map"></div>
 	<script>
+	//Adding a comment so that I can practice.
+	// Another comment.
+		
+		var map = new L.Map("map", {
+    	center: new L.LatLng(45.443272,-122.754364),
+    	zoom: 11
+		});
+ 
+		function onEachFeature(feature, layer) {
+			if(feature.properties && feature.properties.Proj_Name) {
+				layer.bindPopup(feature.properties.Proj_Name);
+			}
+			layer.on('mouseover click', function(e) {
+				layer.setStyle( { fillOpacity: 0.9 })
+			});
+			layer.on('mouseout', function(e) {
+				layer.setStyle( { fillOpacity: 0.6 })
+			});
+			var info = L.control({position: 'topright'});
+			var project_type = feature.properties.Proj_Typ;
 
 		var projects = [{
 			"type": "Feature",
