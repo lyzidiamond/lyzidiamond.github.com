@@ -3,12 +3,18 @@
 <head>
 
 	<title>Blueprint for World Class Bicycling</title>
+	<meta name="viewport" content="width=device-width, inital-scale=1.0, maximum-scale=1.0, user-scalable=no" />
   <!-- CSS -->
 	<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.5/leaflet.css" />
 	<!--[if lte IE 8]>
      <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.5/leaflet.ie.css" />
  	<![endif]-->
  	<style type="text/css">
+
+ 		body {
+ 			padding: 0;
+ 			margin: 0;
+ 		}
  		
  		html, body, #map {
  			height: 100%;
@@ -950,49 +956,29 @@
 			} 
 		}];
 		
-		// Define map, set center on Portland, zoom 11
+		var southWestBounds = new L.LatLng(45.158801,-123.283296);
+		var northEastBounds = new L.LatLng(45.695149,-122.244294);
 		var map = new L.Map("map", {
     	center: new L.LatLng(45.491367,-122.737885),
-    	zoom: 11
+    	zoom: 11,
+    	maxBounds: new L.LatLngBounds(southWestBounds, northEastBounds)
 		});
-
 		var geojson;
-		
-		// Define top right info panel
 		var info = L.control({position: 'topright'});
-
-		// Static Legent
 		var legend = L.control({position: 'bottomright'});
 
-		// onHover function, e is an event object (MouseEvent)
 		function onHover(e) {
-
-			// Create variable layer, set it to the object that fired the event
 			var layer = e.target;
-
-			// Set style of the hovered layer to make more opaque
 			layer.setStyle( { fillOpacity: 0.9 });
-
-			// Change top right info panel by calling info.update()
 			info.update(layer.feature.properties);
-
 		}
 
-		// mouseOut function, e is an event object (Mouse Event)
 		function mouseOut(e) {
-
-			// resets style
 			geojson.resetStyle(e.target);
-
-			// updates the info pane by calling info.update()
 			info.update();
-
 		}
 
-		// zoomToFeature function, e is an event object
 		function zoomToFeature(e) {
-
-			// zooms map to clicked location
 			map.fitBounds(e.target.getBounds());
 		}
 
@@ -1002,7 +988,6 @@
 			return div;
 		};
 
-		// When info is added to the map, do this. Takes map as parameter.
 		info.onAdd = function(map) {
 			this._div = L.DomUtil.create('div', 'info');
 			this.update();
@@ -1056,23 +1041,19 @@
 				click: zoomToFeature
 			});
 		}
- 		
- 		// Add tile layer
+
 		L.tileLayer('http://a.tiles.mapbox.com/v3/lyzidiamond.map-ukqu0krr/{z}/{x}/{y}.png', {
 			maxZoom: 13,
 			minZoom: 11,
 		}).addTo(map);
 
-		// Add GeoJSON
 		geojson = L.geoJson(projects, 
 		{
 			style: style,
 			onEachFeature: onEachFeature
 		}).addTo(map);
 
-		// Add Project Info
 		info.addTo(map);
-
 		legend.addTo(map);
 
 	</script>
