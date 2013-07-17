@@ -1,15 +1,67 @@
 <!doctype html>
 <html>
 <head>
+
+	<title>Blueprint for World Class Bicycling</title>
+	<meta name="viewport" content="width=device-width, inital-scale=1.0, maximum-scale=1.0, user-scalable=no" />
   <!-- CSS -->
 	<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.5/leaflet.css" />
 	<!--[if lte IE 8]>
      <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.5/leaflet.ie.css" />
  	<![endif]-->
  	<style type="text/css">
- 		#map {
- 			height: 960px;
+
+ 		body {
+ 			padding: 0;
+ 			margin: 0;
  		}
+ 		
+ 		html, body, #map {
+ 			height: 100%;
+ 		}
+
+ 		.info {
+ 			background: white;
+ 			background: rgba(255, 255, 255, 0.9);
+ 			border-radius: 5px;
+ 			box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+ 			font: 14px/16px Arial, Helvetica, sans-serif;
+ 			max-width: 400px;
+ 			padding: 6px 8px;
+ 		}
+
+ 		.info h2, .info h3, .info p {
+ 			margin: 0 0 5px;
+ 			color: #555;
+ 		}
+
+ 		.info h2 {
+ 			font-size: 1.5em;
+ 			line-height: 1.5em;
+ 		}
+
+ 		.info h3 {
+ 			font-size: 1.25em;
+ 		}
+
+ 		.info p, .legend p {
+ 			font-size: 1em;
+ 		}
+
+ 		.legend {
+    	line-height: 18px;
+    	color: #555;
+    	width: 250px;
+		}
+
+		.legend i {
+    	width: 25px;
+    	height: 18px;
+    	float: left;
+    	margin-right: 8px;
+    	opacity: 0.7;
+		}
+
  	</style>
  	<!-- End CSS -->
  	<!-- JavaScript -->
@@ -22,39 +74,7 @@
 <body>
 	<div id="map"></div>
 	<script>
-	//Adding a comment so that I can practice.
-	// Another comment.
-		
-		var map = new L.Map("map", {
-    	center: new L.LatLng(45.443272,-122.754364),
-    	zoom: 11
-		});
- 
-		function onEachFeature(feature, layer) {
-			if(feature.properties && feature.properties.Proj_Name) {
-				layer.bindPopup(feature.properties.Proj_Name);
-			}
-			layer.on('mouseover click', function(e) {
-				layer.setStyle( { fillOpacity: 0.9 })
-			});
-			layer.on('mouseout', function(e) {
-				layer.setStyle( { fillOpacity: 0.6 })
-			});
-			var info = L.control({position: 'topright'});
-			var project_type = feature.properties.Proj_Typ;
 
-		/*	info.onAdd = function(map) {
-				this._div = L.DomUtil.create('div', 'info');
-				switch (feature.properties.Proj_Typ) {
-					case 'Build Trails': this.div.innerHTML = '<h2>Build Inspiring Trails</h2><br><p>An inspiring network of trails will connect town centers, residential neighborhoods, and outdoor destinations with smooth, paved space for everyone including daily commuters, families headed to the park, and senior citizens on a stroll.</p>';
-					case 'Make Big Streets Safe': this.div.innerHTML = '<h2>Make Big Streets Safe</h2><br><p>A robust, protected facility, frequently called a “cycle track,” is the only way to provide safe bicycle access to destinations on big streets. Cycle tracks also give guidance to people on bicycles, helping them ride more predictably with other traffic.</p>';
-					case 'Neighborhood Greenways': this.div.innerHTML = '<h2>Create Neighborhood Greenways</h2><br><p>We want to build on the success of Portland’s neighborhood greenway network. Everyone should have access to safe streets with a mix of traffic control such as speed bumps, bulb outs and traffic diverters.</p>';
-					case 'Fix It': this.div.innerHTML = "<h2>Let's Fix It</h2><br><p>No one would accept an uncontrolled intersection on a freeway, a dead-end travel lane for motor vehicles, or a major street that was too narrow for opposing directions of car traffic. All types of transportation deserve the same basic considerations that motor vehicle traffic already enjoys.</p>";
-				}
-				return this._div;
-			} */
-		};
- 
 		var projects = [{
 			"type": "Feature",
 			"properties": {
@@ -935,39 +955,105 @@
 				] 
 			} 
 		}];
-
+		
+		var southWestBounds = new L.LatLng(45.158801,-123.283296);
+		var northEastBounds = new L.LatLng(45.695149,-122.244294);
+		var map = new L.Map("map", {
+    	center: new L.LatLng(45.491367,-122.737885),
+    	zoom: 11,
+    	maxBounds: new L.LatLngBounds(southWestBounds, northEastBounds)
+		});
+		var geojson;
 		var info = L.control({position: 'topright'});
-		var project_type = feature.properties.Proj_Typ;
+		var legend = L.control({position: 'bottomright'});
+
+		function onHover(e) {
+			var layer = e.target;
+			layer.setStyle( { fillOpacity: 0.9 });
+			info.update(layer.feature.properties);
+		}
+
+		function mouseOut(e) {
+			geojson.resetStyle(e.target);
+			info.update();
+		}
+
+		function zoomToFeature(e) {
+			map.fitBounds(e.target.getBounds());
+		}
+
+		legend.onAdd = function(map) {
+			var div = L.DomUtil.create('div', 'info legend');
+			div.innerHTML = '<i style="background: #30c5db"></i> <p>Build Inspiring Trails</p><i style="background:#979ea3"></i> <p>Make Big Streets Safe</p><i style="background:#88c457"></i> <p>Create Neighborhood Greenways</p><i style="background:#fe8e39"></i> <p>Let\'s Fix It</p>';
+			return div;
+		};
 
 		info.onAdd = function(map) {
 			this._div = L.DomUtil.create('div', 'info');
-			switch (feature.properties.Proj_Typ) {
-				case 'Build Trails': this.div.innerHTML = '<h2>Build Inspiring Trails</h2><br><p>An inspiring network of trails will connect town centers, residential neighborhoods, and outdoor destinations with smooth, paved space for everyone including daily commuters, families headed to the park, and senior citizens on a stroll.</p>';
-				case 'Make Big Streets Safe': this.div.innerHTML - '<h2>Make Big Streets Safe</h2>'
-			}
+			this.update();
 			return this._div;
- 		
- 		// Add tile layer
+		};
+
+		info.update = function(props) {
+			var description = '';
+			var project_type = '';
+			console.log(props);
+			if (props) {
+				switch (props.Proj_Typ) {
+					case 'Build Trails': 
+						project_type = 'Build Inspiring Trails';
+						description = 'An inspiring network of trails will connect town centers, residential neighborhoods, and outdoor destinations with smooth, paved space for everyone including daily commuters, families headed to the park, and senior citizens on a stroll.';
+						break;
+					case 'Make Big Streets Safe':
+						project_type = 'Make Big Streets Safe';
+						description = 'A robust, protected facility, frequently called a "cycle track," is the only way to provide safe bicycle access to destinations on big streets. Cycle tracks also give guidance to people on bicycles, helping them ride more predictably with other traffic.';
+						break;
+					case 'Neighborhood Greenways':
+						project_type = 'Create Neighborhood Greenways';
+						description = "We want to build on the success of Portland's neighborhood greenway network. Everyone should have access to safe streets with a mix of traffic control such as speed bumps, bulb outs and traffic diverters.";
+						break;
+					case 'Fix It':
+						project_type = "Let's Fix It";
+						description = 'No one would accept an uncontrolled intersection on a freeway, a dead-end travel lane for motor vehicles, or a major street that was too narrow for opposing directions of car traffic. All types of transportation deserve the same basic considerations that motor vehicle traffic already enjoys.';
+						break;
+				};
+			} else {
+				project_type = 'Blueprint for World Class Bicycling';
+				description = 'After a robust public outreach effort that included over a thousand survey responses and hundreds of in-person conversations, we selected 16 projects to demonstrate our four key areas for action. With a broad geographic spread, and a wide range of forward-thinking goals, the projects included in the Blueprint are some of the most important investments we can make to provide non-motorized transportation options that are safe and convenient.';
+			}
+			this._div.innerHTML = '<h2>' + project_type + '</h2><p>' + description+ '</p>';
+		};
+
+		function style(feature) {
+			switch (feature.properties.Proj_Typ) {
+				case 'Build Trails': return { stroke: false, fillColor: "#30c5db", fillOpacity: 0.6 };
+				case 'Make Big Streets Safe': return { stroke: false, fillColor: "#979ea3", fillOpacity: 0.6 };
+				case 'Neighborhood Greenways': return { stroke: false, fillColor: "#88c457", fillOpacity: 0.6 };
+				case 'Fix It': return { stroke: false, fillColor: "#fe8e39", fillOpacity: 0.6 };
+			}
+		}
+
+		function onEachFeature(feature, layer) {
+			layer.bindPopup(feature.properties.Proj_Name);
+			layer.on({
+				mouseover: onHover,
+				mouseout: mouseOut,
+				click: zoomToFeature
+			});
+		}
+
 		L.tileLayer('http://a.tiles.mapbox.com/v3/lyzidiamond.map-ukqu0krr/{z}/{x}/{y}.png', {
 			maxZoom: 13,
 			minZoom: 11,
 		}).addTo(map);
 
-		// Add GeoJSON
-		L.geoJson(projects, 
+		geojson = L.geoJson(projects, 
 		{
-			style: function(feature) {
-				switch (feature.properties.Proj_Typ) {
-					case 'Build Trails': return { stroke: false, fillColor: "#30c5db", fillOpacity: 0.6 };
-					case 'Make Big Streets Safe': return { stroke: false, fillColor: "#979ea3", fillOpacity: 0.6 };
-					case 'Neighborhood Greenways': return { stroke: false, fillColor: "#88c457", fillOpacity: 0.6 };
-					case 'Fix It': return { stroke: false, fillColor: "#fe8e39", fillOpacity: 0.6 };
-				}
-			},
+			style: style,
 			onEachFeature: onEachFeature
 		}).addTo(map);
 
-		// Add Project Info
+		info.addTo(map);
 		legend.addTo(map);
 
 	</script>
