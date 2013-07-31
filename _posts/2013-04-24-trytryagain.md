@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: blog
 title: If At First You Don't Succeed...
 ---
 

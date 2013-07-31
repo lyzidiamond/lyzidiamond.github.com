@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <title>
+    
+      GitHub: Bringing GeoJSON To Life Since 2013 &ndash;
+    
+    Victory Formation
+  </title>
+
+  <meta name="author" content="Lyzi Diamond" />
+  <meta name="description" content="Victory formation." />
+
+  <link rel="alternate" type="application/rss+xml" href="/atom.xml" />
+
+  <link rel="stylesheet" href="/css/main.css" type="text/css" media="screen, projection" />
+  <link rel="stylesheet" href="/css/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.5/leaflet.css" />
+  <link media="only screen and (max-device-width: 480px)" href="/css/iphone.css" type="text/css" rel="stylesheet" />
+  <link media="only screen and (device-width: 768px)" href="/css/iphone.css" type="text/css" rel="stylesheet" />
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,700italic,400,700,800' rel='stylesheet' type='text/css'>
+  <link rel="apple-touch-icon" href="http://gravatar.com/avatar/029f8c0e50e126f91562b126af9f22dd?s=142" />
+
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="http://cdn.leafletjs.com/leaflet-0.5/leaflet.js"></script>
+  <script type="text/javascript" src="/js/application.js"></script>
+</head>
+
+<body>
+  <div id='wrapper'>
+    <div class='navigation'>
+      <ul>
+        <a href="/about">
+          <li class='left'>about</li>
+        </a>
+        <a href="/history">
+          <li class='left'>history</li>
+        </a>
+        <a href="/things">
+          <li class='right'>things</li>
+        </a>
+        <a href="/posts">
+          <li class='right'>words</li>
+        </a>
+      </ul>
+    </div>
+    <div class='header'>
+      
+        <h1>GitHub: Bringing GeoJSON To Life Since 2013</h1>
+      
+    </div>
+
+
+  <section class='content'>
+
+  <section class='byline'>
+    Lyzi Diamond | June 17, 2013
+  </section>
+
+  <p><em>This post originally appeared on <a href="http://giscollective.org">GIS Collective</a>.</em></p>
+
+<h1><img src="http://giscollective.org/wp-content/uploads/2013/06/githubgeojson1.png" width="100%"></h1>
+
+
+<p>Last week, the code repository heroes over at <a href="http://github.com">GitHub</a> made an awesome announcement: <a href="https://github.com/blog/1528-there-s-a-map-for-that">Any .geojson files living in GitHub repos will now be rendered on a Leaflet-driven, OSM tile-backed map right inside of GitHub</a>, with tooltips showing the data properties to boot! This is a truly exciting moment for all geonerds who code, developers who use geodata, and everyone in between.</p>
+
+<p>“Hey, wait a minute,” you may be saying. “What is GitHub again? And <a href="http://www.geojson.org/">GeoJSON</a>… I think I’ve heard of that, but what is it for?” Do not fret! We at GISC know that the field is moving quickly, and we are happy to provide guidance and direction for your geospatial journey.</p>
+
+<h2>Git and GitHub</h2>
+
+
+
+
+<h1><img src="http://www.palermo.edu/Archivos_content/ingenieria/top/130712_git_github_topdenota1.jpg"></h1>
+
+
+<p>Before learning about GitHub, we first have to understand <a href="http://git-scm.com">git</a>. Git is a tool that allows multiple people to work on the same files at the same time without overwriting each other’s changes. This general concept is called <em>version control</em>, and git is a <em>version control system</em>. There are several other version control systems out there, but git is popular because it does its job more efficiently than many (if not all) of the others.</p>
+
+<p>In order for multiple people to work on a project, the data has to live in a place where multiple people can access it, right? GitHub is that place: the site houses thousands and thousands of projects, in individual workspaces called <em>repositories</em>, or <em>repos</em>, that multiple people can access, copy, edit, and update using the tools available via git. These repositories also have a tracking element; when someone makes a change to a project, or a <em>commit</em>, information is stored about the user, the time, the exact changes that were made (all the way down to the individual line inside the file!), and a unique ID that allows the project owner to restore back to that particular moment. It’s pretty effing cool.</p>
+
+<p>Because git is so great, and GitHub is so popular, people have been using it for all kinds of projects, coding and otherwise. I have seen professors put lectures and lecture notes on GitHub, several of my friends use it as a place to work on resumes and terminal projects… you can basically use it for anything. Shoot, even the code for my website lives on GitHub. So it follows that with the advent of mapping and geospatial analysis on the web, there is a lot of geodata housed on GitHub.</p>
+
+<h2>GeoJSON</h2>
+
+
+
+
+<h1><img src="http://giscollective.org/wp-content/uploads/2013/06/geojson.png"></h1>
+
+
+<p>One of the more common formats used for geospatial data in web mapping applications is called <em>GeoJSON</em>. GeoJSON was born out of a format called <em><a href="http://json.org">JSON</a></em>, which stands for JavaScript Object Notation. JSON is like a table turned on its side; each row gets its own section, and inside of that section is a series of properties and values unique to that row. For example, a table of Presidents of the United States might look something like this:</p>
+
+<h1><img src="http://giscollective.org/wp-content/uploads/2013/06/presidents.png"></h1>
+
+
+<p>In JSON, the table might look like this:</p>
+
+<p><code></p>
+
+<p>  “presidents” : {</p>
+
+<pre><code>“name” : “Barack Obama”,
+  “hometown” : “Honolulu, HI”,
+  “number” : “44”,
+  “year elected” : “2008”,
+  “terms served” : “2”,
+  “child1” : {
+    “name” : “Malia”,
+    “born” : “1998”
+  },
+  “child2” : {
+    “name” : “Sasha”,
+    “born” : “2001”
+  }
+},
+{
+  “name” : “George W. Bush”,
+  “hometown” : “New Haven, CT”,
+  “number” : “43”,
+  “year elected” : “2000”,
+  “terms served” : “2”,
+  “child1” : {
+    “name” : “Jenna”,
+    “born” : “1981”
+  },
+  “child2” : {
+    “name” : “Barbara”,
+    “born” : “1981”
+  }
+}
+</code></pre>
+
+<p></code></p>
+
+<p>GeoJSON takes this format and adds geometry, allowing mapping engines and libraries to parse the data and place these objects in space using coordinates, as well as properties, which can be thought of like the fields and values in an attribute table. GeoJSON allows for points, lines, polygons, and a few other data types, but it’s all formatted in much the same way as the JSON example, above.</p>
+
+<p>Many if not all of the open source mapping libraries for JavaScript (<a href="http://leafletjs.com">Leaflet</a> and <a href="http://mapbox.com">MapBox</a> most notably) support GeoJSON and allow GeoJSON layers to be added to their maps. <a href="http://qgis.org">QGIS</a>, the open source desktop mapping application, also allows the user to view and export data in the GeoJSON format. This has made it extremely popular as a geodata format, which is why it shows up frequently on GitHub.</p>
+
+<h2>In Summary</h2>
+
+
+<p>So now that we know what GitHub is used for and how GeoJSON works, we can clearly see why GitHub’s announcement last week was such a big deal: If you click on any .geojson file in a repo on github.com, the data will be rendered and displayed on a map. No more scrolling through text and trying to figure out where [45.528402,-122.65762] might be, because all of the data is displayed spatially for easy perusal!</p>
+
+<p>With limited time and limited space, I can only say so much, so this wasn’t a thorough walkthrough of git, GitHub, or GeoJSON. I didn’t even touch Leaflet or <a href="http://openstreetmap.org">OpenStreetMap</a> — posts going into all of these things in depth will be on the blog in the coming weeks. For now, head on over to GitHub, find some GeoJSON files, check out the sweet maps, and maybe try making your own repo! And please stay tuned for more updates — by the end of the summer, you’re going to be using git like a pro!</p>
+
+
+</section>
+
+    <div class='footer'>
+      <a href="/">home</a>
+    </div>
+  </div>
+</body>
+
+</html>

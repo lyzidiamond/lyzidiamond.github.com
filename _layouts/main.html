@@ -46,28 +46,18 @@
       </ul>
     </div>
     <div class='header'>
-      <h1>{{ page.title }}</h1>
+      {% if page.title %}
+        <h1>{{ page.title }}</h1>
+      {% endif %}
     </div>
-    <div id='map'></div>
 
-    {{ content }}
+
+  {{ content }}
 
     <div class='footer'>
-      <a href="./">home</a>
+      <a href="/">home</a>
     </div>
   </div>
-  <script>
-
-  var map = new L.map("map", {
-    center: new L.LatLng(45.537137,-122.644715),
-    zoom: 11
-  });
-
-  L.tileLayer('http://{s}.tile.stamen.com/toner/{z}/{x}/{y}.png', {
-    maxZoom: 16,
-  }).addTo(map);
-
-  </script>
 </body>
 
 </html>

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: blog
 title: Every Second
 ---
 

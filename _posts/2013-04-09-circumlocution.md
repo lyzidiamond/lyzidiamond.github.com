@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: blog
 title: Circumlocution and Code
 category: posts
 ---

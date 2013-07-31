@@ -3,14 +3,14 @@
 <head>
   <meta charset="utf-8">
   <title>
-    {% if page.title %}
-      {{ page.title }} &ndash;
-    {% endif %}
-    {{ site.name }}
+    
+      On Design &ndash;
+    
+    Victory Formation
   </title>
 
   <meta name="author" content="Lyzi Diamond" />
-  <meta name="description" content="{{ site.description }}" />
+  <meta name="description" content="Victory formation." />
 
   <link rel="alternate" type="application/rss+xml" href="/atom.xml" />
 
@@ -20,7 +20,7 @@
   <link media="only screen and (max-device-width: 480px)" href="/css/iphone.css" type="text/css" rel="stylesheet" />
   <link media="only screen and (device-width: 768px)" href="/css/iphone.css" type="text/css" rel="stylesheet" />
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,700italic,400,700,800' rel='stylesheet' type='text/css'>
-  <link rel="apple-touch-icon" href="{{ site.gravatar_url }}?s=142" />
+  <link rel="apple-touch-icon" href="http://gravatar.com/avatar/029f8c0e50e126f91562b126af9f22dd?s=142" />
 
   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
   <script src="http://cdn.leafletjs.com/leaflet-0.5/leaflet.js"></script>
@@ -46,28 +46,31 @@
       </ul>
     </div>
     <div class='header'>
-      <h1>{{ page.title }}</h1>
+      
+        <h1>On Design</h1>
+      
     </div>
-    <div id='map'></div>
 
-    {{ content }}
+
+  <section class='content'>
+
+  <section class='byline'>
+    Lyzi Diamond | December 20, 2010
+  </section>
+
+  <blockquote>
+  <p>Cartography is fast becoming the most practical comparative basis for integrating and reducing the vast reaches of modern information. If the geographer seeks to define a domain in terms of space in order to discover regions, and if the historian seeks to define a domain in terms of space and time in order to discover civilizations, the cartographer can be said to use space in order to inform us about all conceivable domains.</p>
+  <cite>Jacques Bertin, Semiology of Graphics</cite>
+</blockquote>
+
+
+
+</section>
 
     <div class='footer'>
-      <a href="./">home</a>
+      <a href="/">home</a>
     </div>
   </div>
-  <script>
-
-  var map = new L.map("map", {
-    center: new L.LatLng(45.537137,-122.644715),
-    zoom: 11
-  });
-
-  L.tileLayer('http://{s}.tile.stamen.com/toner/{z}/{x}/{y}.png', {
-    maxZoom: 16,
-  }).addTo(map);
-
-  </script>
 </body>
 
 </html>

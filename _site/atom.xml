@@ -4,12 +4,369 @@
  <title>Victory Formation</title>
  <link href="http://lyzidiamond.com/atom.xml" rel="self"/>
  <link href="http://lyzidiamond.com/"/>
- <updated>2013-04-22T20:58:53-07:00</updated>
+ <updated>2013-07-31T00:55:38-07:00</updated>
  <id>http://lyzidiamond.com</id>
  <author>
    <name>Victory Formation</name>
  </author>
  
+ 
+ <entry>
+   <title>Geographic Data Assumptions: MAUP and Ecological Fallacies</title>
+   <link href="http://lyzidiamond.com/posts/geographic-data-assumptions"/>
+   <updated>2013-07-02T00:00:00-07:00</updated>
+   <id>http://lyzidiamond.com/posts/geographic-data-assumptions</id>
+   <content type="html">&lt;p&gt;&lt;em&gt;This post originally appeared on &lt;a href=&quot;http://giscollective.org&quot;&gt;GIS Collective&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Global positioning systems have ostensibly become the new atlases — most if noHumans are generally adept at critical thinking and deductive reasoning. We tend to understand the world around us fairly easily, because the world operates on a few basic principles. By relying on these principles, we can find the signals through the noise (or at least narrow it down to a few options). To do this, we tend to rely on assumption and inference.&lt;/p&gt;
+
+&lt;p&gt;This is a good thing. It allows us to, for example, use words that others may not have heard before without having to explain them explicitly. One could deduce that “polygamy” probably means marriage to multiple people, because “monogamy” is the marriage (hah) of the Greek words monos (one) and gamos (marriage), and the Greek word polys means many. You don’t have to look it up, and because you’ve seen the word “monogamy” so many times, you understand “polygamy” in context.&lt;/p&gt;
+
+&lt;p&gt;Maps are a little different. Modern society has allowed for the growth of spatial literacy, and with maps in our pockets (yes, on the cell phones), we do a pretty good job of navigating using lines and cardinal directions. As such, we feel we are qualified to learn about the world in a spatial way, which many of us are! But it’s important to know about the ways that maps can distort our understanding of data, such that we can challenge our assumptions in the future.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;In 1991, Mark Monmonier wrote a book called &lt;a href=&quot;http://www.amazon.com/How-Lie-Maps-2nd-Edition/dp/0226534219&quot;&gt;“How to Lie With Maps.”&lt;/a&gt; The book remains essential to any geographic information science curriculum, and for those interested in learning more about the subjects I’m going to touch on here, it’s a great resource. The first paragraph of the introduction reads:&lt;/p&gt;
+
+&lt;blockquote&gt;Not only is it easy to lie with maps, it’s essential. To portray meaningful relationships for a complex, three-dimensional world on a flat sheet of paper or a video screen, a map must distort reality. As a scale model, the map must use symbols that almost always are proportionally much bigger or thicker than the features they represent. To avoid hiding critical information in a fog of detail, the map must offer a selective, incomplete view of reality. There’s no escape from the cartographic paradox: to present a useful and truthful picture, an accurate map must tell white lies.&lt;/blockquote&gt;
+
+
+&lt;p&gt;There’s the first thing to realize: &lt;strong&gt;every map is lying to you all the time&lt;/strong&gt;. In an ideal world, the map is lying to you in the hopes of conveying the most information to you that it possibly can, but sometimes maps make generalizations and approximations for sake of the cartographer and not the map’s intended audience. Let’s take a look at an example.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://giscollective.org/wp-content/uploads/2013/07/maup2.png&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;This is a map from the &lt;a href=&quot;http://www.washingtonpost.com/wp-srv/special/politics/election-map-2012/president/&quot;&gt;Washington Post&lt;/a&gt; showing the results of the 2012 presidential election. Considering that presidential races in this country are decided by the electoral college, and each state’s electors all vote for the same candidate, breaking out the data state by state makes sense. Nevada is blue, Mississippi is red, Obama won the election, let’s all go get a beer.&lt;/p&gt;
+
+&lt;p&gt;But this map doesn’t tell the whole story. Let’s look at another map from the Washington Post of the exact same data, just aggregated differently.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://giscollective.org/wp-content/uploads/2013/07/maup3.png&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;Nevada doesn’t look as blue as it did in the previous map, and Mississippi doesn’t look quite as red. By grouping data by states, the map was hiding some of the complexity in the data, causing the reader to make certain assumptions.&lt;/p&gt;
+
+&lt;p&gt;This is a common and well-documented spatial data visualization circumstance called the &lt;a href=&quot;http://en.wikipedia.org/wiki/Modifiable_areal_unit_problem&quot;&gt;modifiable areal unit problem&lt;/a&gt;, often acronomized as MAUP. First identified by Gehlke and Biehl in 1934, the MAUP is a statistical bias that is influenced by both the means in which point-based data is aggregated, and the districts into which that data is grouped.&lt;/p&gt;
+
+&lt;p&gt;The presidential election maps above were (in theory*) generated from point-based data: one vote, one point. But showing 117 million points on a map would take a really long time and it wouldn’t be that useful (plus, it’s a cartographic nightmare). The cartographer is all but obligated to aggregate and group the data for ease of consumption, but every grouping mechanism is going to present its own challenges.&lt;/p&gt;
+
+&lt;p&gt;For example, I live in Portland, which is in Multnomah County, Oregon. In the 2012 election, Multnomah County had 367,992 ballots cast in 132 precincts. (Oregon has vote by mail, so that changes things around a bit geographically, but that’s not super relevant here.) 75.37% of the votes cast for president were cast for Barack Obama. When you look at Multnomah County on the presidential map above, you’ll see that it’s pretty blue.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://giscollective.org/wp-content/uploads/2013/07/maup4.png&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;But is that map telling you what’s really going on beneath the aggregation? Nope. Could one theoretically assume that all 367,992 ballots in Multnomah County were cast for Obama? Sure. Does it matter? In this case, probably not that much for you and me, but if you’re interested in conducting a political campaign, the MAUP could seriously hinder your strategy: &lt;em&gt;especially&lt;/em&gt; if you only have access to aggregated data.&lt;/p&gt;
+
+&lt;p&gt;This assumption falls into a category of assumptions called &lt;strong&gt;ecological fallacies&lt;/strong&gt;. Ecological fallacies fall into four camps:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Confusion between ecological correlations and individual correlations&lt;/li&gt;
+&lt;li&gt;Confusion between group average and total average&lt;/li&gt;
+&lt;li&gt;Simpson’s Paradox (when comparing two populations divided in groups of different sizes, the average of some variable in the first population can be higher in every group and yet lower in the total population)&lt;/li&gt;
+&lt;li&gt;Confusion between higher average and higher likelihood&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;p&gt;&lt;em&gt;(Believe it or not, &lt;a href=&quot;http://en.wikipedia.org/wiki/Ecological_fallacy&quot;&gt;Wikipedia&lt;/a&gt; does a really great job breaking each of these down. If you’re interested in learning more about the specifics, head over there.)&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Ecological fallacies and modifiable areal unit problems go hand in hand: the methods for aggregating the data tend to highlight certain trends that are potentially damaging to true understanding (MAUP), and the conclusions drawn from the aggregated data can be erroneous (ecological fallacies).&lt;/p&gt;
+
+&lt;p&gt;Where this is really important is in the realm of public policy. Every policy proposal comes with a statistical analysis of need, or a statistical analysis of effectiveness based on geographic data (that’s why we have a census, y’all), and then an analysis and conclusions drawn from that data. But if the only data available for a specific metric is aggregated into neighborhoods, or census tracts, or zip codes, or watersheds, or any other group, are we really getting the whole story? Are the assumptions we’re making about the data correct?&lt;/p&gt;
+
+&lt;p&gt;When I tell people I make maps for a living, one of the most common responses is, “That’s still a job? Isn’t everything already mapped?”** Although it’s an extremely irritating and silly question, answering it several times has brought me to this conclusion: data display and design issues (MAUP) and the problems with data understanding (ecological fallacies), along with many other things, make data visualization a fascinating (and extremely relevant) science. I believe it is the job of the cartographer to understand the assumptions that will be made when users try to interpret her product, to try and provide as much data as possible, and to be as up front and honest about the ways in which the data is distorted by visualization.&lt;/p&gt;
+
+&lt;p&gt;Maps, just like any other information graphic, exist to show signals in the noise. We as cartographers should work hard to identify common assumptions and work &lt;em&gt;with&lt;/em&gt; them to tell accurate and interesting stories.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;* This is likely false. Election data is aggregated by polling place/ward/district/whatever grouping system is employed where you live. Which creates its own statistical data aggregation problems, no?&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;** I usually come up with two disparate geographic datasets that are so laughably separate that nobody would ever map them together, and talk about how cool it would be if they were juxtaposed. Like, a map of New York City showing art galleries overlayed with National Flood Insurance Program policy holders. If you’re interested in those sorts of strange map mashups, check out Rebecca Solint’s book, &lt;a href=&quot;http://www.amazon.com/Infinite-City-San-Francisco-Atlas/dp/052026506&quot;&gt;Infinite City: A San Francisco Atlas.&amp;ldquo;&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>GitHub and GeoJSON: Just Keeps Getting Better</title>
+   <link href="http://lyzidiamond.com/posts/github-geojson-gets-better"/>
+   <updated>2013-06-26T00:00:00-07:00</updated>
+   <id>http://lyzidiamond.com/posts/github-geojson-gets-better</id>
+   <content type="html">&lt;p&gt;&lt;em&gt;This post originally appeared on &lt;a href=&quot;http://giscollective.org&quot;&gt;GIS Collective&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
+
+&lt;h1&gt;&lt;img src=&quot;http://giscollective.org/wp-content/uploads/2013/06/cluster.png&quot;&gt;&lt;/h1&gt;
+
+
+&lt;p&gt;GitHub has announced today some &lt;a href=&quot;https://github.com/blog/1541-geojson-rendering-improvements&quot;&gt;new features&lt;/a&gt; for rendering geographic data, coming off its announcement two weeks ago that GeoJSON data would now be displayed on a map when opened inside a repo. These changes show that the folks over at GitHub are serious about the importance of geospatial, and recognize that more of the world’s developers are turning to maps and coordinates as a way to display, communicate, and analyze data. Spatial is special once again!&lt;/p&gt;
+
+&lt;p&gt;From the post:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;ul&gt;
+    &lt;li&gt;
+      GitHub now supports rendering &lt;a href=&quot;https://github.com/mbostock/topojson&quot;&gt;TopoJSON&lt;/a&gt;, an extension of GeoJSON that encodes topology and can be up to 80% smaller than their GeoJSON equivalents.
+    &lt;/li&gt;
+    &lt;li&gt;
+      Starting today, you don’t have to rename geo files with a new extension. GitHub will now render GeoJSON (and TopoJSON) in all &lt;a href=&quot;https://github.com/search?q=extension%3Ageojson&amp;type=Code&amp;ref=searchresults&quot;&gt;.geojson&lt;/a&gt;, &lt;a href=&quot;https://github.com/search?q=extension%3Atopojson&amp;type=Code&amp;s=&quot;&gt;.topojson&lt;/a&gt;, and &lt;a href=&quot;https://github.com/search?q=FeatureCollection+extension%3Ajson&amp;type=Code&amp;s=indexed&quot;&gt;.json&lt;/a&gt; files.
+    &lt;/li&gt;
+    &lt;li&gt;
+      Complex geographic datasets can often be difficult to visualize, especially if points are grouped close together. We now &lt;a href=&quot;https://github.com/Leaflet/Leaflet.markercluster&quot;&gt;automatically cluster&lt;/a&gt; nearby markers, allowing us to &lt;a href=&quot;https://github.com/benbalter/dc-maps&quot;&gt;better support&lt;/a&gt; larger datasets.
+    &lt;/li&gt;
+  &lt;ul&gt;
+&lt;/blockquote&gt;
+
+
+&lt;p&gt;You can also now use the rendered map and embed it elsewhere, which is great if you want a quick geographic visualization! Head over to the &lt;a href=&quot;https://github.com/blog/1541-geojson-rendering-improvements&quot;&gt;original post&lt;/a&gt; to read more, and let’s get some more geogeeks on the GitHubs!&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>GitHub: Bringing GeoJSON To Life Since 2013</title>
+   <link href="http://lyzidiamond.com/posts/github-geojson"/>
+   <updated>2013-06-17T00:00:00-07:00</updated>
+   <id>http://lyzidiamond.com/posts/github-geojson</id>
+   <content type="html">&lt;p&gt;&lt;em&gt;This post originally appeared on &lt;a href=&quot;http://giscollective.org&quot;&gt;GIS Collective&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
+
+&lt;h1&gt;&lt;img src=&quot;http://giscollective.org/wp-content/uploads/2013/06/githubgeojson1.png&quot; width=&quot;100%&quot;&gt;&lt;/h1&gt;
+
+
+&lt;p&gt;Last week, the code repository heroes over at &lt;a href=&quot;http://github.com&quot;&gt;GitHub&lt;/a&gt; made an awesome announcement: &lt;a href=&quot;https://github.com/blog/1528-there-s-a-map-for-that&quot;&gt;Any .geojson files living in GitHub repos will now be rendered on a Leaflet-driven, OSM tile-backed map right inside of GitHub&lt;/a&gt;, with tooltips showing the data properties to boot! This is a truly exciting moment for all geonerds who code, developers who use geodata, and everyone in between.&lt;/p&gt;
+
+&lt;p&gt;“Hey, wait a minute,” you may be saying. “What is GitHub again? And &lt;a href=&quot;http://www.geojson.org/&quot;&gt;GeoJSON&lt;/a&gt;… I think I’ve heard of that, but what is it for?” Do not fret! We at GISC know that the field is moving quickly, and we are happy to provide guidance and direction for your geospatial journey.&lt;/p&gt;
+
+&lt;h2&gt;Git and GitHub&lt;/h2&gt;
+
+
+
+
+&lt;h1&gt;&lt;img src=&quot;http://www.palermo.edu/Archivos_content/ingenieria/top/130712_git_github_topdenota1.jpg&quot;&gt;&lt;/h1&gt;
+
+
+&lt;p&gt;Before learning about GitHub, we first have to understand &lt;a href=&quot;http://git-scm.com&quot;&gt;git&lt;/a&gt;. Git is a tool that allows multiple people to work on the same files at the same time without overwriting each other’s changes. This general concept is called &lt;em&gt;version control&lt;/em&gt;, and git is a &lt;em&gt;version control system&lt;/em&gt;. There are several other version control systems out there, but git is popular because it does its job more efficiently than many (if not all) of the others.&lt;/p&gt;
+
+&lt;p&gt;In order for multiple people to work on a project, the data has to live in a place where multiple people can access it, right? GitHub is that place: the site houses thousands and thousands of projects, in individual workspaces called &lt;em&gt;repositories&lt;/em&gt;, or &lt;em&gt;repos&lt;/em&gt;, that multiple people can access, copy, edit, and update using the tools available via git. These repositories also have a tracking element; when someone makes a change to a project, or a &lt;em&gt;commit&lt;/em&gt;, information is stored about the user, the time, the exact changes that were made (all the way down to the individual line inside the file!), and a unique ID that allows the project owner to restore back to that particular moment. It’s pretty effing cool.&lt;/p&gt;
+
+&lt;p&gt;Because git is so great, and GitHub is so popular, people have been using it for all kinds of projects, coding and otherwise. I have seen professors put lectures and lecture notes on GitHub, several of my friends use it as a place to work on resumes and terminal projects… you can basically use it for anything. Shoot, even the code for my website lives on GitHub. So it follows that with the advent of mapping and geospatial analysis on the web, there is a lot of geodata housed on GitHub.&lt;/p&gt;
+
+&lt;h2&gt;GeoJSON&lt;/h2&gt;
+
+
+
+
+&lt;h1&gt;&lt;img src=&quot;http://giscollective.org/wp-content/uploads/2013/06/geojson.png&quot;&gt;&lt;/h1&gt;
+
+
+&lt;p&gt;One of the more common formats used for geospatial data in web mapping applications is called &lt;em&gt;GeoJSON&lt;/em&gt;. GeoJSON was born out of a format called &lt;em&gt;&lt;a href=&quot;http://json.org&quot;&gt;JSON&lt;/a&gt;&lt;/em&gt;, which stands for JavaScript Object Notation. JSON is like a table turned on its side; each row gets its own section, and inside of that section is a series of properties and values unique to that row. For example, a table of Presidents of the United States might look something like this:&lt;/p&gt;
+
+&lt;h1&gt;&lt;img src=&quot;http://giscollective.org/wp-content/uploads/2013/06/presidents.png&quot;&gt;&lt;/h1&gt;
+
+
+&lt;p&gt;In JSON, the table might look like this:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;&lt;/p&gt;
+
+&lt;p&gt;  “presidents” : {&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;“name” : “Barack Obama”,
+  “hometown” : “Honolulu, HI”,
+  “number” : “44”,
+  “year elected” : “2008”,
+  “terms served” : “2”,
+  “child1” : {
+    “name” : “Malia”,
+    “born” : “1998”
+  },
+  “child2” : {
+    “name” : “Sasha”,
+    “born” : “2001”
+  }
+},
+{
+  “name” : “George W. Bush”,
+  “hometown” : “New Haven, CT”,
+  “number” : “43”,
+  “year elected” : “2000”,
+  “terms served” : “2”,
+  “child1” : {
+    “name” : “Jenna”,
+    “born” : “1981”
+  },
+  “child2” : {
+    “name” : “Barbara”,
+    “born” : “1981”
+  }
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;GeoJSON takes this format and adds geometry, allowing mapping engines and libraries to parse the data and place these objects in space using coordinates, as well as properties, which can be thought of like the fields and values in an attribute table. GeoJSON allows for points, lines, polygons, and a few other data types, but it’s all formatted in much the same way as the JSON example, above.&lt;/p&gt;
+
+&lt;p&gt;Many if not all of the open source mapping libraries for JavaScript (&lt;a href=&quot;http://leafletjs.com&quot;&gt;Leaflet&lt;/a&gt; and &lt;a href=&quot;http://mapbox.com&quot;&gt;MapBox&lt;/a&gt; most notably) support GeoJSON and allow GeoJSON layers to be added to their maps. &lt;a href=&quot;http://qgis.org&quot;&gt;QGIS&lt;/a&gt;, the open source desktop mapping application, also allows the user to view and export data in the GeoJSON format. This has made it extremely popular as a geodata format, which is why it shows up frequently on GitHub.&lt;/p&gt;
+
+&lt;h2&gt;In Summary&lt;/h2&gt;
+
+
+&lt;p&gt;So now that we know what GitHub is used for and how GeoJSON works, we can clearly see why GitHub’s announcement last week was such a big deal: If you click on any .geojson file in a repo on github.com, the data will be rendered and displayed on a map. No more scrolling through text and trying to figure out where [45.528402,-122.65762] might be, because all of the data is displayed spatially for easy perusal!&lt;/p&gt;
+
+&lt;p&gt;With limited time and limited space, I can only say so much, so this wasn’t a thorough walkthrough of git, GitHub, or GeoJSON. I didn’t even touch Leaflet or &lt;a href=&quot;http://openstreetmap.org&quot;&gt;OpenStreetMap&lt;/a&gt; — posts going into all of these things in depth will be on the blog in the coming weeks. For now, head on over to GitHub, find some GeoJSON files, check out the sweet maps, and maybe try making your own repo! And please stay tuned for more updates — by the end of the summer, you’re going to be using git like a pro!&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Remembering an Old Friend</title>
+   <link href="http://lyzidiamond.com/posts/stephen-person"/>
+   <updated>2013-06-03T00:00:00-07:00</updated>
+   <id>http://lyzidiamond.com/posts/stephen-person</id>
+   <content type="html">&lt;p&gt;&lt;em&gt;Note: Stephen Alan Person, one of my very good friends, passed away from injuries sustained in a drunk driving incident on Tuesday, May 28, 2013. I&amp;rsquo;ve been trying to write about him since it happened, but it&amp;rsquo;s been so difficult. This is my first attempt, some assorted thoughts on the passing of a special man who touched a lot of lives. Stephen, I miss you so much. I can&amp;rsquo;t wait for all of the adventures we&amp;rsquo;ll have again someday. You&amp;rsquo;re in my thoughts always.&lt;/em&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Stephen was one of the most amazing people I have ever met. I feel like people tend to say these things about their friends upon their passing, and maybe it&amp;rsquo;s always true, but I feel like this case is particular. It would take more than the fingers of two hands to count all the times Stephen showed up in random places, when I was with random groups of people, and there was never an awkward moment. He got along with everyone, it was so easy, and everyone loved him. I have so many stories about him, with him. That&amp;rsquo;s what I keep holding on to.&lt;/p&gt;
+
+&lt;p&gt;At one point, back when we first met, we decided we were going to write a radio drama. I think I was really into radio dramas at the time. One day when we were sitting in his living room in that ridiculous house on Patterson Alley and came up with CONSTITUTIONBOT, a character for our radio show who is a robot programmed to enforce the constitution. I remember Stephen in the backyard pantomiming stiff arms saying, &amp;ldquo;I AM DUE PROCESS&amp;rdquo; in a robot voice. I can hear it and I can hear him laugh about it. It makes me laugh.&lt;/p&gt;
+
+&lt;p&gt;And the time we drove down to the bay for spring break in 2010 and he taught us all how to play &amp;ldquo;Cows On My Side.&amp;rdquo; And we went to In-N-Out and he ate a ridiculous amount of hamburger and we sat on the roof of my car and smoked cigarettes. When I got us lost in San Francisco on the way to Oddsac but then Stephen hung out with Avey Tare in a bar anyway.&lt;/p&gt;
+
+&lt;p&gt;See, Stephen could get himself into the craziest situations. He always met the band, he was always on the list, the bands always stayed at his house. When I first moved to Portland, he was pretty much the only dude I hung out with. We stood in front of Old Wives Tales protesting the poor management. We ate burritos and played ping pong and sat in his backyard. I ran into him all over town. When I was visiting Portland last April for the interview that landed me my current job, I realized I only had my presentation in Google Docs and not on a thumb drive, and what if the office didn&amp;rsquo;t have internet? So Stephen and I went to the Duck Store in the White Stag building, bought a thumb drive, went up to the fourth floor studio and used one of the computers to put the presentation on it. He rode the MAX with me to my interview, gave me a quick squeeze and a &amp;ldquo;Good luck!&amp;rdquo; and headed on his way. He was the first person to text me after my interview to see how it went. He was the first person I texted when I got the job, the job I still have today that has propelled me forward in my career. Without Stephen, it may never have happened.&lt;/p&gt;
+
+&lt;p&gt;I started writing this last week, before his memorial, and now that I&amp;rsquo;ve listened to so many of his friends and people close to him, I realize that we all have these stories. Stephen loved all of us for exactly who we are. He found the things we love about ourselves and made those the things important. He celebrated our successes and helped us move past our failures. Stephen never judged me. Stephen was always there for me. Stephen was our biggest cheerleader. And we are all better for that.&lt;/p&gt;
+
+&lt;p&gt;At the end of the memorial, when I was tired of trying to cry quietly in my seat, I stepped outside and listened to some of the old voicemails Stephen had left me. Some of them were silly, some involved descriptions of what he was looking at while he was leaving the message. A staggering number of them are they same: &amp;ldquo;Hey Lyzi, this is Stephen. I, ah, haven&amp;rsquo;t seen you in a few weeks and was wondering how you&amp;rsquo;ve been, if you wanna kick it. So, ah, call me back!&amp;rdquo; Stephen cared so much about his friends, he went out of his way to make sure he spoke to us regularly. To make sure he was at every show. To celebrate the things about us that are special. He noticed every one of them.&lt;/p&gt;
+
+&lt;p&gt;I want to live my life like Stephen lived his: letting people know he cared about them, talking to strangers, telling jokes, helping out, being honest, being true, never being bored, never giving up, always learning, always creating, growing, giving. In his life, Stephen changed mine. I miss him so much, but I know he&amp;rsquo;s still around us all the time, every time we help out a friend, every time we make up a silly song, and every time we stop a stranger on the street, asking him to tell us a joke.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Getting a Good (GIS) Job, Part 1</title>
+   <link href="http://lyzidiamond.com/posts/getting-a-good-job-pt-1"/>
+   <updated>2013-05-07T00:00:00-07:00</updated>
+   <id>http://lyzidiamond.com/posts/getting-a-good-job-pt-1</id>
+   <content type="html">&lt;p&gt;Last week, I was asked by the &lt;a href=&quot;http://orurisayp.org&quot;&gt;ORURISA Young Professionals&lt;/a&gt; to give a short talk about the transition from completing a geogrpahy or GIS degree to becoming employed in the field of geospatial. There were around eight of us who gave short talks, and each of us had good pieces of advice to share. I thought the whole thing was very valuable, albeit poorly-attended, so I&amp;rsquo;m going to attempt to recreate some of that advice here. Although the talk was GIS-oriented and some of the conversation was specific to geospatial careers, I feel that a lot of the advice is applicable to job hunters regardless of field.&lt;/p&gt;
+
+&lt;p&gt;Part 1 is included here. Parts 2, 3, and 4 will be included in future blog posts, which I will link to from this blog post when they&amp;rsquo;re up.&lt;/p&gt;
+
+&lt;br&gt;
+
+
+&lt;h2&gt;Part 1: Taking Stock&lt;/h2&gt;
+
+&lt;br&gt;
+
+
+&lt;h3&gt;The Life Inventory&lt;/h3&gt;
+
+&lt;p&gt;For me, and it sounds like most people, the hardest part about applying for jobs is &lt;strong&gt;actually sitting down and starting.&lt;/strong&gt; You don&amp;rsquo;t know what to include, you can&amp;rsquo;t remember the full scope of that project you worked on junior year that would be &lt;em&gt;perfect&lt;/em&gt; to include in this cover letter, etc. One thing that helped me get started when I was looking for a job was to do a little &lt;strong&gt;life inventory&lt;/strong&gt;. I opened a Google Doc and started writing down everything about me: skills I have, projects I&amp;rsquo;ve worked on, jobs I&amp;rsquo;ve had, volunteer experiences, interests (both personal and professional), places I&amp;rsquo;ve lived, everything. &lt;em&gt;This inventory became my repository for job applications, and remains to this day.&lt;/em&gt; Whenever I do something new, I put it in the inventory for posterity, and whenever I&amp;rsquo;m applying to a job, this list is the first place I go. Your list does not have to be organized at all at first; just add stuff to it as it comes to mind. Whenever you feel like you have some time and want to tackle it, you can organize your thoughts into some categories. My categories are:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Things I&amp;rsquo;ve Made/Written&lt;/li&gt;
+&lt;li&gt;Things I&amp;rsquo;ve Done&lt;/li&gt;
+&lt;li&gt;Skills (Proficiency)&lt;/li&gt;
+&lt;li&gt;Skills (Experience)&lt;/li&gt;
+&lt;li&gt;Jobs I&amp;rsquo;ve Had&lt;/li&gt;
+&lt;li&gt;Volunteer Experience&lt;/li&gt;
+&lt;li&gt;Places I&amp;rsquo;ve Been&lt;/li&gt;
+&lt;li&gt;Keyword Interests&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;p&gt;My &lt;strong&gt;skills&lt;/strong&gt; sections are broken into skills I am proficient at and skills I have touched on or have some experience with, but about which I would not label myself as proficient. The &amp;ldquo;Things I&amp;rsquo;ve Made/Written&amp;rdquo; and &amp;ldquo;Things I&amp;rsquo;ve Done&amp;rdquo; sections are separated because the former includes &lt;strong&gt;tangible portfolio pieces&lt;/strong&gt;, whereas the latter focuses on &lt;strong&gt;experiences&lt;/strong&gt;. I also broke apart jobs and volunteer experienecs, although I don&amp;rsquo;t necessarily divide them  by whether or not I received monetary compensation; for me, jobs are the long-term positions where I&amp;rsquo;ve been responsible for a project or a portion of the project, whereas volunteer experience encompasses mostly periodic volunteering and/or areas that are not relevant to my career. The &amp;ldquo;Keyword Interests&amp;rdquo; section is the newest section, and contains a list of both my &lt;strong&gt;personal and professional interests&lt;/strong&gt; in one- to three-word items. This is mostly a personal exercise: I should be able to look at any item on that list and talk about why I am interested in it, what aspects of it interest me, and how it relates to the job for which I&amp;rsquo;m applying.&lt;/p&gt;
+
+&lt;p&gt;The next step is to &lt;strong&gt;add in all the things you want to do&lt;/strong&gt;, the project ideas, the skillsets you&amp;rsquo;d like to have, the places you&amp;rsquo;d like to go, the things you want to learn. This list has two purposes. First, it&amp;rsquo;ll help you identify some of the things you want to get out of a job (the ones related to job function, anyway &amp;mdash; for more on this, see the section below), which can help to determine whether or not you&amp;rsquo;re legitimately interested in the job for which you&amp;rsquo;re applying. Second, this list becomes the list of questions you ask at the end of the interview. You know, when the interviewer says, &amp;ldquo;Do you have any questions for us?&amp;rdquo; You should always have at least a few questions prepared, and those questions can come from this list of goals. (You should also make sure you have at least one question to ask that demonstrates how thoroughly you read the organization/company&amp;rsquo;s website; I usually ask about the methodology of a specific project, or to inquire about a recent change in the organization/company.)&lt;/p&gt;
+
+&lt;p&gt;Creating a life inventory not only helps you figure out where you&amp;rsquo;re at and what you want, but once you&amp;rsquo;ve created it, it makes applying for jobs so much easier.&lt;/p&gt;
+
+&lt;br&gt;
+
+
+&lt;h3&gt;The Job Search&lt;/h3&gt;
+
+&lt;p&gt;So now you&amp;rsquo;ve figured out where you&amp;rsquo;re at and where you want to go. How do you figure out what jobs to apply for? Even in geospatial, there are a multitude of options: GIS Technician, GIS Developer, Cartographer, GIS Databse Administrator, government, private sector, nonprofits&amp;hellip; the list goes on and on. &lt;a href=&quot;http://idealist.org&quot;&gt;Idealist&lt;/a&gt; has identified what it calls the &lt;a href=&quot;http://www.idealist.org/info/Careers/SelfKnowledge/Lenses&quot;&gt;&amp;ldquo;Five Lens Framework&amp;rdquo;&lt;/a&gt; for determining the frames through which individuals see their careers. That list is specifically geared toward nonprofit job seekers, so it doesn&amp;rsquo;t include what I think is an important part of many job searches: money. The framework (with my addendum) involves the following six lenses:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Organization: You want to work at Specific Company X. It is less important what you do there, so long as you are working there.&lt;/li&gt;
+&lt;li&gt;Role: It is not so important which company you work at, so long as you get to do Job Duty Y.&lt;/li&gt;
+&lt;li&gt;System: You are flexible when it comes to job duty and company, so long as the company has Organiational Structure Z.&lt;/li&gt;
+&lt;li&gt;Issue: You want to work solving Social or Technical Problem Q. Different types of organizational structures and job duties are less important.&lt;/li&gt;
+&lt;li&gt;Population: You want to serve Population J. This can be humans, animals, the environment, whatever, but so long as through your job you are helping this population you care about, you&amp;rsquo;re content.&lt;/li&gt;
+&lt;li&gt;Compensation: You want to make a certain amount of money. (Sidenote: I know there&amp;rsquo;s stigma attached to this, but being adequately compensated for your life is something that is totally okay to desire and nothing to be ashamed of!)&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;p&gt;In the exercise above, when you were taking a life inventory, one of the things you wrote down was a list of what you want to get out of a job. Take a look at this list and try to identify which of these categories your goals fit into. &lt;strong&gt;It&amp;rsquo;s also okay to want more than one thing.&lt;/strong&gt; For me, it is a combination of role, system, and population: I want to conduct specific job tasks, I like certain types of organizations and work environments, and I care that my work is affecting a certain population. The spcific company I work for, the problems I&amp;rsquo;m solving, and my compensation are less important. Still important, but less so. Identifying which of these lenses is more prevalent for you can be extremely helpful in deciding which jobs to apply for, and if you get lucky enough to have to choose between multiple offers, your self-knowledge about these lenses will certainly come in handy.&lt;/p&gt;
+
+&lt;p&gt;For more information and advice about what to do once you&amp;rsquo;ve identified which lenses you value, see the &lt;a href=&quot;http://www.idealist.org/info/Careers/SelfKnowledge/Lenses&quot;&gt;Idealist page on the Five Lenses Framework.&lt;/a&gt;&lt;/p&gt;
+
+&lt;br&gt;
+
+
+&lt;h3&gt;Take A Deep Breath&lt;/h3&gt;
+
+&lt;p&gt;Look at you! Now you know all about yourself, and you&amp;rsquo;re starting to identify jobs that will give you what you want. I&amp;rsquo;ve often heard from people when I&amp;rsquo;ve given this advice, &amp;ldquo;But there are so few jobs in my field! Who am I to be picky when I&amp;rsquo;m just out of school?&amp;rdquo; It is true, we all need to make money to eat and drink beer and pay rent and so on. Ideally, this process doesn&amp;rsquo;t limit your job prospects, but actually helps you to &lt;strong&gt;realize the totality of your skillset&lt;/strong&gt; which can open the field a bit. I have seen many of my friends take the first job in the field that they were qualified for without considering what they really wanted, and most of them are now pretty sad to be in that situation. I have also seen friends take jobs that were seemingly out of their ideal career field that ended up being great investments: they learned a lot about what they enjoyed in a work environment, they learned new skills, they made new friends, and even if it didn&amp;rsquo;t work out in the end, they ended up learning a lot about themselves in the process.&lt;/p&gt;
+
+&lt;p&gt;Taking stock is hard, but it helps you figure out who you are and what you want, which in turn can help in making decisions and generating a plan for moving forward. Take a deep breath: you&amp;rsquo;re on the right track, and you&amp;rsquo;re doing just fine.&lt;/p&gt;
+
+&lt;br&gt;
+
+
+&lt;p&gt;&lt;strong&gt;Stay tuned for Part 2: Grabbing Onto It, which should be up next week. If you have any questions/comments/concerns, feel free to contact me via the link at the left.&lt;/strong&gt;&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Every Second</title>
+   <link href="http://lyzidiamond.com/posts/everysecond"/>
+   <updated>2013-05-02T00:00:00-07:00</updated>
+   <id>http://lyzidiamond.com/posts/everysecond</id>
+   <content type="html">&lt;p&gt;&lt;em&gt;This is an email I just sent to my sister, Kimberly. I thought some of you might enjoy it as well. (Note: I may or may not have been inspired by &lt;a href=&quot;http://xkcd.com/1205/&quot;&gt;this xkcd comic&lt;/a&gt;).&lt;/em&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Hi Kim,&lt;/p&gt;
+
+&lt;p&gt;I have been doing some thinking about life, and time, and the things I want to accomplish, and the way I want to live my life. I came up with a new mantra for myself that I think will be helpful for you. This is how I communicated it to &lt;a href=&quot;http://bradsimantel.com&quot;&gt;Brad&lt;/a&gt;:&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Every second is contributing to the sum total of seconds of your life. I want to be able to go through that list of seconds, were it to exist, pick one, and feel good about whatever I was doing during that second. In taking inventory of what that would mean, I made a small list of the things I&amp;rsquo;d like to spend my seconds on. Holding hands with you is pretty high up on that list, but also playing music, listening to music, dancing, biking, rowing, singing. Creating. Learning. Sleeping. These all count. Consuming information? Reading Twitter? Not so much. Sometimes it&amp;rsquo;s important to read and consume, but I want it to be in the context of creation. Of dreaming and teaching. Every second.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;I think it might be a good exercise to constantly remind yourself of this, that your life is a conglomeration of seconds and what you do in each second is contributing to that sum total. What is the purpose of the activity you&amp;rsquo;re currently undertaking? Does it fulfill you? Is it helping you get where you need to go? Is it something you can&amp;rsquo;t avoid? Are you engaged and focused, or is your brain elsewhere? If so, where is it?&lt;/p&gt;
+
+&lt;p&gt;Thinking about your daily activities as contributing to the grand painting of your life may help to make some decisions and focus on the things that are important. For me, one of my challenges is talking about things and never actually doing them. So it is important for me to notice when I&amp;rsquo;m talking about something and when I&amp;rsquo;m actually doing it. I want to make sure I&amp;rsquo;m doing things more than talking about them. That I&amp;rsquo;m producing more than I&amp;rsquo;m consuming. Organizing my space, writing lists, getting ready&amp;hellip; this is all distraction from the goal. Create. Produce. Make. That&amp;rsquo;s how I grow. How do you grow? What feeds you? When are you in the flow?&lt;/p&gt;
+
+&lt;p&gt;Take some time to answer these questions for yourself. I bet you&amp;rsquo;ll be surprised and inspired by what you come up with.&lt;/p&gt;
+
+&lt;p&gt;Love,&lt;/p&gt;
+
+&lt;p&gt;Alyssa&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>If At First You Don't Succeed...</title>
+   <link href="http://lyzidiamond.com/posts/trytryagain"/>
+   <updated>2013-04-24T00:00:00-07:00</updated>
+   <id>http://lyzidiamond.com/posts/trytryagain</id>
+   <content type="html">&lt;p&gt;&lt;em&gt;&amp;ldquo;You&amp;rsquo;re talking a lot, but you&amp;rsquo;re not saying anything.&amp;rdquo;&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;He didn&amp;rsquo;t mean to mimic David Byrne, but his exhausted, frustrated, post-argument comment could have just as easily been from the &lt;a href=&quot;http://en.wikipedia.org/wiki/Psycho_Killer&quot;&gt;Talking Heads 1977* classic&lt;/a&gt;. He could have just as easily been on stage in the big suit, limping around to new wave beats (or no-wave non-beats), full of vigor that would inspire a generation, and generations to come.&lt;/p&gt;
+
+&lt;p&gt;But there was no stage, no lights, no big suit. He was laying in bed, half-asleep, irritated and exasperated and out of options. I had spend the last hour, like I&amp;rsquo;ve spent many hours as of late, beating up his girlfriend, calling her names, making her feel small and inadequate. He was sick of it. He wanted it to stop. I was hurting someone he loves.&lt;/p&gt;
+
+&lt;p&gt;His girlfriend is me, and I have a lot of trouble keeping my head above water when it comes to my skills, my aspirations, and, ultimately, my options. I don&amp;rsquo;t ever feel like I have what it takes to succeed because of various talents I don&amp;rsquo;t possesses. Because I have an idea of what I want that is arbitrary and societal and fabricated, and it&amp;rsquo;s not who I am or what I&amp;rsquo;m good at, and that makes it hard for the brain to cope with.&lt;/p&gt;
+
+&lt;p&gt;So he did what he had to do. He did his best to get me out of it.&lt;/p&gt;
+
+&lt;p&gt;In truth, he didn&amp;rsquo;t say the line &lt;em&gt;exactly&lt;/em&gt; as written by Byrne and Frantz and Weymouth; he didn&amp;rsquo;t mean to make me the victim and him the killer. What he said was:&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;&amp;ldquo;You talk about all these things, but you never actually &lt;strong&gt;do&lt;/strong&gt; anything.&amp;rdquo;&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;I thought about this a lot last night as I laid awake for hours, pondering. It took me a while, but I realized that he was right. I don&amp;rsquo;t take the time, I don&amp;rsquo;t sit down and churn things out. I know that to get better you need to practice, so why don&amp;rsquo;t I practice? Why don&amp;rsquo;t I work? Why don&amp;rsquo;t I &lt;em&gt;try?&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;There it was. &lt;em&gt;That&lt;/em&gt; was the lightbulb. I don&amp;rsquo;t try! I&amp;rsquo;m so afraid of failure that I don&amp;rsquo;t even try in the first place. I dismiss options outright because of a fear that I will have an option taken away from me.&lt;/p&gt;
+
+&lt;p&gt;But here&amp;rsquo;s the kicker, and something I am slowly realizing. The worst thing to happen if I try and fail is&amp;hellip; that I try something else. And if that doesn&amp;rsquo;t work? Try something else. It&amp;rsquo;s &lt;em&gt;okay&lt;/em&gt; that I don&amp;rsquo;t know what I want to do, and it&amp;rsquo;s &lt;em&gt;okay&lt;/em&gt; to have a ton of interests. And it&amp;rsquo;s even okay to be bad at things, and to still like them! But the more days that go by with me beating myself for not being a good cartographer and not having a good portfolio that I &lt;em&gt;don&amp;rsquo;t&lt;/em&gt; work on a map? That I &lt;em&gt;don&amp;rsquo;t&lt;/em&gt; try? I&amp;rsquo;m setting myself up for failure. I&amp;rsquo;m stacking the deck. I will always lose.&lt;/p&gt;
+
+&lt;p&gt;When I was 12 I started playing bass. I wanted to be &lt;a href=&quot;http://en.wikipedia.org/wiki/Kim_Deal&quot;&gt;Kim Deal&lt;/a&gt;, I wanted to be &lt;a href=&quot;http://en.wikipedia.org/wiki/D%27arcy_Wretzky&quot;&gt;D'arcy Wretzky&lt;/a&gt;, I wanted to be &lt;a href=&quot;http://en.wikipedia.org/wiki/Kim_Gordon&quot;&gt;Kim Gordon&lt;/a&gt;, I wanted to be &lt;a href=&quot;http://en.wikipedia.org/wiki/Kathy_Foster&quot;&gt;Kathy Foster&lt;/a&gt;. And I wanted to be &lt;a href=&quot;http://en.wikipedia.org/wiki/Tina_Weymouth&quot;&gt;Tina Weymouth&lt;/a&gt;, too. Should I keep beating myself up for not being a bassist in a successful band? For not being &lt;a href=&quot;http://en.wikipedia.org/wiki/Aimee_Mann&quot;&gt;Aimee Mann&lt;/a&gt; or &lt;a href=&quot;http://en.wikipedia.org/wiki/Esperanza_Spalding&quot;&gt;Esperanza Spalding&lt;/a&gt; or &lt;a href=&quot;http://en.wikipedia.org/wiki/Kathi_Wilcox&quot;&gt;Kathi Wilcox&lt;/a&gt;?**&lt;/p&gt;
+
+&lt;p&gt;Hell no. I&amp;rsquo;m going to keep playing music, I&amp;rsquo;m going to keep making maps and writing Python scrapers and riding bikes and planning events. I&amp;rsquo;m Lyzi Diamond, and so long as I try, that can mean whatever I want it to mean.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;*&amp;ldquo;Psycho Killer&amp;rdquo; was first performed in 1974 by the Talking Heads precursor The Artistic, then in 1975 by the Talking Heads, and finally recorded for the 1977 album, Talking Heads: 77. This note is in place specifically because I know my friends are the ones to nitpick. And that&amp;rsquo;s why I love them. :)&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;**If you can name the bands that all of these women were in without clicking the links, you should email me, and we should be friends.&lt;/em&gt;&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>Circumlocution and Code</title>
@@ -72,17 +429,121 @@
  </entry>
  
  <entry>
-   <title>New Beginnings</title>
-   <link href="http://lyzidiamond.com/posts/newbeginnings"/>
-   <updated>2013-01-26T00:00:00-08:00</updated>
-   <id>http://lyzidiamond.com/posts/newbeginnings</id>
-   <content type="html">&lt;p&gt;Once upon a time, there was a girl who wasn&amp;rsquo;t sure what she should do with her life. She tried a bunch of different things&amp;hellip; and then still wasn&amp;rsquo;t sure what to do. So she made a blog, and decided to start writing things down.&lt;/p&gt;
+   <title>Fork, brook, run? A neat toponym visualization by a UO geographer.</title>
+   <link href="http://lyzidiamond.com/posts/fork-brook-run"/>
+   <updated>2011-11-24T00:00:00-08:00</updated>
+   <id>http://lyzidiamond.com/posts/fork-brook-run</id>
+   <content type="html">&lt;p&gt;&lt;img src=&quot;http://lyzidiamond.files.wordpress.com/2011/11/dwatkins_usstreamnames_big.png&quot; width=&quot;100%&quot;&gt;&lt;/p&gt;
 
-&lt;p&gt;That girl is Lyzi Diamond, and that blog is here.&lt;/p&gt;
+&lt;p&gt;At work a few weeks ago, we were having a conversation about how different areas of the country pronounce the word “creek.” There is the urban pronunciation, “creek,” and the rural pronunciation, “crick.” The argument was over whether or not these two bodies of water were actually geographically different or just indicative of cultural influence in pronunciation (dialect shift). Language is a funny thing, and linguistics is an interesting science, but none of us are linguists. We agreed to disagree.&lt;/p&gt;
 
-&lt;p&gt;So this is the first post on that blog, and I&amp;rsquo;m sure it&amp;rsquo;ll evolve over time. I hope I figure out &lt;em&gt;something&lt;/em&gt; interesting to put here, but for now, take a look at my &lt;a href=&quot;&quot; title=&quot;/about.html&quot;&gt;about&lt;/a&gt; page, and &lt;a href=&quot;&quot; title=&quot;mailto:lyzidiamond@gmail.com&quot;&gt;holler at me&lt;/a&gt; if you can think of something interesting for me to do.&lt;/p&gt;
+&lt;p&gt;Soon after, I stumbled upon this map by my former classmate and University of Oregon geography student Derek Watkins. Using the USGS National Hydrography Dataset, Derek symbolized bodies of water based on their toponyms, or generic place names. The patterns, as he points out in his &lt;a href=&quot;http://blog.dwtkns.com/2011/generic-stream-terms/&quot;&gt;blog post&lt;/a&gt; accompanying the map, are mostly well-explained, outlining historical trails, settlement patterns, and tendencies of weather:&lt;/p&gt;
 
-&lt;p&gt;For the moment, I&amp;rsquo;m going to go back to writing a volunteer handbook for &lt;a href=&quot;&quot; title=&quot;http://codescouts.org&quot;&gt;Code Scouts&lt;/a&gt;, sipping coffee, and braving the cold Philadelphia weather. I look forward to hearing from you.&lt;/p&gt;
+&lt;blockquote&gt;Lite-Brite aesthetic notwithstanding, I like this map because it illustrates the range of cultural and environmental factors that affect how we label and interact with the world. Lime green bayous follow historical French settlement patterns along the Gulf Coast and up Louisiana streams. The distribution of the Dutch-derived term kill (dark blue) in New York echoes the colonial settlement of &quot;&lt;a href=&quot;http://en.wikipedia.org/wiki/File:Nieuw_Nederland_and_Nya_Sverige.svg&quot;&gt;New Netherland&lt;/a&gt;&quot; (as well as furnishing half of a specific toponym to the Catskill Mountains). Similarly, the spanish-derived terms rio, arroyo, and cañada (orange hues) trace the &lt;a href=&quot;http://books.google.com/books?id=KOPdX2qaVrkC&amp;pg=PA66&quot;&gt;early&lt;/a&gt; advances of conquistadors into present-day northern New Mexico, an area that still retains some unique &lt;a href=&quot;http://www.theatlantic.com/past/docs/issues/2000/12/ferry.htm&quot;&gt;cultural&lt;/a&gt; &lt;a href=&quot;http://books.google.com/books?id=us_i7JfycYgC&amp;dq&quot;&gt;traits&lt;/a&gt;. Washes in the southwest reflect the intermittent rainfall of the region, while streams named swamps (desaturated green) along the Atlantic seaboard highlight where the coastal plain meets the Appalachian Piedmont at the &lt;a href=&quot;http://en.wikipedia.org/wiki/Fall_line&quot;&gt;fall&lt;/a&gt; &lt;a href='http://md.water.usgs.gov/publications/fs-157-00/html/location_big.gif'&gt;line&lt;/a&gt;.&lt;/blockquote&gt;
+
+
+&lt;p&gt;&lt;em&gt;A quick aside on map design: The whole point of a map is to disseminate information. There is a tendency among amateur cartographers to want to make water blue, land green, and labels black. But if the information that the cartographer is seeking to convey requires further classification, it can be a benefit to the reader to make these elements, for lack of a better word, obvious. A visual hierarchy exists in the brain. We see things in a certain order depending on how they are displayed. It is for this reason that Derek chose a dark background with bright hydrological features because that is the part of the map he wished you to focus on. Cartography secrets revealed!&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Incidentally, the comments section actually addresses the “creek” vs. “crick” issue. Derek created the map using the Geographic Naming Information System (GNIS), a national standard for, yep, you guessed it, geographic naming. Did you know there’s a U.S. Board on Geographic Names? If you were ever a GIS intern, the answer is probably yes. Regardless, this map only displays the names as approved by this body, not the colloquial nomenclature, meaning that this map, although totally awesome, does not help me or my colleagues determine the answer to our question.&lt;/p&gt;
+
+&lt;p&gt;In closing: are creeks and cricks the same thing? According to the United States government, yes. But as far as the cultural and regional lexicon? We may never know.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;EXTRA CREDIT:&lt;/strong&gt; For the etymology of the word “creek,” check out &lt;a href=&quot;http://www.etymonline.com/index.php?term=creek&quot;&gt;this post&lt;/a&gt; from the Online Etymology Dictionary.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Scale Unimaginable: The Intersection of Art and Cart</title>
+   <link href="http://lyzidiamond.com/posts/scale-unimaginable"/>
+   <updated>2011-11-21T00:00:00-08:00</updated>
+   <id>http://lyzidiamond.com/posts/scale-unimaginable</id>
+   <content type="html">&lt;h1&gt;&lt;img src=&quot;http://lyzidiamond.files.wordpress.com/2011/11/monarchs.jpeg&quot;&gt;&lt;/h1&gt;
+
+
+
+
+&lt;blockquote&gt;
+  &lt;p&gt;An atlas never just shows you where you are, where you want to go to and how to get there. It also fires the imagination. Maps which chart rivers, mountains, towns, countries, far-away regions, oceans and continents can arouse intense feelings. An atlas combines reality and fantasy.&lt;/p&gt;
+  &lt;p&gt;Maps evoke travel, exotic places and the allure of the unknown. Without a map, there would be no way to know precisely where you are. There is no ‘here’ without ‘there’. There is no world without a map.&lt;/p&gt;
+  &lt;cite&gt;Louise van Swaaij and Jean Klare, &lt;a href=&quot;http://www.amazon.com/Atlas-Experience-Louise-van-Swaaji/dp/1582341001&quot;&gt;The Atlas of Experience&lt;/a&gt;&lt;/cite&gt;
+&lt;/blockquote&gt;
+
+
+&lt;p&gt;Most cartographers, myself included, measure the quality of our maps by the accuracy of data and analysis. The cleaner the line, the higher the product quality. But many map makers, information designers, and illustrators take a slightly different, more emotional approach to map design, incorporating the fantastical into the exact and the real into the imagined. One of the most notable is Rebecca Solint, and her cartographers Ben Pease and Shizue Seigel, in their 2010 book &lt;a href=&quot;http://www.ucpress.edu/book.php?isbn=9780520262508&quot;&gt;Infinite City: A San Francisco Atlas&lt;/a&gt;, published by the University of California Press. A catalogue of maps, culture, and history in one of the west coast’s most illustrious cities, the book seeks to teach the reader what’s beyond the page, the streets, the buildings, the lines and the water. Solint seeks to fold out a history on the page, using coordinates to tell a story. Her maps are snapshots in time, overlaying pieces of information that have sometimes clear but mostly tenuous connections, allowing the reader to discover historiographic relationships that would never have guessed existed.&lt;/p&gt;
+
+&lt;p&gt;Traditional maps can also create an illusion of a static plane, while the world is in reality dynamic and multidimensional. Solint writes in her introduction:&lt;/p&gt;
+
+&lt;blockquote&gt;&lt;p&gt;Places are leaky containers. They always refer beyond themselves, whether island or mainland, and can be imagined in various scales, from the drama of a back alley to transcontinental geopolitical forces and global climate. What we call places are stable locations with unstable converging forces that cannot be delineated either by fences on the ground or by boundaries in the imagination—or by the perimeter of the map. Something is always coming from elsewhere, whether it’s wind, water, immigrants, trade goods, or ideas. The local exists—an endemic species may evolve out of those circumstances, or the human equivalent—but it exists in relation, whether symbiotic with or sanctuary from the larger world.&lt;/p&gt;&lt;/blockquote&gt;
+
+
+&lt;p&gt;Cartographic products as displayed by data analysts and statisticians can serve a variety of purposes. But we can sometimes forget to see the trees for the forest. Maps invoke emotions, regardless of their artistic content. Often, the inclusion of art and other creative cartographic elements can enhance those emotions and guide the reader to discover what was previously thought undiscoverable, or not previously thought of at all.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;EXTRA CREDIT:&lt;/strong&gt; For a bevy of nontraditional maps, check out the &lt;a href=&quot;http://www.handmaps.org/&quot;&gt;Hand Drawn Map Association&lt;/a&gt;.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Maps Can Save Lives: A true story of GPS and the importance of navigation</title>
+   <link href="http://lyzidiamond.com/posts/maps-can-save-lives"/>
+   <updated>2011-05-15T00:00:00-07:00</updated>
+   <id>http://lyzidiamond.com/posts/maps-can-save-lives</id>
+   <content type="html">&lt;p&gt;Global positioning systems have ostensibly become the new atlases — most if not all new vehicles have internal GPS mapping devices, rendering old-school paper maps obsolete. But as drivers and navigators become more reliant on these devices, their safety may be put in severe danger.&lt;/p&gt;
+
+&lt;p&gt;This was the case for Alicia Sanchez and her six-year-old son Carlos, who ventured into Death Valley National Park in August of 2009, equipped with a GPS device and no paper maps to verify her surroundings. When the two traveled twenty miles into the park and got their vehicle stuck deep in sand, with little to no cell phone service available to call for help, Carlos passed away when their water supply dwindled and they did not receive assistance.&lt;/p&gt;
+
+&lt;p&gt;Another GPS user faced a similar dilemma when traveling in Glen Canyon National Recreation Area in Utah. After traveling 60 miles into the park, she hit Lake Powell — which had inconveniently not been documented in the GPS.&lt;/p&gt;
+
+&lt;p&gt;These stories, as well as the stories of many other GPS-wielding travelers, are documented in &lt;a href=&quot;http://www.oregonlive.com/pacific-northwest-news/index.ssf/2011/05/missing_canadian_couple_experts_say_always_pair_gps_with_paper_map_realize_technology_not_infallible.html&quot;&gt;an Oregonian story from yesterday&lt;/a&gt;, with some advice on how to travel appropriately:&lt;/p&gt;
+
+&lt;blockquote&gt;“Never ask the question, ‘What is the shortest route?’ if you are on a dirt road,’” said [Charlie] Callagan, a National Park Service wilderness coordinator in Death Valley, Calif.
+
+The technology often trumps common sense for unwary visitors who put too much faith in the units that receive satellite signals at the speed of light. “It’s fancy, it’s the newest thing,” Callagan said. “How could it do me wrong?” [...]
+
+Travelers should know that map data displayed by GPS units can be outdated, with roads that no longer exist. Callagan, for instance, said he has persuaded some manufacturers to remove dangerous road segments from their Death Valley databases.
+
+Outdoor experts recommend always carrying several maps and plenty of water and food. They suggest taking four-wheel-drives with heavy-duty tires into the backcountry or even two spare tires.&lt;/blockquote&gt;
+
+
+&lt;p&gt;Having and knowing how to use a paper map will always be helpful to travelers, even in the age of ubiquitous technology. Whether it be operator or mechanical error, GPS devices (and the underlying systems/companies that operate them) are fallable, and being able to handle yourself around a paper map and a compass could end up saving your life.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>On Design</title>
+   <link href="http://lyzidiamond.com/posts/on-design"/>
+   <updated>2010-12-20T00:00:00-08:00</updated>
+   <id>http://lyzidiamond.com/posts/on-design</id>
+   <content type="html">&lt;blockquote&gt;
+  &lt;p&gt;Cartography is fast becoming the most practical comparative basis for integrating and reducing the vast reaches of modern information. If the geographer seeks to define a domain in terms of space in order to discover regions, and if the historian seeks to define a domain in terms of space and time in order to discover civilizations, the cartographer can be said to use space in order to inform us about all conceivable domains.&lt;/p&gt;
+  &lt;cite&gt;Jacques Bertin, Semiology of Graphics&lt;/cite&gt;
+&lt;/blockquote&gt;
+
+</content>
+ </entry>
+ 
+ <entry>
+   <title>The Skilled Pedestrian</title>
+   <link href="http://lyzidiamond.com/posts/the-skilled-pedestrian"/>
+   <updated>2010-11-07T00:00:00-07:00</updated>
+   <id>http://lyzidiamond.com/posts/the-skilled-pedestrian</id>
+   <content type="html">&lt;blockquote&gt;
+  &lt;p&gt;The pedestrian is a social being: he is also a transportation unit, and a marvelously complex and efficient one. He is self-contained, self-propelled, and moves forward with a field of vision about 100 degrees wide, further widening this with back-and-forth scanning movements to almost 180 degrees. He monitors a host of equations: two crossing patterns at left front, 290 feet a minute, three on the right, angle on the cars 30 degrees and closing, a pair abreast dead ahead, a traffic light starting to flash DON’T WALK. In fractions of a second he responds with course shifts, accelerations, and retards, and he signals to others that he is doing so. Think of the orders and computers it would take to match him! Transportation engineers are spending millions on developing automated people-mover systems. But the best, by far, is a person.&lt;/p&gt;
+  &lt;cite&gt;William H. Whyte, City: Rediscovering the Center&lt;/cite&gt;
+&lt;/blockquote&gt;
+
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Field Thoughts</title>
+   <link href="http://lyzidiamond.com/posts/field-thoughts"/>
+   <updated>2010-08-06T00:00:00-07:00</updated>
+   <id>http://lyzidiamond.com/posts/field-thoughts</id>
+   <content type="html">&lt;blockquote&gt;
+  &lt;p&gt;Geography is the study of relations between society and the natural environment. Geography looks at how society shapes, alters, and increasingly transforms the natural environment, creating humanized forms from stretches of pristine nature, and then sedimenting layers of socialization one within the other, one on top of the other, until a complex natural-social landscape results. Geography also looks at how nature conditions society, in some original sense of creating the people and raw materials which social forces “work up” into culture, and in an ongoing sense of placing limits and offering material potentials for social processes like economic development. The “relation” between society and nature is thus an entire system, a complex of interrelations. What was once a causal relationship mainly in one direction (the formation of humanity during natural evolution) becomes an equally causal interrelationship in the reverse direction (social evolution alters the “natural” environment). In this way, human activity continually remakes its natural context — nature comes to be socially constructed, in the sense both of social and economic forces remaking landscapes, and of the intervention of ideas and discourses. Understanding this system of relations requires that geographers be sophisticated natural and social scientists, find ways of combining the two, know the methods and be excited by the insights of both aspects of knowledge. Thus, the synthetic core of geography is a study of nature-society interrelations.&lt;/p&gt;
+  &lt;cite&gt;Richard Peet, Modern Geographic Thought&lt;/cite&gt;
+&lt;/blockquote&gt;
+
 </content>
  </entry>
  

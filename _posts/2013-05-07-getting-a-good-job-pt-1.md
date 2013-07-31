@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: blog
 title: Getting a Good (GIS) Job, Part 1
 ---
 
