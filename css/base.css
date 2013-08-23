@@ -114,6 +114,7 @@ a {
     margin-bottom: 1.2em;
     line-height: 1.25em; }
     .content p code {
+      font-family: Courier;
       font-size: 12px;
       background-color: #eeeeee;
       border: 1px solid #777777;
