@@ -154,6 +154,7 @@ li {
 }
 
 .content code {
+  display: inline-block;
   font-family: 'Courier New', serif;
   background-color: #eee;
   padding: 2px 3px; }
