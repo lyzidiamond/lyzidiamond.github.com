@@ -113,13 +113,13 @@ a {
     margin-top: 0;
     margin-bottom: 1.2em;
     line-height: 1.25em; }
-    .content p code {
-      font-family: Courier;
-      font-size: 12px;
-      background-color: #eeeeee;
-      border: 1px solid #777777;
-      border-radius: 3px;
-      padding: 2px 3px; }
+  .content code {
+    font-family: Courier;
+    font-size: 12px;
+    background-color: #eeeeee;
+    border: 1px solid #777777;
+    border-radius: 3px;
+    padding: 2px 3px; }
   .content img {
     padding: 3px;
     border: 1px solid #eeeeee;
