@@ -156,8 +156,6 @@ li {
 .content code {
   font-family: 'Courier New', serif;
   background-color: #eee;
-  border: 1px solid #777777;
-  border-radius: 3px;
   padding: 2px 3px; }
 
 .content blockquote {
