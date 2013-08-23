@@ -143,10 +143,6 @@ Now let's get into the body of our HTML. The first think you see on line 13 is a
 
 Our JavaScript is sandwiched between <code>script</code> tags, which lets the browser know that anything inside of them is JavaScript and should be treated as such. (This was mirrored in lines 4 and 7 in the head, with <code>style</code> tags.) The first thing we do in our script (line 15) is define a variable called cupcakeTiles, and use the Leaflet [tileLayer](http://leafletjs.com/reference.html#tilelayer) constructor to define a map tile layer (more info on that at the link). This map uses custom tiles I made using [MapBox](http://mapbox.com), so this constructor links to those tiles. It also adds a property for maxZoom, ensuring that the map will not be zoomed in past zoom level 18. (For more information on web maps and zoom levels and how they work, check out [this excellent blog post](http://www.mapbox.com/developers/guide/).)
 
-      var cupcakeTiles = L.tileLayer('http://a.tiles.mapbox.com/v3/lyzidiamond.map-ietb6srb/{z}/{x}/{y}.png', {
-        maxZooom: 18  
-      });
-
 Line 19 is where the code gets interesting, as we employ jQuery's [getJSON method](http://api.jquery.com/jQuery.getJSON/). This method takes three parameters: A URL of the location of the data, a plain object or string that gets sent with the request for the data, and a function to execute if the request for data is successful. The second parameter is optional, and you'll see we don't actually use it in our example.
 
      $.getJSON($('link[rel="points"]').attr("href"), function(data) {
@@ -181,7 +177,7 @@ The last two lines are pretty self-explanatory: we add our cupcakeTiles layer to
 
 So what did we just do? We made a map with custom tiles that grabs GeoJSON from an external file without changing that file. Oh, and we added some popups to the GeoJSON features and set the bounds of our map to match the bounds of the data. Not too bad for 29 lines of code!
 
-<img src="./images/cupcakes.png">
+<h1><img src="https://raw.github.com/lyzidiamond/lyzidiamond.github.com/master/images/cupcakes.PNG" width="100%"></h1>
 
-* This is a joke.
-** JSON and GeoJSON are just JavaScript objects. A GeoJSON file can be saved as type .geojson, .json, or .js. All of them work.
+*This is a joke.
+**JSON and GeoJSON are just JavaScript objects. A GeoJSON file can be saved as type .geojson, .json, or .js. All of them work.

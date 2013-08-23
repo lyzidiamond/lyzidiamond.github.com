@@ -114,9 +114,10 @@ a {
     margin-bottom: 1.2em;
     line-height: 1.25em; }
   .content code {
+    display: inline-block;
     font-family: Courier;
     font-size: 12px;
-    background-color: #eeeeee;
+    background-color: #bbb;
     border: 1px solid #777777;
     border-radius: 3px;
     padding: 2px 3px; }
