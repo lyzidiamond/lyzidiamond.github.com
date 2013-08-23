@@ -70,7 +70,7 @@ strong {
 }
 
 a {
-  color: #7A5BA7;
+  color: #912CEE;
   text-decoration: none;
 }
 
@@ -154,9 +154,11 @@ li {
 }
 
 .content code {
-  border-radius: 3px;
   font-family: 'Courier New', serif;
-}
+  background-color: #eee;
+  border: 1px solid #777777;
+  border-radius: 3px;
+  padding: 2px 3px; }
 
 .content blockquote {
   color: #444;
