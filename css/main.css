@@ -89,6 +89,7 @@ h1 {
 h2 {
   font-size: 150%;
   margin-bottom: 30px;
+  margin-top: 5px;
   line-height: 1.5;
   text-align: center;
 }
@@ -157,6 +158,7 @@ li {
   display: inline-block;
   font-family: 'Courier New', serif;
   background-color: #eee;
+  margin-bottom: 5px;
   padding: 2px 3px; }
 
 .content blockquote {
