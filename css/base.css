@@ -7,7 +7,7 @@ body {
 }
 
 a {
-  color: #68228B;
+  color: #912CEE;
   font-weight: bold;
   text-decoration: none; }
 
@@ -89,7 +89,7 @@ a {
     font-size: 30px;
     margin-bottom: 15px;}
   .content h2 a {
-    color: #a561ea;
+    color: #912CEE;
     text-decoration: none; }
   .content h3 {
     font-family: 'Chivo', Helvetica, sans-serif;
@@ -98,7 +98,7 @@ a {
     color: #111;
     font-size: 20px; }
   .content h3 a {
-    color: #a561ea;
+    color: #912CEE;
     text-decoration: none; }
   .content h4 {
     color: #111;
@@ -106,7 +106,7 @@ a {
     font-weight: 600;
     line-height: 10%; }
   .content h4 a {
-    color: #a561ea;
+    color: #912CEE;
     text-decoration: none; }
   .content p {
     font-size: 19px;
