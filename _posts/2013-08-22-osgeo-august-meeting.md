@@ -33,6 +33,8 @@ One of my Twitter friends, [Sean Gillies](http://twitter.com/sgillies), had anot
 
 I decided to play with this a little more, and it totally worked! And it worked well! So let's talk about it.
 
+##GeoJSON: The Challenges
+
 JSON and GeoJSON files are just JavaScript files. (JSON stands for JavaScript Object Notation; you can read more about JSON as a file type in a previous post, [here](http://lyzidiamond.com/posts/github-geojson/).) As such, you can reference a JSON or GeoJSON file as a script, the same way you would for, say, including the Leaflet or jQuery libraries in your code.
 
     <script src="./cupcakes.json"></script>
@@ -93,6 +95,8 @@ This would totally work, but it would mean that our cupcakes.json file would no 
 
 So what can you do? You can used a typed link/link relation and a little bit of jQuery. It's really quite magical.
 
+##GeoJSON and Leaflet: The Solution
+
 Let's look at the code, and then talk through it. You can view a live version of this [here](http://lyzidiamond.com/cupcakes.html).
 
     <html>
@@ -127,6 +131,8 @@ Let's look at the code, and then talk through it. You can view a live version of
     </body>
     </html>
 
+###The Head
+
 Leaflet, as discussed previously, is a JavaScript mapping library with a lot of great functionality. (For more info on getting started with and using Leaflet, check out their [Quick Start Tutorial](http://leafletjs.com/examples/quick-start.html).) In order to use it, we need to include both a Leaflet CSS file (for map styling) and the Leaflet JavaScript file, which is what the stylesheet on line 3 and the script on line 8 are all about. Lines 4 through 7 are CSS rules to give our map a height and ensure that it is actually full-screen on the page.
 
 The other library we need to make this work is called [jQuery](http://jquery.com/). jQuery is a JavaScript library that can make developing way easier, as it takes some of the complicated parts of the language and synthesizes them into easy-to-use pieces. Line 9 includes jQuery in our map, which allows us to use its functionality.
@@ -136,6 +142,8 @@ The interesting part comes at Line 10. This is where we are including our JSON**
 Typcailly, link relations are used with a common set of keywords that have specific value to the browser. For example, our CSS stylesheet on line 3 has the link relation <code>rel="stylesheet"</code>. This is the most common link relation, and every browser knows to download the data from the link before loading the page, as the relation tells it that the linked data contains important style information.
 
 In our case, we are sort of hacking around that. We don't necessarily want the browser to fetch the data on load or at any particular time. Indeed, we don't want the browser to do anything with our GeoJSON file until we tell it to. Thus, we supply the link with a <code>rel="points"</code>, which isn't going to have any unintended consequences. (For more information on link relation keywords and what they do, check out [this comprehensive list](http://microformats.org/wiki/existing-rel-values).)
+
+###The Body
 
 Now let's get into the body of our HTML. The first think you see on line 13 is an empty div with id "cupcake-map." This is how Leaflet works: you create an empty div, and then write some JavaScript to fill it in. For us, this JavaScript starts on the very next line, as it's a full-screen web map.
 
@@ -174,6 +182,8 @@ The last two lines are pretty self-explanatory: we add our cupcakeTiles layer to
         cupcakeTiles.addTo(map);
         geojson.addTo(map);
       });
+
+##We did it!
 
 So what did we just do? We made a map with custom tiles that grabs GeoJSON from an external file without changing that file. Oh, and we added some popups to the GeoJSON features and set the bounds of our map to match the bounds of the data. Not too bad for 29 lines of code!
 
