@@ -179,5 +179,5 @@ So what did we just do? We made a map with custom tiles that grabs GeoJSON from 
 
 <h1><img src="https://raw.github.com/lyzidiamond/lyzidiamond.github.com/master/images/cupcakes.PNG" width="100%"></h1>
 
-*This is a joke.
+*This is a joke.<br>
 **JSON and GeoJSON are just JavaScript objects. A GeoJSON file can be saved as type .geojson, .json, or .js. All of them work.
