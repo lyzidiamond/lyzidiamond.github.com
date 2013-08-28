@@ -131,17 +131,29 @@ Let's look at the code, and then talk through it. You can view a live version of
     </body>
     </html>
 
+
 ###The Head
 
 Leaflet, as discussed previously, is a JavaScript mapping library with a lot of great functionality. (For more info on getting started with and using Leaflet, check out their [Quick Start Tutorial](http://leafletjs.com/examples/quick-start.html).) In order to use it, we need to include both a Leaflet CSS file (for map styling) and the Leaflet JavaScript file, which is what the stylesheet on line 3 and the script on line 8 are all about. Lines 4 through 7 are CSS rules to give our map a height and ensure that it is actually full-screen on the page.
 
+    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.5/leaflet.css" />
+    ...
+    <script src="http://cdn.leafletjs.com/leaflet-0.5/leaflet.js"></script>
+
 The other library we need to make this work is called [jQuery](http://jquery.com/). jQuery is a JavaScript library that can make developing way easier, as it takes some of the complicated parts of the language and synthesizes them into easy-to-use pieces. Line 9 includes jQuery in our map, which allows us to use its functionality.
 
-The interesting part comes at Line 10. This is where we are including our JSON** file using a [link relation](http://blog.whatwg.org/the-road-to-html-5-link-relations). As defined on the WHATWG blog post to which I just linked, "Regular links simply point to another page. Link relations are a way to explain _why_ you're pointing to another page. They finish the sentence, 'I'm pointing to this other page because...'"
+      <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+
+The interesting part comes at Line 10. This is where we are including our JSON** file using a [link relation](http://blog.whatwg.org/the-road-to-html-5-link-relations).
+
+      <link rel="points" type="application/json" href="./cupcakes.json">
+
+As defined on the WHATWG blog post to which I just linked, "Regular links simply point to another page. Link relations are a way to explain _why_ you're pointing to another page. They finish the sentence, 'I'm pointing to this other page because...'"
 
 Typcailly, link relations are used with a common set of keywords that have specific value to the browser. For example, our CSS stylesheet on line 3 has the link relation <code>rel="stylesheet"</code>. This is the most common link relation, and every browser knows to download the data from the link before loading the page, as the relation tells it that the linked data contains important style information.
 
 In our case, we are sort of hacking around that. We don't necessarily want the browser to fetch the data on load or at any particular time. Indeed, we don't want the browser to do anything with our GeoJSON file until we tell it to. Thus, we supply the link with a <code>rel="points"</code>, which isn't going to have any unintended consequences. (For more information on link relation keywords and what they do, check out [this comprehensive list](http://microformats.org/wiki/existing-rel-values).)
+
 
 ###The Body
 
@@ -167,21 +179,23 @@ Our callback function takes one parameter, data, which will be the data that's r
             layer.bindPopup(feature.properties.name);
           }
         });
+    ...
 
 After we have defined our GeoJSON layer, we have to actually create our map. This is done on line 23, where we create a variable map and use the Leaflet [map](http://leafletjs.com/reference.html#map-class) constructor to put our map in the "cupcake-map" div. We then also add a method [fitBounds()](http://leafletjs.com/reference.html#map-fitbounds) and pass it the extent of our GeoJSON data, which sets the bounds of our map to match the bounds of our data.
 
 The last two lines are pretty self-explanatory: we add our cupcakeTiles layer to the map and we add our geojson layer to the map.
 
     $.getJSON($('link[rel="points"]').attr("href"), function(data) {
-        var geojson = L.geoJson(data, {
-          onEachFeature: function (feature, layer) {
-            layer.bindPopup(feature.properties.name);
-          }
-        });
-        var map = L.map('cupcake-map').fitBounds(geojson.getBounds());
-        cupcakeTiles.addTo(map);
-        geojson.addTo(map);
+      var geojson = L.geoJson(data, {
+        onEachFeature: function (feature, layer) {
+          layer.bindPopup(feature.properties.name);
+        }
       });
+      var map = L.map('cupcake-map').fitBounds(geojson.getBounds());
+      cupcakeTiles.addTo(map);
+      geojson.addTo(map);
+    });
+
 
 ##We did it!
 
