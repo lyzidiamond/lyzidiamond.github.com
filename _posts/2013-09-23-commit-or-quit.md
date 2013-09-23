@@ -28,7 +28,7 @@ Sometimes, though, something comes along that I just can't do. I don't have the 
 
 <strong>Commit or quit.</strong>
 
-This principle applies to other, non-programming aspects of life, too. Just because you have had the same job for five, ten, fifteen years doesn't mean you need to stay committed to it. But it doesn't mean you should beat yourself up for not enjoying it anymore. Taking the time to figure out what you want, knowing that at the end of that discovery you will decide to either commit or quit, can be liberating.
+This principle applies to other, non-programming aspects of life, too. Just because you have had the same job for five, ten, fifteen years doesn't mean you need to stay committed to it. But it doesn't mean you should beat yourself up for not enjoying it anymore. Taking the time to figure out what you want, knowing that at the end of that discovery you will decide to either commit or quit, which can be liberating.
 
 <strong>Commit or quit.</strong>
 
