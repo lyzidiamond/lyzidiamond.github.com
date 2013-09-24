@@ -29,7 +29,7 @@
 		maxZoom: 18
 	});
 
-	$.getJSON($("./cupcakes.json").attr("href"), function(data) {
+	$.getJSON($("./cupcakes.json"), function(data) {
 		var geojson = L.geoJson(data, {
 			onEachFeature: function (feature, layer) {
 				layer.bindPopup(feature.properties.name);
