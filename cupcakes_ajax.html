@@ -26,7 +26,17 @@
 		maxZoom: 18
 	});
 
-	$.getJSON("./cupcakes.json", function(data) {
+  function popUp(feature, layer) {
+    layer.bindPopup(feature.properties.name);
+  }
+
+  var geojsonLayer = new L.GeoJSON.AJAX("./cupcakes.json", { onEachFeature:popUp});
+
+  var map = L.map('cupcake-map').fitBounds(geojsonLayer.getBounds());
+  cupcakeTiles.addTo(map);
+  geojsonLayer.addTo(map);
+
+/*	$.getJSON("./cupcakes.json", function(data) {
 		var geojson = L.geoJson(data, {
 			onEachFeature: function (feature, layer) {
 				layer.bindPopup(feature.properties.name);
@@ -35,7 +45,7 @@
 		var map = L.map('cupcake-map').fitBounds(geojson.getBounds());
 		cupcakeTiles.addTo(map);
 		geojson.addTo(map);
-	});
+	}); */
 	</script>
 </body>
 </html>
