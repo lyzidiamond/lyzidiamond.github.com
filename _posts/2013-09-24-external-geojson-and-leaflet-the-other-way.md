@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: 'External GeoJSON and Leaflet: The Better Way'
+title: 'External GeoJSON and Leaflet: The Other Way(s)'
 ---
 
 I will always be a student. In the wide world of geospatial technology, we are all going to be students forever. So when someone from Twitter tells me a better way to do something that seems intuitive and worthwhile, I have no problem sharing it with the world, even when it contradicts something I said before.
@@ -13,6 +13,8 @@ I'm specifically talking about my last technical post, ["Adding GeoJSON to Leafl
 I thought about this for a minute. Why _wasn't_ I just passing my GeoJSON file directly into jQuery's getJSON method? I thought I had tried it and it hadn't worked. But then I tried it. And it [totally worked](http://lyzidiamond.com/cupcakes_fail.html)!
 
 So let's take a look at this code, and compare it to the code I posted last month.
+
+<h2>Passing JSON directly into getJSON method.</h2>
 
     <!doctype html>
     <html>
@@ -55,205 +57,97 @@ So let's take a look at this code, and compare it to the code I posted last mont
     </body>
     </html>
 
-_Wednesday night, I was fortunate to attend the August meeting of PDX OSGEO, Portland's meetup for open source geo shenanigans. I learned some new stuff, got to see a [3D-printed map tile](http://www.mapbox.com/blog/weekend-hack-printing-3d-tiles/) (!!!!!), and got a chance to show off some of my recent work. The bulk of my contribution to the meeting was showing off a new technique for adding GeoJSON to a Leaflet map. This is an overview of what I talked about, with more detail and background._
+There are two main differences. First of all, the link relation in the `<head>` is gone. Second, the first argument to the jQuery getJSON method is different. Instead of using some additional jQuery code to identify the linked JSON and pull out the content, we just simply pass the JSON file _itself_ into the method. (The second argument remains the same, a callback function upon successful "getting" of JSON.) Everything else is the same. And as you [can see](http://lyzidiamond.com/cupcakes_fail.html), it looks [exactly the same](http://lyzidiamond.com/cupcakes.html).
 
----
+<h2>This is great! Should I just use this instead of link relations all the time?</h2>
 
-[Leaflet](http://leafletjs.com) is one of the best mapping libraries out there; it's certainly my favorite! But one thing that's somewhat convoluted is adding and using GeoJSON layers inside your Leaflet map. The [Leaflet API](http://leafletjs.com/reference.html) does have a [constructor for adding a GeoJSON layer](http://leafletjs.com/reference.html#geojson), which is great! But when you have a GeoJSON file with hundreds or thousands of features, it makes most sense to house that data in an external file. The challenge then comes when trying to use or reference that file when constructing your map.
-
-Let's look at an example. (This is the same example I used at the meeting.) A few months ago, my friend Liza tweeted at me:
-
-<blockquote class="twitter-tweet"><p><a href="https://twitter.com/lyzidiamond">@lyzidiamond</a> You know maps, right? Is there a website that shows all the places in Portland where cupcakes can be purchased on map? <a href="https://twitter.com/search?q=%23serious&amp;src=hash">#serious</a></p>&mdash; Liza J (@lizaface) <a href="https://twitter.com/lizaface/statuses/335503955603890176">May 17, 2013</a></blockquote>
+<blockquote class="twitter-tweet"><p><a href="https://twitter.com/vtcraghead">@vtcraghead</a> <a href="https://twitter.com/lyzidiamond">@lyzidiamond</a> Might need to be proxied if cross-domain...</p>&mdash; Bryan McBride (@brymcbride) <a href="https://twitter.com/brymcbride/statuses/382541743947665408">September 24, 2013</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-And so, with all of my infinite free time*, I set off to construct a [GeoJSON file](https://github.com/lyzidiamond/lyzidiamond.github.com/blob/master/cupcakes.json) of places to buy cupcakes in Portland. _(Disclaimer: It's not comprehensive and it's not at all done, so expect it to change significantly and frequently.)_ But when I set off to create my map, I ran into the problem of referencing this file. How was I to assign the data to a variable such that I could use it in the L.geoJson constructor and add it as a layer to my map?
+No. This technique worked for me because my [cupcakes.html](http://lyzidiamond.com/cupcakes_fail.html) and [cupcakes.json](http://lyzidiamond.com/cupcakes.json) files are in the same domain. If my files were in separate domains, I would have to create a proxy. (There is a nice example of a simple PHP proxy and an example its usage with jQuery's getJSON method [here](https://gist.github.com/bmcbride/6614373#file-proxy-php). According to Twitter, you can write these proxies in other languages too, but [it can be annoying/time consuming](https://twitter.com/billdollins/status/382561454500487168).)
 
-Typically when I have an issue like this, I turn to the best tech support at my disposal: Twitter.
+A proxy is required when using this method because of the [same-origin policy](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Same_origin_policy_for_JavaScript), which affects browser-side programming languages. The policy sets restrictions on how scripts loaded from one origin can interact with resources from different origins in the interest of security ("origins" meaning "domains" in this case). Most methods and properties are not accessible when being requested from a different domain, so a proxy domain must be created to mimic a same-origin request.
 
-<blockquote class="twitter-tweet"><p>Question: What is the best way to reference an external geojson file for use in a <a href="https://twitter.com/LeafletJS">@LeafletJS</a> map? Do I assign to a variable in the file?</p>&mdash; Lyzi Diamond (@lyzidiamond) <a href="https://twitter.com/lyzidiamond/statuses/364169343854059520">August 4, 2013</a></blockquote>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+<h2>Oh. That sounds annoying. Is there another way?</h2>
 
-The folks at Leaflet agreed that this would be the best way to go:
+You bet. [Calvin Metcalf](https://twitter.com/CWMma) has created a nice little plugin for [Leaflet](http://leafletjs.com) called [leaflet-ajax](https://github.com/calvinmetcalf/leaflet-ajax) that allows you to make a request for JSON using Ajax and allows a request/response for JSONP, making it possible to pull JSON from another domain.
 
-<blockquote class="twitter-tweet"><p><a href="https://twitter.com/lyzidiamond">@lyzidiamond</a> yep, it&#39;s the simplest way if you&#39;re including the GeoJSON statically on page load</p>&mdash; Leaflet (@LeafletJS) <a href="https://twitter.com/LeafletJS/statuses/364336552383492097">August 5, 2013</a></blockquote>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+    var geojsonLayer = new L.GeoJSON.AJAX("./cupcakes.json");
+    var geojsonLayer = new L.GeoJSON.AJAX("http:example.com/cupcakes.jsonp", {dataType:"jsonp"});
 
-One of my Twitter friends, [Sean Gillies](http://twitter.com/sgillies), had another suggestion:
+<h2>Wait, wait, back up. AJAX? JSONP? What?</h2>
 
-<blockquote class="twitter-tweet"><p><a href="https://twitter.com/lyzidiamond">@lyzidiamond</a> Fwiw, we use a typed link at ISAW: <a href="http://t.co/Ea2MzuchBV">http://t.co/Ea2MzuchBV</a>. If you don&#39;t want an extra request, you can use a data uri.</p>&mdash; Sean Gillies (@sgillies) <a href="https://twitter.com/sgillies/statuses/364171433246588928">August 4, 2013</a></blockquote>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+<h3>Ajax</h3>
 
-I decided to play with this a little more, and it totally worked! And it worked well! So let's talk about it.
+[Ajax](https://developer.mozilla.org/en-US/docs/AJAX/Getting_Started) stands for Asynchronous JavaScript and XML. It is a way for web applications to send data to and receive data from a server asynchronously, without disrupting the behavior of the page where the request was originated.
 
-##GeoJSON: The Challenges
+Ultimately, when we are loading our GeoJSON file onto the page, we are loading it from the server and displaying it in the browser, which means communication needs to occur from the server-side, or back end, to the client-side, or front end. This communication happens at different times, depending on when the data is requested. In the example above, we are requesting the data in the getJSON method. In the [previous example](http://lyzidiamond.com/posts/osgeo-august-meeting/), we were requesting the data in the `<head>`, so the request was being made before the getJSON method was called. With Calvin's plugin, an Ajax request is being made when a variable is created for the geoJSON layer.
 
-JSON and GeoJSON files are just JavaScript files. (JSON stands for JavaScript Object Notation; you can read more about JSON as a file type in a previous post, [here](http://lyzidiamond.com/posts/github-geojson/).) As such, you can reference a JSON or GeoJSON file as a script, the same way you would for, say, including the Leaflet or jQuery libraries in your code.
+<h3>JSONP</h3>
 
-    <script src="./cupcakes.json"></script>
+[JSONP](http://json-p.org/) stands for "JSON with padding." It exists primarily to thwart the previously mentioned _same-origin policy_ and uses one of the allowed cross-domain mechanisms to get JSON from a different domain. I am not going to go into how JSONP works here; for more information on its structure and history, click the link. (EXTRA CREDIT: There is another, more commonly used tool for allowing JavaScript requests to be made across browsers, caled [cross-origin resource sharing, or CORS](http://enable-cors.org/). It isn't yet a standard for this type of practice, however, because Internet Explorer has yet to implement it, making it a poor cross-<em>browser</em> solution.)
 
-Adding a link to a script allows you access to its content; it's as if you copy-pasted the code in the script into your HTML file. Everything that is in that file is now effectively inside your HTML file and can be referenced and used freely. Adding the GeoJSON at the top does the same thing, but the GeoJSON data has no name. It's not attached to a variable. It's just features that can't be referenced, containing geometry and properties that can't be referenced. For the purposes of our map, it is essentially useless.
+<h2>So how would that work, then?</h2>
 
-The obvious solution is to add a variable definition to our cupcakes.json file. That would mean that instead of this:
+As always, let's take a look at the code (live example [here](http://lyzidiamond.com/cupcakes_ajax.html):
 
-    {
-      "type": "FeatureCollection",
-      "features": [
-        {
-          "type": "Feature",
-          "geometry": {
-            "type": "Point",
-            "coordinates": [
-              -122.65335738658904,
-              45.512083676585156
-            ]
-          },
-          "properties": {
-              "name": "Hungry Heart Cupcakes",
-              "address": "1212 SE Hawthorne Boulevard",
-              "website": "http://www.hungryheartcupcakes.com",
-              "gluten free": "no",
-              "open1": "Monday - Sunday, 11am - 9pm"
-          }
-        },
-
-    ...
-
-we would have something like this:
-
-    var cupcakes = {
-      "type": "FeatureCollection",
-      "features": [
-        {
-          "type": "Feature",
-          "geometry": {
-            "type": "Point",
-            "coordinates": [
-              -122.65335738658904,
-              45.512083676585156
-            ]
-          },
-          "properties": {
-              "name": "Hungry Heart Cupcakes",
-              "address": "1212 SE Hawthorne Boulevard",
-              "website": "http://www.hungryheartcupcakes.com",
-              "gluten free": "no",
-              "open1": "Monday - Sunday, 11am - 9pm"
-          }
-        },
-
-    ...
-
-This would totally work, but it would mean that our cupcakes.json file would no longer be a true JSON/GeoJSON file. If you tried to [show the file in GitHub](http://lyzidiamond.com/posts/github-geojson-gets-better/), for example, the points would not be interpreted and a map would not be rendered. Additionally, you don't always have direct control over the GeoJSON file itself, especially if it's a shared dataset or if it's being returned from some other process. Adding a variable definition could also potentially mess up the work of anyone else trying to use your dataset, if it is indeed a dataset you constructed.
-
-So what can you do? You can used a typed link/link relation and a little bit of jQuery. It's really quite magical.
-
-##GeoJSON and Leaflet: The Solution
-
-Let's look at the code, and then talk through it. You can view a live version of this [here](http://lyzidiamond.com/cupcakes.html).
-
+    <!doctype html>
     <html>
     <head>
       <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.5/leaflet.css" />
+      <!--[if lte IE 8]>
+         <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.5/leaflet.ie.css" />
+      <![endif]-->
       <style type="text/css">
-      body {  padding: 0; margin: 0;  }
-      html, body, #cupcake-map {  height: 100%;  }
+        body {
+          padding: 0;
+          margin: 0;
+        }
+
+        html, body, #cupcake-map {
+          height: 100%;
+        }
+
       </style>
       <script src="http://cdn.leafletjs.com/leaflet-0.5/leaflet.js"></script>
-      <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
-      <link rel="points" type="application/json" href="./cupcakes.json">
-    </head>
+      <script src="https://raw.github.com/calvinmetcalf/leaflet-ajax/master/dist/leaflet.ajax.min.js"></script>
     <body>
       <div id="cupcake-map"></div>
       <script>
       var cupcakeTiles = L.tileLayer('http://a.tiles.mapbox.com/v3/lyzidiamond.map-ietb6srb/{z}/{x}/{y}.png', {
-        maxZooom: 18  
+        maxZoom: 18
       });
 
-      $.getJSON($('link[rel="points"]').attr("href"), function(data) {
-        var geojson = L.geoJson(data, {
-          onEachFeature: function (feature, layer) {
-            layer.bindPopup(feature.properties.name);
-          }
-        });
-        var map = L.map('cupcake-map').fitBounds(geojson.getBounds());
-        cupcakeTiles.addTo(map);
-        geojson.addTo(map);
-      });
+      function popUp(feature, layer) {
+        layer.bindPopup(feature.properties.name);
+      }
+
+      var geojsonLayer = new L.GeoJSON.AJAX("./cupcakes.json", {onEachFeature:popUp});
+
+      var map = L.map('cupcake-map').fitBounds(geojsonLayer.getBounds());
+      cupcakeTiles.addTo(map);
+      geojsonLayer.addTo(map);
+
       </script>
     </body>
     </html>
 
+What's different here? A few things. First, notice that instead of the jQuery `<script>` tag in the `<head>`, I instead added Calvin's Leaflet-Ajax plugin, allowing us to use the methods housed therein. (For more information on Leaflet plugins, click [here](http://leafletjs.com/plugins.html).) Second, I made a function popUp that binds a tool tip to each feature (when asked to do so) that displays the text from the "name" field of the properties of the feature. (This was in our previous example as well, but was not explicitly defined; it was simply an [anonymous function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions_and_function_scope) being used as a value for the onEachFeature option when adding a new layer. For more info on options when using the Leaflet GeoJSON constructor, check out the [Leaflet API Reference](http://leafletjs.com/reference.html#geojson).)
 
-###The Head
+Third, I define a variable geojsonLayer and, using the Leaflet GeoJSON constructor with Calvin's plugin, use the AJAX method, passing in first the location of my GeoJSON file and second the options for the layer, which include setting the onEachFeature method to the popUp function. This means that when any feature in the layer is clicked on, a tool tip with the information defined in the popUp function will show up.
 
-Leaflet, as discussed previously, is a JavaScript mapping library with a lot of great functionality. (For more info on getting started with and using Leaflet, check out their [Quick Start Tutorial](http://leafletjs.com/examples/quick-start.html).) In order to use it, we need to include both a Leaflet CSS file (for map styling) and the Leaflet JavaScript file, which is what the stylesheet on line 3 and the script on line 8 are all about. Lines 4 through 7 are CSS rules to give our map a height and ensure that it is actually full-screen on the page.
+I then define the map object, tell Leaflet to put it in the div with ID `cupcake-map`, fit the bounds of the map to the extend of the features in the GeoJSON layer, add the basemap tiles to the map, and add the GeoJSON layer to the map.
 
-    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.5/leaflet.css" />
-    ...
-    <script src="http://cdn.leafletjs.com/leaflet-0.5/leaflet.js"></script>
+Now, this isn't an example of loading JSON from a different domain, but if you look at the GitHub repo for the Leaflet-Ajax tool, there's a [nice little example](https://github.com/calvinmetcalf/leaflet-ajax/blob/master/example/index.html) showing off this functionality.
 
-The other library we need to make this work is called [jQuery](http://jquery.com/). jQuery is a JavaScript library that can make developing way easier, as it takes some of the complicated parts of the language and synthesizes them into easy-to-use pieces. Line 9 includes jQuery in our map, which allows us to use its functionality.
+<h2>Wow! That's a lot of different ways to add GeoJSON to a Leaflet map.</h2>
 
-      <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+I know, right? Isn't it awesome?! Different techniques will work for different situations, but all of them have some similar features:
 
-The interesting part comes at Line 10. This is where we are including our JSON** file using a [link relation](http://blog.whatwg.org/the-road-to-html-5-link-relations).
+  - There is no need to add a variable definition inside of an external JSON, making it not a true JSON file.
+  - Using an external GeoJSON file is no problem, and files can be easily switched out at any time.
+  - They work!
 
-      <link rel="points" type="application/json" href="./cupcakes.json">
+So go forth, young web cartographers and spatial analysts! Add all the GeoJSON. With these techniques, I think you'll have a ton of fun.
 
-As defined on the WHATWG blog post to which I just linked, "Regular links simply point to another page. Link relations are a way to explain _why_ you're pointing to another page. They finish the sentence, 'I'm pointing to this other page because...'"
-
-Typcailly, link relations are used with a common set of keywords that have specific value to the browser. For example, our CSS stylesheet on line 3 has the link relation <code>rel="stylesheet"</code>. This is the most common link relation, and every browser knows to download the data from the link before loading the page, as the relation tells it that the linked data contains important style information.
-
-In our case, we are sort of hacking around that. We don't necessarily want the browser to fetch the data on load or at any particular time. Indeed, we don't want the browser to do anything with our GeoJSON file until we tell it to. Thus, we supply the link with a <code>rel="points"</code>, which isn't going to have any unintended consequences. (For more information on link relation keywords and what they do, check out [this comprehensive list](http://microformats.org/wiki/existing-rel-values).)
-
-
-###The Body
-
-Now let's get into the body of our HTML. The first think you see on line 13 is an empty div with id "cupcake-map." This is how Leaflet works: you create an empty div, and then write some JavaScript to fill it in. For us, this JavaScript starts on the very next line, as it's a full-screen web map.
-
-    <div id="cupcake-map"></div>
-
-Our JavaScript is sandwiched between <code>script</code> tags, which lets the browser know that anything inside of them is JavaScript and should be treated as such. (This was mirrored in lines 4 and 7 in the head, with <code>style</code> tags.) The first thing we do in our script (line 15) is define a variable called cupcakeTiles, and use the Leaflet [tileLayer](http://leafletjs.com/reference.html#tilelayer) constructor to define a map tile layer (more info on that at the link). This map uses custom tiles I made using [MapBox](http://mapbox.com), so this constructor links to those tiles. It also adds a property for maxZoom, ensuring that the map will not be zoomed in past zoom level 18. (For more information on web maps and zoom levels and how they work, check out [this excellent blog post](http://www.mapbox.com/developers/guide/).)
-
-Line 19 is where the code gets interesting, as we employ jQuery's [getJSON method](http://api.jquery.com/jQuery.getJSON/). This method takes three parameters: A URL of the location of the data, a plain object or string that gets sent with the request for the data, and a function to execute if the request for data is successful. The second parameter is optional, and you'll see we don't actually use it in our example.
-
-     $.getJSON($('link[rel="points"]').attr("href"), function(data) {
-
-We pass <code>$('link[rel="points"]').attr("href")</code> as our first parameter, which actually _does_ translate to a URL. It finds a link by its rel value (<code>$('link[rel="points"]')</code>), and then uses a getter method [attr](http://api.jquery.com/attr/) to pull the value of the href parameter in the link. This returns <code>"./cupcakes.json"</code>, which is the location of our JSON file. (I should also note that our link has an attribute <code>type</code> that is defined as <code>'application/json'</code>. This helps the browser understand that the data in the link is JSON and should be treated as such.)
-
-The second parameter is actually a function to be executed upon successful retrieval of data, called a _[callback function](https://developer.mozilla.org/en-US/docs/Mozilla/js-ctypes/js-ctypes_reference/Callbacks)_. (If that blows your mind, take some time to read about [asynchronous programming](http://en.wikipedia.org/wiki/Asynchronous_I/O). It's really fascinating.) We actually have housed all the rest of the map creation and layer adding functionality of our map inside of this callback function, which ensures that the map won't draw unless the GeoJSON has sucecssfully been retrieved.
-
-Our callback function takes one parameter, data, which will be the data that's returned from the getJSON method. The first thing the function does is create a variable geojson and use the Leaflet [geoJson](http://leafletjs.com/reference.html#geojson) constructor to define a GeoJSON layer. The constructor takes two parameters: one for the actual GeoJSON that will make the layer (data, in our case), and any options you wish to specify. One of thse is called [onEachFeature](http://leafletjs.com/reference.html#geojson-oneachfeature), which is most commonly used for attaching popups to data. That's how we used it, anyway! As the value for onEachFeature, we define a function that takes our data and adds a popup to each feature that shows whatever value is in that feature's "name" property.
-
-    $.getJSON($('link[rel="points"]').attr("href"), function(data) {
-        var geojson = L.geoJson(data, {
-          onEachFeature: function (feature, layer) {
-            layer.bindPopup(feature.properties.name);
-          }
-        });
-    ...
-
-After we have defined our GeoJSON layer, we have to actually create our map. This is done on line 23, where we create a variable map and use the Leaflet [map](http://leafletjs.com/reference.html#map-class) constructor to put our map in the "cupcake-map" div. We then also add a method [fitBounds()](http://leafletjs.com/reference.html#map-fitbounds) and pass it the extent of our GeoJSON data, which sets the bounds of our map to match the bounds of our data.
-
-The last two lines are pretty self-explanatory: we add our cupcakeTiles layer to the map and we add our geojson layer to the map.
-
-    $.getJSON($('link[rel="points"]').attr("href"), function(data) {
-      var geojson = L.geoJson(data, {
-        onEachFeature: function (feature, layer) {
-          layer.bindPopup(feature.properties.name);
-        }
-      });
-      var map = L.map('cupcake-map').fitBounds(geojson.getBounds());
-      cupcakeTiles.addTo(map);
-      geojson.addTo(map);
-    });
-
-
-##We did it!
-
-So what did we just do? We made a map with custom tiles that grabs GeoJSON from an external file without changing that file. Oh, and we added some popups to the GeoJSON features and set the bounds of our map to match the bounds of the data. Not too bad for 29 lines of code!
-
-<h1><img src="https://raw.github.com/lyzidiamond/lyzidiamond.github.com/master/images/cupcakes.PNG" width="100%"></h1>
-
-*This is a joke.<br>
-**JSON and GeoJSON are just JavaScript objects. A GeoJSON file can be saved as type .geojson, .json, or .js. All of them work.
+(Oh, and. I'm always interested in hearing about new techniques and tools. Hit me up on [the Twitters](http://twitter.com/lyzidiamond) if you find something interesting!)
