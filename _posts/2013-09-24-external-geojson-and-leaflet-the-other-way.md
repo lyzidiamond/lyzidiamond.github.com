@@ -89,7 +89,7 @@ Ultimately, when we are loading our GeoJSON file onto the page, we are loading i
 
 <h2>So how would that work, then?</h2>
 
-As always, let's take a look at the code (live example [here](http://lyzidiamond.com/cupcakes_ajax.html):
+As always, let's take a look at the code (live example [here](http://lyzidiamond.com/cupcakes_ajax.html)):
 
     <!doctype html>
     <html>
