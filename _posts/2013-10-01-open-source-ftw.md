@@ -43,7 +43,7 @@ It was merged! Mele checked it afterwards, and it [totally works](https://github
 
 Now, save for having to resolve the conflicts with each of the commits made pre-prettifying, this exercise will work completely smoothly in the future. I can't wait to present it again.
 
-### This is a long story.
+**This is a long story.**
 
 But everyone has one of these stories — stories that make them realize what's been right in front of them the whole time. And this is mine: **open source is the future.** I'm hooked. I'm completely and totally hooked. I think Mele put it best:
 
