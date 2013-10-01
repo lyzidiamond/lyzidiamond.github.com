@@ -45,7 +45,7 @@ Now, save for having to resolve the conflicts with each of the commits made pre-
 
 ### This is a long story.
 
-But everyone has one of these stories — stories that make them realize what's been right in front of them the whole time. And this is mine: open source is the future. Open source is the only way we can move forward. I'm hooked. I'm completely and totally hooked. I think Mele put it best:
+But everyone has one of these stories — stories that make them realize what's been right in front of them the whole time. And this is mine: **open source is the future.** I'm hooked. I'm completely and totally hooked. I think Mele put it best:
 
 <blockquote class="twitter-tweet"><p><a href="https://twitter.com/lyzidiamond">@lyzidiamond</a> <a href="https://twitter.com/reidab">@reidab</a> open source FTW</p>&mdash; Mele Sax-Barnett (@pdxmele) <a href="https://twitter.com/pdxmele/statuses/384455625674989568">September 29, 2013</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
