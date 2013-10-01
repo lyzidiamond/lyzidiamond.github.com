@@ -1,185 +1,130 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Big: Presentations for Busy Messy Hackers</title>
-    <meta charset='utf-8'>
-    <meta property="og:title" content="Big"/>
-    <meta property="og:description" content="Presentations for Busy Messy Hackers"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
-    <style>
+<!DOCTYPE html><html><head><title></title><meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" /><style type='text/css'>
 body {
-    color:#222;
-    max-width:640px;
-    margin:20px auto 50px auto;
-    font:normal 14px/25px 'Helvetica Neue', sans-serif;
+  font-family: 'Helvetica';
+  letter-spacing:-5px;
+  background:#000;
+  background-size:100%;
+  color:#fff;
+  margin:0;
+  padding:0;
+  font-weight:bold;
 }
-h1 { font-size:140px; line-height:40px;margin-top:140px; }
-h1, h2 {
-    text-align:center;
+
+h1, h2, h3, p {
+  margin:0;
 }
-.head {
-    color:#fff;
-    background:#000;
-    padding:10px;
-    text-align:right;
-    border:1px solid #000;
+
+em, a {
+  font-style:normal;
+  color:#8dbd0c;
 }
-.content {
-    margin:40px 50px 0 50px;
-}
-.buttons {
-    text-align:center;
-    padding:20px 0 20px 0;
-}
-.button {
-    color:#fff;
-    background:#56a;
-    padding:10px 20px;
-    font-size:18px;
-    border-radius:3px;
-    text-decoration:none;
-    margin:0 10px;
-    border-bottom:1px solid #AEB7DD;
-    border-right:1px solid #AEB7DD;
-}
-.button:first-child {
-    background:#586;
-    border-bottom:1px solid #A8D8B3;
-    border-right:1px solid #A8D8B3;
-}
+
 a {
-    color:blue;
-    text-decoration:none;
+  background: #34d0e7;
+  color:#000;
+  text-decoration:none;
 }
-a:hover { text-decoration:underline; }
-ul { list-style-type:none; margin:0; padding:0;}
-li { width:50%;float:left;box-sizing:border-box;border:5px solid #fff; }
-li a {
-    color: #000;
-    display:block;
-    text-decoration:none;
-    padding:15px;
-    background:#fff;
-    transition:background 100ms linear;
-    text-align:center;
-    border-radius:2px;
-    background:#efefef;
+
+img {
+  width:100%;
 }
-li a:hover { background:#558866; color:#fff; text-decoration:none; }
-.clearfix:after {
-  content:'.';
-  display:block;
-  height:0;
-  clear:both;
-  visibility:hidden;
-  }
 
-.clearfix { display:inline-block; }
-
-pre {
-    padding:10px;
-    background:#e0efe0;
+div {
+  cursor:pointer;
+  cursor:hand;
+  position:absolute;
+  top:0;
+  left:0;
 }
-.gh {
-    display:block;
-    text-align:right;
-}
-    </style>
-</head>
-<body>
-<a class='gh' href='https://github.com/tmcw/big'>(fork || star) on github</a>
-<div class='head'>
-    <iframe class="github-btn" src="http://ghbtns.com/github-btn.html?user=tmcw&repo=big&type=watch&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="100px" height="20px"></iframe>
-    <h1>Big</h1>
-    <div class='buttons'>
-        <a class='button' href='https://github.com/tmcw/big/archive/gh-pages.zip'>Download</a>
-        <a class='button' href='./demo.html'>Demo</a>
-    </div>
-    <h2>Presentations for Busy Messy Hackers</h2>
-</div>
+</style><script type='text/javascript'>
+window.onload = function() {
+    var s = document.getElementsByTagName('div'), cur = 0;
+    if (!s) return;
+    function go(n) {
+        cur = n;
+        var i = 1e3, e = s[n];
+        for (var k = 0; k < s.length; k++) s[k].style.display = 'none';
+        e.style.display = 'inline';
+        e.style.fontSize = i + 'px';
+        if (e.firstChild.nodeName === 'IMG') {
+            document.body.style.backgroundImage = 'url(' + e.firstChild.src + ')';
+            e.firstChild.style.display = 'none';
+        } else {
+            document.body.style.backgroundImage = '';
+            document.body.style.backgroundColor = e.style.backgroundColor;
+        }
+        while (
+            e.offsetWidth > window.innerWidth ||
+            e.offsetHeight > window.innerHeight) {
+            e.style.fontSize = (i -= 10) + 'px';
+            if (i < 0) break;
+        }
+        e.style.marginTop = ((window.innerHeight - e.offsetHeight) / 2) + 'px';
+        if (window.location.hash !== n) window.location.hash = n;
+        document.title = e.textContent || e.innerText;
+    }
+    document.onclick = function() {
+        go(++cur % (s.length));
+    };
+    document.onkeydown = function(e) {
+        (e.which === 39) && go(Math.min(s.length - 1, ++cur));
+        (e.which === 37) && go(Math.max(0, --cur));
+    };
+    function parse_hash() {
+        return Math.max(Math.min(
+            s.length - 1,
+            parseInt(window.location.hash.substring(1), 10)), 0);
+    }
+    if (window.location.hash) cur = parse_hash() || cur;
+    window.onhashchange = function() {
+        var c = parse_hash();
+        if (c !== cur) go(c);
+    };
 
-<div class='content'>
-    <p>
-    Big is a minimal presentation system with a simple rule: the text on every
-    slide is embiggened until it fills your screen.
-    It works pretty okay with focused presentations and plenty of narration,
-    and it will make long bullet-lists look terrible.
-    </p>
-    <p>
-    You create presentations with big by downloading it and editing simple
-    HTML: <code>div</code> elements become slides. You style your presentations
-    with CSS, just like web pages.
-    </p>
-    <p>Then you can either post your slides
-    to GitHub to share with the world, or boot up a local development
-    server to conference-wifi-proof them.
-    </p>
-</div>
+    go(cur);
+};
+</script></head><body>
+<div><em>Learn GeoJSON!</em> (and maybe git and GitHub too)</div>
+<div>Where are we at?</div>
+<div>What is <em>GeoJSON</em>?</div>
+<div><em>GeoJSON:</em> geographic data format. (Contains spatial information.)</div>
+<div><em>GeoJSON:</em> extension of JSON, with a specific structure.</div>
+<div>This is what it looks like:</div>
+<div><em>GeoJSON:</em> has room for nested attribute information.</div>
+<div><em>GeoJSON:</em> loved by web mapping libraries.</div>
+<div>For example...</div>
+<div>Also, there's a cool tool for editing <em>GeoJSON</em>called <em>geojson.io</em>!</div>
+<div>(We'll come back to that.)</div>
+<div>What is <em>git</em>?</div>
+<div><em>git:</em> distributed version control system.</div>
+<div><em>git:</em> allows for collaboration without totally screwing everything up.</div>
+<div><em>git:</em> super powerful.</div>
+<div>What is <em>GitHub</em>?</div>
+<div><em>GitHub:</em> a home for lots and lots of code repositories.</div>
+<div><em>GitHub:</em> interacted with using <em>git</em>.</div>
+<div><em>GitHub:</em> provides easy-to-use tools and tutorials for using and learning git to collaborate on and contribute to projects.</div>
+<div><em>GitHub:</em> best friends with <em>GeoJSON</em>! (Renders in a map.)</div>
+<div>Let's check it out!</div>
+<div>Any questions?</div>
+<div>What are we doing today?</div>
+<div>Building collaborative <em>GeoJSON</em> datasets using <em>git</em> and <em>GitHub</em>.</div>
+<div><em>Step one:</em> Make a GitHub account.</div>
+<div><em>Step two:</em> Fork this repo: http://github.com/lyzidiamond/learn-geojson</div>
+<div><em>Step three:</em> Fork this repo: <em>http://github.com/lyzidiamond/learn-geojson/</em>.</div>
+<div>(Instructions on repo's readme...)</div>
+<div>What did we just do?</div>
+<div>We <em>forked</em> a repo!</div>
+<div>We added some data to some files in that repo!</div>
+<div>We <em>commited </em> our changes to the repo!</div>
+<div>We made a pull request to the <em>upstream</em> repo!</div>
+<div>This basic workflow, plus a few other pieces, is how people contribute to projects on GitHub.</div>
+<div>What's next?</div>
+<div>If you wanna contribute in a more traditional way, try a more traditional tutorial.</div>
+<div>Like <em>http://try.github.io</em>.</div>
+<div>Or <em>http://think-like-a-git.net</em>.</div>
+<div>Feel free to add datasets or contribute to the datasets on <em>learn-geojson</em>.</div>
+<div>The best data is the data we make together! :)</div>
+<div>Thanks.</div>
+<div>Lyzi Diamond; @lyzidiamond on everything; lyzidiamond@gmail.com.</div>
 
-<div class='content'>
-    <h2>Quick Start</h2>
-    <pre>curl -L http://bit.ly/big-quick -O index.html
-python -m SimpleHTTPServer</pre>
-    <p>(then open <a href='http://localhost:8000/'>localhost:8000</a>)</p>
-</div>
-
-<div class='content'>
-    <h2>Examples</h2>
-    <ul class='clearfix'>
-        <li><a href="http://exposedata.com/talk/d3-geo/#0">d3-geo</a>
-        <li><a href="http://bdon.org/talk-2013-1-29.html#0">THREE.js + geo</a>
-        <li><a href="http://macwright.org/presentations/beyond/">FOSS4G: Beyond</a></li>
-        <li><a href="http://macwright.org/presentations/projections/#0">Project It Yourself</a></li>
-        <li><a href="http://macwright.org/presentations/carto/">Carto</a></li>
-        <li><a href="http://maxogden.github.com/slides/empirejs/index.html#0">javascript for cats</a>
-        <li><a href="http://macwright.org/presentations/wherecampboston/">WhereCamp Boston</a>
-        <li><a href="http://macwright.org/presentations/foss4g/1.html">foss4g</a></li>
-        <li><a href="http://isaacjg.github.io/intro_to_python/python_presentation/python_presentation.html#0">python</a></li>
-    </ul>
-</div>
-
-<div class='content'>
-    <h2>Plugins and Riffs</h2>
-    <p>
-    Don't like typing HTML? You can use <a href='http://macwright.org/biggie'>biggie</a>
-    if you want and type Markdown instead. <a href='https://github.com/harperreed/bigpy'>bigpy</a> does
-    it in Python.
-    </p>
-    <p>
-    Don't want to spend time designing stuff? <a href='https://github.com/tmcw/big-themes'>big-themes</a>
-    has some precooked styles.
-    </p>
-    <p>
-    Want something else? Check out <a href='https://github.com/jed/weenote'>Weenote</a>,
-    <a href='http://github.com/mbostock/stack'>stack</a>, and <a href='https://github.com/schacon/showoff'>showoff</a>.
-    There sure are options nowadays.
-    </p>
-</div>
-
-<div class='content'>
-    <h2>Nerd Stuff</h2>
-    <p>
-    Big is 1.1KB and 46 lines long at last count. It's written in vanilla JavaScript
-    with no frameworks and no hijinks. It supports touch and permalinks
-    to individual slide pages. It's licensed PD and is ready for you to hack
-    it into something beautiful or monstrous.
-    </p>
-    <p>
-        Big is awesome because awesome folks have helped out, and you can too:
-        <a href='https://github.com/tmcw/big'>fork big on GitHub!</a>
-    </p>
-</div>
-
-<script type="text/javascript">
-  var _gauges = _gauges || [];
-  (function() {
-    var t   = document.createElement('script');
-    t.type  = 'text/javascript';
-    t.async = true;
-    t.id    = 'gauges-tracker';
-    t.setAttribute('data-site-id', '4e36eb1ef5a1f53d6f000001');
-    t.src = '//secure.gaug.es/track.js';
-    var s = document.getElementsByTagName('script')[0];
-    s.parentNode.insertBefore(t, s);
-  })();
-</script>
+</body></html>
