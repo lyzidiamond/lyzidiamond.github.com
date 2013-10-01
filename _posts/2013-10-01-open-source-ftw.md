@@ -49,3 +49,7 @@ But everyone has one of these stories — stories that make them realize what's 
 
 <blockquote class="twitter-tweet"><p><a href="https://twitter.com/lyzidiamond">@lyzidiamond</a> <a href="https://twitter.com/reidab">@reidab</a> open source FTW</p>&mdash; Mele Sax-Barnett (@pdxmele) <a href="https://twitter.com/pdxmele/statuses/384455625674989568">September 29, 2013</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+**Let's contribute to all the things!**
+
+Non sequiturs: Sometime soon I'll write a more in-depth post discussing the [Learn GeoJSON](http://github.com/lyzidiamond/learn-geojson) exercise, how it works, what needs to be added to it, and how it may solve some of the pedagogical problems with getting geographers into tech. On a similar note, I hosted an unconference session at WhereCampPDX about geospatial pedagogy that yielded an interesting discussion. I'll write about that here, too.
