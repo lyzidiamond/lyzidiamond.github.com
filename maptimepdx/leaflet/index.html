@@ -108,7 +108,7 @@ window.onload = function() {
   <div>You may be asking yourself: <strong>But what about when I zoom in? How come the resolution stays so good?</strong></div>
   <div>Well, each <em>zoom level</em> has its own set of tiles!</div>
   <div>Zoom level 0: <strong>1</strong> tile for the world.</div>
-  <div>[Add image 'zero']</div>
+  <div><img src="./zero.PNG" /></div>
   <div>With each additional zoom level, the number of tiles increases exponentially.</div>
   <div>Zoom level 1: <strong>4</strong> tiles for the world.</div>
   <div>Zoom level 2: <strong>16</strong> tiles for the world.</div>
@@ -147,40 +147,40 @@ window.onload = function() {
   <div>The <em>head</em> section includes all the elements that your page might need to load properly.</div>
   <div>The <em>body</em> section includes all the elements that will be rendered on the page.</div>
   <div>Oh: and the whole thing should be bookended by <em>html</em> tags.</div>
-  <div>[Add image 'html']</div>
+  <div><img src="./html.PNG" /></div>
   <div>In order to make our web map work, there are several things that need to be added to the <em>head</em> section of the page.</div>
   <div>First, we need to add the Leaflet <em>CSS</em> file to the page. This allows us to add predefined mappy elements.</div>
-  <div>[Add image 'css']</div>
+  <div><img src="./css.PNG" /></div>
   <div>Then we need to add the Leaflet <em>JavaScript</em> file. This will allow us to make a map object in which we can pan, zoom, and do other mappy activities.</div>
-  <div>[Add image 'javascript']</div>
+  <div><img src="./javascript.PNG" /></div>
   <div>Finally, we need to add some of our own CSS to make the map as big or small as we want. We'll set it to a height of <strong>600 pixels</strong>.</div>
-  <div>[Add image 'containercss']</div>
+  <div><img src="./containercss.PNG" /></div>
   <div>Now let's add some code inside the <em>body</em>.</div>
   <div>Step one is to make a <em>div</em> to contain our map.</div>
-  <div>[Add image 'mapdiv']</div>
+  <div><img src="./mapdiv.PNG" /></div>
   <div>Great! Now we have a <em>div</em> that will contain our map, and we've added the scripts and stylesheets we will need to access.</div>
   <div>Now, let's make it do stuff!</div>
   <div>Inside the <em>body</em>, add a <em>script</em> tag.</div>
-  <div>[Add image 'script']</div>
+  <div><img src="./script.PNG" /></div>
   <div>We will be making a map of Portland using <em>OpenStreetMap</em> tiles.</div>
   <div>The first step is to <strong>initialize</strong> a map, <strong>set its view</strong> to Portland, and set a <strong>zoom level</strong>.</div>
-  <div>[Add image 'jsinit']</div>
+  <div><img src="./jsinit.PNG" /></div>
   <div>Hooray! Now there's a map in our map div, with the center in the Willamette River, set at zoom level 14.</div>
   <div>But... there's nothing on the map. We have to add some <strong>map tiles</strong>!</div>
-  <div>[Add image 'tiles']</div>
+  <div><img src="./tiles.PNG" /></div>
   <div>Now we have to close the <em>script</em> tag, close the <em>body</em> tag, and close the <em>html</em> tag.</div>
-  <div>[Add image 'closetags']</div>
+  <div><img src="./closetags.PNG" /></div>
   <div>Go ahead and open up your HTML file in your browser. Do you see a map?</div>
   <div><strong>Awesome!</strong></div>
   <div>But a map of tiles is kind of boring, right? Let's add a <strong>map marker</strong>.</div>
   <div>The lat/lon for our current location (the Esri office) is [<em>45.516469</em>, <em>-122.676208</em>]. Let's add a marker here.</div>
   <div>Inside the <em>script</em> tags, add:</div>
-  <div>[Add image 'marker']</div>
+  <div><img src="./marker.PNG" /></div>
   <div>Reload your HTML in the browser. There's totally a map marker on SW 3rd and Salmon!</div>
   <div>Go ahead and <strong>click</strong> on the marker. Does anything happen?</div>
   <div>Nope. Let's do something about that. Let's give that point a <strong>popup</strong>.</div>
   <div><em>Leaflet really likes popups.</em> They're baked right into the JavaScript library! Let's add one for our marker that says "EsriPDX" on it.</div>
-  <div>[Add image 'popup']</div>
+  <div><img src="./popup.PNG" /></div>
   <div><strong>Reload</strong> and <strong>click</strong> on the marker. Does the popup appear?</div>
   <div><em>Hooray!</em> It totally does! We made a popup!</div>
   <div>In reference to the <em>feature layers</em> we talked about earlier: in addition to adding individual points, you can totally add full data layers on top of a Leaflet map.</div>
