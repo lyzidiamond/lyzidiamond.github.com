@@ -2,26 +2,29 @@
 body {
   font-family: 'Helvetica';
   letter-spacing:-5px;
-  background:#000;
+  background:#eee;
   background-size:100%;
-  color:#fff;
+  color:#000;
   margin:0;
   padding:0;
-  font-weight:bold;
 }
 
 h1, h2, h3, p {
   margin:0;
 }
 
-em, a {
+em, a, strong {
   font-style:normal;
-  color:#8dbd0c;
+  color:#1DAD63;
+}
+
+strong {
+  color: #B354E3;
 }
 
 a {
-  background: #34d0e7;
-  color:#000;
+  background: #1DAD63;
+  color:#eee;
   text-decoration:none;
 }
 
@@ -36,7 +39,8 @@ div {
   top:0;
   left:0;
 }
-</style><script type='text/javascript'>
+</style>
+<script type='text/javascript'>
 window.onload = function() {
     var s = document.getElementsByTagName('div'), cur = 0;
     if (!s) return;
@@ -83,48 +87,60 @@ window.onload = function() {
 
     go(cur);
 };
-</script></head><body>
-<div><em>Learn GeoJSON!</em> (and maybe git and GitHub too)</div>
-<div>Where are we at?</div>
-<div>What is <em>GeoJSON</em>?</div>
-<div><em>GeoJSON:</em> geographic data format. (Contains spatial information.)</div>
-<div><em>GeoJSON:</em> extension of JSON, with a specific structure.</div>
-<div>This is what it looks like:</div>
-<div><em>GeoJSON:</em> has room for nested attribute information.</div>
-<div><em>GeoJSON:</em> loved by web mapping libraries.</div>
-<div>For example...</div>
-<div>Also, there's a cool tool for editing <em>GeoJSON</em>called <em>geojson.io</em>!</div>
-<div>(We'll come back to that.)</div>
-<div>What is <em>git</em>?</div>
-<div><em>git:</em> distributed version control system.</div>
-<div><em>git:</em> allows for collaboration without totally screwing everything up.</div>
-<div><em>git:</em> super powerful.</div>
-<div>What is <em>GitHub</em>?</div>
-<div><em>GitHub:</em> a home for lots and lots of code repositories.</div>
-<div><em>GitHub:</em> interacted with using <em>git</em>.</div>
-<div><em>GitHub:</em> provides easy-to-use tools and tutorials for using and learning git to collaborate on and contribute to projects.</div>
-<div><em>GitHub:</em> best friends with <em>GeoJSON</em>! (Renders in a map.)</div>
-<div>Let's check it out!</div>
-<div>Any questions?</div>
-<div>What are we doing today?</div>
-<div>Building collaborative <em>GeoJSON</em> datasets using <em>git</em> and <em>GitHub</em>.</div>
-<div><em>Step one:</em> Make a GitHub account.</div>
-<div><em>Step two:</em> Fork this repo: http://github.com/lyzidiamond/learn-geojson</div>
-<div><em>Step three:</em> Fork this repo: <em>http://github.com/lyzidiamond/learn-geojson/</em>.</div>
-<div>(Instructions on repo's readme...)</div>
-<div>What did we just do?</div>
-<div>We <em>forked</em> a repo!</div>
-<div>We added some data to some files in that repo!</div>
-<div>We <em>commited </em> our changes to the repo!</div>
-<div>We made a pull request to the <em>upstream</em> repo!</div>
-<div>This basic workflow, plus a few other pieces, is how people contribute to projects on GitHub.</div>
-<div>What's next?</div>
-<div>If you wanna contribute in a more traditional way, try a more traditional tutorial.</div>
-<div>Like <em>http://try.github.io</em>.</div>
-<div>Or <em>http://think-like-a-git.net</em>.</div>
-<div>Feel free to add datasets or contribute to the datasets on <em>learn-geojson</em>.</div>
-<div>The best data is the data we make together! :)</div>
-<div>Thanks.</div>
-<div>Lyzi Diamond; @lyzidiamond on everything; lyzidiamond@gmail.com.</div>
-
-</body></html>
+</script>
+</head>
+<body>
+  <div><strong>Hell yes, Leaflet!</strong> (or, Let's Make a Web Map)</div>
+  <div>PLEASE interrupt me to ask questions.</div>
+  <div>To follow along: <strong>http://lyzidiamond.com/maptimepdx/leaflet/</strong></div>
+  <div>While I'm talking, please download a text editor if you don't have one. I recommend Sublime Text 2.</div>
+  <div>First of all: What characterizes a web map?</div>
+  <div>1: <em>Tiles*</em></div>
+  <div>*(This isn't ALWAYS the case, but we'll pretend it is for now.)</div>
+  <div>"... web maps are made up of many small, square images called <em>tiles</em>."</div>
+  <div>"These tiles are typically 256x256 pixels and are placed side-by-side in order to create the illusion of a very large seamless image."</div>
+  <div><a href="http://mapbox.com/developers/guide">(Thanks for the explanation, MapBox!)</a></div>
+  <div>You may be asking yourself: <strong>But what about when I zoom in? How come the resolution stays so good?</strong></div>
+  <div>Well, each <em>zoom level</em> has its own set of tiles!</div>
+  <div>Zoom level 0: <strong>1</strong> tile for the world.</div>
+  <div>[Add image 'zero']</div>
+  <div>With each addtional zoom level, the number of tiles increases exponentially.</div>
+  <div>Zoom level 1: <strong>4</strong> tiles for the world.</div>
+  <div>Zoom level 2: <strong>16</strong> tiles for the world.</div>
+  <div>Any guesses how many tiles are in zoom level 3?</div>
+  <div>Aw yeah, you got it. <strong>64</strong>! Y'all are great at math.</div>
+  <div>Map tiles only render when you're looking at them in that moment, so tiles make maps hella fast.</div>
+  <div>Map tiles are just images on the web, so you can link to them individually.</div>
+  <div>For example: <a href="http://tile.openstreetmap.org/4/2/3.png">http://tile.openstreetmap.org/4/2/3.png</a></div>
+  <div>In order to understand how this works, let's break down the URL.</div>
+  <div>http://<em>tile.openstreetmap.org</em>/4/2/3.png -- this is the name of the tile server.</div>
+  <div>http://tile.openstreetmap.org/<em>4</em>/2/3.png -- this is the z value, or the zoom level.</div>
+  <div>http://tile.openstreetmap.org/4/<em>2/3</em>.png -- This is the y/x value, or the place in the grid where the tile lives.</div>
+  <div>In a little bit, we will look at how to include tiles in our web map.</div>
+  <div>2: <em>Feature Layers*</em></div>
+  <div>Feature layers are map elements that do things when you click on them.</div>
+  <div>They can be raster or vector layers, but often are vector (points, lines, polygons).</div>
+  <div>*(Not every web map contanis a feature layer, but they are fairly typical.</div>
+  <div>What data types can we use for adding feature layers to a web map?</div>
+  <div><a href="http://github.com/lyzidiamond/learn-geojson">GeoJSON</a> is one.</div>
+  <div>KML is another. So is TopoJSON. And even SVG.</div>
+  <div>Some mapping libraries allow you to define vector data points <em>within your script itself.</em></div>
+  <div>But we're getting ahead of ourselves. There's one more thing that makes a web map:</div>
+  <div>3: <em>It's on the web!</em></div>
+  <div>This means you need to embed your map in an <strong>HTML page</strong>.</div>
+  <div>And in order to allow you to zoom and pan and add tooltips, you need some <strong>JavaScript</strong>.</div>
+  <div>Fortunately, we have <strong>mapping libraries</strong> that can help us out!</div>
+  <div>The one we're going to play with today is called <em>Leaflet</em>.</div>
+  <div><a href="http://leafletjs.com">Let's take a look at what Leaflet can do.</a></div>
+  <div>So with all of that functionality available, it should take us no time to make a map!</div>
+  <div>Let's go to it.</div>
+  <div>(This is going to be similar to the <a href="http://leafletjs.com/examples/quick-start.html">Leaflet Quick Start Guide</a>. Some of it is directly from there.)</div>
+  <div>First, open your text editor and save the file as a *.html file.</div>
+  <div>You can call it whatever you want, but make sure the file extension is .html.</div>
+  <div>An HTML file is broken into two parts: <em><code><head></code></em> and <em><code><body></code></em>.</div>
+  <div>The <em><code><head></code></em> section includes all the elements that your page might need to load properly.</div>
+  <div>The <em><code><body></code></em> section includes all the elements that will be rendered on the page.</div>
+  <div>Oh: and the whole thing should be bookended by <em><code><html></code></em> tags.</div>
+  <div>[Add image 'html']</div>
+</body>
+</html>
