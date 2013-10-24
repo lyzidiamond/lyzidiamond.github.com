@@ -57,6 +57,7 @@ window.onload = function() {
         e.style.fontSize = i + 'px';
         if (e.firstChild.nodeName === 'IMG') {
             document.body.style.backgroundImage = 'url(' + e.firstChild.src + ')';
+            document.body.style.width = 100 + '%';
             e.firstChild.style.display = 'none';
         } else {
             document.body.style.backgroundImage = '';
