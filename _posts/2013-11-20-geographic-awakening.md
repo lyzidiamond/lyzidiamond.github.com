@@ -5,7 +5,7 @@ title: 'Geographic Awakening'
 
 # ![Geography Awareness Week](http://education.nationalgeographic.com/media/photos/000/344/custom/34437_610x343.jpg)
 
-This week is [Geographic Awareness Week](http://geographyawarenessweek.org), a whole week dedicated to the study and understanding of our world through a geographic lens. It was established by presidential proclamation in 1987 (pop quiz: who was president in 1987?) in order to promote geographic education in our classrooms and in our lives at large.
+This week is [Geography Awareness Week](http://geographyawarenessweek.org), a whole week dedicated to the study and understanding of our world through a geographic lens. It was established by presidential proclamation in 1987 (pop quiz: who was president in 1987?) in order to promote geographic education in our classrooms and in our lives at large.
 
 Of course, the fact that we have to designate a specific week for the study of geography is a saddening fact. Geography just doesn't exist explicitly in schools anymore, at any level. Yes, including universities. A large part of the problem is that there isn't a clear understanding among the general population of what geography actually *is*. When I tell people I was a geography major, they assume my program involved learning the names and locations of the world's capital cities and hand drawing maps with colored pencils. Before I took my first geography class at the University of Oregon, I thought much the same thing.
 
