@@ -3,7 +3,7 @@ layout: blog
 title: 'What even is TileMill?'
 ---
 
-_The other day, my friend [Dave](http://twitter.com/allafarce) asked me, "Okay. So what even is [TileMill](http://tilemill.com)?" This was my response (with the curse words edited out, and a few links thrown in). I was told it'd be useful to people. Enjoy!_
+_The other day, my friend [Dave](http://twitter.com/allafarce) asked me, "Okay. So what does [TileMill](http://tilemill.com) **actually do**?" This was my response (with the curse words edited out, and a few links thrown in). I was told it'd be useful to people. Enjoy!_
 
 -----------
 
