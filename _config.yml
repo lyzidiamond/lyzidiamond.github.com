@@ -5,6 +5,12 @@ auto: true
 rdiscount:
   extensions: [smart]
 
+analytics:
+  provider: google
+  google:
+    tracking_id: 'UA-47757349-1'
+
+
 name: Victory Formation
 url: http://lyzidiamond.com
 description: Victory formation.
