@@ -88,10 +88,10 @@ h1 {
 
 h2 {
   font-size: 150%;
+  font-weight: bold;
   margin-bottom: 5px;
   margin-top: 5px;
   line-height: 1.5;
-  text-align: center;
 }
 
 h3 {
@@ -103,6 +103,10 @@ p {
   line-height: 1.5;
   margin-bottom: 1.2em;
   margin-top: 1.2em;
+}
+
+ul {
+  margin-bottom: 1.2em;
 }
 
 li {
