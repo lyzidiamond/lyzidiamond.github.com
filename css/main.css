@@ -97,6 +97,7 @@ h2 {
 h3 {
   font-size: 125%;
   line-height: 1.25;
+  margin-top: 5px;
 }
 
 p {
@@ -113,6 +114,11 @@ li {
   list-style: circle;
   line-height: 1.5;
   margin-left: 20px;
+}
+
+img {
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 .left {
