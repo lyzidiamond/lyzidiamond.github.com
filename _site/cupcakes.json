@@ -775,25 +775,6 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    -122.77978062629698,
-                    45.537828054224086
-                ]
-            },
-            "properties": {
-                "name": "Sweet Ambrosia",
-                "address": "2037 NW Miller Road",
-                "website": "http://www.sweetambrosiabakery.com/",
-                "gluten free": "no",
-                "open1": "Monday - Tuesday, Thurdsay, 8am - 5pm",
-                "open2": "Wednesday, Friday, 8am - 8pm",
-                "open3": "Saturday - Sunday, 8am - 3pm"
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
                     -122.80373275279999,
                     45.4876325287077
                 ]

@@ -17,14 +17,11 @@
 
  	</style>
 	<script src="http://cdn.leafletjs.com/leaflet-0.5/leaflet.js"></script>
-	<script src="/js/jquery-1.10.2.min.js"></script>
+	<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
 	<link rel="points" type="application/json" href="./cupcakes.json">
-</head>
 <body>
 	<div id="cupcake-map"></div>
 	<script>
-
-
 	var cupcakeTiles = L.tileLayer('http://a.tiles.mapbox.com/v3/lyzidiamond.map-ietb6srb/{z}/{x}/{y}.png', {
 		maxZoom: 18
 	});
@@ -39,61 +36,6 @@
 		cupcakeTiles.addTo(map);
 		geojson.addTo(map);
 	});
-/*
-	$.getJSON($('link[rel="points"]').attr("href"), function(data) {
-    var geojson = L.geoJson(data, {
-      onEachFeature: function (feature, layer) {
-        layer.bindPopup(feature.properties.title);
-      }
-    });
-    var map = L.map('map').fitBounds(geojson.getBounds());
-    terrain.addTo(map);
-    L.control.layers({
-      "Terrain (default)": terrain,
-      "Streets": streets,
-      "Imperium": imperium,
-      }).addTo(map);
-    var markers = L.markerClusterGroup();
-    markers.addLayer(geojson);
-    map.addLayer(markers);
-  });
-
-		/*
- 
-		function onEachFeature(feature, layer) {
-			if(feature.properties && feature.properties.name) {
-				layer.bindPopup(feature.properties.name);
-			}
-			var info = L.control({position: 'topright'});
-			var project_type = feature.properties.Proj_Typ;
-		};
-
-		var info = L.control({position: 'topright'});
-		var project_type = feature.properties.Proj_Typ;
- 		
- 		// Add tile layer
-		L.tileLayer('http://a.tiles.mapbox.com/v3/lyzidiamond.map-ietb6srb/{z}/{x}/{y}.png', {
-			maxZoom: 13,
-			minZoom: 11,
-		}).addTo(map);
-
-		// Add GeoJSON
-		L.geoJson(cupcakes, 
-		{
-			style: function(feature) {
-				switch (feature.properties.Proj_Typ) {
-					case 'Build Trails': return { stroke: false, fillColor: "#30c5db", fillOpacity: 0.6 };
-					case 'Make Big Streets Safe': return { stroke: false, fillColor: "#979ea3", fillOpacity: 0.6 };
-					case 'Neighborhood Greenways': return { stroke: false, fillColor: "#88c457", fillOpacity: 0.6 };
-					case 'Fix It': return { stroke: false, fillColor: "#fe8e39", fillOpacity: 0.6 };
-				}
-			},
-			onEachFeature: onEachFeature
-		}).addTo(map);
-
-		// Add Project Info
-		legend.addTo(map); */
-
 	</script>
 </body>
 </html>

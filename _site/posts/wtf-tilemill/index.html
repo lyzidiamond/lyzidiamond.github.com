@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <title>
+    
+      What even is TileMill? &ndash;
+    
+    Victory Formation
+  </title>
+
+  <meta name="author" content="Lyzi Diamond" />
+  <meta name="description" content="Victory formation." />
+
+  <link rel="alternate" type="application/rss+xml" href="/atom.xml" />
+
+  <link rel="stylesheet" href="/css/main.css" type="text/css" media="screen, projection" />
+  <link rel="stylesheet" href="/css/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.5/leaflet.css" />
+  <link media="only screen and (max-device-width: 480px)" href="/css/iphone.css" type="text/css" rel="stylesheet" />
+  <link media="only screen and (device-width: 768px)" href="/css/iphone.css" type="text/css" rel="stylesheet" />
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,700italic,400,700,800' rel='stylesheet' type='text/css'>
+  <link rel="apple-touch-icon" href="http://gravatar.com/avatar/029f8c0e50e126f91562b126af9f22dd?s=142" />
+
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="http://cdn.leafletjs.com/leaflet-0.5/leaflet.js"></script>
+  <script type="text/javascript" src="/js/application.js"></script>
+ 
+</head>
+
+<body>
+  <div id='wrapper'>
+    <div class='navigation'>
+      <ul>
+        <a href="/about">
+          <li class='left'>about</li>
+        </a>
+        <a href="/history">
+          <li class='left'>history</li>
+        </a>
+        <a href="/things">
+          <li class='right'>things</li>
+        </a>
+        <a href="/posts">
+          <li class='right'>words</li>
+        </a>
+      </ul>
+    </div>
+    <div class='header'>
+      
+        <h1>What even is TileMill?</h1>
+      
+    </div>
+
+
+  <section class='content'>
+
+  <section class='byline'>
+    Lyzi Diamond | February  4, 2014
+  </section>
+
+  <p><em>The other day, my friend <a href="http://twitter.com/allafarce">Dave</a> asked me, &ldquo;Okay. So what does <a href="http://tilemill.com">TileMill</a> <strong>actually do</strong>?&rdquo; This was my response (with the curse words edited out, and a few links thrown in). I was told it&rsquo;d be useful to people. Enjoy!</em></p>
+
+<hr />
+
+<p><strong>On Tue, Jan 28, 2014 at 3:43 PM, <a href="http://lyzidiamond.com">Lyzi Diamond</a> wrote:</strong></p>
+
+<p>TileMill allows you to load in <a href="http://en.wikipedia.org/wiki/GIS_file_formats#Vector_formats">vector</a> and/or <a href="http://en.wikipedia.org/wiki/GIS_file_formats#Raster_formats">raster</a> data, style it using a language called <a href="https://www.mapbox.com/tilemill/docs/manual/carto/">CartoCSS</a> (often abbreviated &ldquo;carto&rdquo;), and export raster <a href="http://wiki.openstreetmap.org/wiki/Tiles">map tiles</a>. Map tiles can be exported as PNG, SVG, or <a href="https://www.mapbox.com/developers/mbtiles/">MBTiles</a>, which is <a href="http://mapbox.com">Mapbox</a>&rsquo;s format. TileMill also allows you to add feature layers on top of your tiles, which are vector layers that have some sort of interactivity (tooltips, for example).</p>
+
+<p>TileMill only allows you to have one interactivity/feature layer at a time. Typically the interaction involves tooltips. That&rsquo;s the basic interactivity functionality built in to TileMill (you can do more stuff in <a href="http://leafletjs.com">Leaflet</a>, as I&rsquo;m sure you know). Because you&rsquo;re loading in (mostly) vector layers that have a lot of data associated with them (attributes/properties/columns in a database table/whatever else you want to call it), you can pull from that data to make individualized tooltips without hardcoding them. There&rsquo;s more info on how to do that <a href="https://www.mapbox.com/tilemill/docs/crashcourse/tooltips/">here</a>.</p>
+
+<p>Styling vector layers is also a pretty cool thing that can pull from attribute information &ndash; if you wanted to make <a href="http://wiki.gis.com/wiki/index.php/Graduated_Symbols">graduated symbols</a> based on the values of some attribute, you can do that within CartoCSS. There&rsquo;s a lot of functionality there. You can read more about styling in TileMill <a href="https://www.mapbox.com/tilemill/docs/manual/carto/">here</a>.</p>
+
+<p>The bread and butter of TileMill is obviously tiles. It seems really trivial, right? Why can&rsquo;t I just draw some crap on some images and put those images in a map? There are a few reasons.</p>
+
+<p>A map tile is a very specific thing. Map tiles are 256x256 pixel images that are placed side by side inside of a web map to give the illusion of one very large, seamless image. Maps have specific zoom levels that are explicitly defined, from zoom level 0 through zoom level 20. Zoom level 0 is one tile for the whole world. It looks like this:</p>
+
+<p><img src="/images/zoom0.png" alt="Zoom Level 0" /></p>
+
+<p>Zoom level 1 is four tiles for the whole world, in a 2x2 grid. Zoom level 2 is 16 tiles for the whole world, in a 4x4 grid. You see where this is going.</p>
+
+<p>Zoom levels are the same across all tilesets. Zoom level 0 is always going to be one tile for the world, 1 will be four tiles, etc. You can imagine that the whole world at zoom level 20 gets pretty unwieldy. It&rsquo;s a <strong>lot</strong> of data. When you&rsquo;re zoomed way in and panning around a map, only the tiles that are being viewed are rendered, and then cached. It&rsquo;s actually quite efficient and does create the illusion of a seamless image, because you are only ever rendering a subset of the tiles, which doesn&rsquo;t take very long.</p>
+
+<p>The URL for the tile above is http://a.tiles.mapbox.com/v3/lyzidiamond.map-ietb6srb/0/0/0.png. The first part is obviously the server. The last three numbers, as I&rsquo;m sure you&rsquo;ve figured out, delineate the zoom level and the x/y location of that particular tile in the grid. Zoom 0 is a pretty bad example of this. Let&rsquo;s go to zoom 1.</p>
+
+<p><img src="/images/zoom-1-1-0.png" alt="Zoom Level 1" /></p>
+
+<p>This is the tile in the first row in the second column of the zoom level 1 2x2 grid. Its URL is http://a.tiles.mapbox.com/v3/lyzidiamond.map-ietb6srb/1/1/0.png. You can see that at the end of the URL, it shows us that we&rsquo;re looking at a tile from zoom level 1 in the 1, 0 part of the grid.</p>
+
+<p><img src="/images/tilegrid.png" alt="Tile Grid" /></p>
+
+<p>Two more, way zoomed in, just for fun:</p>
+
+<p><img src="/images/zoom-12-1009-1878.png" alt="Zoom Level 12" /></p>
+
+<p>URL: http://a.tiles.mapbox.com/v3/lyzidiamond.map-ietb6srb/12/1009/1878.png</p>
+
+<p><img src="/images/zoom-12-1009-1879.png" alt="Zoom Level 12" /></p>
+
+<p>URL: http://a.tiles.mapbox.com/v3/lyzidiamond.map-ietb6srb/12/1009/1879.png, or the tile right below the previous one. Get it? Pretty cool, right?</p>
+
+<p>So you&rsquo;ve now deduced that there&rsquo;s a pretty rigorous file structure that is required to manage all of this.</p>
+
+<p><img src="/images/tile-files.png" alt="Tile File Structure" /></p>
+
+<p>Notice that in this image, it doesn&rsquo;t have every zoom level, or even the entirety of the grid. TileMill will ask you for a) a geographic area and b) the number of zoom levels you want before you export. If you&rsquo;re trying to do something too epically large, or with a ton of layers that are going to be annoying/resource-consuming to render down, it&rsquo;ll give you a nice little warning, along the lines of &ldquo;HEY JERKFACE WE DON&rsquo;T WANNA DO THAT FIX YR STUFF.&rdquo; But nicer. Then they export your tiles into this file structure, and indeed host them as well. If they&rsquo;re hosting a ton of your crap or you&rsquo;re getting a ton of views, they ask you to pay them.</p>
+
+<p>(Mostly, these are PNGs. Mapbox likes its MBTiles format for a bunch of reasons, one of which is that some tiles [particularly in the middle of water bodies] are always going to look the same, at every zoom level and in any location. You can read them loving on it more <a href="https://www.mapbox.com/developers/mbtiles/">here</a>.)</p>
+
+<p><em>(Editor&rsquo;s note: the original version of the following paragraph was incorrect, so I&rsquo;ve included an updated version here.)</em></p>
+
+<p>Okay, on to <a href="http://wiki.openstreetmap.org/wiki/Vector_tiles">vector tiles</a>. <a href="https://www.mapbox.com/blog/vector-tiles/">Vector tiles</a> use data structure magic (<a href="http://en.wikipedia.org/wiki/Protocol_Buffers">protocol buffers</a>) to store all sorts of information you&rsquo;d have in a geographic vector data layer and then renders it into images on the fly. This makes it really awesomely space-efficient; the entirety of <a href="http://openstreetmap.org">OpenStreetMap</a>&rsquo;s data as vector tiles can fit on just about 60GB, <a href="https://vine.co/v/b0DvTPnpPtw">small enough to fit on a thumb drive</a>.</p>
+
+<p>Vector tiles are going to be a part of TileMill2 when it&rsquo;s released, which will also come pre-loaded with the whole world in OSM vectors. Seriously. Mapbox is maybe the coolest company ever of ever.</p>
+
+<p>I&rsquo;m pretty sure I missed some stuff. Let me know if you have any other questions. Sorry I wrote an essay, but that&rsquo;s kind of what I do.</p>
+
+
+</section>
+
+    <div class='footer'>
+      <a href="/">home</a>
+    </div>
+  </div>
+   <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-47757349-1', 'lyzidiamond.com');
+  ga('send', 'pageview');
+
+</script>
+</body>
+
+</html>

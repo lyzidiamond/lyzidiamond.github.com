@@ -7,7 +7,7 @@ body {
 }
 
 a {
-  color: #a561ea;
+  color: #912CEE;
   font-weight: bold;
   text-decoration: none; }
 
@@ -89,7 +89,7 @@ a {
     font-size: 30px;
     margin-bottom: 15px;}
   .content h2 a {
-    color: #a561ea;
+    color: #912CEE;
     text-decoration: none; }
   .content h3 {
     font-family: 'Chivo', Helvetica, sans-serif;
@@ -98,7 +98,7 @@ a {
     color: #111;
     font-size: 20px; }
   .content h3 a {
-    color: #a561ea;
+    color: #912CEE;
     text-decoration: none; }
   .content h4 {
     color: #111;
@@ -106,19 +106,21 @@ a {
     font-weight: 600;
     line-height: 10%; }
   .content h4 a {
-    color: #a561ea;
+    color: #912CEE;
     text-decoration: none; }
   .content p {
     font-size: 19px;
     margin-top: 0;
     margin-bottom: 1.2em;
     line-height: 1.25em; }
-    .content p code {
-      font-size: 12px;
-      background-color: #eeeeee;
-      border: 1px solid #777777;
-      border-radius: 3px;
-      padding: 2px 3px; }
+  .content code {
+    display: inline-block;
+    font-family: Courier;
+    font-size: 12px;
+    background-color: #bbb;
+    border: 1px solid #777777;
+    border-radius: 3px;
+    padding: 2px 3px; }
   .content img {
     padding: 3px;
     border: 1px solid #eeeeee;
