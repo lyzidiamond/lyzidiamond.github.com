@@ -4,7 +4,7 @@
  <title>Victory Formation</title>
  <link href="http://lyzidiamond.com/atom.xml" rel="self"/>
  <link href="http://lyzidiamond.com/"/>
- <updated>2014-02-15T18:35:32-05:00</updated>
+ <updated>2014-03-04T15:46:51-08:00</updated>
  <id>http://lyzidiamond.com</id>
  <author>
    <name>Victory Formation</name>
@@ -12,9 +12,80 @@
  
  
  <entry>
+   <title>Building a LocalWiki Changebot</title>
+   <link href="http://lyzidiamond.com/posts/localwiki-changebots"/>
+   <updated>2014-03-03T00:00:00-08:00</updated>
+   <id>http://lyzidiamond.com/posts/localwiki-changebots</id>
+   <content type="html">&lt;h1&gt;&lt;img src=&quot;/images/lexwiki.png&quot; alt=&quot;LexingtonWiki&quot; /&gt;&lt;/h1&gt;
+
+&lt;p&gt;One thing that became obvious soon after becoming part of the Code for America family was the abundance of communit-focused wikis – sites where anyone can contribute, intended to facilitate community around shared knowledge. Some cities have very successful and robust wikis (I&amp;rsquo;m looking at you, &lt;a href=&quot;http://oaklandwiki.org&quot;&gt;OaklandWiki&lt;/a&gt;), but others have some work to do to catch up.&lt;/p&gt;
+
+&lt;p&gt;During National Day of Civic Hacking last year in Lexington, &lt;a href=&quot;http://openlexington.org&quot;&gt;OpenLexington&lt;/a&gt; (the local &lt;a href=&quot;http://brigade.codeforamerica.org&quot;&gt;Code for America brigade&lt;/a&gt;) launched &lt;a href=&quot;http://lexington-wiki.org&quot;&gt;LexingtonWiki&lt;/a&gt;, which is built on &lt;a href=&quot;http://localwiki.org&quot;&gt;LocalWiki&lt;/a&gt;. Unfortunately, it hasn&amp;rsquo;t yet gotten much traction, which is a huge bummer! The &lt;a href=&quot;http://teambiglex.tumblr.com&quot;&gt;Lexingteam&lt;/a&gt; thought it might be cool to have &lt;a href=&quot;http://twitter.com/openlexington&quot;&gt;Twitter notifications&lt;/a&gt; when a page on the wiki is edited/updated to try and publicize the wiki and get more folks editing. Turns out it&amp;rsquo;s a pretty easy thing to set up.&lt;/p&gt;
+
+&lt;h2&gt;This is how we did it:&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Every LocalWiki instance has a Recent Changes page, and there&amp;rsquo;s a pretty cool but casually hidden/relatively unkown feed for those changes. It lives at &lt;code&gt;http://[your wiki&#39;s URL]/Recent_Changes/_feed&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;h1&gt;&lt;img src=&quot;/images/wiki_feed.png&quot; alt=&quot;Wiki Feed&quot; /&gt;&lt;/h1&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Discovering that feed was like, 90% of the challenge. From there, we set up a recipe in &lt;a href=&quot;http://ifttt.com&quot;&gt;IFTTT&lt;/a&gt; to automatically tweet when that feed was updated.&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;h1&gt;&lt;img src=&quot;/images/wikibot_ifttt.png&quot; alt=&quot;Wikibot Recipe&quot; /&gt;&lt;/h1&gt;
+
+&lt;p&gt;&lt;em&gt;IFTTT stands for IF This Then That. It&amp;rsquo;s a service that allows you to combine internet services – in this case, a connecting a feed update to Twitter. People use IFTTT for all kinds of stuff: &lt;a href=&quot;https://ifttt.com/recipes/83847-text-me-today-s-forecast-each-morning&quot;&gt;getting a text message every day with the day&amp;rsquo;s forecast&lt;/a&gt;, &lt;a href=&quot;https://ifttt.com/recipes/102384-backup-my-contacts-to-a-google-spreadsheet&quot;&gt;backing up their contacts to a Google Spreadsheet&lt;/a&gt;, or &lt;a href=&quot;https://ifttt.com/recipes/1552-instagram-dropbox&quot;&gt;saving their Instagram photos to Dropbox&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Setting up a recipe in IFTTT is pretty easy. After you get an account and log in, click &lt;strong&gt;Create a Recipe&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;h1&gt;&lt;img src=&quot;/images/create_recipe.png&quot; alt=&quot;Create a Recipe&quot; /&gt;&lt;/h1&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Click the link where it says &lt;strong&gt;&amp;ldquo;this&amp;rdquo;&lt;/strong&gt; and select Feed from the list of triggers.&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;h1&gt;&lt;img src=&quot;/images/click_feed.png&quot; alt=&quot;Click Feed&quot; /&gt;&lt;/h1&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Since every item added to the feed is a new change, you can select &lt;strong&gt;New feed item&lt;/strong&gt; as your trigger.&lt;/li&gt;
+&lt;li&gt;Copy and paste the URL for the feed into the box provided and click &lt;strong&gt;Create Trigger&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;h1&gt;&lt;img src=&quot;/images/create_trigger.png&quot; alt=&quot;Create Trigger&quot; /&gt;&lt;/h1&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Click where it says &lt;strong&gt;&amp;ldquo;that&amp;rdquo;&lt;/strong&gt; and choose &lt;strong&gt;Twitter&lt;/strong&gt; as your action channel. You will probably have to set up IFTTT such that it can interact with your Twitter account, if you haven&amp;rsquo;t already.&lt;/li&gt;
+&lt;li&gt;Under Choose an Action, click &lt;strong&gt;Post a tweet&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Now you can compose your tweet. The &lt;code&gt;EntryTitle&lt;/code&gt; and &lt;code&gt;EntryUrl&lt;/code&gt; fields will be automatically populated from the feed. The rest of the tweet is all yours to compose! When you&amp;rsquo;re done, click &lt;strong&gt;Create Action&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;h1&gt;&lt;img src=&quot;/images/create_action.png&quot; alt=&quot;Create Action&quot; /&gt;&lt;/h1&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Look over everything to make sure you like it, and then click Create Recipe.&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;h2&gt;Boom!&lt;/h2&gt;
+
+&lt;p&gt;You have a LocalWikiBot. Recipes on IFTTT are triggered automatically every 15 minutes, so if you have a lot of edits, expect a flood of tweets on that mark. You can also set up your bot to have an action outside of Twitter: check out the full list of possible channels &lt;a href=&quot;https://ifttt.com/channels&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
    <title>What even is TileMill?</title>
    <link href="http://lyzidiamond.com/posts/wtf-tilemill"/>
-   <updated>2014-02-04T00:00:00-05:00</updated>
+   <updated>2014-02-04T00:00:00-08:00</updated>
    <id>http://lyzidiamond.com/posts/wtf-tilemill</id>
    <content type="html">&lt;p&gt;&lt;em&gt;The other day, my friend &lt;a href=&quot;http://twitter.com/allafarce&quot;&gt;Dave&lt;/a&gt; asked me, &amp;ldquo;Okay. So what does &lt;a href=&quot;http://tilemill.com&quot;&gt;TileMill&lt;/a&gt; &lt;strong&gt;actually do&lt;/strong&gt;?&amp;rdquo; This was my response (with the curse words edited out, and a few links thrown in). I was told it&amp;rsquo;d be useful to people. Enjoy!&lt;/em&gt;&lt;/p&gt;
 
@@ -77,7 +148,7 @@
  <entry>
    <title>Geographic Awakening</title>
    <link href="http://lyzidiamond.com/posts/geographic-awakening"/>
-   <updated>2013-11-20T00:00:00-05:00</updated>
+   <updated>2013-11-20T00:00:00-08:00</updated>
    <id>http://lyzidiamond.com/posts/geographic-awakening</id>
    <content type="html">&lt;h1&gt;&lt;img src=&quot;http://education.nationalgeographic.com/media/photos/000/344/custom/34437_610x343.jpg&quot; alt=&quot;Geography Awareness Week&quot; /&gt;&lt;/h1&gt;
 
@@ -98,7 +169,7 @@
  <entry>
    <title>Open Source FTW!</title>
    <link href="http://lyzidiamond.com/posts/open-source-ftw"/>
-   <updated>2013-10-01T00:00:00-04:00</updated>
+   <updated>2013-10-01T00:00:00-07:00</updated>
    <id>http://lyzidiamond.com/posts/open-source-ftw</id>
    <content type="html">&lt;p&gt;For some time, I&amp;rsquo;ve been frustrated with the lack of social spaces for developers to work together on map-related projects here in Portland. There are &lt;a href=&quot;http://calagator.org&quot;&gt;language-specific meetups&lt;/a&gt;, and there are definitely people hacking on spatial projects at those, but it&amp;rsquo;s in the context of the programming language, not the field of geospatial tech. I have also long been fascinated with the pedagogical issues of teaching developers about geographic principles and geographers about computer programming. I began wondering: is there a place for a meetup like this in Portland?&lt;/p&gt;
 
@@ -170,7 +241,7 @@
  <entry>
    <title>External GeoJSON and Leaflet: The Other Way(s)</title>
    <link href="http://lyzidiamond.com/posts/external-geojson-and-leaflet-the-other-way"/>
-   <updated>2013-09-24T00:00:00-04:00</updated>
+   <updated>2013-09-24T00:00:00-07:00</updated>
    <id>http://lyzidiamond.com/posts/external-geojson-and-leaflet-the-other-way</id>
    <content type="html">&lt;p&gt;I will always be a student. In the wide world of geospatial technology, we are all going to be students forever. So when someone from Twitter tells me a better way to do something that seems intuitive and worthwhile, I have no problem sharing it with the world, even when it contradicts something I said before.&lt;/p&gt;
 
@@ -350,7 +421,7 @@ var geojsonLayer = new L.GeoJSON.AJAX(&quot;http:example.com/cupcakes.jsonp&quot
  <entry>
    <title>Commit or Quit</title>
    <link href="http://lyzidiamond.com/posts/commit-or-quit"/>
-   <updated>2013-09-23T00:00:00-04:00</updated>
+   <updated>2013-09-23T00:00:00-07:00</updated>
    <id>http://lyzidiamond.com/posts/commit-or-quit</id>
    <content type="html">&lt;h1&gt;&lt;img src=&quot;http://b.vimeocdn.com/ts/130/674/130674832_640.jpg&quot;&gt;&lt;/h1&gt;
 
@@ -396,7 +467,7 @@ var geojsonLayer = new L.GeoJSON.AJAX(&quot;http:example.com/cupcakes.jsonp&quot
  <entry>
    <title>Adding GeoJSON to Leaflet with Link Relations</title>
    <link href="http://lyzidiamond.com/posts/osgeo-august-meeting"/>
-   <updated>2013-08-22T00:00:00-04:00</updated>
+   <updated>2013-08-22T00:00:00-07:00</updated>
    <id>http://lyzidiamond.com/posts/osgeo-august-meeting</id>
    <content type="html">&lt;p&gt;&lt;em&gt;Wednesday night, I was fortunate to attend the August meeting of PDX OSGEO, Portland&amp;rsquo;s meetup for open source geo shenanigans. I learned some new stuff, got to see a &lt;a href=&quot;http://www.mapbox.com/blog/weekend-hack-printing-3d-tiles/&quot;&gt;3D-printed map tile&lt;/a&gt; (!!!!!), and got a chance to show off some of my recent work. The bulk of my contribution to the meeting was showing off a new technique for adding GeoJSON to a Leaflet map. This is an overview of what I talked about, with more detail and background.&lt;/em&gt;&lt;/p&gt;
 
@@ -627,7 +698,7 @@ var geojsonLayer = new L.GeoJSON.AJAX(&quot;http:example.com/cupcakes.jsonp&quot
  <entry>
    <title>geojson.io: In-browser spatial data creation and sharing. Finally.</title>
    <link href="http://lyzidiamond.com/posts/geojson-io"/>
-   <updated>2013-08-12T00:00:00-04:00</updated>
+   <updated>2013-08-12T00:00:00-07:00</updated>
    <id>http://lyzidiamond.com/posts/geojson-io</id>
    <content type="html">&lt;p&gt;&lt;em&gt;This post originally appeared on &lt;a href=&quot;http://giscollective.org&quot;&gt;GIS Collective&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
 
@@ -657,7 +728,7 @@ var geojsonLayer = new L.GeoJSON.AJAX(&quot;http:example.com/cupcakes.jsonp&quot
  <entry>
    <title>Local Governments and Open Data</title>
    <link href="http://lyzidiamond.com/posts/local-gov-open-data"/>
-   <updated>2013-08-04T00:00:00-04:00</updated>
+   <updated>2013-08-04T00:00:00-07:00</updated>
    <id>http://lyzidiamond.com/posts/local-gov-open-data</id>
    <content type="html">&lt;p&gt;&lt;em&gt;I wrote this on Facebook the other day, and my friend &lt;a href=&quot;http://twitter.com/mapadelphia&quot;&gt;Sarah&lt;/a&gt; asked me to write it as a blog post so she could share it with others. I do agree that it&amp;rsquo;s something others need to read: local governments aren&amp;rsquo;t going to move toward shared/open data models until a) they&amp;rsquo;ve received funding to do so, or b) they&amp;rsquo;re convinced it&amp;rsquo;s mutually beneficial. The latter is likelier than the former. Let&amp;rsquo;s start some conversations.&lt;/em&gt;&lt;/p&gt;
 
@@ -673,7 +744,7 @@ var geojsonLayer = new L.GeoJSON.AJAX(&quot;http:example.com/cupcakes.jsonp&quot
  <entry>
    <title>Geographic Data Assumptions: MAUP and Ecological Fallacies</title>
    <link href="http://lyzidiamond.com/posts/geographic-data-assumptions"/>
-   <updated>2013-07-02T00:00:00-04:00</updated>
+   <updated>2013-07-02T00:00:00-07:00</updated>
    <id>http://lyzidiamond.com/posts/geographic-data-assumptions</id>
    <content type="html">&lt;p&gt;&lt;em&gt;This post originally appeared on &lt;a href=&quot;http://giscollective.org&quot;&gt;GIS Collective&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
 
@@ -741,7 +812,7 @@ var geojsonLayer = new L.GeoJSON.AJAX(&quot;http:example.com/cupcakes.jsonp&quot
  <entry>
    <title>GitHub and GeoJSON: Just Keeps Getting Better</title>
    <link href="http://lyzidiamond.com/posts/github-geojson-gets-better"/>
-   <updated>2013-06-26T00:00:00-04:00</updated>
+   <updated>2013-06-26T00:00:00-07:00</updated>
    <id>http://lyzidiamond.com/posts/github-geojson-gets-better</id>
    <content type="html">&lt;p&gt;&lt;em&gt;This post originally appeared on &lt;a href=&quot;http://giscollective.org&quot;&gt;GIS Collective&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
 
@@ -774,7 +845,7 @@ var geojsonLayer = new L.GeoJSON.AJAX(&quot;http:example.com/cupcakes.jsonp&quot
  <entry>
    <title>GitHub: Bringing GeoJSON To Life Since 2013</title>
    <link href="http://lyzidiamond.com/posts/github-geojson"/>
-   <updated>2013-06-17T00:00:00-04:00</updated>
+   <updated>2013-06-17T00:00:00-07:00</updated>
    <id>http://lyzidiamond.com/posts/github-geojson</id>
    <content type="html">&lt;p&gt;&lt;em&gt;This post originally appeared on &lt;a href=&quot;http://giscollective.org&quot;&gt;GIS Collective&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
 
@@ -865,7 +936,7 @@ var geojsonLayer = new L.GeoJSON.AJAX(&quot;http:example.com/cupcakes.jsonp&quot
  <entry>
    <title>Remembering an Old Friend</title>
    <link href="http://lyzidiamond.com/posts/stephen-person"/>
-   <updated>2013-06-03T00:00:00-04:00</updated>
+   <updated>2013-06-03T00:00:00-07:00</updated>
    <id>http://lyzidiamond.com/posts/stephen-person</id>
    <content type="html">&lt;p&gt;&lt;em&gt;Note: Stephen Alan Person, one of my very good friends, passed away from injuries sustained in a drunk driving incident on Tuesday, May 28, 2013. I&amp;rsquo;ve been trying to write about him since it happened, but it&amp;rsquo;s been so difficult. This is my first attempt, some assorted thoughts on the passing of a special man who touched a lot of lives. Stephen, I miss you so much. I can&amp;rsquo;t wait for all of the adventures we&amp;rsquo;ll have again someday. You&amp;rsquo;re in my thoughts always.&lt;/em&gt;&lt;/p&gt;
 
@@ -890,7 +961,7 @@ var geojsonLayer = new L.GeoJSON.AJAX(&quot;http:example.com/cupcakes.jsonp&quot
  <entry>
    <title>Getting a Good (GIS) Job, Part 1</title>
    <link href="http://lyzidiamond.com/posts/getting-a-good-job-pt-1"/>
-   <updated>2013-05-07T00:00:00-04:00</updated>
+   <updated>2013-05-07T00:00:00-07:00</updated>
    <id>http://lyzidiamond.com/posts/getting-a-good-job-pt-1</id>
    <content type="html">&lt;p&gt;Last week, I was asked by the &lt;a href=&quot;http://orurisayp.org&quot;&gt;ORURISA Young Professionals&lt;/a&gt; to give a short talk about the transition from completing a geogrpahy or GIS degree to becoming employed in the field of geospatial. There were around eight of us who gave short talks, and each of us had good pieces of advice to share. I thought the whole thing was very valuable, albeit poorly-attended, so I&amp;rsquo;m going to attempt to recreate some of that advice here. Although the talk was GIS-oriented and some of the conversation was specific to geospatial careers, I feel that a lot of the advice is applicable to job hunters regardless of field.&lt;/p&gt;
 
@@ -956,7 +1027,7 @@ var geojsonLayer = new L.GeoJSON.AJAX(&quot;http:example.com/cupcakes.jsonp&quot
  <entry>
    <title>Every Second</title>
    <link href="http://lyzidiamond.com/posts/everysecond"/>
-   <updated>2013-05-02T00:00:00-04:00</updated>
+   <updated>2013-05-02T00:00:00-07:00</updated>
    <id>http://lyzidiamond.com/posts/everysecond</id>
    <content type="html">&lt;p&gt;&lt;em&gt;This is an email I just sent to my sister, Kimberly. I thought some of you might enjoy it as well. (Note: I may or may not have been inspired by &lt;a href=&quot;http://xkcd.com/1205/&quot;&gt;this xkcd comic&lt;/a&gt;).&lt;/em&gt;&lt;/p&gt;
 
@@ -983,7 +1054,7 @@ var geojsonLayer = new L.GeoJSON.AJAX(&quot;http:example.com/cupcakes.jsonp&quot
  <entry>
    <title>If At First You Don't Succeed...</title>
    <link href="http://lyzidiamond.com/posts/trytryagain"/>
-   <updated>2013-04-24T00:00:00-04:00</updated>
+   <updated>2013-04-24T00:00:00-07:00</updated>
    <id>http://lyzidiamond.com/posts/trytryagain</id>
    <content type="html">&lt;p&gt;&lt;em&gt;&amp;ldquo;You&amp;rsquo;re talking a lot, but you&amp;rsquo;re not saying anything.&amp;rdquo;&lt;/em&gt;&lt;/p&gt;
 
@@ -1018,7 +1089,7 @@ var geojsonLayer = new L.GeoJSON.AJAX(&quot;http:example.com/cupcakes.jsonp&quot
  <entry>
    <title>Circumlocution and Code</title>
    <link href="http://lyzidiamond.com/posts/circumlocution"/>
-   <updated>2013-04-09T00:00:00-04:00</updated>
+   <updated>2013-04-09T00:00:00-07:00</updated>
    <id>http://lyzidiamond.com/posts/circumlocution</id>
    <content type="html">&lt;p&gt;&lt;em&gt;&amp;ldquo;¿Cómo se dice &amp;lsquo;roommate&amp;rsquo; en español?&amp;rdquo;&lt;/em&gt;&lt;/p&gt;
 
@@ -1051,7 +1122,7 @@ var geojsonLayer = new L.GeoJSON.AJAX(&quot;http:example.com/cupcakes.jsonp&quot
  <entry>
    <title>The Secret To Productivity? Forgiveness.</title>
    <link href="http://lyzidiamond.com/posts/productivity-forgiveness"/>
-   <updated>2013-04-03T00:00:00-04:00</updated>
+   <updated>2013-04-03T00:00:00-07:00</updated>
    <id>http://lyzidiamond.com/posts/productivity-forgiveness</id>
    <content type="html">&lt;p&gt;I have often been given the advice, &amp;ldquo;Don&amp;rsquo;t try to do everything. You will never succeed. Instead, try to do one or two things at a time, really well.&amp;rdquo;&lt;/p&gt;
 
@@ -1078,7 +1149,7 @@ var geojsonLayer = new L.GeoJSON.AJAX(&quot;http:example.com/cupcakes.jsonp&quot
  <entry>
    <title>Fork, brook, run? A neat toponym visualization by a UO geographer.</title>
    <link href="http://lyzidiamond.com/posts/fork-brook-run"/>
-   <updated>2011-11-24T00:00:00-05:00</updated>
+   <updated>2011-11-24T00:00:00-08:00</updated>
    <id>http://lyzidiamond.com/posts/fork-brook-run</id>
    <content type="html">&lt;p&gt;&lt;img src=&quot;http://lyzidiamond.files.wordpress.com/2011/11/dwatkins_usstreamnames_big.png&quot; width=&quot;100%&quot;&gt;&lt;/p&gt;
 
@@ -1102,7 +1173,7 @@ var geojsonLayer = new L.GeoJSON.AJAX(&quot;http:example.com/cupcakes.jsonp&quot
  <entry>
    <title>Scale Unimaginable: The Intersection of Art and Cart</title>
    <link href="http://lyzidiamond.com/posts/scale-unimaginable"/>
-   <updated>2011-11-21T00:00:00-05:00</updated>
+   <updated>2011-11-21T00:00:00-08:00</updated>
    <id>http://lyzidiamond.com/posts/scale-unimaginable</id>
    <content type="html">&lt;h1&gt;&lt;img src=&quot;http://lyzidiamond.files.wordpress.com/2011/11/monarchs.jpeg&quot;&gt;&lt;/h1&gt;
 
@@ -1132,7 +1203,7 @@ var geojsonLayer = new L.GeoJSON.AJAX(&quot;http:example.com/cupcakes.jsonp&quot
  <entry>
    <title>Maps Can Save Lives: A true story of GPS and the importance of navigation</title>
    <link href="http://lyzidiamond.com/posts/maps-can-save-lives"/>
-   <updated>2011-05-15T00:00:00-04:00</updated>
+   <updated>2011-05-15T00:00:00-07:00</updated>
    <id>http://lyzidiamond.com/posts/maps-can-save-lives</id>
    <content type="html">&lt;p&gt;Global positioning systems have ostensibly become the new atlases — most if not all new vehicles have internal GPS mapping devices, rendering old-school paper maps obsolete. But as drivers and navigators become more reliant on these devices, their safety may be put in severe danger.&lt;/p&gt;
 
@@ -1158,7 +1229,7 @@ Outdoor experts recommend always carrying several maps and plenty of water and f
  <entry>
    <title>On Design</title>
    <link href="http://lyzidiamond.com/posts/on-design"/>
-   <updated>2010-12-20T00:00:00-05:00</updated>
+   <updated>2010-12-20T00:00:00-08:00</updated>
    <id>http://lyzidiamond.com/posts/on-design</id>
    <content type="html">&lt;blockquote&gt;
   &lt;p&gt;Cartography is fast becoming the most practical comparative basis for integrating and reducing the vast reaches of modern information. If the geographer seeks to define a domain in terms of space in order to discover regions, and if the historian seeks to define a domain in terms of space and time in order to discover civilizations, the cartographer can be said to use space in order to inform us about all conceivable domains.&lt;/p&gt;
@@ -1171,7 +1242,7 @@ Outdoor experts recommend always carrying several maps and plenty of water and f
  <entry>
    <title>The Skilled Pedestrian</title>
    <link href="http://lyzidiamond.com/posts/the-skilled-pedestrian"/>
-   <updated>2010-11-07T00:00:00-04:00</updated>
+   <updated>2010-11-07T00:00:00-07:00</updated>
    <id>http://lyzidiamond.com/posts/the-skilled-pedestrian</id>
    <content type="html">&lt;blockquote&gt;
   &lt;p&gt;The pedestrian is a social being: he is also a transportation unit, and a marvelously complex and efficient one. He is self-contained, self-propelled, and moves forward with a field of vision about 100 degrees wide, further widening this with back-and-forth scanning movements to almost 180 degrees. He monitors a host of equations: two crossing patterns at left front, 290 feet a minute, three on the right, angle on the cars 30 degrees and closing, a pair abreast dead ahead, a traffic light starting to flash DON’T WALK. In fractions of a second he responds with course shifts, accelerations, and retards, and he signals to others that he is doing so. Think of the orders and computers it would take to match him! Transportation engineers are spending millions on developing automated people-mover systems. But the best, by far, is a person.&lt;/p&gt;
@@ -1184,7 +1255,7 @@ Outdoor experts recommend always carrying several maps and plenty of water and f
  <entry>
    <title>Field Thoughts</title>
    <link href="http://lyzidiamond.com/posts/field-thoughts"/>
-   <updated>2010-08-06T00:00:00-04:00</updated>
+   <updated>2010-08-06T00:00:00-07:00</updated>
    <id>http://lyzidiamond.com/posts/field-thoughts</id>
    <content type="html">&lt;blockquote&gt;
   &lt;p&gt;Geography is the study of relations between society and the natural environment. Geography looks at how society shapes, alters, and increasingly transforms the natural environment, creating humanized forms from stretches of pristine nature, and then sedimenting layers of socialization one within the other, one on top of the other, until a complex natural-social landscape results. Geography also looks at how nature conditions society, in some original sense of creating the people and raw materials which social forces “work up” into culture, and in an ongoing sense of placing limits and offering material potentials for social processes like economic development. The “relation” between society and nature is thus an entire system, a complex of interrelations. What was once a causal relationship mainly in one direction (the formation of humanity during natural evolution) becomes an equally causal interrelationship in the reverse direction (social evolution alters the “natural” environment). In this way, human activity continually remakes its natural context — nature comes to be socially constructed, in the sense both of social and economic forces remaking landscapes, and of the intervention of ideas and discourses. Understanding this system of relations requires that geographers be sophisticated natural and social scientists, find ways of combining the two, know the methods and be excited by the insights of both aspects of knowledge. Thus, the synthetic core of geography is a study of nature-society interrelations.&lt;/p&gt;

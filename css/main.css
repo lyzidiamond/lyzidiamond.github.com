@@ -119,6 +119,7 @@ li {
 img {
   margin-top: 5px;
   margin-bottom: 5px;
+  border: 1px solid;
 }
 
 .left {
@@ -133,6 +134,10 @@ img {
 
 .text-center {
   text-align: center;
+}
+
+.content img {
+  max-width: 800px;
 }
 
 #wrapper {
