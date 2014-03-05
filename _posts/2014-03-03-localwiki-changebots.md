@@ -11,7 +11,8 @@ During National Day of Civic Hacking last year in Lexington, [OpenLexington](htt
 
 ## This is how we did it:
 
-- Every LocalWiki instance has a Recent Changes RSS feed, and there's a pretty cool but casually hidden/relatively unkown feed for those changes. It lives at `http://[your wiki's URL]/Recent_Changes/_feed`. Discovering that feed was like, 90% of the challenge. From there, we set up a recipe in [IFTTT](http://ifttt.com) to automatically tweet when that feed was updated.
+- Every LocalWiki instance has a Recent Changes RSS feed, and there's a pretty cool but casually hidden/relatively unkown feed for those changes. It lives at `http://[your wiki's URL]/Recent_Changes/_feed`.
+- Discovering that feed was like, 90% of the challenge. From there, we set up a recipe in [IFTTT](http://ifttt.com) to automatically tweet when that feed was updated.
 
 # ![Wikibot Recipe](/images/wikibot_ifttt.png)
 
