@@ -2,10 +2,20 @@
 <html>
 <head>
 	<script src='flickrapi.js'></script>
+	<script src='http://code.jquery.com/jquery-1.11.0.min.js'></script>
 </head>
 <body>
-	<h1>Flickr photos for location: [37.7703428969378,
-	lon: -122.436848957005]</h1>
+	<h1>Flickr photos</h1>
+	<div id='input'>
+		<form id='latlng'>
+			<fieldset>
+				<legend>Enter a latitude and longitude</legend>
+				<input type='text' id='lat' name='valueId1' value=''/>
+				<input type='text' id='lon' name='valueId2' value=''/>
+				<input type='submit' id='button' value='Submit' />
+			</fieldset>
+		</form>
+	</div>
 	<div id='result'></div>
 	<script src='geo_flickr_search.js'></script>
 </body>
