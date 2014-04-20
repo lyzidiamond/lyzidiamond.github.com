@@ -116,7 +116,7 @@ li {
   margin-left: 20px;
 }
 
-img {
+img .inline {
   margin-top: 5px;
   margin-bottom: 5px;
   border: 1px solid;
