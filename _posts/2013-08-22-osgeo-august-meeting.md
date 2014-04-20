@@ -201,7 +201,7 @@ The last two lines are pretty self-explanatory: we add our cupcakeTiles layer to
 
 So what did we just do? We made a map with custom tiles that grabs GeoJSON from an external file without changing that file. Oh, and we added some popups to the GeoJSON features and set the bounds of our map to match the bounds of the data. Not too bad for 29 lines of code!
 
-<h1><img src="https://raw.github.com/lyzidiamond/lyzidiamond.github.com/master/images/cupcakes.PNG" width="100%"></h1>
+<h1><img src="https://raw.github.com/lyzidiamond/lyzidiamond.github.com/master/images/cupcakes.PNG" class="inline" width="100%"></h1>
 
 *This is a joke.<br>
 **JSON and GeoJSON are just JavaScript objects. A GeoJSON file can be saved as type .geojson, .json, or .js. All of them work.

@@ -5,7 +5,7 @@ title: 'GitHub: Bringing GeoJSON To Life Since 2013'
 
 _This post originally appeared on [GIS Collective](http://giscollective.org)._
 
-<h1><img src="http://giscollective.org/wp-content/uploads/2013/06/githubgeojson1.png" width="100%"></h1>
+<h1><img src="http://giscollective.org/wp-content/uploads/2013/06/githubgeojson1.png" class="inline" width="100%"></h1>
 
 Last week, the code repository heroes over at [GitHub](http://github.com) made an awesome announcement: [Any .geojson files living in GitHub repos will now be rendered on a Leaflet-driven, OSM tile-backed map right inside of GitHub](https://github.com/blog/1528-there-s-a-map-for-that), with tooltips showing the data properties to boot! This is a truly exciting moment for all geonerds who code, developers who use geodata, and everyone in between.
 
@@ -13,7 +13,7 @@ Last week, the code repository heroes over at [GitHub](http://github.com) made a
 
 <h2>Git and GitHub</h2>
 
-<h1><img src="http://www.palermo.edu/Archivos_content/ingenieria/top/130712_git_github_topdenota1.jpg"></h1>
+<h1><img src="http://www.palermo.edu/Archivos_content/ingenieria/top/130712_git_github_topdenota1.jpg" class="inline"></h1>
 
 Before learning about GitHub, we first have to understand [git](http://git-scm.com). Git is a tool that allows multiple people to work on the same files at the same time without overwriting each other’s changes. This general concept is called _version control_, and git is a _version control system_. There are several other version control systems out there, but git is popular because it does its job more efficiently than many (if not all) of the others.
 
@@ -23,11 +23,11 @@ Because git is so great, and GitHub is so popular, people have been using it for
 
 <h2>GeoJSON</h2>
 
-<h1><img src="http://giscollective.org/wp-content/uploads/2013/06/geojson.png"></h1>
+<h1><img src="http://giscollective.org/wp-content/uploads/2013/06/geojson.png" class="inline"></h1>
 
 One of the more common formats used for geospatial data in web mapping applications is called _GeoJSON_. GeoJSON was born out of a format called _[JSON](http://json.org)_, which stands for JavaScript Object Notation. JSON is like a table turned on its side; each row gets its own section, and inside of that section is a series of properties and values unique to that row. For example, a table of Presidents of the United States might look something like this:
 
-<h1><img src="http://giscollective.org/wp-content/uploads/2013/06/presidents.png"></h1>
+<h1><img src="http://giscollective.org/wp-content/uploads/2013/06/presidents.png" class="inline"></h1>
 
 In JSON, the table might look like this:
 

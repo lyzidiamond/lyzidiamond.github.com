@@ -19,15 +19,15 @@ The basic idea is to use GitHub as a collaboration tool for building crowd-sourc
 
 Then I turned back to the projector to show an example of merging a pull request, seeing as I had about ten of them at that point, and lo and behold...
 
-<h1><img src="https://raw.github.com/lyzidiamond/lyzidiamond.github.com/master/images/mergeconflict.png" width="100%"></h1>
+<h1><img src="https://raw.github.com/lyzidiamond/lyzidiamond.github.com/master/images/mergeconflict.png" class="inline" width="100%"></h1>
 
 Every pull request had a merge conflict! I got super frustrated, asked the group to talk amongst themselves, and investigated a little bit. When I checked the diff, this is what I saw:
 
-<h1><img src="https://raw.github.com/lyzidiamond/lyzidiamond.github.com/master/images/diff.png" width="100%"></h1>
+<h1><img src="https://raw.github.com/lyzidiamond/lyzidiamond.github.com/master/images/diff.png" class="inline" width="100%"></h1>
 
 Every feature in the dataset was on the same line! JavaScript doesn't care about line breaks, so this is definitely acceptable and is totally still valid GeoJSON, but makes it near impossible for use with this collaboration technique I was preaching. I didn't even notice it beforehand, because it appears to be line broken in geojson.io:
 
-<h1><img src="https://raw.github.com/lyzidiamond/lyzidiamond.github.com/master/images/geojsonio.png" width="100%"></h1>
+<h1><img src="https://raw.github.com/lyzidiamond/lyzidiamond.github.com/master/images/geojsonio.png" class="inline" width="100%"></h1>
 
 A conundrum, to be certain. I thought to myself, "Ugh, I can't believe I didn't figure this out ahead of time. How could I screw this up so badly?" It wasn't a pretty scene.
 
@@ -35,11 +35,11 @@ But fortunately, I was surrounded by a few of the [great](http://twitter.com/rei
 
 So they did. And less than an hour later...
 
-<h1><img src="https://raw.github.com/lyzidiamond/lyzidiamond.github.com/master/images/merged.png" width="100%"></h1>
+<h1><img src="https://raw.github.com/lyzidiamond/lyzidiamond.github.com/master/images/merged.png" class="inline" width="100%"></h1>
 
 It was merged! Mele checked it afterwards, and it [totally works](https://github.com/pdxmele/pdxpyconmap/commit/7890ee0924e987eda955c6218d95778026fd9384):
 
-<h1><img src="https://raw.github.com/lyzidiamond/lyzidiamond.github.com/master/images/melecommit.png" width="100%"></h1>
+<h1><img src="https://raw.github.com/lyzidiamond/lyzidiamond.github.com/master/images/melecommit.png" class="inline" width="100%"></h1>
 
 Now, save for having to resolve the conflicts with each of the commits made pre-prettifying, this exercise will work completely smoothly in the future. I can't wait to present it again.
 

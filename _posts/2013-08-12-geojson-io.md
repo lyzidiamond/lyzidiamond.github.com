@@ -5,7 +5,7 @@ title: 'geojson.io: In-browser spatial data creation and sharing. Finally.'
 
 _This post originally appeared on [GIS Collective](http://giscollective.org)._
 
-<h1><img src="http://giscollective.org/wp-content/uploads/2013/08/geojsonio1.png"></h1>
+<h1><img src="http://giscollective.org/wp-content/uploads/2013/08/geojsonio1.png" class="inline"></h1>
 
 Today on [its blog](http://www.mapbox.com/blog/geojsonio-announce/), the open-source geo wizard repository [MapBox](http://mapbox.com/) has announced a new project to create, share, and edit geospatial data in your browser. It’s called [geojson.io](http://geojson.io), and it’s set to sweep the nation! Or at least, the nation of those who like creating, sharing and editing spatial data.
 

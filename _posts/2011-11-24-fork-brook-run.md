@@ -3,7 +3,7 @@ layout: blog
 title: 'Fork, brook, run? A neat toponym visualization by a UO geographer.'
 ---
 
-<img src="http://lyzidiamond.files.wordpress.com/2011/11/dwatkins_usstreamnames_big.png" width="100%">
+<img src="http://lyzidiamond.files.wordpress.com/2011/11/dwatkins_usstreamnames_big.png" class="inline" width="100%">
 
 At work a few weeks ago, we were having a conversation about how different areas of the country pronounce the word “creek.” There is the urban pronunciation, “creek,” and the rural pronunciation, “crick.” The argument was over whether or not these two bodies of water were actually geographically different or just indicative of cultural influence in pronunciation (dialect shift). Language is a funny thing, and linguistics is an interesting science, but none of us are linguists. We agreed to disagree.
 

@@ -3,7 +3,7 @@ layout: blog
 title: Commit or Quit
 ---
 
-<h1><img src="http://b.vimeocdn.com/ts/130/674/130674832_640.jpg"></h1>
+<h1><img src="http://b.vimeocdn.com/ts/130/674/130674832_640.jpg" class="inline"></h1>
 
 I am a perfectionist. Scratch that. I am an *ambitious* perfectionist. I want to do everything, and I want to do it perfectly the first time, and I want to do it faster than anyone else has ever done it before. These are unrealistic goals, which means I fail... a lot.
 

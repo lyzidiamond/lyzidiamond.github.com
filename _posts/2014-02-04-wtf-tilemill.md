@@ -19,7 +19,7 @@ The bread and butter of TileMill is obviously tiles. It seems really trivial, ri
 
 A map tile is a very specific thing. Map tiles are 256x256 pixel images that are placed side by side inside of a web map to give the illusion of one very large, seamless image. Maps have specific zoom levels that are explicitly defined, from zoom level 0 through zoom level 20. Zoom level 0 is one tile for the whole world. It looks like this:
 
-![Zoom Level 0](/images/zoom0.png)
+<img src="/images/zoom0.png" class="inline">
 
 Zoom level 1 is four tiles for the whole world, in a 2x2 grid. Zoom level 2 is 16 tiles for the whole world, in a 4x4 grid. You see where this is going.
 
@@ -27,25 +27,25 @@ Zoom levels are the same across all tilesets. Zoom level 0 is always going to be
 
 The URL for the tile above is http://a.tiles.mapbox.com/v3/lyzidiamond.map-ietb6srb/0/0/0.png. The first part is obviously the server. The last three numbers, as I'm sure you've figured out, delineate the zoom level and the x/y location of that particular tile in the grid. Zoom 0 is a pretty bad example of this. Let's go to zoom 1.
 
-![Zoom Level 1](/images/zoom-1-1-0.png)
+<img src="/images/zoom-1-1-0.png" class="inline">
 
 This is the tile in the first row in the second column of the zoom level 1 2x2 grid. Its URL is http://a.tiles.mapbox.com/v3/lyzidiamond.map-ietb6srb/1/1/0.png. You can see that at the end of the URL, it shows us that we're looking at a tile from zoom level 1 in the 1, 0 part of the grid.
 
-![Tile Grid](/images/tilegrid.png)
+<img src="/images/tilegrid.png" class="inline">
 
 Two more, way zoomed in, just for fun:
 
-![Zoom Level 12](/images/zoom-12-1009-1878.png)
+<img src="/images/zoom-12-1009-1878.png" class="inline">
 
 URL: http://a.tiles.mapbox.com/v3/lyzidiamond.map-ietb6srb/12/1009/1878.png
 
-![Zoom Level 12](/images/zoom-12-1009-1879.png)
+<img src="/images/zoom-12-1009-1879.png" class="inline">
 
 URL: http://a.tiles.mapbox.com/v3/lyzidiamond.map-ietb6srb/12/1009/1879.png, or the tile right below the previous one. Get it? Pretty cool, right?
 
 So you've now deduced that there's a pretty rigorous file structure that is required to manage all of this.
 
-![Tile File Structure](/images/tile-files.png)
+<img src="/images/tile-files.png" class="inline">
 
 Notice that in this image, it doesn't have every zoom level, or even the entirety of the grid. TileMill will ask you for a) a geographic area and b) the number of zoom levels you want before you export. If you're trying to do something too epically large, or with a ton of layers that are going to be annoying/resource-consuming to render down, it'll give you a nice little warning, along the lines of "HEY JERKFACE WE DON'T WANNA DO THAT FIX YR STUFF." But nicer. Then they export your tiles into this file structure, and indeed host them as well. If they're hosting a ton of your crap or you're getting a ton of views, they ask you to pay them.
 

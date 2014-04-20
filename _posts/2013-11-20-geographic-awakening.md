@@ -3,7 +3,7 @@ layout: blog
 title: 'Geographic Awakening'
 ---
 
-# ![Geography Awareness Week](http://education.nationalgeographic.com/media/photos/000/344/custom/34437_610x343.jpg)
+<h1><img src="http://education.nationalgeographic.com/media/photos/000/344/custom/34437_610x343.jpg" class="inline"></h1>
 
 This week is [Geography Awareness Week](http://geographyawarenessweek.org), a whole week dedicated to the study and understanding of our world through a geographic lens. It was established by presidential proclamation in 1987 (pop quiz: who was president in 1987?) in order to promote geographic education in our classrooms and in our lives at large.
 
