@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: Maptime: Changing culture in geospatial tech Learning, one meetup at a time
+title: 'Maptime: Changing culture in geospatial tech learning, one meetup at a time'
 ---
 
 <h1><img src="images/maptime.jpg" class="inline" /></h1>
