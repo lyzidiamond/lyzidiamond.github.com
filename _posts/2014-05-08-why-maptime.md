@@ -17,9 +17,10 @@ So what has [Maptime](http://maptime.io) become? **Maptime is a collection of be
 3. The "learning tools" for geo are largely written by developers and/or experts, the folks who perhaps wrote the tool or are active users/maintainers. Often these resources are well-written, but make too many assumptions and can alienate beginners. **If you are a beginner and unsure how to learn, there is a lack of accessible and empowering resources.**
 2. The "learning mechanisms" for geo involve blog posts scattered all around the web. There are some organied trainings, but they typically rely on learning one piece of software or one particular tool. **If you want to learn how to make maps, there is neither a clearly defined starting point nor an intuitive flow so you can understand what to do next.**
 
-## _How does Maptime address these?_
-
 <h1><img src="/images/maptimepdx.jpg" class="inline" /></h1>
+
+
+## _How does Maptime address these?_
 
 1. Maptime **creates community** around learning geospatial as a beginner. By simply making a space weekly or monthly where folks can go to ask questions and hang out with other people in a welcoming environment, Maptime is already achieving one of its goals and making a difference.
 2. Maptime provides encouragement and **a platform for creating beginner content** that is clearly-written, accessible, and makes no assumptions about what the trainee is familiar with. Not only are tehse resources helpful for those learning, but all of the teaching and mentoring is coming from beginners as well. Maptime provides a platform for both learning and guiding, regardless of skill level.
