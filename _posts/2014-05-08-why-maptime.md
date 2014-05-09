@@ -1,4 +1,7 @@
-# Maptime: because it shouldn't be this hard to learn about maps
+---
+layout: blog
+title: Maptime: Changing culture in geospatial tech Learning, one meetup at a time
+---
 
 <h1><img src="images/maptime.jpg" class="inline" /></h1>
 
