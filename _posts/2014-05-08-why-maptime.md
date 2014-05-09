@@ -27,7 +27,7 @@ So what has [Maptime](http://maptime.io) become? **Maptime is a collection of be
 
 ## _But these are just the first steps._
 
-Where it was once very difficult for beginners in geospatial to get the help they need, there is now a place for them to go and resources for them to use. But there are lots of things left to do in order to make geo a welcoming field for everyone, regardless of background or skill level. We're keeping a list of our goals, plans, and aspirations, and we want you to contribute. That list is over on the [Issues](http://github.com/maptime/maptime/issues) page of the [Maptime GitHub repo](http://github.com/maptime), and anyone is free to contribute. (If you don't know how to use GitHub issues, don't fret! Watch [this quick video](INSERT LINK TO DAVE'S SCREENCAST) instead.)
+Where it was once very difficult for beginners in geospatial to get the help they need, there is now a place for them to go and resources for them to use. But there are lots of things left to do in order to make geo a welcoming field for everyone, regardless of background or skill level. We're keeping a list of our goals, plans, and aspirations, and we want you to contribute. That list is over on the [Issues](http://github.com/maptime/maptime/issues) page of the [Maptime GitHub repo](http://github.com/maptime), and anyone is free to contribute. (If you don't know how to use GitHub issues, don't fret! Watch [this quick video](https://t.co/XbQaMio9SI) instead.)
 
 Maptime exists because **community, inclusivity, and accessibility are important and necessary components of positive learning experiences.** The more we harp on this idea, the more it will become self-evident in communities everywhere. Plus, more people making maps is awesome. :)
 
