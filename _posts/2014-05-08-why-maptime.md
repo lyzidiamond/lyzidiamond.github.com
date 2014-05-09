@@ -13,8 +13,8 @@ So what has [Maptime](http://maptime.io) become? **Maptime is a collection of be
 
 ## _What is difficult for beginners in geospatial tech right now?_
 
-1. The "geo community" as it stands includes developers who do mappy stuff, GIS professionals who largely work in government and utilities, OpenStreetMap editors and developers, and the academic community. Most meetups involve either networking / career seeking or presentations of recent work by experts, seeking to talk to other experts. **If you're new to the field and trying to _learn_, there isn't a community for you.**
-3. The "learning tools" for geo are largely written by developers and/or experts, the folks who perhaps wrote the tool or are active users/maintainers. Often these resources are well-written, but make too many assumptions and can alienate beginners. **If you are a beginner and unsure how to learn, there is a lack of accessible and empowering resources.**
+1. The "geo community" as it stands includes developers who do mappy stuff, GIS professionals who largely work in government and utilities, [OpenStreetMap](http://openstreetmap.org) editors and developers, and the academic community. Most meetups involve either networking / career seeking or presentations of recent work by experts who are to talk to other experts. **If you're new to the field and trying to _learn_, there isn't a community for you.**
+3. The "learning tools" for geospatial tech are largely written by developers and/or experts, the folks who perhaps wrote the tool or are active users/maintainers. Often these resources are well-written, but make too many assumptions and can alienate beginners. **If you are a beginner and unsure how to learn, there is a lack of accessible and empowering resources.**
 2. The "learning mechanisms" for geo involve blog posts scattered all around the web. There are some organied trainings, but they typically rely on learning one piece of software or one particular tool. **If you want to learn how to make maps, there is neither a clearly defined starting point nor an intuitive flow so you can understand what to do next.**
 
 ## _How does Maptime address these?_
@@ -32,6 +32,7 @@ Where it was once very difficult for beginners in geospatial to get the help the
 
 Maptime exists because **community, inclusivity, and accessibility are important and necessary components of positive learning experiences.** The more we harp on this idea, the more it will become self-evident in communities everywhere. Plus, more people making maps is awesome. :)
 
+**_Maptime chapters:_**
 <script src="https://embed.github.com/view/geojson/maptime/maptime-bites/gh-pages/00004/maptimes.geojson"></script>
 
 _If you're interested in starting a Maptime chapter in your area, [shoot me an email](mailto:lyzi@codeforamerica.org). If you're interested in getting in contact with an existing Maptime chapter in your area, check out the contact page [here](http://www.maptime.io/chapters/)._
