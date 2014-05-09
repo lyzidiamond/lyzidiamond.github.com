@@ -3,7 +3,7 @@ layout: blog
 title: 'Maptime: Changing culture in geospatial tech learning, one meetup at a time'
 ---
 
-<h1><img src="images/maptime.jpg" class="inline" /></h1>
+<h1><img src="/images/maptime.jpg" class="inline" /></h1>
 
 There has long been a need for **organized community around learning and teaching geospatial open source**. It's way too hard hard to learn about maps and geographic concepts. It's way too hard to learn about geospatial technology. And it's a huge bummer.
 
@@ -19,7 +19,7 @@ So what has [Maptime](http://maptime.io) become? **Maptime is a collection of be
 
 ## _How does Maptime address these?_
 
-<h1><img src="images/maptimepdx.jpg" class="inline" /></h1>
+<h1><img src="/images/maptimepdx.jpg" class="inline" /></h1>
 
 1. Maptime **creates community** around learning geospatial as a beginner. By simply making a space weekly or monthly where folks can go to ask questions and hang out with other people in a welcoming environment, Maptime is already achieving one of its goals and making a difference.
 2. Maptime provides encouragement and **a platform for creating beginner content** that is clearly-written, accessible, and makes no assumptions about what the trainee is familiar with. Not only are tehse resources helpful for those learning, but all of the teaching and mentoring is coming from beginners as well. Maptime provides a platform for both learning and guiding, regardless of skill level.
