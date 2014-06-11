@@ -5,7 +5,7 @@ title: 'Building a LocalWiki Changebot'
 
 <h1><img src="/images/lexwiki.png" class="inline"></h1>
 
-One thing that became obvious soon after becoming part of the Code for America family was the abundance of communit-focused wikis – sites where anyone can contribute, intended to facilitate community around shared knowledge. Some cities have very successful and robust wikis (I'm looking at you, [OaklandWiki](http://oaklandwiki.org)), but others have some work to do to catch up.
+One thing that became obvious soon after becoming part of the Code for America family was the abundance of community-focused wikis – sites where anyone can contribute, intended to facilitate community around shared knowledge. Some cities have very successful and robust wikis (I'm looking at you, [OaklandWiki](http://oaklandwiki.org)), but others have some work to do to catch up.
 
 During National Day of Civic Hacking last year in Lexington, [OpenLexington](http://openlexington.org) (the local [Code for America brigade](http://brigade.codeforamerica.org)) launched [LexingtonWiki](http://lexington-wiki.org), which is built on [LocalWiki](http://localwiki.org). Unfortunately, it hasn't yet gotten much traction, which is a huge bummer! The [Lexingteam](http://teambiglex.tumblr.com) thought it might be cool to have [Twitter notifications](http://twitter.com/openlexington) when a page on the wiki is edited/updated to try and publicize the wiki and get more folks editing. Turns out it's a pretty easy thing to set up.
 
