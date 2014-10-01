@@ -21,7 +21,7 @@ He looked at me with wide eyes and replied, "Lyzi, are you kidding me? You have 
 
 Why hadn't I thought about it that way? Because that's not how we think about things. Most people think the important things they do are the big things, the obvious things. But sometimes it's the _small_ things that make the biggest difference.
 
-<h1><img src="./images/transitmix.jpg"></h1>
+<h1><img src="/images/transitmix.jpg"></h1>
 
 Think back to the last time you fixed a typo in a friend's email before she sent it, or when you stopped your mom from putting salt into the pan instead of sugar. Think about the typos you've fixed on random GitHub repos and the explanations you've made to your coworkers about how HTTP works, or what a map projection is, or why you need to use curly braces in JavaScript. Think about all of the tiny contributions you've made to big projects.
 
@@ -31,6 +31,6 @@ After I talked to David, my mood totally flipped. (And then I got on stage and d
 
 The number one thing I learned from the Code for America Summit (and the number one thing I learned from this year as a CfA fellow) is the power of combining skills and sharing knowledge. The smallest things can be big things. You might not see it right away, but **you are making a difference.** Keep it up: your contribution may be the piece that solves the puzzle!
 
-<h1><img src="./images/fellows.jpg"></h1>
+<h1><img src="/images/fellows.jpg"></h1>
 
 _If this post inspired you to start contributing to projects on GitHub (even if it's just editing typos in READMEs, which is super helpful btw), but you're not sure how to start, check out [learn-geojson](http://github.com/lyzidiamond/learn-geojson), a tutorial for getting started with git and GitHub. Or just [email me](mailto:lyzidiamond@gmail.com) and I'll point you in the right direction. :)_
