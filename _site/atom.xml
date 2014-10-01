@@ -4,7 +4,7 @@
  <title>Victory Formation</title>
  <link href="http://lyzidiamond.com/atom.xml" rel="self"/>
  <link href="http://lyzidiamond.com/"/>
- <updated>2014-03-04T15:46:51-08:00</updated>
+ <updated>2014-09-30T20:29:44-07:00</updated>
  <id>http://lyzidiamond.com</id>
  <author>
    <name>Victory Formation</name>
@@ -12,31 +12,214 @@
  
  
  <entry>
+   <title>Small Things, Big Things</title>
+   <link href="http://lyzidiamond.com/posts/small-things-big-things"/>
+   <updated>2014-09-30T00:00:00-07:00</updated>
+   <id>http://lyzidiamond.com/posts/small-things-big-things</id>
+   <content type="html">&lt;p&gt;Last week was the &lt;a href=&quot;http://www.codeforamerica.org/summit/&quot;&gt;2014 Code for America Summit&lt;/a&gt;, and it was just as incredible as I imagined it would be. I was there last year, but this was &lt;em&gt;my&lt;/em&gt; summit. &lt;em&gt;I&lt;/em&gt; would be on stage presenting my work. &lt;em&gt;I&lt;/em&gt; would be the one talking to next year&amp;rsquo;s fellows, assuring them that it&amp;rsquo;s a struggle, but it&amp;rsquo;s worth it. &lt;em&gt;I&lt;/em&gt; would be the one feeling confident.&lt;/p&gt;
+
+&lt;p&gt;But I wasn&amp;rsquo;t feeling confident. Not even a little bit.&lt;/p&gt;
+
+&lt;p&gt;Truth be told, I was &lt;em&gt;terrified&lt;/em&gt;. This was supposed to be &lt;em&gt;my&lt;/em&gt; summit, and what had I accomplished? I stood next to my fellow fellows at the Civic Tech Fair showing off a &lt;a href=&quot;http://streetscope.net&quot;&gt;tiny application&lt;/a&gt; that I only had a small hand in building, while everyone else was showing off projects they had worked on, projects that actually touched people and changed their lives. What had I done? What had I accomplished? I left that night dejected and disappointed in myself.&lt;/p&gt;
+
+&lt;p&gt;I carried these feelings with me back to the summit on Wednesday afternoon, when &lt;a href=&quot;http://twitter.com/lippytak&quot;&gt;Jake Solomon&lt;/a&gt; delivered a talk onstage about the applications being developed by the health team at Code for America. His talk was called &lt;strong&gt;The Big Thing About Small Things.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h1&gt;&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;//www.youtube.com/embed/yViYA8IG36U&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;&lt;/h1&gt;
+
+
+&lt;p&gt;Those beautiful slides (made by my lovely roommate &lt;a href=&quot;http://twitter.com/mollyampersand&quot;&gt;Molly McLeod&lt;/a&gt;) and Jake&amp;rsquo;s words were making an excellent point: &lt;em&gt;sometimes it&amp;rsquo;s the smallest things that make the biggest impact&lt;/em&gt;. I thought about this as I walked out of the theater to prepare for my own talk, to be given on the same stage several hours later.&lt;/p&gt;
+
+&lt;p&gt;I ran into my fellow fellow &lt;a href=&quot;http://twitter.com/davidleonardii&quot;&gt;David Leonard&lt;/a&gt;, and he and I went to grab a cup of coffee. In all of my pre-talk anxiety, I let it slip that I was feeling completely lost. I asked him, &amp;ldquo;What have I accomplished this year? I feel like I haven&amp;rsquo;t built anything, like I haven&amp;rsquo;t done anything.&amp;rdquo;&lt;/p&gt;
+
+&lt;p&gt;He looked at me with wide eyes and replied, &amp;ldquo;Lyzi, are you kidding me? You have contributed to almost every single fellowship project &amp;ndash; and some staff projects too! Without you, half of these projects would not be successful today.&amp;rdquo;&lt;/p&gt;
+
+&lt;p&gt;Why hadn&amp;rsquo;t I thought about it that way? Because that&amp;rsquo;s not how we think about things. Most people think the important things they do are the big things, the obvious things. But sometimes it&amp;rsquo;s the &lt;em&gt;small&lt;/em&gt; things that make the biggest difference.&lt;/p&gt;
+
+&lt;h1&gt;&lt;img src=&quot;./images/transitmix.jpg&quot;&gt;&lt;/h1&gt;
+
+
+&lt;p&gt;Think back to the last time you fixed a typo in a friend&amp;rsquo;s email before she sent it, or when you stopped your mom from putting salt into the pan instead of sugar. Think about the typos you&amp;rsquo;ve fixed on random GitHub repos and the explanations you&amp;rsquo;ve made to your coworkers about how HTTP works, or what a map projection is, or why you need to use curly braces in JavaScript. Think about all of the tiny contributions you&amp;rsquo;ve made to big projects.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;You made a difference!&lt;/strong&gt; You may have thought your edits were small and your contributions insignificant, but that errant semicolon may have made or broken that application. And &lt;em&gt;you&amp;rsquo;re&lt;/em&gt; the one who found it.&lt;/p&gt;
+
+&lt;p&gt;After I talked to David, my mood totally flipped. (And then I got on stage and did a presentation, which gave me an adrenaline rush. that probably helped too. :-P) I started to notice all of the small contributions that every Code for America fellow makes to everyone else&amp;rsquo;s project. All of the design meetups, portfolio and code reviews, brainstorming and namestorming sessions (ask &lt;a href=&quot;http://twitter.com/ainsleywagon&quot;&gt;Ainsley&lt;/a&gt; about that one). All of the feedback and knowledge sharing and the way we&amp;rsquo;ve held each other up all year.&lt;/p&gt;
+
+&lt;p&gt;The number one thing I learned from the Code for America Summit (and the number one thing I learned from this year as a CfA fellow) is the power of combining skills and sharing knowledge. The smallest things can be big things. You might not see it right away, but &lt;strong&gt;you are making a difference.&lt;/strong&gt; Keep it up: your contribution may be the piece that solves the puzzle!&lt;/p&gt;
+
+&lt;h1&gt;&lt;img src=&quot;./images/fellows.jpg&quot;&gt;&lt;/h1&gt;
+
+
+&lt;p&gt;&lt;em&gt;If this post inspired you to start contributing to projects on GitHub (even if it&amp;rsquo;s just editing typos in READMEs, which is super helpful btw), but you&amp;rsquo;re not sure how to start, check out &lt;a href=&quot;http://github.com/lyzidiamond/learn-geojson&quot;&gt;learn-geojson&lt;/a&gt;, a tutorial for getting started with git and GitHub. Or just &lt;a href=&quot;mailto:lyzidiamond@gmail.com&quot;&gt;email me&lt;/a&gt; and I&amp;rsquo;ll point you in the right direction. :)&lt;/em&gt;&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Maptime: Changing culture in geospatial tech learning, one meetup at a time</title>
+   <link href="http://lyzidiamond.com/posts/why-maptime"/>
+   <updated>2014-05-08T00:00:00-07:00</updated>
+   <id>http://lyzidiamond.com/posts/why-maptime</id>
+   <content type="html">&lt;p&gt;There has long been a need for &lt;strong&gt;organized community around learning and teaching geospatial open source&lt;/strong&gt;. It&amp;rsquo;s way too hard hard to learn about maps and geographic concepts. It&amp;rsquo;s way too hard to learn about geospatial technology. And it&amp;rsquo;s a huge bummer.&lt;/p&gt;
+
+&lt;p&gt;It&amp;rsquo;s also why &lt;a href=&quot;http://twitter.com/bethschechter&quot;&gt;Beth Schechter&lt;/a&gt; started &lt;a href=&quot;http://twitter.com/maptimesf&quot;&gt;MaptimeSF&lt;/a&gt; in the summer of 2013: she wanted to make it easier for herself to learn, and for her that meant &lt;em&gt;working with other people&lt;/em&gt;. And then MaptimeSF grew in popularity, because it just makes sense to learn things in an accessible way with other people who want to learn. It&amp;rsquo;s the same reason I started &lt;a href=&quot;http://twitter.com/maptimepdx&quot;&gt;MaptimePDX&lt;/a&gt;, and the same reason &lt;a href=&quot;http://twitter.com/skorasaurus&quot;&gt;Will&lt;/a&gt; started &lt;a href=&quot;http://twitter.com/opengeocle&quot;&gt;OpenGeoCLE&lt;/a&gt;, and the reason that &lt;a href=&quot;http://www.maptime.io/state-of-the-maptime/&quot;&gt;Maptime chapters are popping up all over the continent&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;So what has &lt;a href=&quot;http://maptime.io&quot;&gt;Maptime&lt;/a&gt; become? &lt;strong&gt;Maptime is a collection of beginner-focused community groups for learning geospatial technology, techniques, and concepts, particularly using open source tools and hands-on practice and exercises.&lt;/strong&gt; But Maptime is also an important idea: it shouldn&amp;rsquo;t be so hard to learn, and we have the power to make it easier &amp;ndash; and teach ourselves in the process.&lt;/p&gt;
+
+&lt;h1&gt;&lt;img src=&quot;/images/maptime.jpg&quot; class=&quot;inline&quot; /&gt;&lt;/h1&gt;
+
+
+&lt;h2&gt;&lt;em&gt;What is difficult for beginners in geospatial tech right now?&lt;/em&gt;&lt;/h2&gt;
+
+&lt;ol&gt;
+&lt;li&gt;The &amp;ldquo;geo community&amp;rdquo; as it stands includes developers who do mappy stuff, GIS professionals who largely work in government and utilities, &lt;a href=&quot;http://openstreetmap.org&quot;&gt;OpenStreetMap&lt;/a&gt; editors and developers, and the academic community. Most meetups involve either networking / career seeking or presentations of recent work by experts who are to talk to other experts. &lt;strong&gt;If you&amp;rsquo;re new to the field and trying to &lt;em&gt;learn&lt;/em&gt;, there isn&amp;rsquo;t a community for you.&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;The &amp;ldquo;learning tools&amp;rdquo; for geospatial tech are largely written by developers and/or experts, the folks who perhaps wrote the tool or are active users/maintainers. Often these resources are well-written, but make too many assumptions and can alienate beginners. &lt;strong&gt;If you are a beginner and unsure how to learn, there is a lack of accessible and empowering resources.&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;The &amp;ldquo;learning mechanisms&amp;rdquo; for geo involve blog posts scattered all around the web. There are some organied trainings, but they typically rely on learning one piece of software or one particular tool. &lt;strong&gt;If you want to learn how to make maps, there is neither a clearly defined starting point nor an intuitive flow so you can understand what to do next.&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;h2&gt;&lt;em&gt;How does Maptime address these?&lt;/em&gt;&lt;/h2&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Maptime &lt;strong&gt;creates community&lt;/strong&gt; around learning geospatial as a beginner. By simply making a space weekly or monthly where folks can go to ask questions and hang out with other people in a welcoming environment, Maptime is already achieving one of its goals and making a difference.&lt;/li&gt;
+&lt;li&gt;Maptime provides encouragement and &lt;strong&gt;a platform for creating beginner content&lt;/strong&gt; that is clearly-written, accessible, and makes no assumptions about what the trainee is familiar with. Not only are tehse resources helpful for those learning, but all of the teaching and mentoring is coming from beginners as well. Maptime provides a platform for both learning and guiding, regardless of skill level.&lt;/li&gt;
+&lt;li&gt;The Maptime community is slowly &lt;a href=&quot;http://github.com/maptime&quot;&gt;amassing content&lt;/a&gt; through its chapters to &lt;strong&gt;create a repository of resources and build a curriculum.&lt;/strong&gt; We gain valuable insight from the hands-on work the chapters are doing to teach beginners, and from that we can determine what is helpful, what is not so helpful, and a logical path down which we can guide new Maptimers.&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;h1&gt;&lt;img src=&quot;/images/maptimepdx.jpg&quot; class=&quot;inline&quot; /&gt;&lt;/h1&gt;
+
+
+&lt;h2&gt;&lt;em&gt;But these are just the first steps.&lt;/em&gt;&lt;/h2&gt;
+
+&lt;p&gt;Where it was once very difficult for beginners in geospatial to get the help they need, there is now a place for them to go and resources for them to use. But there are lots of things left to do in order to make geo a welcoming field for everyone, regardless of background or skill level. We&amp;rsquo;re keeping a list of our goals, plans, and aspirations, and we want you to contribute. That list is over on the &lt;a href=&quot;http://github.com/maptime/maptime/issues&quot;&gt;Issues&lt;/a&gt; page of the &lt;a href=&quot;http://github.com/maptime&quot;&gt;Maptime GitHub repo&lt;/a&gt;, and anyone is free to contribute. (If you don&amp;rsquo;t know how to use GitHub issues, don&amp;rsquo;t fret! Watch &lt;a href=&quot;https://t.co/XbQaMio9SI&quot;&gt;this quick video&lt;/a&gt; instead.)&lt;/p&gt;
+
+&lt;p&gt;Maptime exists because &lt;strong&gt;community, inclusivity, and accessibility are important and necessary components of positive learning experiences.&lt;/strong&gt; The more we harp on this idea, the more it will become self-evident in communities everywhere. Plus, more people making maps is awesome. :)&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;Maptime chapters:&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;script src=&quot;https://embed.github.com/view/geojson/maptime/maptime-bites/gh-pages/00004/maptimes.geojson&quot;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;&lt;em&gt;If you&amp;rsquo;re interested in starting a Maptime chapter in your area, &lt;a href=&quot;mailto:lyzi@codeforamerica.org&quot;&gt;shoot me an email&lt;/a&gt;. If you&amp;rsquo;re interested in getting in contact with an existing Maptime chapter in your area, check out the contact page &lt;a href=&quot;http://www.maptime.io/chapters/&quot;&gt;here&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>What even is GIS?</title>
+   <link href="http://lyzidiamond.com/posts/wtf-arcgis"/>
+   <updated>2014-03-25T00:00:00-07:00</updated>
+   <id>http://lyzidiamond.com/posts/wtf-arcgis</id>
+   <content type="html">&lt;p&gt;Yesterday, some fine folks from &lt;a href=&quot;http://esri.com&quot;&gt;Esri&lt;/a&gt; came in to chat with the 2014 &lt;a href=&quot;http://codeforamerica.org&quot;&gt;Code for America&lt;/a&gt; fellows about ArcGIS Online and various other Esri cloud-based services. The presentation was somewhat of a whirlwind, which was honestly to be expected – for a long time, Esri has only had the challenge of explaining new tools to folks with GIS backgrounds, but geo is not so much of a niche interest anymore. Most of the folks at Code for America do &lt;em&gt;not&lt;/em&gt; have a GIS background, coming from the worlds of design and software/web development. And I would be lying if I said i wasn&amp;rsquo;t watching eyes glaze over several times during their presentation.&lt;/p&gt;
+
+&lt;p&gt;This morning when I walked in to the Code for America offices, two of my fellow fellows were discussing yesterday&amp;rsquo;s talk. One of them asked me,&lt;/p&gt;
+
+&lt;blockquote&gt;&lt;p&gt;&amp;ldquo;Is ArcGIS like CartoDB?&amp;rdquo;&lt;/p&gt;&lt;/blockquote&gt;
+
+&lt;p&gt;The answer to that question is yes, no, and everywhere in between. So I sat down and started telling him about ArcGIS. And I realized there was a lot to tell. And he thanked me for giving him some context, because he wasn&amp;rsquo;t even really sure what GIS &lt;em&gt;was&lt;/em&gt;, let alone its utility. And he suggested I write it all down. So now I&amp;rsquo;m going to do that.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;ArcGIS is a software program for &lt;strong&gt;viewing&lt;/strong&gt;, &lt;strong&gt;editing&lt;/strong&gt;, and &lt;strong&gt;styling&lt;/strong&gt; spatial data. What is spatial data? As I wrote in a &lt;a href=&quot;http://teambiglex.tumblr.com/post/79867819222/lexingtons-open-data-portal-an-overview&quot;&gt;recent blog post&lt;/a&gt; for the &lt;a href=&quot;http://teambiglex.tumblr.com/&quot;&gt;Lexington Code for America team&amp;rsquo;s blog&lt;/a&gt;:&lt;/p&gt;
+
+&lt;blockquote&gt;&lt;p&gt;Geographic data is the stuff that maps are made of – the lines that make up roads, the shapes that make up parks and buildings, and the markers that tell us where things are. You can take these different files – the roads dataset, the parks dataset, the buildings dataset – and layer them on top of each other to make a map, because the data includes location information. It’s really cool stuff.&lt;/p&gt;&lt;/blockquote&gt;
+
+&lt;p&gt;From another perspective, spatial data is just like any other type of tabular data, except it has geographic/geometric information associated with it. It could also be described as vector data, but with location information. Except geographic/spatial data also includes rasters. But we&amp;rsquo;ll get to those in a bit.&lt;/p&gt;
+
+&lt;p&gt;Let&amp;rsquo;s go through these things one by one:&lt;/p&gt;
+
+&lt;h2&gt;ArcGIS is a software program for &lt;em&gt;viewing&lt;/em&gt; spatial data&lt;/h2&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Geographic Data Assumptions: MAUP and Ecological Fallacies</title>
+   <link href="http://lyzidiamond.com/posts/geographic-data-assumptions"/>
+   <updated>2014-03-18T00:00:00-07:00</updated>
+   <id>http://lyzidiamond.com/posts/geographic-data-assumptions</id>
+   <content type="html">&lt;p&gt;&lt;em&gt;This post originally appeared on &lt;a href=&quot;http://giscollective.org&quot;&gt;GIS Collective&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Humans are generally adept at critical thinking and deductive reasoning. We tend to understand the world around us fairly easily, because the world operates on a few basic principles. By relying on these principles, we can find the signals through the noise (or at least narrow it down to a few options). To do this, we tend to rely on assumption and inference.&lt;/p&gt;
+
+&lt;p&gt;This is a good thing. It allows us to, for example, use words that others may not have heard before without having to explain them explicitly. One could deduce that “polygamy” probably means marriage to multiple people, because “monogamy” is the marriage (hah) of the Greek words &lt;em&gt;monos&lt;/em&gt; (one) and &lt;em&gt;gamos&lt;/em&gt; (marriage), and the Greek word &lt;em&gt;polys&lt;/em&gt; means many. You don’t have to look it up, and because you’ve seen the word “monogamy” so many times, you understand “polygamy” in context.&lt;/p&gt;
+
+&lt;p&gt;Maps are a little different. Modern society has allowed for the growth of spatial literacy, and with maps in our pockets (yes, on the cell phones), we do a pretty good job of navigating using lines and cardinal directions. As such, we feel we are qualified to learn about the world in a spatial way, which many of us are! But it’s important to know about the ways that maps can distort our understanding of data, such that we can challenge our assumptions in the future.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;In 1991, Mark Monmonier wrote a book called &lt;a href=&quot;http://www.amazon.com/How-Lie-Maps-2nd-Edition/dp/0226534219&quot;&gt;“How to Lie With Maps.”&lt;/a&gt; The book remains essential to any geographic information science curriculum, and for those interested in learning more about the subjects I’m going to touch on here, it’s a great resource. The first paragraph of the introduction reads:&lt;/p&gt;
+
+&lt;blockquote&gt;&lt;p&gt;Not only is it easy to lie with maps, it’s essential. To portray meaningful relationships for a complex, three-dimensional world on a flat sheet of paper or a video screen, a map must distort reality. As a scale model, the map must use symbols that almost always are proportionally much bigger or thicker than the features they represent. To avoid hiding critical information in a fog of detail, the map must offer a selective, incomplete view of reality. There’s no escape from the cartographic paradox: to present a useful and truthful picture, an accurate map must tell white lies.&lt;p&gt;&lt;/blockquote&gt;
+
+
+&lt;p&gt;There’s the first thing to realize: &lt;strong&gt;every map is lying to you all the time&lt;/strong&gt;. In an ideal world, the map is lying to you in the hopes of conveying the most information to you that it possibly can, but sometimes maps make generalizations and approximations for sake of the cartographer and not the map’s intended audience. Let’s take a look at an example.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://giscollective.org/wp-content/uploads/2013/07/maup2.png&quot; class=&quot;inline&quot; width=&quot;100%&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;This is a map from the &lt;a href=&quot;http://www.washingtonpost.com/wp-srv/special/politics/election-map-2012/president/&quot;&gt;Washington Post&lt;/a&gt; showing the results of the 2012 presidential election. Considering that presidential races in this country are decided by the electoral college, and each state’s electors all vote for the same candidate, breaking out the data state by state makes sense. Nevada is blue, Mississippi is red, Obama won the election, let’s all go get a beer.&lt;/p&gt;
+
+&lt;p&gt;But this map doesn’t tell the whole story. Let’s look at another map from the Washington Post of the exact same data, just aggregated differently.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://giscollective.org/wp-content/uploads/2013/07/maup3.png&quot; class=&quot;inline&quot; width=&quot;100%&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;Nevada doesn’t look as blue as it did in the previous map, and Mississippi doesn’t look quite as red. By grouping data by states, the map was hiding some of the complexity in the data, causing the reader to make certain assumptions.&lt;/p&gt;
+
+&lt;p&gt;This is a common and well-documented spatial data visualization circumstance called the &lt;a href=&quot;http://en.wikipedia.org/wiki/Modifiable_areal_unit_problem&quot;&gt;modifiable areal unit problem&lt;/a&gt;, often acronomized as MAUP. First identified by Gehlke and Biehl in 1934, the MAUP is a statistical bias that is influenced by both the means in which point-based data is aggregated, and the districts into which that data is grouped.&lt;/p&gt;
+
+&lt;p&gt;The presidential election maps above were (in theory*) generated from point-based data: one vote, one point. But showing 117 million points on a map would take a really long time and it wouldn’t be that useful (plus, it’s a cartographic nightmare). The cartographer is all but obligated to aggregate and group the data for ease of consumption, but every grouping mechanism is going to present its own challenges.&lt;/p&gt;
+
+&lt;p&gt;For example, I live in Portland, which is in Multnomah County, Oregon. In the 2012 election, Multnomah County had 367,992 ballots cast in 132 precincts. (Oregon has vote by mail, so that changes things around a bit geographically, but that’s not super relevant here.) 75.37% of the votes cast for president were cast for Barack Obama. When you look at Multnomah County on the presidential map above, you’ll see that it’s pretty blue.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://giscollective.org/wp-content/uploads/2013/07/maup4.png&quot; class=&quot;inline&quot; width=&quot;100%&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;But is that map telling you what’s really going on beneath the aggregation? Nope. Could one theoretically assume that all 367,992 ballots in Multnomah County were cast for Obama? Sure. Does it matter? In this case, probably not that much for you and me, but if you’re interested in conducting a political campaign, the MAUP could seriously hinder your strategy: &lt;em&gt;especially&lt;/em&gt; if you only have access to aggregated data.&lt;/p&gt;
+
+&lt;p&gt;This assumption falls into a category of assumptions called &lt;strong&gt;ecological fallacies&lt;/strong&gt;. Ecological fallacies fall into four camps:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Confusion between ecological correlations and individual correlations&lt;/li&gt;
+&lt;li&gt;Confusion between group average and total average&lt;/li&gt;
+&lt;li&gt;Simpson’s Paradox (when comparing two populations divided in groups of different sizes, the average of some variable in the first population can be higher in every group and yet lower in the total population)&lt;/li&gt;
+&lt;li&gt;Confusion between higher average and higher likelihood&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;p&gt;&lt;em&gt;(Believe it or not, &lt;a href=&quot;http://en.wikipedia.org/wiki/Ecological_fallacy&quot;&gt;Wikipedia&lt;/a&gt; does a really great job breaking each of these down. If you’re interested in learning more about the specifics, head over there.)&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Ecological fallacies and modifiable areal unit problems go hand in hand: the methods for aggregating the data tend to highlight certain trends that are potentially damaging to true understanding (MAUP), and the conclusions drawn from the aggregated data can be erroneous (ecological fallacies).&lt;/p&gt;
+
+&lt;p&gt;Where this is really important is in the realm of public policy. Every policy proposal comes with a statistical analysis of need, or a statistical analysis of effectiveness based on geographic data (that’s why we have a census, y’all), and then an analysis and conclusions drawn from that data. But if the only data available for a specific metric is aggregated into neighborhoods, or census tracts, or zip codes, or watersheds, or any other group, are we really getting the whole story? Are the assumptions we’re making about the data correct?&lt;/p&gt;
+
+&lt;p&gt;When I tell people I make maps for a living, one of the most common responses is, “That’s still a job? Isn’t everything already mapped?”** Although it’s an extremely irritating and silly question, answering it several times has brought me to this conclusion: data display and design issues (MAUP) and the problems with data understanding (ecological fallacies), along with many other things, make data visualization a fascinating (and extremely relevant) science. I believe it is the job of the cartographer to understand the assumptions that will be made when users try to interpret her product, to try and provide as much data as possible, and to be as up front and honest about the ways in which the data is distorted by visualization.&lt;/p&gt;
+
+&lt;p&gt;Maps, just like any other information graphic, exist to show signals in the noise. We as cartographers should work hard to identify common assumptions and work &lt;em&gt;with&lt;/em&gt; them to tell accurate and interesting stories.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;* This is likely false. Election data is aggregated by polling place/ward/district/whatever grouping system is employed where you live. Which creates its own statistical data aggregation problems, no?&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;** I usually come up with two disparate geographic datasets that are so laughably separate that nobody would ever map them together, and talk about how cool it would be if they were juxtaposed. Like, a map of New York City showing art galleries overlayed with National Flood Insurance Program policy holders. If you’re interested in those sorts of strange map mashups, check out Rebecca Solint’s book, &lt;a href=&quot;http://www.amazon.com/Infinite-City-San-Francisco-Atlas/dp/052026506&quot;&gt;Infinite City: A San Francisco Atlas.&amp;ldquo;&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
    <title>Building a LocalWiki Changebot</title>
    <link href="http://lyzidiamond.com/posts/localwiki-changebots"/>
    <updated>2014-03-03T00:00:00-08:00</updated>
    <id>http://lyzidiamond.com/posts/localwiki-changebots</id>
-   <content type="html">&lt;h1&gt;&lt;img src=&quot;/images/lexwiki.png&quot; alt=&quot;LexingtonWiki&quot; /&gt;&lt;/h1&gt;
+   <content type="html">&lt;h1&gt;&lt;img src=&quot;/images/lexwiki.png&quot; class=&quot;inline&quot;&gt;&lt;/h1&gt;
 
-&lt;p&gt;One thing that became obvious soon after becoming part of the Code for America family was the abundance of communit-focused wikis – sites where anyone can contribute, intended to facilitate community around shared knowledge. Some cities have very successful and robust wikis (I&amp;rsquo;m looking at you, &lt;a href=&quot;http://oaklandwiki.org&quot;&gt;OaklandWiki&lt;/a&gt;), but others have some work to do to catch up.&lt;/p&gt;
+
+&lt;p&gt;One thing that became obvious soon after becoming part of the Code for America family was the abundance of community-focused wikis – sites where anyone can contribute, intended to facilitate community around shared knowledge. Some cities have very successful and robust wikis (I&amp;rsquo;m looking at you, &lt;a href=&quot;http://oaklandwiki.org&quot;&gt;OaklandWiki&lt;/a&gt;), but others have some work to do to catch up.&lt;/p&gt;
 
 &lt;p&gt;During National Day of Civic Hacking last year in Lexington, &lt;a href=&quot;http://openlexington.org&quot;&gt;OpenLexington&lt;/a&gt; (the local &lt;a href=&quot;http://brigade.codeforamerica.org&quot;&gt;Code for America brigade&lt;/a&gt;) launched &lt;a href=&quot;http://lexington-wiki.org&quot;&gt;LexingtonWiki&lt;/a&gt;, which is built on &lt;a href=&quot;http://localwiki.org&quot;&gt;LocalWiki&lt;/a&gt;. Unfortunately, it hasn&amp;rsquo;t yet gotten much traction, which is a huge bummer! The &lt;a href=&quot;http://teambiglex.tumblr.com&quot;&gt;Lexingteam&lt;/a&gt; thought it might be cool to have &lt;a href=&quot;http://twitter.com/openlexington&quot;&gt;Twitter notifications&lt;/a&gt; when a page on the wiki is edited/updated to try and publicize the wiki and get more folks editing. Turns out it&amp;rsquo;s a pretty easy thing to set up.&lt;/p&gt;
 
 &lt;h2&gt;This is how we did it:&lt;/h2&gt;
 
 &lt;ul&gt;
-&lt;li&gt;Every LocalWiki instance has a Recent Changes page, and there&amp;rsquo;s a pretty cool but casually hidden/relatively unkown feed for those changes. It lives at &lt;code&gt;http://[your wiki&#39;s URL]/Recent_Changes/_feed&lt;/code&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-
-
-&lt;h1&gt;&lt;img src=&quot;/images/wiki_feed.png&quot; alt=&quot;Wiki Feed&quot; /&gt;&lt;/h1&gt;
-
-&lt;ul&gt;
+&lt;li&gt;Every LocalWiki instance has a Recent Changes RSS feed, and there&amp;rsquo;s a pretty cool but casually hidden/relatively unknown feed for those changes. It lives at &lt;code&gt;http://[your wiki&#39;s URL]/Recent_Changes/_feed&lt;/code&gt;.&lt;/li&gt;
 &lt;li&gt;Discovering that feed was like, 90% of the challenge. From there, we set up a recipe in &lt;a href=&quot;http://ifttt.com&quot;&gt;IFTTT&lt;/a&gt; to automatically tweet when that feed was updated.&lt;/li&gt;
 &lt;/ul&gt;
 
 
-&lt;h1&gt;&lt;img src=&quot;/images/wikibot_ifttt.png&quot; alt=&quot;Wikibot Recipe&quot; /&gt;&lt;/h1&gt;
+&lt;h1&gt;&lt;img src=&quot;/images/wikibot_ifttt.png&quot; class=&quot;inline&quot;&gt;&lt;/h1&gt;
+
 
 &lt;p&gt;&lt;em&gt;IFTTT stands for IF This Then That. It&amp;rsquo;s a service that allows you to combine internet services – in this case, a connecting a feed update to Twitter. People use IFTTT for all kinds of stuff: &lt;a href=&quot;https://ifttt.com/recipes/83847-text-me-today-s-forecast-each-morning&quot;&gt;getting a text message every day with the day&amp;rsquo;s forecast&lt;/a&gt;, &lt;a href=&quot;https://ifttt.com/recipes/102384-backup-my-contacts-to-a-google-spreadsheet&quot;&gt;backing up their contacts to a Google Spreadsheet&lt;/a&gt;, or &lt;a href=&quot;https://ifttt.com/recipes/1552-instagram-dropbox&quot;&gt;saving their Instagram photos to Dropbox&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
 
@@ -45,14 +228,16 @@
 &lt;/ul&gt;
 
 
-&lt;h1&gt;&lt;img src=&quot;/images/create_recipe.png&quot; alt=&quot;Create a Recipe&quot; /&gt;&lt;/h1&gt;
+&lt;h1&gt;&lt;img src=&quot;/images/create_recipe.png&quot; class=&quot;inline&quot;&gt;&lt;/h1&gt;
+
 
 &lt;ul&gt;
 &lt;li&gt;Click the link where it says &lt;strong&gt;&amp;ldquo;this&amp;rdquo;&lt;/strong&gt; and select Feed from the list of triggers.&lt;/li&gt;
 &lt;/ul&gt;
 
 
-&lt;h1&gt;&lt;img src=&quot;/images/click_feed.png&quot; alt=&quot;Click Feed&quot; /&gt;&lt;/h1&gt;
+&lt;h1&gt;&lt;img src=&quot;/images/click_feed.png&quot; class=&quot;inline&quot;&gt;&lt;/h1&gt;
+
 
 &lt;ul&gt;
 &lt;li&gt;Since every item added to the feed is a new change, you can select &lt;strong&gt;New feed item&lt;/strong&gt; as your trigger.&lt;/li&gt;
@@ -60,7 +245,8 @@
 &lt;/ul&gt;
 
 
-&lt;h1&gt;&lt;img src=&quot;/images/create_trigger.png&quot; alt=&quot;Create Trigger&quot; /&gt;&lt;/h1&gt;
+&lt;h1&gt;&lt;img src=&quot;/images/create_trigger.png&quot; class=&quot;inline&quot;&gt;&lt;/h1&gt;
+
 
 &lt;ul&gt;
 &lt;li&gt;Click where it says &lt;strong&gt;&amp;ldquo;that&amp;rdquo;&lt;/strong&gt; and choose &lt;strong&gt;Twitter&lt;/strong&gt; as your action channel. You will probably have to set up IFTTT such that it can interact with your Twitter account, if you haven&amp;rsquo;t already.&lt;/li&gt;
@@ -69,16 +255,17 @@
 &lt;/ul&gt;
 
 
-&lt;h1&gt;&lt;img src=&quot;/images/create_action.png&quot; alt=&quot;Create Action&quot; /&gt;&lt;/h1&gt;
+&lt;h1&gt;&lt;img src=&quot;/images/create_action.png&quot; class=&quot;inline&quot;&gt;&lt;/h1&gt;
+
 
 &lt;ul&gt;
-&lt;li&gt;Look over everything to make sure you like it, and then click Create Recipe.&lt;/li&gt;
+&lt;li&gt;Look over everything to make sure you like it, and then click &lt;strong&gt;Create Recipe.&lt;/strong&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 
 &lt;h2&gt;Boom!&lt;/h2&gt;
 
-&lt;p&gt;You have a LocalWikiBot. Recipes on IFTTT are triggered automatically every 15 minutes, so if you have a lot of edits, expect a flood of tweets on that mark. You can also set up your bot to have an action outside of Twitter: check out the full list of possible channels &lt;a href=&quot;https://ifttt.com/channels&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;You have a &lt;strong&gt;LocalWikiBot&lt;/strong&gt;. Recipes on IFTTT are triggered automatically every 15 minutes, so if you have a lot of edits, expect a flood of tweets on that mark. You can also set up your bot to have an action outside of Twitter: check out the full list of possible channels &lt;a href=&quot;https://ifttt.com/channels&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
 </content>
  </entry>
  
@@ -103,7 +290,7 @@
 
 &lt;p&gt;A map tile is a very specific thing. Map tiles are 256x256 pixel images that are placed side by side inside of a web map to give the illusion of one very large, seamless image. Maps have specific zoom levels that are explicitly defined, from zoom level 0 through zoom level 20. Zoom level 0 is one tile for the whole world. It looks like this:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/zoom0.png&quot; alt=&quot;Zoom Level 0&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/zoom0.png&quot; class=&quot;inline&quot;&gt;&lt;/p&gt;
 
 &lt;p&gt;Zoom level 1 is four tiles for the whole world, in a 2x2 grid. Zoom level 2 is 16 tiles for the whole world, in a 4x4 grid. You see where this is going.&lt;/p&gt;
 
@@ -111,25 +298,25 @@
 
 &lt;p&gt;The URL for the tile above is http://a.tiles.mapbox.com/v3/lyzidiamond.map-ietb6srb/0/0/0.png. The first part is obviously the server. The last three numbers, as I&amp;rsquo;m sure you&amp;rsquo;ve figured out, delineate the zoom level and the x/y location of that particular tile in the grid. Zoom 0 is a pretty bad example of this. Let&amp;rsquo;s go to zoom 1.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/zoom-1-1-0.png&quot; alt=&quot;Zoom Level 1&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/zoom-1-1-0.png&quot; class=&quot;inline&quot;&gt;&lt;/p&gt;
 
 &lt;p&gt;This is the tile in the first row in the second column of the zoom level 1 2x2 grid. Its URL is http://a.tiles.mapbox.com/v3/lyzidiamond.map-ietb6srb/1/1/0.png. You can see that at the end of the URL, it shows us that we&amp;rsquo;re looking at a tile from zoom level 1 in the 1, 0 part of the grid.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/tilegrid.png&quot; alt=&quot;Tile Grid&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/tilegrid.png&quot; class=&quot;inline&quot;&gt;&lt;/p&gt;
 
 &lt;p&gt;Two more, way zoomed in, just for fun:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/zoom-12-1009-1878.png&quot; alt=&quot;Zoom Level 12&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/zoom-12-1009-1878.png&quot; class=&quot;inline&quot;&gt;&lt;/p&gt;
 
 &lt;p&gt;URL: http://a.tiles.mapbox.com/v3/lyzidiamond.map-ietb6srb/12/1009/1878.png&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/zoom-12-1009-1879.png&quot; alt=&quot;Zoom Level 12&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/zoom-12-1009-1879.png&quot; class=&quot;inline&quot;&gt;&lt;/p&gt;
 
 &lt;p&gt;URL: http://a.tiles.mapbox.com/v3/lyzidiamond.map-ietb6srb/12/1009/1879.png, or the tile right below the previous one. Get it? Pretty cool, right?&lt;/p&gt;
 
 &lt;p&gt;So you&amp;rsquo;ve now deduced that there&amp;rsquo;s a pretty rigorous file structure that is required to manage all of this.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/tile-files.png&quot; alt=&quot;Tile File Structure&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/tile-files.png&quot; class=&quot;inline&quot;&gt;&lt;/p&gt;
 
 &lt;p&gt;Notice that in this image, it doesn&amp;rsquo;t have every zoom level, or even the entirety of the grid. TileMill will ask you for a) a geographic area and b) the number of zoom levels you want before you export. If you&amp;rsquo;re trying to do something too epically large, or with a ton of layers that are going to be annoying/resource-consuming to render down, it&amp;rsquo;ll give you a nice little warning, along the lines of &amp;ldquo;HEY JERKFACE WE DON&amp;rsquo;T WANNA DO THAT FIX YR STUFF.&amp;rdquo; But nicer. Then they export your tiles into this file structure, and indeed host them as well. If they&amp;rsquo;re hosting a ton of your crap or you&amp;rsquo;re getting a ton of views, they ask you to pay them.&lt;/p&gt;
 
@@ -150,7 +337,8 @@
    <link href="http://lyzidiamond.com/posts/geographic-awakening"/>
    <updated>2013-11-20T00:00:00-08:00</updated>
    <id>http://lyzidiamond.com/posts/geographic-awakening</id>
-   <content type="html">&lt;h1&gt;&lt;img src=&quot;http://education.nationalgeographic.com/media/photos/000/344/custom/34437_610x343.jpg&quot; alt=&quot;Geography Awareness Week&quot; /&gt;&lt;/h1&gt;
+   <content type="html">&lt;h1&gt;&lt;img src=&quot;http://education.nationalgeographic.com/media/photos/000/344/custom/34437_610x343.jpg&quot; class=&quot;inline&quot;&gt;&lt;/h1&gt;
+
 
 &lt;p&gt;This week is &lt;a href=&quot;http://geographyawarenessweek.org&quot;&gt;Geography Awareness Week&lt;/a&gt;, a whole week dedicated to the study and understanding of our world through a geographic lens. It was established by presidential proclamation in 1987 (pop quiz: who was president in 1987?) in order to promote geographic education in our classrooms and in our lives at large.&lt;/p&gt;
 
@@ -193,17 +381,17 @@
 
 &lt;p&gt;Then I turned back to the projector to show an example of merging a pull request, seeing as I had about ten of them at that point, and lo and behold&amp;hellip;&lt;/p&gt;
 
-&lt;h1&gt;&lt;img src=&quot;https://raw.github.com/lyzidiamond/lyzidiamond.github.com/master/images/mergeconflict.png&quot; width=&quot;100%&quot;&gt;&lt;/h1&gt;
+&lt;h1&gt;&lt;img src=&quot;https://raw.github.com/lyzidiamond/lyzidiamond.github.com/master/images/mergeconflict.png&quot; class=&quot;inline&quot; width=&quot;100%&quot;&gt;&lt;/h1&gt;
 
 
 &lt;p&gt;Every pull request had a merge conflict! I got super frustrated, asked the group to talk amongst themselves, and investigated a little bit. When I checked the diff, this is what I saw:&lt;/p&gt;
 
-&lt;h1&gt;&lt;img src=&quot;https://raw.github.com/lyzidiamond/lyzidiamond.github.com/master/images/diff.png&quot; width=&quot;100%&quot;&gt;&lt;/h1&gt;
+&lt;h1&gt;&lt;img src=&quot;https://raw.github.com/lyzidiamond/lyzidiamond.github.com/master/images/diff.png&quot; class=&quot;inline&quot; width=&quot;100%&quot;&gt;&lt;/h1&gt;
 
 
 &lt;p&gt;Every feature in the dataset was on the same line! JavaScript doesn&amp;rsquo;t care about line breaks, so this is definitely acceptable and is totally still valid GeoJSON, but makes it near impossible for use with this collaboration technique I was preaching. I didn&amp;rsquo;t even notice it beforehand, because it appears to be line broken in geojson.io:&lt;/p&gt;
 
-&lt;h1&gt;&lt;img src=&quot;https://raw.github.com/lyzidiamond/lyzidiamond.github.com/master/images/geojsonio.png&quot; width=&quot;100%&quot;&gt;&lt;/h1&gt;
+&lt;h1&gt;&lt;img src=&quot;https://raw.github.com/lyzidiamond/lyzidiamond.github.com/master/images/geojsonio.png&quot; class=&quot;inline&quot; width=&quot;100%&quot;&gt;&lt;/h1&gt;
 
 
 &lt;p&gt;A conundrum, to be certain. I thought to myself, &amp;ldquo;Ugh, I can&amp;rsquo;t believe I didn&amp;rsquo;t figure this out ahead of time. How could I screw this up so badly?&amp;rdquo; It wasn&amp;rsquo;t a pretty scene.&lt;/p&gt;
@@ -212,12 +400,12 @@
 
 &lt;p&gt;So they did. And less than an hour later&amp;hellip;&lt;/p&gt;
 
-&lt;h1&gt;&lt;img src=&quot;https://raw.github.com/lyzidiamond/lyzidiamond.github.com/master/images/merged.png&quot; width=&quot;100%&quot;&gt;&lt;/h1&gt;
+&lt;h1&gt;&lt;img src=&quot;https://raw.github.com/lyzidiamond/lyzidiamond.github.com/master/images/merged.png&quot; class=&quot;inline&quot; width=&quot;100%&quot;&gt;&lt;/h1&gt;
 
 
 &lt;p&gt;It was merged! Mele checked it afterwards, and it &lt;a href=&quot;https://github.com/pdxmele/pdxpyconmap/commit/7890ee0924e987eda955c6218d95778026fd9384&quot;&gt;totally works&lt;/a&gt;:&lt;/p&gt;
 
-&lt;h1&gt;&lt;img src=&quot;https://raw.github.com/lyzidiamond/lyzidiamond.github.com/master/images/melecommit.png&quot; width=&quot;100%&quot;&gt;&lt;/h1&gt;
+&lt;h1&gt;&lt;img src=&quot;https://raw.github.com/lyzidiamond/lyzidiamond.github.com/master/images/melecommit.png&quot; class=&quot;inline&quot; width=&quot;100%&quot;&gt;&lt;/h1&gt;
 
 
 &lt;p&gt;Now, save for having to resolve the conflicts with each of the commits made pre-prettifying, this exercise will work completely smoothly in the future. I can&amp;rsquo;t wait to present it again.&lt;/p&gt;
@@ -243,7 +431,9 @@
    <link href="http://lyzidiamond.com/posts/external-geojson-and-leaflet-the-other-way"/>
    <updated>2013-09-24T00:00:00-07:00</updated>
    <id>http://lyzidiamond.com/posts/external-geojson-and-leaflet-the-other-way</id>
-   <content type="html">&lt;p&gt;I will always be a student. In the wide world of geospatial technology, we are all going to be students forever. So when someone from Twitter tells me a better way to do something that seems intuitive and worthwhile, I have no problem sharing it with the world, even when it contradicts something I said before.&lt;/p&gt;
+   <content type="html">&lt;p&gt;&lt;strong&gt;&lt;em&gt;Editor&amp;rsquo;s Note:&lt;/em&gt;&lt;/strong&gt; &lt;em&gt;This post was updated in June 2014 to fix errors and reflect the most recent versions of Leaflet and jQuery.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;I will always be a student. In the wide world of geospatial technology, we are all going to be students forever. So when someone from Twitter tells me a better way to do something that seems intuitive and worthwhile, I have no problem sharing it with the world, even when it contradicts something I said before.&lt;/p&gt;
 
 &lt;p&gt;I&amp;rsquo;m specifically talking about my last technical post, &lt;a href=&quot;http://lyzidiamond.com/posts/osgeo-august-meeting/&quot;&gt;&amp;ldquo;Adding GeoJSON to Leaflet with Link Relations&amp;rdquo;&lt;/a&gt;. The technique I outlined totally worked, and people seem to be enjoying using it, but as is usual for these sorts of things, someone from Twitter offered another suggestion:&lt;/p&gt;
 
@@ -253,19 +443,18 @@
 &lt;script async src=&quot;//platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
 
 
-&lt;p&gt;I thought about this for a minute. Why &lt;em&gt;wasn&amp;rsquo;t&lt;/em&gt; I just passing my GeoJSON file directly into jQuery&amp;rsquo;s getJSON method? I thought I had tried it and it hadn&amp;rsquo;t worked. But then I tried it. And it &lt;a href=&quot;http://lyzidiamond.com/cupcakes_fail.html&quot;&gt;totally worked&lt;/a&gt;!&lt;/p&gt;
+&lt;p&gt;I thought about this for a minute. Why &lt;em&gt;wasn&amp;rsquo;t&lt;/em&gt; I just passing my GeoJSON file directly into jQuery&amp;rsquo;s getJSON method? I thought I had tried it and it hadn&amp;rsquo;t worked. But then I tried it. And it &lt;a href=&quot;http://lyzidiamond.com/cupcakes/cupcakes_fail.html&quot;&gt;totally worked&lt;/a&gt;!&lt;/p&gt;
 
-&lt;p&gt;So let&amp;rsquo;s take a look at this code, and compare it to the code I posted last month.&lt;/p&gt;
+&lt;p&gt;So let&amp;rsquo;s take a look at this code and compare it to the code I posted last month.&lt;/p&gt;
 
 &lt;h2&gt;Passing JSON directly into getJSON method.&lt;/h2&gt;
-
 
 &lt;pre&gt;&lt;code&gt;&amp;lt;!doctype html&amp;gt;
 &amp;lt;html&amp;gt;
 &amp;lt;head&amp;gt;
-  &amp;lt;link rel=&quot;stylesheet&quot; href=&quot;http://cdn.leafletjs.com/leaflet-0.5/leaflet.css&quot; /&amp;gt;
+  &amp;lt;link rel=&quot;stylesheet&quot; href=&quot;http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.css&quot; /&amp;gt;
   &amp;lt;!--[if lte IE 8]&amp;gt;
-     &amp;lt;link rel=&quot;stylesheet&quot; href=&quot;http://cdn.leafletjs.com/leaflet-0.5/leaflet.ie.css&quot; /&amp;gt;
+     &amp;lt;link rel=&quot;stylesheet&quot; href=&quot;http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.ie.css&quot; /&amp;gt;
   &amp;lt;![endif]--&amp;gt;
   &amp;lt;style type=&quot;text/css&quot;&amp;gt;
     body {
@@ -278,8 +467,9 @@
     }
 
   &amp;lt;/style&amp;gt;
-  &amp;lt;script src=&quot;http://cdn.leafletjs.com/leaflet-0.5/leaflet.js&quot;&amp;gt;&amp;lt;/script&amp;gt;
-  &amp;lt;script src=&quot;http://code.jquery.com/jquery-1.10.2.min.js&quot;&amp;gt;&amp;lt;/script&amp;gt;
+  &amp;lt;script src=&quot;http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.js&quot;&amp;gt;&amp;lt;/script&amp;gt;
+  &amp;lt;script src=&quot;http://code.jquery.com/jquery-2.1.0.min.js&quot;&amp;gt;&amp;lt;/script&amp;gt;
+&amp;lt;/head&amp;gt;
 &amp;lt;body&amp;gt;
   &amp;lt;div id=&quot;cupcake-map&quot;&amp;gt;&amp;lt;/div&amp;gt;
   &amp;lt;script&amp;gt;
@@ -287,7 +477,7 @@
     maxZoom: 18
   });
 
-  $.getJSON(&quot;./cupcakes.json&quot;, function(data) {
+  $.getJSON(&quot;./cupcakes/cupcakes.json&quot;, function(data) {
     var geojson = L.geoJson(data, {
       onEachFeature: function (feature, layer) {
         layer.bindPopup(feature.properties.name);
@@ -302,12 +492,9 @@
 &amp;lt;/html&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;There are two main differences. First of all, the link relation in the &lt;code&gt;&amp;lt;head&amp;gt;&lt;/code&gt; is gone. Second, the first argument to the jQuery getJSON method is different. Instead of using some additional jQuery code to identify the linked JSON and pull out the content, we just simply pass the JSON file &lt;em&gt;itself&lt;/em&gt; into the method. (The second argument remains the same, a callback function upon successful &amp;ldquo;getting&amp;rdquo; of JSON.) Everything else is the same. And as you &lt;a href=&quot;http://lyzidiamond.com/cupcakes_fail.html&quot;&gt;can see&lt;/a&gt;, it looks &lt;a href=&quot;http://lyzidiamond.com/cupcakes.html&quot;&gt;exactly the same&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;There are two main differences. First of all, the link relation in the &lt;code&gt;&amp;lt;head&amp;gt;&lt;/code&gt; is gone. Second, the first argument to the jQuery getJSON method is different. Instead of using some additional jQuery code to identify the linked JSON and pull out the content, we just simply pass the JSON file &lt;em&gt;itself&lt;/em&gt; into the method. (The second argument remains the same, a callback function upon successful &amp;ldquo;getting&amp;rdquo; of the JSON file.) Everything else is the same. And as you &lt;a href=&quot;http://lyzidiamond.com/cupcakes/cupcakes_fail.html&quot;&gt;can see&lt;/a&gt;, it looks &lt;a href=&quot;http://lyzidiamond.com/cupcakes/cupcakes.html&quot;&gt;exactly the same&lt;/a&gt;.&lt;/p&gt;
 
 &lt;h2&gt;This is great! Should I just use this instead of link relations all the time?&lt;/h2&gt;
-
-
-
 
 &lt;blockquote class=&quot;twitter-tweet&quot;&gt;&lt;p&gt;&lt;a href=&quot;https://twitter.com/vtcraghead&quot;&gt;@vtcraghead&lt;/a&gt; &lt;a href=&quot;https://twitter.com/lyzidiamond&quot;&gt;@lyzidiamond&lt;/a&gt; Might need to be proxied if cross-domain...&lt;/p&gt;&amp;mdash; Bryan McBride (@brymcbride) &lt;a href=&quot;https://twitter.com/brymcbride/statuses/382541743947665408&quot;&gt;September 24, 2013&lt;/a&gt;&lt;/blockquote&gt;
 
@@ -315,12 +502,13 @@
 &lt;script async src=&quot;//platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
 
 
-&lt;p&gt;No. This technique worked for me because my &lt;a href=&quot;http://lyzidiamond.com/cupcakes_fail.html&quot;&gt;cupcakes.html&lt;/a&gt; and &lt;a href=&quot;http://lyzidiamond.com/cupcakes.json&quot;&gt;cupcakes.json&lt;/a&gt; files are in the same domain. If my files were in separate domains, I would have to create a proxy. (There is a nice example of a simple PHP proxy and an example its usage with jQuery&amp;rsquo;s getJSON method &lt;a href=&quot;https://gist.github.com/bmcbride/6614373#file-proxy-php&quot;&gt;here&lt;/a&gt;. According to Twitter, you can write these proxies in other languages too, but &lt;a href=&quot;https://twitter.com/billdollins/status/382561454500487168&quot;&gt;it can be annoying/time consuming&lt;/a&gt;.)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;No.&lt;/strong&gt; This technique worked for me because my &lt;a href=&quot;http://lyzidiamond.com/cupcakes/cupcakes_fail.html&quot;&gt;cupcakes.html&lt;/a&gt; and &lt;a href=&quot;http://lyzidiamond.com/cupcakes/cupcakes.json&quot;&gt;cupcakes.json&lt;/a&gt; files are in the same domain. If my files were in separate domains, I would have to create a proxy. (There is a nice example of a simple PHP proxy and an example its usage with jQuery&amp;rsquo;s getJSON method &lt;a href=&quot;https://gist.github.com/bmcbride/6614373#file-proxy-php&quot;&gt;here&lt;/a&gt;. According to Twitter, you can write these proxies in other languages too, but &lt;a href=&quot;https://twitter.com/billdollins/status/382561454500487168&quot;&gt;it can be annoying/time consuming&lt;/a&gt;.)&lt;/p&gt;
 
 &lt;p&gt;A proxy is required when using this method because of the &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/JavaScript/Same_origin_policy_for_JavaScript&quot;&gt;same-origin policy&lt;/a&gt;, which affects browser-side programming languages. The policy sets restrictions on how scripts loaded from one origin can interact with resources from different origins in the interest of security (&amp;ldquo;origins&amp;rdquo; meaning &amp;ldquo;domains&amp;rdquo; in this case). Most methods and properties are not accessible when being requested from a different domain, so a proxy domain must be created to mimic a same-origin request.&lt;/p&gt;
 
-&lt;h2&gt;Oh. That sounds annoying. Is there another way?&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;Editor&amp;rsquo;s note:&lt;/em&gt;&lt;/strong&gt; _At the time of this writing,&lt;/p&gt;
 
+&lt;h2&gt;Oh. That sounds annoying. Is there another way?&lt;/h2&gt;
 
 &lt;p&gt;You bet. &lt;a href=&quot;https://twitter.com/CWMma&quot;&gt;Calvin Metcalf&lt;/a&gt; has created a nice little plugin for &lt;a href=&quot;http://leafletjs.com&quot;&gt;Leaflet&lt;/a&gt; called &lt;a href=&quot;https://github.com/calvinmetcalf/leaflet-ajax&quot;&gt;leaflet-ajax&lt;/a&gt; that allows you to make a request for JSON using Ajax and allows a request/response for JSONP, making it possible to pull JSON from another domain.&lt;/p&gt;
 
@@ -423,7 +611,7 @@ var geojsonLayer = new L.GeoJSON.AJAX(&quot;http:example.com/cupcakes.jsonp&quot
    <link href="http://lyzidiamond.com/posts/commit-or-quit"/>
    <updated>2013-09-23T00:00:00-07:00</updated>
    <id>http://lyzidiamond.com/posts/commit-or-quit</id>
-   <content type="html">&lt;h1&gt;&lt;img src=&quot;http://b.vimeocdn.com/ts/130/674/130674832_640.jpg&quot;&gt;&lt;/h1&gt;
+   <content type="html">&lt;h1&gt;&lt;img src=&quot;http://b.vimeocdn.com/ts/130/674/130674832_640.jpg&quot; class=&quot;inline&quot;&gt;&lt;/h1&gt;
 
 
 &lt;p&gt;I am a perfectionist. Scratch that. I am an &lt;em&gt;ambitious&lt;/em&gt; perfectionist. I want to do everything, and I want to do it perfectly the first time, and I want to do it faster than anyone else has ever done it before. These are unrealistic goals, which means I fail&amp;hellip; a lot.&lt;/p&gt;
@@ -469,9 +657,11 @@ var geojsonLayer = new L.GeoJSON.AJAX(&quot;http:example.com/cupcakes.jsonp&quot
    <link href="http://lyzidiamond.com/posts/osgeo-august-meeting"/>
    <updated>2013-08-22T00:00:00-07:00</updated>
    <id>http://lyzidiamond.com/posts/osgeo-august-meeting</id>
-   <content type="html">&lt;p&gt;&lt;em&gt;Wednesday night, I was fortunate to attend the August meeting of PDX OSGEO, Portland&amp;rsquo;s meetup for open source geo shenanigans. I learned some new stuff, got to see a &lt;a href=&quot;http://www.mapbox.com/blog/weekend-hack-printing-3d-tiles/&quot;&gt;3D-printed map tile&lt;/a&gt; (!!!!!), and got a chance to show off some of my recent work. The bulk of my contribution to the meeting was showing off a new technique for adding GeoJSON to a Leaflet map. This is an overview of what I talked about, with more detail and background.&lt;/em&gt;&lt;/p&gt;
+   <content type="html">&lt;p&gt;&lt;strong&gt;&lt;em&gt;Editor&amp;rsquo;s note:&lt;/em&gt;&lt;/strong&gt; &lt;em&gt;This post was updated in June 2014 to reflect changes in Leaflet and update examples to new versions. Shortly after publishing this post, I discovered &lt;a href=&quot;http://lyzidiamond.com/posts/external-geojson-and-leaflet-the-other-way/&quot;&gt;a different way&lt;/a&gt; to add GeoJSON to a Leaflet map that I like a lot better. You can read a blog post about that &lt;a href=&quot;http://lyzidiamond.com/posts/external-geojson-and-leaflet-the-other-way/&quot;&gt;here&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
 
 &lt;hr /&gt;
+
+&lt;p&gt;&lt;em&gt;Wednesday night, I was fortunate to attend the August meeting of PDX OSGEO, Portland&amp;rsquo;s meetup for open source geo shenanigans. I learned some new stuff, got to see a &lt;a href=&quot;http://www.mapbox.com/blog/weekend-hack-printing-3d-tiles/&quot;&gt;3D-printed map tile&lt;/a&gt; (!!!!!), and got a chance to show off some of my recent work. The bulk of my contribution to the meeting was showing off a new technique for adding GeoJSON to a Leaflet map. This is an overview of what I talked about, with more detail and background.&lt;/em&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;http://leafletjs.com&quot;&gt;Leaflet&lt;/a&gt; is one of the best mapping libraries out there; it&amp;rsquo;s certainly my favorite! But one thing that&amp;rsquo;s somewhat convoluted is adding and using GeoJSON layers inside your Leaflet map. The &lt;a href=&quot;http://leafletjs.com/reference.html&quot;&gt;Leaflet API&lt;/a&gt; does have a &lt;a href=&quot;http://leafletjs.com/reference.html#geojson&quot;&gt;constructor for adding a GeoJSON layer&lt;/a&gt;, which is great! But when you have a GeoJSON file with hundreds or thousands of features, it makes most sense to house that data in an external file. The challenge then comes when trying to use or reference that file when constructing your map.&lt;/p&gt;
 
@@ -582,14 +772,14 @@ var geojsonLayer = new L.GeoJSON.AJAX(&quot;http:example.com/cupcakes.jsonp&quot
 
 &lt;pre&gt;&lt;code&gt;&amp;lt;html&amp;gt;
 &amp;lt;head&amp;gt;
-  &amp;lt;link rel=&quot;stylesheet&quot; href=&quot;http://cdn.leafletjs.com/leaflet-0.5/leaflet.css&quot; /&amp;gt;
+  &amp;lt;link rel=&quot;stylesheet&quot; href=&quot;http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.css&quot; /&amp;gt;
   &amp;lt;style type=&quot;text/css&quot;&amp;gt;
   body {  padding: 0; margin: 0;  }
   html, body, #cupcake-map {  height: 100%;  }
   &amp;lt;/style&amp;gt;
-  &amp;lt;script src=&quot;http://cdn.leafletjs.com/leaflet-0.5/leaflet.js&quot;&amp;gt;&amp;lt;/script&amp;gt;
-  &amp;lt;script src=&quot;http://code.jquery.com/jquery-1.10.2.min.js&quot;&amp;gt;&amp;lt;/script&amp;gt;
-  &amp;lt;link rel=&quot;points&quot; type=&quot;application/json&quot; href=&quot;./cupcakes.json&quot;&amp;gt;
+  &amp;lt;script src=&quot;http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.js&quot;&amp;gt;&amp;lt;/script&amp;gt;
+  &amp;lt;script src=&quot;http://code.jquery.com/jquery-2.1.0.min.js&quot;&amp;gt;&amp;lt;/script&amp;gt;
+  &amp;lt;link rel=&quot;points&quot; type=&quot;application/json&quot; href=&quot;.cupcakes/cupcakes.json&quot;&amp;gt;
 &amp;lt;/head&amp;gt;
 &amp;lt;body&amp;gt;
   &amp;lt;div id=&quot;cupcake-map&quot;&amp;gt;&amp;lt;/div&amp;gt;
@@ -617,26 +807,26 @@ var geojsonLayer = new L.GeoJSON.AJAX(&quot;http:example.com/cupcakes.jsonp&quot
 
 &lt;p&gt;Leaflet, as discussed previously, is a JavaScript mapping library with a lot of great functionality. (For more info on getting started with and using Leaflet, check out their &lt;a href=&quot;http://leafletjs.com/examples/quick-start.html&quot;&gt;Quick Start Tutorial&lt;/a&gt;.) In order to use it, we need to include both a Leaflet CSS file (for map styling) and the Leaflet JavaScript file, which is what the stylesheet on line 3 and the script on line 8 are all about. Lines 4 through 7 are CSS rules to give our map a height and ensure that it is actually full-screen on the page.&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;&amp;lt;link rel=&quot;stylesheet&quot; href=&quot;http://cdn.leafletjs.com/leaflet-0.5/leaflet.css&quot; /&amp;gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;link rel=&quot;stylesheet&quot; href=&quot;http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.css&quot; /&amp;gt;
 ...
-&amp;lt;script src=&quot;http://cdn.leafletjs.com/leaflet-0.5/leaflet.js&quot;&amp;gt;&amp;lt;/script&amp;gt;
+&amp;lt;script src=&quot;http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.js&quot;&amp;gt;&amp;lt;/script&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;The other library we need to make this work is called &lt;a href=&quot;http://jquery.com/&quot;&gt;jQuery&lt;/a&gt;. jQuery is a JavaScript library that can make developing way easier, as it takes some of the complicated parts of the language and synthesizes them into easy-to-use pieces. Line 9 includes jQuery in our map, which allows us to use its functionality.&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;  &amp;lt;script src=&quot;http://code.jquery.com/jquery-1.10.2.min.js&quot;&amp;gt;&amp;lt;/script&amp;gt;
+&lt;pre&gt;&lt;code&gt;  &amp;lt;script src=&quot;http://code.jquery.com/jquery-2.1.0.min.js&quot;&amp;gt;&amp;lt;/script&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;The interesting part comes at Line 10. This is where we are including our JSON** file using a &lt;a href=&quot;http://blog.whatwg.org/the-road-to-html-5-link-relations&quot;&gt;link relation&lt;/a&gt;.&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;  &amp;lt;link rel=&quot;points&quot; type=&quot;application/json&quot; href=&quot;./cupcakes.json&quot;&amp;gt;
+&lt;pre&gt;&lt;code&gt;  &amp;lt;link rel=&quot;points&quot; type=&quot;application/json&quot; href=&quot;.cupcakes/cupcakes.json&quot;&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;As defined on the WHATWG blog post to which I just linked, &amp;ldquo;Regular links simply point to another page. Link relations are a way to explain &lt;em&gt;why&lt;/em&gt; you&amp;rsquo;re pointing to another page. They finish the sentence, &amp;lsquo;I&amp;rsquo;m pointing to this other page because&amp;hellip;&amp;rsquo;&amp;rdquo;&lt;/p&gt;
 
-&lt;p&gt;Typcailly, link relations are used with a common set of keywords that have specific value to the browser. For example, our CSS stylesheet on line 3 has the link relation &lt;code&gt;rel=&amp;ldquo;stylesheet&amp;rdquo;&lt;/code&gt;. This is the most common link relation, and every browser knows to download the data from the link before loading the page, as the relation tells it that the linked data contains important style information.&lt;/p&gt;
+&lt;p&gt;Typcailly, link relations are used with a common set of keywords that have specific value to the browser. For example, our CSS stylesheet on line 3 has the link relation &lt;code&gt;rel=&quot;stylesheet&quot;&lt;/code&gt;. This is the most common link relation, and every browser knows to download the data from the link before loading the page, as the relation tells it that the linked data contains important style information.&lt;/p&gt;
 
-&lt;p&gt;In our case, we are sort of hacking around that. We don&amp;rsquo;t necessarily want the browser to fetch the data on load or at any particular time. Indeed, we don&amp;rsquo;t want the browser to do anything with our GeoJSON file until we tell it to. Thus, we supply the link with a &lt;code&gt;rel=&amp;ldquo;points&amp;rdquo;&lt;/code&gt;, which isn&amp;rsquo;t going to have any unintended consequences. (For more information on link relation keywords and what they do, check out &lt;a href=&quot;http://microformats.org/wiki/existing-rel-values&quot;&gt;this comprehensive list&lt;/a&gt;.)&lt;/p&gt;
+&lt;p&gt;In our case, we are sort of hacking around that. We don&amp;rsquo;t necessarily want the browser to fetch the data on load or at any particular time. Indeed, we don&amp;rsquo;t want the browser to do anything with our GeoJSON file until we tell it to. Thus, we supply the link with a &lt;code&gt;rel=&quot;points&quot;&lt;/code&gt;, which isn&amp;rsquo;t going to have any unintended consequences. (For more information on link relation keywords and what they do, check out &lt;a href=&quot;http://microformats.org/wiki/existing-rel-values&quot;&gt;this comprehensive list&lt;/a&gt;.)&lt;/p&gt;
 
 &lt;h3&gt;The Body&lt;/h3&gt;
 
@@ -645,18 +835,18 @@ var geojsonLayer = new L.GeoJSON.AJAX(&quot;http:example.com/cupcakes.jsonp&quot
 &lt;pre&gt;&lt;code&gt;&amp;lt;div id=&quot;cupcake-map&quot;&amp;gt;&amp;lt;/div&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;Our JavaScript is sandwiched between &lt;code&gt;script&lt;/code&gt; tags, which lets the browser know that anything inside of them is JavaScript and should be treated as such. (This was mirrored in lines 4 and 7 in the head, with &lt;code&gt;style&lt;/code&gt; tags.) The first thing we do in our script (line 15) is define a variable called cupcakeTiles, and use the Leaflet &lt;a href=&quot;http://leafletjs.com/reference.html#tilelayer&quot;&gt;tileLayer&lt;/a&gt; constructor to define a map tile layer (more info on that at the link). This map uses custom tiles I made using &lt;a href=&quot;http://mapbox.com&quot;&gt;MapBox&lt;/a&gt;, so this constructor links to those tiles. It also adds a property for maxZoom, ensuring that the map will not be zoomed in past zoom level 18. (For more information on web maps and zoom levels and how they work, check out &lt;a href=&quot;http://www.mapbox.com/developers/guide/&quot;&gt;this excellent blog post&lt;/a&gt;.)&lt;/p&gt;
+&lt;p&gt;Our JavaScript is sandwiched between &lt;code&gt;script&lt;/code&gt; tags, which lets the browser know that anything inside of them is JavaScript and should be treated as such. (This was mirrored in lines 4 and 7 in the head, with &lt;code&gt;style&lt;/code&gt; tags.) The first thing we do in our script (line 15) is define a variable called cupcakeTiles, and use the Leaflet &lt;a href=&quot;http://leafletjs.com/reference.html#tilelayer&quot;&gt;tileLayer&lt;/a&gt; constructor to define a map tile layer (more info on that at the link). This map uses custom tiles I made using &lt;a href=&quot;http://mapbox.com&quot;&gt;MapBox&lt;/a&gt;, so this constructor links to those tiles. It also adds a property for maxZoom, ensuring that the map will not be zoomed in past zoom level 18. (For more information on web maps and zoom levels and how they work, check out &lt;a href=&quot;http://lyzidiamond.com/posts/wtf-tilemill/&quot;&gt;this blog post&lt;/a&gt;.)&lt;/p&gt;
 
 &lt;p&gt;Line 19 is where the code gets interesting, as we employ jQuery&amp;rsquo;s &lt;a href=&quot;http://api.jquery.com/jQuery.getJSON/&quot;&gt;getJSON method&lt;/a&gt;. This method takes three parameters: A URL of the location of the data, a plain object or string that gets sent with the request for the data, and a function to execute if the request for data is successful. The second parameter is optional, and you&amp;rsquo;ll see we don&amp;rsquo;t actually use it in our example.&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt; $.getJSON($(&#39;link[rel=&quot;points&quot;]&#39;).attr(&quot;href&quot;), function(data) {
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;We pass &lt;code&gt;$(&amp;lsquo;link[rel=&amp;ldquo;points&amp;rdquo;]&amp;rsquo;).attr(&amp;ldquo;href&amp;rdquo;)&lt;/code&gt; as our first parameter, which actually &lt;em&gt;does&lt;/em&gt; translate to a URL. It finds a link by its rel value (&lt;code&gt;$(&amp;lsquo;link[rel=&amp;ldquo;points&amp;rdquo;]&amp;rsquo;)&lt;/code&gt;), and then uses a getter method &lt;a href=&quot;http://api.jquery.com/attr/&quot;&gt;attr&lt;/a&gt; to pull the value of the href parameter in the link. This returns &lt;code&gt;&amp;ldquo;./cupcakes.json&amp;rdquo;&lt;/code&gt;, which is the location of our JSON file. (I should also note that our link has an attribute &lt;code&gt;type&lt;/code&gt; that is defined as &lt;code&gt;&amp;lsquo;application/json&amp;rsquo;&lt;/code&gt;. This helps the browser understand that the data in the link is JSON and should be treated as such.)&lt;/p&gt;
+&lt;p&gt;We pass &lt;code&gt;$(&#39;link[rel=&quot;points&quot;]&#39;).attr(&quot;href&quot;)&lt;/code&gt; as our first parameter, which actually &lt;em&gt;does&lt;/em&gt; translate to a URL. It finds a link by its rel value (&lt;code&gt;$(&#39;link[rel=&quot;points&quot;]&#39;)&lt;/code&gt;), and then uses a getter method &lt;a href=&quot;http://api.jquery.com/attr/&quot;&gt;attr&lt;/a&gt; to pull the value of the href parameter in the link. This returns &lt;code&gt;&quot;./cupcakes.json&quot;&lt;/code&gt;, which is the location of our JSON file. (I should also note that our link has an attribute &lt;code&gt;type&lt;/code&gt; that is defined as &lt;code&gt;&#39;application/json&#39;&lt;/code&gt;. This helps the browser understand that the data in the link is JSON and should be treated as such.)&lt;/p&gt;
 
-&lt;p&gt;The second parameter is actually a function to be executed upon successful retrieval of data, called a &lt;em&gt;&lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Mozilla/js-ctypes/js-ctypes_reference/Callbacks&quot;&gt;callback function&lt;/a&gt;&lt;/em&gt;. (If that blows your mind, take some time to read about &lt;a href=&quot;http://en.wikipedia.org/wiki/Asynchronous_I/O&quot;&gt;asynchronous programming&lt;/a&gt;. It&amp;rsquo;s really fascinating.) We actually have housed all the rest of the map creation and layer adding functionality of our map inside of this callback function, which ensures that the map won&amp;rsquo;t draw unless the GeoJSON has sucecssfully been retrieved.&lt;/p&gt;
+&lt;p&gt;The second parameter is actually a function to be executed upon successful retrieval of data, called a &lt;em&gt;&lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Mozilla/js-ctypes/js-ctypes_reference/Callbacks&quot;&gt;callback function&lt;/a&gt;&lt;/em&gt;. (If that blows your mind, take some time to read about &lt;a href=&quot;http://en.wikipedia.org/wiki/Asynchronous_I/O&quot;&gt;asynchronous programming&lt;/a&gt;. It&amp;rsquo;s really fascinating.) We actually have housed all the rest of the map creation and layer adding functionality of our map inside of this callback function, which ensures that the map won&amp;rsquo;t draw unless the GeoJSON has successfully been retrieved.&lt;/p&gt;
 
-&lt;p&gt;Our callback function takes one parameter, data, which will be the data that&amp;rsquo;s returned from the getJSON method. The first thing the function does is create a variable geojson and use the Leaflet &lt;a href=&quot;http://leafletjs.com/reference.html#geojson&quot;&gt;geoJson&lt;/a&gt; constructor to define a GeoJSON layer. The constructor takes two parameters: one for the actual GeoJSON that will make the layer (data, in our case), and any options you wish to specify. One of thse is called &lt;a href=&quot;http://leafletjs.com/reference.html#geojson-oneachfeature&quot;&gt;onEachFeature&lt;/a&gt;, which is most commonly used for attaching popups to data. That&amp;rsquo;s how we used it, anyway! As the value for onEachFeature, we define a function that takes our data and adds a popup to each feature that shows whatever value is in that feature&amp;rsquo;s &amp;ldquo;name&amp;rdquo; property.&lt;/p&gt;
+&lt;p&gt;Our callback function takes one parameter, &lt;code&gt;data&lt;/code&gt;, which represents the data that will be returned from the getJSON method. The first thing the function does is create a variable &lt;code&gt;geojson&lt;/code&gt; and use the Leaflet &lt;a href=&quot;http://leafletjs.com/reference.html#geojson&quot;&gt;geoJson&lt;/a&gt; constructor to define a &lt;em&gt;GeoJSON layer&lt;/em&gt;. The constructor takes two parameters: one for the actual GeoJSON that will make the layer (&lt;code&gt;data&lt;/code&gt;, in our case), and any options you wish to specify. One of these options is &lt;a href=&quot;http://leafletjs.com/reference.html#geojson-oneachfeature&quot;&gt;onEachFeature&lt;/a&gt;, which we use to attach popups to our GeoJSON As the value for &lt;code&gt;onEachFeature&lt;/code&gt;, we define a function that takes our data and adds a popup to each feature that shows whatever value is in that feature&amp;rsquo;s &lt;code&gt;name&lt;/code&gt; property.&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;$.getJSON($(&#39;link[rel=&quot;points&quot;]&#39;).attr(&quot;href&quot;), function(data) {
     var geojson = L.geoJson(data, {
@@ -667,9 +857,9 @@ var geojsonLayer = new L.GeoJSON.AJAX(&quot;http:example.com/cupcakes.jsonp&quot
 ...
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;After we have defined our GeoJSON layer, we have to actually create our map. This is done on line 23, where we create a variable map and use the Leaflet &lt;a href=&quot;http://leafletjs.com/reference.html#map-class&quot;&gt;map&lt;/a&gt; constructor to put our map in the &amp;ldquo;cupcake-map&amp;rdquo; div. We then also add a method &lt;a href=&quot;http://leafletjs.com/reference.html#map-fitbounds&quot;&gt;fitBounds()&lt;/a&gt; and pass it the extent of our GeoJSON data, which sets the bounds of our map to match the bounds of our data.&lt;/p&gt;
+&lt;p&gt;After we have defined our GeoJSON layer, we have to actually create our map. This is done on line 23, where we create a variable &lt;code&gt;map&lt;/code&gt; and use the Leaflet &lt;a href=&quot;http://leafletjs.com/reference.html#map-class&quot;&gt;map&lt;/a&gt; constructor to put our map in the &lt;code&gt;&quot;cupcake-map&quot;&lt;/code&gt; div. We then also add a method &lt;a href=&quot;http://leafletjs.com/reference.html#map-fitbounds&quot;&gt;fitBounds()&lt;/a&gt; and pass it the extent of our GeoJSON data, which sets the bounds of our map to match the bounds of our data.&lt;/p&gt;
 
-&lt;p&gt;The last two lines are pretty self-explanatory: we add our cupcakeTiles layer to the map and we add our geojson layer to the map.&lt;/p&gt;
+&lt;p&gt;In the last two lines, we add our &lt;code&gt;cupcakeTiles&lt;/code&gt; layer to the map and we add our geojson layer to the map.&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;$.getJSON($(&#39;link[rel=&quot;points&quot;]&#39;).attr(&quot;href&quot;), function(data) {
   var geojson = L.geoJson(data, {
@@ -687,7 +877,7 @@ var geojsonLayer = new L.GeoJSON.AJAX(&quot;http:example.com/cupcakes.jsonp&quot
 
 &lt;p&gt;So what did we just do? We made a map with custom tiles that grabs GeoJSON from an external file without changing that file. Oh, and we added some popups to the GeoJSON features and set the bounds of our map to match the bounds of the data. Not too bad for 29 lines of code!&lt;/p&gt;
 
-&lt;h1&gt;&lt;img src=&quot;https://raw.github.com/lyzidiamond/lyzidiamond.github.com/master/images/cupcakes.PNG&quot; width=&quot;100%&quot;&gt;&lt;/h1&gt;
+&lt;h1&gt;&lt;img src=&quot;https://raw.github.com/lyzidiamond/lyzidiamond.github.com/master/images/cupcakes/cupcakes.PNG&quot; class=&quot;inline&quot; width=&quot;100%&quot;&gt;&lt;/h1&gt;
 
 
 &lt;p&gt;*This is a joke.&lt;br&gt;
@@ -702,7 +892,7 @@ var geojsonLayer = new L.GeoJSON.AJAX(&quot;http:example.com/cupcakes.jsonp&quot
    <id>http://lyzidiamond.com/posts/geojson-io</id>
    <content type="html">&lt;p&gt;&lt;em&gt;This post originally appeared on &lt;a href=&quot;http://giscollective.org&quot;&gt;GIS Collective&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
 
-&lt;h1&gt;&lt;img src=&quot;http://giscollective.org/wp-content/uploads/2013/08/geojsonio1.png&quot;&gt;&lt;/h1&gt;
+&lt;h1&gt;&lt;img src=&quot;http://giscollective.org/wp-content/uploads/2013/08/geojsonio1.png&quot; class=&quot;inline&quot;&gt;&lt;/h1&gt;
 
 
 &lt;p&gt;Today on &lt;a href=&quot;http://www.mapbox.com/blog/geojsonio-announce/&quot;&gt;its blog&lt;/a&gt;, the open-source geo wizard repository &lt;a href=&quot;http://mapbox.com/&quot;&gt;MapBox&lt;/a&gt; has announced a new project to create, share, and edit geospatial data in your browser. It’s called &lt;a href=&quot;http://geojson.io&quot;&gt;geojson.io&lt;/a&gt;, and it’s set to sweep the nation! Or at least, the nation of those who like creating, sharing and editing spatial data.&lt;/p&gt;
@@ -763,13 +953,13 @@ var geojsonLayer = new L.GeoJSON.AJAX(&quot;http:example.com/cupcakes.jsonp&quot
 
 &lt;p&gt;There’s the first thing to realize: &lt;strong&gt;every map is lying to you all the time&lt;/strong&gt;. In an ideal world, the map is lying to you in the hopes of conveying the most information to you that it possibly can, but sometimes maps make generalizations and approximations for sake of the cartographer and not the map’s intended audience. Let’s take a look at an example.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://giscollective.org/wp-content/uploads/2013/07/maup2.png&quot; width=&quot;100%&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://giscollective.org/wp-content/uploads/2013/07/maup2.png&quot; class=&quot;inline&quot; width=&quot;100%&quot;&gt;&lt;/p&gt;
 
 &lt;p&gt;This is a map from the &lt;a href=&quot;http://www.washingtonpost.com/wp-srv/special/politics/election-map-2012/president/&quot;&gt;Washington Post&lt;/a&gt; showing the results of the 2012 presidential election. Considering that presidential races in this country are decided by the electoral college, and each state’s electors all vote for the same candidate, breaking out the data state by state makes sense. Nevada is blue, Mississippi is red, Obama won the election, let’s all go get a beer.&lt;/p&gt;
 
 &lt;p&gt;But this map doesn’t tell the whole story. Let’s look at another map from the Washington Post of the exact same data, just aggregated differently.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://giscollective.org/wp-content/uploads/2013/07/maup3.png&quot; width=&quot;100%&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://giscollective.org/wp-content/uploads/2013/07/maup3.png&quot; class=&quot;inline&quot; width=&quot;100%&quot;&gt;&lt;/p&gt;
 
 &lt;p&gt;Nevada doesn’t look as blue as it did in the previous map, and Mississippi doesn’t look quite as red. By grouping data by states, the map was hiding some of the complexity in the data, causing the reader to make certain assumptions.&lt;/p&gt;
 
@@ -779,7 +969,7 @@ var geojsonLayer = new L.GeoJSON.AJAX(&quot;http:example.com/cupcakes.jsonp&quot
 
 &lt;p&gt;For example, I live in Portland, which is in Multnomah County, Oregon. In the 2012 election, Multnomah County had 367,992 ballots cast in 132 precincts. (Oregon has vote by mail, so that changes things around a bit geographically, but that’s not super relevant here.) 75.37% of the votes cast for president were cast for Barack Obama. When you look at Multnomah County on the presidential map above, you’ll see that it’s pretty blue.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://giscollective.org/wp-content/uploads/2013/07/maup4.png&quot; width=&quot;100%&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://giscollective.org/wp-content/uploads/2013/07/maup4.png&quot; class=&quot;inline&quot; width=&quot;100%&quot;&gt;&lt;/p&gt;
 
 &lt;p&gt;But is that map telling you what’s really going on beneath the aggregation? Nope. Could one theoretically assume that all 367,992 ballots in Multnomah County were cast for Obama? Sure. Does it matter? In this case, probably not that much for you and me, but if you’re interested in conducting a political campaign, the MAUP could seriously hinder your strategy: &lt;em&gt;especially&lt;/em&gt; if you only have access to aggregated data.&lt;/p&gt;
 
@@ -816,7 +1006,7 @@ var geojsonLayer = new L.GeoJSON.AJAX(&quot;http:example.com/cupcakes.jsonp&quot
    <id>http://lyzidiamond.com/posts/github-geojson-gets-better</id>
    <content type="html">&lt;p&gt;&lt;em&gt;This post originally appeared on &lt;a href=&quot;http://giscollective.org&quot;&gt;GIS Collective&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
 
-&lt;h1&gt;&lt;img src=&quot;http://giscollective.org/wp-content/uploads/2013/06/cluster.png&quot;&gt;&lt;/h1&gt;
+&lt;h1&gt;&lt;img src=&quot;http://giscollective.org/wp-content/uploads/2013/06/cluster.png&quot; class=&quot;inline&quot;&gt;&lt;/h1&gt;
 
 
 &lt;p&gt;GitHub has announced today some &lt;a href=&quot;https://github.com/blog/1541-geojson-rendering-improvements&quot;&gt;new features&lt;/a&gt; for rendering geographic data, coming off its announcement two weeks ago that GeoJSON data would now be displayed on a map when opened inside a repo. These changes show that the folks over at GitHub are serious about the importance of geospatial, and recognize that more of the world’s developers are turning to maps and coordinates as a way to display, communicate, and analyze data. Spatial is special once again!&lt;/p&gt;
@@ -849,7 +1039,7 @@ var geojsonLayer = new L.GeoJSON.AJAX(&quot;http:example.com/cupcakes.jsonp&quot
    <id>http://lyzidiamond.com/posts/github-geojson</id>
    <content type="html">&lt;p&gt;&lt;em&gt;This post originally appeared on &lt;a href=&quot;http://giscollective.org&quot;&gt;GIS Collective&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
 
-&lt;h1&gt;&lt;img src=&quot;http://giscollective.org/wp-content/uploads/2013/06/githubgeojson1.png&quot; width=&quot;100%&quot;&gt;&lt;/h1&gt;
+&lt;h1&gt;&lt;img src=&quot;http://giscollective.org/wp-content/uploads/2013/06/githubgeojson1.png&quot; class=&quot;inline&quot; width=&quot;100%&quot;&gt;&lt;/h1&gt;
 
 
 &lt;p&gt;Last week, the code repository heroes over at &lt;a href=&quot;http://github.com&quot;&gt;GitHub&lt;/a&gt; made an awesome announcement: &lt;a href=&quot;https://github.com/blog/1528-there-s-a-map-for-that&quot;&gt;Any .geojson files living in GitHub repos will now be rendered on a Leaflet-driven, OSM tile-backed map right inside of GitHub&lt;/a&gt;, with tooltips showing the data properties to boot! This is a truly exciting moment for all geonerds who code, developers who use geodata, and everyone in between.&lt;/p&gt;
@@ -861,7 +1051,7 @@ var geojsonLayer = new L.GeoJSON.AJAX(&quot;http:example.com/cupcakes.jsonp&quot
 
 
 
-&lt;h1&gt;&lt;img src=&quot;http://www.palermo.edu/Archivos_content/ingenieria/top/130712_git_github_topdenota1.jpg&quot;&gt;&lt;/h1&gt;
+&lt;h1&gt;&lt;img src=&quot;http://www.palermo.edu/Archivos_content/ingenieria/top/130712_git_github_topdenota1.jpg&quot; class=&quot;inline&quot;&gt;&lt;/h1&gt;
 
 
 &lt;p&gt;Before learning about GitHub, we first have to understand &lt;a href=&quot;http://git-scm.com&quot;&gt;git&lt;/a&gt;. Git is a tool that allows multiple people to work on the same files at the same time without overwriting each other’s changes. This general concept is called &lt;em&gt;version control&lt;/em&gt;, and git is a &lt;em&gt;version control system&lt;/em&gt;. There are several other version control systems out there, but git is popular because it does its job more efficiently than many (if not all) of the others.&lt;/p&gt;
@@ -875,12 +1065,12 @@ var geojsonLayer = new L.GeoJSON.AJAX(&quot;http:example.com/cupcakes.jsonp&quot
 
 
 
-&lt;h1&gt;&lt;img src=&quot;http://giscollective.org/wp-content/uploads/2013/06/geojson.png&quot;&gt;&lt;/h1&gt;
+&lt;h1&gt;&lt;img src=&quot;http://giscollective.org/wp-content/uploads/2013/06/geojson.png&quot; class=&quot;inline&quot;&gt;&lt;/h1&gt;
 
 
 &lt;p&gt;One of the more common formats used for geospatial data in web mapping applications is called &lt;em&gt;GeoJSON&lt;/em&gt;. GeoJSON was born out of a format called &lt;em&gt;&lt;a href=&quot;http://json.org&quot;&gt;JSON&lt;/a&gt;&lt;/em&gt;, which stands for JavaScript Object Notation. JSON is like a table turned on its side; each row gets its own section, and inside of that section is a series of properties and values unique to that row. For example, a table of Presidents of the United States might look something like this:&lt;/p&gt;
 
-&lt;h1&gt;&lt;img src=&quot;http://giscollective.org/wp-content/uploads/2013/06/presidents.png&quot;&gt;&lt;/h1&gt;
+&lt;h1&gt;&lt;img src=&quot;http://giscollective.org/wp-content/uploads/2013/06/presidents.png&quot; class=&quot;inline&quot;&gt;&lt;/h1&gt;
 
 
 &lt;p&gt;In JSON, the table might look like this:&lt;/p&gt;
@@ -1151,7 +1341,7 @@ var geojsonLayer = new L.GeoJSON.AJAX(&quot;http:example.com/cupcakes.jsonp&quot
    <link href="http://lyzidiamond.com/posts/fork-brook-run"/>
    <updated>2011-11-24T00:00:00-08:00</updated>
    <id>http://lyzidiamond.com/posts/fork-brook-run</id>
-   <content type="html">&lt;p&gt;&lt;img src=&quot;http://lyzidiamond.files.wordpress.com/2011/11/dwatkins_usstreamnames_big.png&quot; width=&quot;100%&quot;&gt;&lt;/p&gt;
+   <content type="html">&lt;p&gt;&lt;img src=&quot;http://lyzidiamond.files.wordpress.com/2011/11/dwatkins_usstreamnames_big.png&quot; class=&quot;inline&quot; width=&quot;100%&quot;&gt;&lt;/p&gt;
 
 &lt;p&gt;At work a few weeks ago, we were having a conversation about how different areas of the country pronounce the word “creek.” There is the urban pronunciation, “creek,” and the rural pronunciation, “crick.” The argument was over whether or not these two bodies of water were actually geographically different or just indicative of cultural influence in pronunciation (dialect shift). Language is a funny thing, and linguistics is an interesting science, but none of us are linguists. We agreed to disagree.&lt;/p&gt;
 

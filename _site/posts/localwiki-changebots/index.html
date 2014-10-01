@@ -10,7 +10,7 @@
   </title>
 
   <meta name="author" content="Lyzi Diamond" />
-  <meta name="description" content="Victory formation." />
+  <meta name="description" content="Lyzi Diamond writes on the internet sometimes." />
 
   <link rel="alternate" type="application/rss+xml" href="/atom.xml" />
 
@@ -59,27 +59,23 @@
     Lyzi Diamond | March  3, 2014
   </section>
 
-  <h1><img src="/images/lexwiki.png" alt="LexingtonWiki" /></h1>
+  <h1><img src="/images/lexwiki.png" class="inline"></h1>
 
-<p>One thing that became obvious soon after becoming part of the Code for America family was the abundance of communit-focused wikis – sites where anyone can contribute, intended to facilitate community around shared knowledge. Some cities have very successful and robust wikis (I&rsquo;m looking at you, <a href="http://oaklandwiki.org">OaklandWiki</a>), but others have some work to do to catch up.</p>
+
+<p>One thing that became obvious soon after becoming part of the Code for America family was the abundance of community-focused wikis – sites where anyone can contribute, intended to facilitate community around shared knowledge. Some cities have very successful and robust wikis (I&rsquo;m looking at you, <a href="http://oaklandwiki.org">OaklandWiki</a>), but others have some work to do to catch up.</p>
 
 <p>During National Day of Civic Hacking last year in Lexington, <a href="http://openlexington.org">OpenLexington</a> (the local <a href="http://brigade.codeforamerica.org">Code for America brigade</a>) launched <a href="http://lexington-wiki.org">LexingtonWiki</a>, which is built on <a href="http://localwiki.org">LocalWiki</a>. Unfortunately, it hasn&rsquo;t yet gotten much traction, which is a huge bummer! The <a href="http://teambiglex.tumblr.com">Lexingteam</a> thought it might be cool to have <a href="http://twitter.com/openlexington">Twitter notifications</a> when a page on the wiki is edited/updated to try and publicize the wiki and get more folks editing. Turns out it&rsquo;s a pretty easy thing to set up.</p>
 
 <h2>This is how we did it:</h2>
 
 <ul>
-<li>Every LocalWiki instance has a Recent Changes page, and there&rsquo;s a pretty cool but casually hidden/relatively unkown feed for those changes. It lives at <code>http://[your wiki's URL]/Recent_Changes/_feed</code>.</li>
-</ul>
-
-
-<h1><img src="/images/wiki_feed.png" alt="Wiki Feed" /></h1>
-
-<ul>
+<li>Every LocalWiki instance has a Recent Changes RSS feed, and there&rsquo;s a pretty cool but casually hidden/relatively unknown feed for those changes. It lives at <code>http://[your wiki's URL]/Recent_Changes/_feed</code>.</li>
 <li>Discovering that feed was like, 90% of the challenge. From there, we set up a recipe in <a href="http://ifttt.com">IFTTT</a> to automatically tweet when that feed was updated.</li>
 </ul>
 
 
-<h1><img src="/images/wikibot_ifttt.png" alt="Wikibot Recipe" /></h1>
+<h1><img src="/images/wikibot_ifttt.png" class="inline"></h1>
+
 
 <p><em>IFTTT stands for IF This Then That. It&rsquo;s a service that allows you to combine internet services – in this case, a connecting a feed update to Twitter. People use IFTTT for all kinds of stuff: <a href="https://ifttt.com/recipes/83847-text-me-today-s-forecast-each-morning">getting a text message every day with the day&rsquo;s forecast</a>, <a href="https://ifttt.com/recipes/102384-backup-my-contacts-to-a-google-spreadsheet">backing up their contacts to a Google Spreadsheet</a>, or <a href="https://ifttt.com/recipes/1552-instagram-dropbox">saving their Instagram photos to Dropbox</a>.</em></p>
 
@@ -88,14 +84,16 @@
 </ul>
 
 
-<h1><img src="/images/create_recipe.png" alt="Create a Recipe" /></h1>
+<h1><img src="/images/create_recipe.png" class="inline"></h1>
+
 
 <ul>
 <li>Click the link where it says <strong>&ldquo;this&rdquo;</strong> and select Feed from the list of triggers.</li>
 </ul>
 
 
-<h1><img src="/images/click_feed.png" alt="Click Feed" /></h1>
+<h1><img src="/images/click_feed.png" class="inline"></h1>
+
 
 <ul>
 <li>Since every item added to the feed is a new change, you can select <strong>New feed item</strong> as your trigger.</li>
@@ -103,7 +101,8 @@
 </ul>
 
 
-<h1><img src="/images/create_trigger.png" alt="Create Trigger" /></h1>
+<h1><img src="/images/create_trigger.png" class="inline"></h1>
+
 
 <ul>
 <li>Click where it says <strong>&ldquo;that&rdquo;</strong> and choose <strong>Twitter</strong> as your action channel. You will probably have to set up IFTTT such that it can interact with your Twitter account, if you haven&rsquo;t already.</li>
@@ -112,16 +111,17 @@
 </ul>
 
 
-<h1><img src="/images/create_action.png" alt="Create Action" /></h1>
+<h1><img src="/images/create_action.png" class="inline"></h1>
+
 
 <ul>
-<li>Look over everything to make sure you like it, and then click Create Recipe.</li>
+<li>Look over everything to make sure you like it, and then click <strong>Create Recipe.</strong></li>
 </ul>
 
 
 <h2>Boom!</h2>
 
-<p>You have a LocalWikiBot. Recipes on IFTTT are triggered automatically every 15 minutes, so if you have a lot of edits, expect a flood of tweets on that mark. You can also set up your bot to have an action outside of Twitter: check out the full list of possible channels <a href="https://ifttt.com/channels">here</a>.</p>
+<p>You have a <strong>LocalWikiBot</strong>. Recipes on IFTTT are triggered automatically every 15 minutes, so if you have a lot of edits, expect a flood of tweets on that mark. You can also set up your bot to have an action outside of Twitter: check out the full list of possible channels <a href="https://ifttt.com/channels">here</a>.</p>
 
 
 </section>

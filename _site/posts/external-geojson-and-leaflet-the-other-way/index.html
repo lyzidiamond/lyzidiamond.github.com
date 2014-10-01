@@ -10,7 +10,7 @@
   </title>
 
   <meta name="author" content="Lyzi Diamond" />
-  <meta name="description" content="Victory formation." />
+  <meta name="description" content="Lyzi Diamond writes on the internet sometimes." />
 
   <link rel="alternate" type="application/rss+xml" href="/atom.xml" />
 
@@ -59,7 +59,9 @@
     Lyzi Diamond | September 24, 2013
   </section>
 
-  <p>I will always be a student. In the wide world of geospatial technology, we are all going to be students forever. So when someone from Twitter tells me a better way to do something that seems intuitive and worthwhile, I have no problem sharing it with the world, even when it contradicts something I said before.</p>
+  <p><strong><em>Editor&rsquo;s Note:</em></strong> <em>This post was updated in June 2014 to fix errors and reflect the most recent versions of Leaflet and jQuery.</em></p>
+
+<p>I will always be a student. In the wide world of geospatial technology, we are all going to be students forever. So when someone from Twitter tells me a better way to do something that seems intuitive and worthwhile, I have no problem sharing it with the world, even when it contradicts something I said before.</p>
 
 <p>I&rsquo;m specifically talking about my last technical post, <a href="http://lyzidiamond.com/posts/osgeo-august-meeting/">&ldquo;Adding GeoJSON to Leaflet with Link Relations&rdquo;</a>. The technique I outlined totally worked, and people seem to be enjoying using it, but as is usual for these sorts of things, someone from Twitter offered another suggestion:</p>
 
@@ -69,19 +71,18 @@
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 
-<p>I thought about this for a minute. Why <em>wasn&rsquo;t</em> I just passing my GeoJSON file directly into jQuery&rsquo;s getJSON method? I thought I had tried it and it hadn&rsquo;t worked. But then I tried it. And it <a href="http://lyzidiamond.com/cupcakes_fail.html">totally worked</a>!</p>
+<p>I thought about this for a minute. Why <em>wasn&rsquo;t</em> I just passing my GeoJSON file directly into jQuery&rsquo;s getJSON method? I thought I had tried it and it hadn&rsquo;t worked. But then I tried it. And it <a href="http://lyzidiamond.com/cupcakes/cupcakes_fail.html">totally worked</a>!</p>
 
-<p>So let&rsquo;s take a look at this code, and compare it to the code I posted last month.</p>
+<p>So let&rsquo;s take a look at this code and compare it to the code I posted last month.</p>
 
 <h2>Passing JSON directly into getJSON method.</h2>
-
 
 <pre><code>&lt;!doctype html&gt;
 &lt;html&gt;
 &lt;head&gt;
-  &lt;link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.5/leaflet.css" /&gt;
+  &lt;link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.css" /&gt;
   &lt;!--[if lte IE 8]&gt;
-     &lt;link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.5/leaflet.ie.css" /&gt;
+     &lt;link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.ie.css" /&gt;
   &lt;![endif]--&gt;
   &lt;style type="text/css"&gt;
     body {
@@ -94,8 +95,9 @@
     }
 
   &lt;/style&gt;
-  &lt;script src="http://cdn.leafletjs.com/leaflet-0.5/leaflet.js"&gt;&lt;/script&gt;
-  &lt;script src="http://code.jquery.com/jquery-1.10.2.min.js"&gt;&lt;/script&gt;
+  &lt;script src="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.js"&gt;&lt;/script&gt;
+  &lt;script src="http://code.jquery.com/jquery-2.1.0.min.js"&gt;&lt;/script&gt;
+&lt;/head&gt;
 &lt;body&gt;
   &lt;div id="cupcake-map"&gt;&lt;/div&gt;
   &lt;script&gt;
@@ -103,7 +105,7 @@
     maxZoom: 18
   });
 
-  $.getJSON("./cupcakes.json", function(data) {
+  $.getJSON("./cupcakes/cupcakes.json", function(data) {
     var geojson = L.geoJson(data, {
       onEachFeature: function (feature, layer) {
         layer.bindPopup(feature.properties.name);
@@ -118,12 +120,9 @@
 &lt;/html&gt;
 </code></pre>
 
-<p>There are two main differences. First of all, the link relation in the <code>&lt;head&gt;</code> is gone. Second, the first argument to the jQuery getJSON method is different. Instead of using some additional jQuery code to identify the linked JSON and pull out the content, we just simply pass the JSON file <em>itself</em> into the method. (The second argument remains the same, a callback function upon successful &ldquo;getting&rdquo; of JSON.) Everything else is the same. And as you <a href="http://lyzidiamond.com/cupcakes_fail.html">can see</a>, it looks <a href="http://lyzidiamond.com/cupcakes.html">exactly the same</a>.</p>
+<p>There are two main differences. First of all, the link relation in the <code>&lt;head&gt;</code> is gone. Second, the first argument to the jQuery getJSON method is different. Instead of using some additional jQuery code to identify the linked JSON and pull out the content, we just simply pass the JSON file <em>itself</em> into the method. (The second argument remains the same, a callback function upon successful &ldquo;getting&rdquo; of the JSON file.) Everything else is the same. And as you <a href="http://lyzidiamond.com/cupcakes/cupcakes_fail.html">can see</a>, it looks <a href="http://lyzidiamond.com/cupcakes/cupcakes.html">exactly the same</a>.</p>
 
 <h2>This is great! Should I just use this instead of link relations all the time?</h2>
-
-
-
 
 <blockquote class="twitter-tweet"><p><a href="https://twitter.com/vtcraghead">@vtcraghead</a> <a href="https://twitter.com/lyzidiamond">@lyzidiamond</a> Might need to be proxied if cross-domain...</p>&mdash; Bryan McBride (@brymcbride) <a href="https://twitter.com/brymcbride/statuses/382541743947665408">September 24, 2013</a></blockquote>
 
@@ -131,12 +130,13 @@
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 
-<p>No. This technique worked for me because my <a href="http://lyzidiamond.com/cupcakes_fail.html">cupcakes.html</a> and <a href="http://lyzidiamond.com/cupcakes.json">cupcakes.json</a> files are in the same domain. If my files were in separate domains, I would have to create a proxy. (There is a nice example of a simple PHP proxy and an example its usage with jQuery&rsquo;s getJSON method <a href="https://gist.github.com/bmcbride/6614373#file-proxy-php">here</a>. According to Twitter, you can write these proxies in other languages too, but <a href="https://twitter.com/billdollins/status/382561454500487168">it can be annoying/time consuming</a>.)</p>
+<p><strong>No.</strong> This technique worked for me because my <a href="http://lyzidiamond.com/cupcakes/cupcakes_fail.html">cupcakes.html</a> and <a href="http://lyzidiamond.com/cupcakes/cupcakes.json">cupcakes.json</a> files are in the same domain. If my files were in separate domains, I would have to create a proxy. (There is a nice example of a simple PHP proxy and an example its usage with jQuery&rsquo;s getJSON method <a href="https://gist.github.com/bmcbride/6614373#file-proxy-php">here</a>. According to Twitter, you can write these proxies in other languages too, but <a href="https://twitter.com/billdollins/status/382561454500487168">it can be annoying/time consuming</a>.)</p>
 
 <p>A proxy is required when using this method because of the <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Same_origin_policy_for_JavaScript">same-origin policy</a>, which affects browser-side programming languages. The policy sets restrictions on how scripts loaded from one origin can interact with resources from different origins in the interest of security (&ldquo;origins&rdquo; meaning &ldquo;domains&rdquo; in this case). Most methods and properties are not accessible when being requested from a different domain, so a proxy domain must be created to mimic a same-origin request.</p>
 
-<h2>Oh. That sounds annoying. Is there another way?</h2>
+<p><strong><em>Editor&rsquo;s note:</em></strong> _At the time of this writing,</p>
 
+<h2>Oh. That sounds annoying. Is there another way?</h2>
 
 <p>You bet. <a href="https://twitter.com/CWMma">Calvin Metcalf</a> has created a nice little plugin for <a href="http://leafletjs.com">Leaflet</a> called <a href="https://github.com/calvinmetcalf/leaflet-ajax">leaflet-ajax</a> that allows you to make a request for JSON using Ajax and allows a request/response for JSONP, making it possible to pull JSON from another domain.</p>
 

@@ -10,7 +10,7 @@
   </title>
 
   <meta name="author" content="Lyzi Diamond" />
-  <meta name="description" content="Victory formation." />
+  <meta name="description" content="Lyzi Diamond writes on the internet sometimes." />
 
   <link rel="alternate" type="application/rss+xml" href="/atom.xml" />
 
@@ -75,7 +75,7 @@
 
 <p>A map tile is a very specific thing. Map tiles are 256x256 pixel images that are placed side by side inside of a web map to give the illusion of one very large, seamless image. Maps have specific zoom levels that are explicitly defined, from zoom level 0 through zoom level 20. Zoom level 0 is one tile for the whole world. It looks like this:</p>
 
-<p><img src="/images/zoom0.png" alt="Zoom Level 0" /></p>
+<p><img src="/images/zoom0.png" class="inline"></p>
 
 <p>Zoom level 1 is four tiles for the whole world, in a 2x2 grid. Zoom level 2 is 16 tiles for the whole world, in a 4x4 grid. You see where this is going.</p>
 
@@ -83,25 +83,25 @@
 
 <p>The URL for the tile above is http://a.tiles.mapbox.com/v3/lyzidiamond.map-ietb6srb/0/0/0.png. The first part is obviously the server. The last three numbers, as I&rsquo;m sure you&rsquo;ve figured out, delineate the zoom level and the x/y location of that particular tile in the grid. Zoom 0 is a pretty bad example of this. Let&rsquo;s go to zoom 1.</p>
 
-<p><img src="/images/zoom-1-1-0.png" alt="Zoom Level 1" /></p>
+<p><img src="/images/zoom-1-1-0.png" class="inline"></p>
 
 <p>This is the tile in the first row in the second column of the zoom level 1 2x2 grid. Its URL is http://a.tiles.mapbox.com/v3/lyzidiamond.map-ietb6srb/1/1/0.png. You can see that at the end of the URL, it shows us that we&rsquo;re looking at a tile from zoom level 1 in the 1, 0 part of the grid.</p>
 
-<p><img src="/images/tilegrid.png" alt="Tile Grid" /></p>
+<p><img src="/images/tilegrid.png" class="inline"></p>
 
 <p>Two more, way zoomed in, just for fun:</p>
 
-<p><img src="/images/zoom-12-1009-1878.png" alt="Zoom Level 12" /></p>
+<p><img src="/images/zoom-12-1009-1878.png" class="inline"></p>
 
 <p>URL: http://a.tiles.mapbox.com/v3/lyzidiamond.map-ietb6srb/12/1009/1878.png</p>
 
-<p><img src="/images/zoom-12-1009-1879.png" alt="Zoom Level 12" /></p>
+<p><img src="/images/zoom-12-1009-1879.png" class="inline"></p>
 
 <p>URL: http://a.tiles.mapbox.com/v3/lyzidiamond.map-ietb6srb/12/1009/1879.png, or the tile right below the previous one. Get it? Pretty cool, right?</p>
 
 <p>So you&rsquo;ve now deduced that there&rsquo;s a pretty rigorous file structure that is required to manage all of this.</p>
 
-<p><img src="/images/tile-files.png" alt="Tile File Structure" /></p>
+<p><img src="/images/tile-files.png" class="inline"></p>
 
 <p>Notice that in this image, it doesn&rsquo;t have every zoom level, or even the entirety of the grid. TileMill will ask you for a) a geographic area and b) the number of zoom levels you want before you export. If you&rsquo;re trying to do something too epically large, or with a ton of layers that are going to be annoying/resource-consuming to render down, it&rsquo;ll give you a nice little warning, along the lines of &ldquo;HEY JERKFACE WE DON&rsquo;T WANNA DO THAT FIX YR STUFF.&rdquo; But nicer. Then they export your tiles into this file structure, and indeed host them as well. If they&rsquo;re hosting a ton of your crap or you&rsquo;re getting a ton of views, they ask you to pay them.</p>
 
