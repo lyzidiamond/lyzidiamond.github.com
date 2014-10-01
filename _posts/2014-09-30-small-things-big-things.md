@@ -27,7 +27,7 @@ Think back to the last time you fixed a typo in a friend's email before she sent
 
 **You made a difference!** You may have thought your edits were small and your contributions insignificant, but that errant semicolon may have made or broken that application. And _you're_ the one who found it.
 
-After I talked to David, my mood totally flipped. (And then I got on stage and did a presentation, which gave me an adrenaline rush. that probably helped too. :-P) I started to notice all of the small contributions that every Code for America fellow makes to everyone else's project. All of the design meetups, portfolio and code reviews, brainstorming and namestorming sessions (ask [Ainsley](http://twitter.com/ainsleywagon) about that one). All of the feedback and knowledge sharing and the way we've held each other up all year.
+After I talked to David, my mood totally flipped. (And then I got on stage and did a presentation, which gave me an adrenaline rush. That probably helped too. :-P) I started to notice all of the small contributions that every Code for America fellow makes to everyone else's project. All of the design meetups, portfolio and code reviews, brainstorming and namestorming sessions (ask [Ainsley](http://twitter.com/ainsleywagon) about that one). All of the feedback and knowledge sharing and the way we've held each other up all year.
 
 The number one thing I learned from the Code for America Summit (and the number one thing I learned from this year as a CfA fellow) is the power of combining skills and sharing knowledge. The smallest things can be big things. You might not see it right away, but **you are making a difference.** Keep it up: your contribution may be the piece that solves the puzzle!
 
