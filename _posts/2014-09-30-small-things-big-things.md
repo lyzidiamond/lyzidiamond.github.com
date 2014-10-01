@@ -13,7 +13,7 @@ I carried these feelings with me back to the summit on Wednesday afternoon, when
 
 <h1><iframe width="560" height="315" src="//www.youtube.com/embed/yViYA8IG36U" frameborder="0" allowfullscreen></iframe></h1>
 
-Those beautiful slides (made by my lovely roommate [Molly McLeod](http://twitter.com/mollyampersand)) and Jake's words were making an excellent point: _sometimes it's the smallest things that make the biggest impact_. I thought about this as I walked out of the theater to prepare for my own talk, to be given on the same stage several hours later.
+Those beautiful slides (made by my lovely roommate [Molly McLeod](http://twitter.com/mollyampersand)) and Jake's words were making an excellent point: _sometimes it's the smallest things that make the biggest impact_. I thought about this as I walked out of the theater to prepare for [my own talk](https://www.youtube.com/watch?v=Jh-cpTGCuTQ), to be given on the same stage several hours later.
 
 I ran into my fellow fellow [David Leonard](http://twitter.com/davidleonardii), and he and I went to grab a cup of coffee. In all of my pre-talk anxiety, I let it slip that I was feeling completely lost. I asked him, "What have I accomplished this year? I feel like I haven't built anything, like I haven't done anything."
 
