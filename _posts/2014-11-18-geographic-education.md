@@ -45,7 +45,7 @@ These conversations and questions have led me to some deep thinking about what i
 
 There are many more thoughts, but it all boils down to this: if we focus on tools, our curricula will become outdated very quickly. If we _focus on principles and ideas_, our curricula become not only longer-lasting in relevance, but also malleable to the point that they don't need a recreation every five years.
 
-But **curricula aren't the only things that need to change**. I'd like to see **small, independent groups** of students **learning together** from provided resources -- and working together to **create learning resources** of their own. I'd like to see an **excitement** for the geospatial field simply because it's _cool_, and not just because it may lead to a lucrative job (although, that's a fine motivation as well).
+But **curricula aren't the only things that need to change**. Ultimately, I'd like to see more Maptime-style philosophies permeating the halls of academia. I'd like to see **small, independent groups** of students **learning together** from provided resources -- and working together to **create learning resources** of their own. I'd like to see an **excitement** for the geospatial field simply because it's _cool_, and not just because it may lead to a lucrative job (although, that's a fine motivation as well).
 
 I'd like to see a time in which we don't have to have a week where we focus on geography, because it's truly and explictly embedded in our everyday lives. Fortunately, with the help of great communities and excited educators, we are well on our way.
 
