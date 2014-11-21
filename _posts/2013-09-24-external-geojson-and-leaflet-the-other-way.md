@@ -14,7 +14,7 @@ I'm specifically talking about my last technical post, ["Adding GeoJSON to Leafl
 
 I thought about this for a minute. Why _wasn't_ I just passing my GeoJSON file directly into jQuery's `getJSON()` method? I thought I had tried it and it hadn't worked. But then I tried it. And it [totally worked](http://lyzidiamond.com/cupcakes/cupcakes_fail.html)!
 
-So let's take a look at this code, and compare it to the code I posted last month.
+So let's take a look at this code and compare it to the code I posted last month.
 
 <h2>Passing JSON directly into getJSON method.</h2>
 
