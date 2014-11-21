@@ -21,9 +21,9 @@ So let's take a look at this code and compare it to the code I posted last month
     <!doctype html>
     <html>
     <head>
-      <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.5/leaflet.css" />
+      <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.css" />
       <!--[if lte IE 8]>
-         <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.5/leaflet.ie.css" />
+         <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.ie.css" />
       <![endif]-->
       <style type="text/css">
         body {
@@ -36,8 +36,9 @@ So let's take a look at this code and compare it to the code I posted last month
         }
 
       </style>
-      <script src="http://cdn.leafletjs.com/leaflet-0.5/leaflet.js"></script>
-      <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+      <script src="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.js"></script>
+      <script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
+    </head>
     <body>
       <div id="cupcake-map"></div>
       <script>
@@ -115,6 +116,7 @@ As always, let's take a look at the code (live example [here](http://lyzidiamond
       </style>
       <script src="http://cdn.leafletjs.com/leaflet-0.5/leaflet.js"></script>
       <script src="https://raw.github.com/calvinmetcalf/leaflet-ajax/master/dist/leaflet.ajax.min.js"></script>
+    </head>
     <body>
       <div id="cupcake-map"></div>
       <script>
