@@ -16,7 +16,7 @@ I thought about this for a minute. Why _wasn't_ I just passing my GeoJSON file d
 
 So let's take a look at this code and compare it to the code I posted last month.
 
-<h2>Passing JSON directly into getJSON method.</h2>
+##Passing JSON directly into getJSON method.
 
     <!doctype html>
     <html>
@@ -61,16 +61,18 @@ So let's take a look at this code and compare it to the code I posted last month
 
 There are two main differences. First of all, the link relation in the `<head>` is gone. Second, the first argument to the jQuery `getJSON()` method is different. Instead of using some additional jQuery code to identify the linked JSON and pull out the content, we just simply pass the JSON file _itself_ into the method. (The second argument remains the same, a callback function upon successful "getting" of the JSON file.) Everything else is the same. And as you [can see](http://lyzidiamond.com/cupcakes/cupcakes_fail.html), it looks [exactly the same](http://lyzidiamond.com/cupcakes/cupcakes.html).
 
-<h2>This is great! Should I just use this instead of link relations all the time?</h2>
+## This is great! Should I just use this instead of link relations all the time?
 
 <blockquote class="twitter-tweet"><p><a href="https://twitter.com/vtcraghead">@vtcraghead</a> <a href="https://twitter.com/lyzidiamond">@lyzidiamond</a> Might need to be proxied if cross-domain...</p>&mdash; Bryan McBride (@brymcbride) <a href="https://twitter.com/brymcbride/statuses/382541743947665408">September 24, 2013</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-No. This technique worked for me because my [cupcakes.html](http://lyzidiamond.com/cupcakes_fail.html) and [cupcakes.json](http://lyzidiamond.com/cupcakes.json) files are in the same domain. If my files were in separate domains, I would have to create a proxy. (There is a nice example of a simple PHP proxy and an example its usage with jQuery's getJSON method [here](https://gist.github.com/bmcbride/6614373#file-proxy-php). According to Twitter, you can write these proxies in other languages too, but [it can be annoying/time consuming](https://twitter.com/billdollins/status/382561454500487168).)
+**No.** This technique worked for me because my [cupcakes.html](http://lyzidiamond.com/cupcakes/cupcakes_fail.html) and [cupcakes.json](http://lyzidiamond.com/cupcakes/cupcakes.json) files are in the same domain. If my files were in separate domains, I would have to create a proxy. (There is a nice example of a simple PHP proxy and an example its usage with jQuery's `getJSON()` method [here](https://gist.github.com/bmcbride/6614373#file-proxy-php). According to Twitter, you can write these proxies in other languages too, but [it can be annoying/time consuming](https://twitter.com/billdollins/status/382561454500487168).)
 
 A proxy is required when using this method because of the [same-origin policy](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Same_origin_policy_for_JavaScript), which affects browser-side programming languages. The policy sets restrictions on how scripts loaded from one origin can interact with resources from different origins in the interest of security ("origins" meaning "domains" in this case). Most methods and properties are not accessible when being requested from a different domain, so a proxy domain must be created to mimic a same-origin request.
 
-<h2>Oh. That sounds annoying. Is there another way?</h2>
+**_Editor's note:_** _At the time of this writing, modern browsers had not yet adopted CORS (cross-origin resource sharing). Now, modern browsers like Chrome and Firefox will not have so many issues with same-origin policy. This is also reflected in a change below._
+
+## Oh. That sounds annoying. Is there another way?
 
 You bet. [Calvin Metcalf](https://twitter.com/CWMma) has created a nice little plugin for [Leaflet](http://leafletjs.com) called [leaflet-ajax](https://github.com/calvinmetcalf/leaflet-ajax) that allows you to make a request for JSON using Ajax and allows a request/response for JSONP, making it possible to pull JSON from another domain.
 
@@ -81,9 +83,9 @@ You bet. [Calvin Metcalf](https://twitter.com/CWMma) has created a nice little p
 
 <h3>Ajax</h3>
 
-[Ajax](https://developer.mozilla.org/en-US/docs/AJAX/Getting_Started) stands for Asynchronous JavaScript and XML. It is a way for web applications to send data to and receive data from a server asynchronously, without disrupting the behavior of the page where the request was originated.
+[Ajax](https://developer.mozilla.org/en-US/docs/AJAX/Getting_Started) stands for **Asynchronous JavaScript and XML**. It is a way for web applications to send data to and receive data from a server _asynchronously_, without disrupting the behavior of the page where the request was originated.
 
-Ultimately, when we are loading our GeoJSON file onto the page, we are loading it from the server and displaying it in the browser, which means communication needs to occur from the server-side, or back end, to the client-side, or front end. This communication happens at different times, depending on when the data is requested. In the example above, we are requesting the data in the getJSON method. In the [previous example](http://lyzidiamond.com/posts/osgeo-august-meeting/), we were requesting the data in the `<head>`, so the request was being made before the getJSON method was called. With Calvin's plugin, an Ajax request is being made when a variable is created for the geoJSON layer.
+Ultimately, when we are loading our GeoJSON file onto the page, we are loading it from the server and displaying it in the browser, which means communication needs to occur from the server-side, or back end, to the client-side, or front end. This communication happens at different times, depending on when the data is requested. In the example above, we are requesting the data in the `getJSON()` method. In the [previous example](http://lyzidiamond.com/posts/osgeo-august-meeting/), we were requesting the data in the `<head>`, so the request was being made before the getJSON method was called. With Calvin's plugin, an Ajax request is being made when a variable is created for the geoJSON layer.
 
 <h3>JSONP</h3>
 
@@ -134,11 +136,11 @@ As always, let's take a look at the code (live example [here](http://lyzidiamond
     </body>
     </html>
 
-What's different here? A few things. First, notice that instead of the jQuery `<script>` tag in the `<head>`, I instead added Calvin's Leaflet-Ajax plugin, allowing us to use the methods housed therein. (For more information on Leaflet plugins, click [here](http://leafletjs.com/plugins.html).) Second, I made a function popUp that binds a tool tip to each feature (when asked to do so) that displays the text from the "name" field of the properties of the feature. (This was in our previous example as well, but was not explicitly defined; it was simply an [anonymous function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions_and_function_scope) being used as a value for the onEachFeature option when adding a new layer. For more info on options when using the Leaflet GeoJSON constructor, check out the [Leaflet API Reference](http://leafletjs.com/reference.html#geojson).)
+What's different here? A few things. First, notice that instead of the jQuery `<script>` tag in the `<head>`, I instead added Calvin's Leaflet-Ajax plugin, allowing us to use the methods housed therein. (For more information on Leaflet plugins, click [here](http://leafletjs.com/plugins.html).) Second, I made a function `popUp()` that binds a "tooltip" to each feature (when asked to do so) that displays the text from the "name" field of the properties of the feature. (This was in our previous example as well, but was not explicitly defined; it was simply an [anonymous function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions_and_function_scope) being used as a value for the onEachFeature option when adding a new layer. For more info on options when using the Leaflet GeoJSON constructor, check out the [Leaflet API Reference](http://leafletjs.com/reference.html#geojson).)
 
-Third, I define a variable geojsonLayer and, using the Leaflet GeoJSON constructor with Calvin's plugin, use the AJAX method, passing in first the location of my GeoJSON file and second the options for the layer, which include setting the onEachFeature method to the popUp function. This means that when any feature in the layer is clicked on, a tool tip with the information defined in the popUp function will show up.
+Third, I define a variable `geojsonLayer` and, using the Leaflet GeoJSON constructor with Calvin's plugin, use the AJAX method, passing in first the location of my GeoJSON file and second the options for the layer, which include setting the `onEachFeature()` method to the `popUp()` function. This means that when any feature in the layer is clicked on, a tool tip with the information defined in the `popUp()` function will show up.
 
-I then define the map object, tell Leaflet to put it in the div with ID `cupcake-map`, fit the bounds of the map to the extend of the features in the GeoJSON layer, add the basemap tiles to the map, and add the GeoJSON layer to the map.
+I then define the `L.map` object, tell Leaflet to put it in the div with ID `cupcake-map`, fit the bounds of the map to the extent of the features in the GeoJSON layer, add the basemap tiles to the map, and add the GeoJSON layer to the map.
 
 Now, this isn't an example of loading JSON from a different domain, but if you look at the GitHub repo for the Leaflet-Ajax tool, there's a [nice little example](https://github.com/calvinmetcalf/leaflet-ajax/blob/master/example/index.html) showing off this functionality.
 
