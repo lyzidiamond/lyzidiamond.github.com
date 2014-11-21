@@ -3,6 +3,8 @@ layout: blog
 title: 'External GeoJSON and Leaflet: The Other Way(s)'
 ---
 
+**_Editor's Note:_** _This post was updated in November 2014 to fix errors and reflect the most recent versions of Leaflet and jQuery._
+
 I will always be a student. In the wide world of geospatial technology, we are all going to be students forever. So when someone from Twitter tells me a better way to do something that seems intuitive and worthwhile, I have no problem sharing it with the world, even when it contradicts something I said before.
 
 I'm specifically talking about my last technical post, ["Adding GeoJSON to Leaflet with Link Relations"](http://lyzidiamond.com/posts/osgeo-august-meeting/). The technique I outlined totally worked, and people seem to be enjoying using it, but as is usual for these sorts of things, someone from Twitter offered another suggestion:
