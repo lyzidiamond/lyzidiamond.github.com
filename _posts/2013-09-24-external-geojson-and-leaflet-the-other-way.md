@@ -110,7 +110,7 @@ As always, let's take a look at the code (live example [here](http://lyzidiamond
 
       </style>
       <script src="http://cdn.leafletjs.com/leaflet-0.5/leaflet.js"></script>
-      <script src="https://raw.github.com/calvinmetcalf/leaflet-ajax/master/dist/leaflet.ajax.min.js"></script>
+      <script src="https://rawgit.com/calvinmetcalf/leaflet-ajax/master/dist/leaflet.ajax.min.js"></script>
     <body>
       <div id="cupcake-map"></div>
       <script>
