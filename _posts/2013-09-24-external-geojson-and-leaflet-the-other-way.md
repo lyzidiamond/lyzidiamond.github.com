@@ -12,7 +12,7 @@ I'm specifically talking about my last technical post, ["Adding GeoJSON to Leafl
 <blockquote class="twitter-tweet"><p><a href="https://twitter.com/vtcraghead">@vtcraghead</a> <a href="https://twitter.com/lyzidiamond">@lyzidiamond</a> How is this advantageous to: $.getJSON(&quot;mydata.geojson&quot;, function (data) {&#10;markers.addData(data);&#10;});</p>&mdash; Bryan McBride (@brymcbride) <a href="https://twitter.com/brymcbride/statuses/382535707798929408">September 24, 2013</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-I thought about this for a minute. Why _wasn't_ I just passing my GeoJSON file directly into jQuery's getJSON method? I thought I had tried it and it hadn't worked. But then I tried it. And it [totally worked](http://lyzidiamond.com/cupcakes_fail.html)!
+I thought about this for a minute. Why _wasn't_ I just passing my GeoJSON file directly into jQuery's `getJSON()` method? I thought I had tried it and it hadn't worked. But then I tried it. And it [totally worked](http://lyzidiamond.com/cupcakes/cupcakes_fail.html)!
 
 So let's take a look at this code, and compare it to the code I posted last month.
 
@@ -45,7 +45,7 @@ So let's take a look at this code, and compare it to the code I posted last mont
         maxZoom: 18
       });
 
-      $.getJSON("./cupcakes.json", function(data) {
+      $.getJSON("./cupcakes/cupcakes.json", function(data) {
         var geojson = L.geoJson(data, {
           onEachFeature: function (feature, layer) {
             layer.bindPopup(feature.properties.name);
@@ -59,7 +59,7 @@ So let's take a look at this code, and compare it to the code I posted last mont
     </body>
     </html>
 
-There are two main differences. First of all, the link relation in the `<head>` is gone. Second, the first argument to the jQuery getJSON method is different. Instead of using some additional jQuery code to identify the linked JSON and pull out the content, we just simply pass the JSON file _itself_ into the method. (The second argument remains the same, a callback function upon successful "getting" of JSON.) Everything else is the same. And as you [can see](http://lyzidiamond.com/cupcakes_fail.html), it looks [exactly the same](http://lyzidiamond.com/cupcakes.html).
+There are two main differences. First of all, the link relation in the `<head>` is gone. Second, the first argument to the jQuery `getJSON()` method is different. Instead of using some additional jQuery code to identify the linked JSON and pull out the content, we just simply pass the JSON file _itself_ into the method. (The second argument remains the same, a callback function upon successful "getting" of the JSON file.) Everything else is the same. And as you [can see](http://lyzidiamond.com/cupcakes/cupcakes_fail.html), it looks [exactly the same](http://lyzidiamond.com/cupcakes/cupcakes.html).
 
 <h2>This is great! Should I just use this instead of link relations all the time?</h2>
 
@@ -91,7 +91,7 @@ Ultimately, when we are loading our GeoJSON file onto the page, we are loading i
 
 <h2>So how would that work, then?</h2>
 
-As always, let's take a look at the code (live example [here](http://lyzidiamond.com/cupcakes_ajax.html)):
+As always, let's take a look at the code (live example [here](http://lyzidiamond.com/cupcakes/cupcakes_ajax.html)):
 
     <!doctype html>
     <html>
