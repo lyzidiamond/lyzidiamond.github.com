@@ -33,8 +33,8 @@ footer, header, hgroup, menu, nav, section {
 body {
   line-height: 1;
 }
-ol, ul {
-  list-style: none;
+ol {
+  list-style: decimal;
 }
 blockquote, q {
   quotes: none;
@@ -114,6 +114,11 @@ li {
   list-style: circle;
   line-height: 1.5;
   margin-left: 20px;
+}
+
+ol li {
+  list-style: decimal;
+  padding-bottom: 0.8em;
 }
 
 img .inline {
