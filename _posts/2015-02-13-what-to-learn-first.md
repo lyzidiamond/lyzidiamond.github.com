@@ -47,3 +47,5 @@ With all that said, my advice:
 4. If you're interested in taking the Web Mapping Quickstart class, I suggest you do it. I think it's going to be a lot of fun. :)
 
 I'm not sure if that was helpful at all, but there it is. Feel free to ask more questions if anything is unclear. I hope this is useful to you in some way, and I hope to see you at a Maptime soon!
+
+_I added a [Part 2](http://lyzidiamond.com/posts/what-to-learn-first-pt-2) after I posted this one because I had more to share._
