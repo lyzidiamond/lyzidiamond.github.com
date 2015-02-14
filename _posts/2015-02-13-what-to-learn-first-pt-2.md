@@ -13,7 +13,7 @@ It is not a stretch to say that the majority of academic courses in our field fo
 
 ![](../../images/vlad-gis.png)
 
-_A slide from [Vlad](https://twitter.com/mourner)'s [presentation] at [FOSS4G 2014 in Portland](https://2014.foss4g.org)._
+_A slide from [Vlad](https://twitter.com/mourner)'s [presentation](https://vimeo.com/106112939) at [FOSS4G 2014 in Portland](https://2014.foss4g.org)._
 
 As I'm sure you know, the times, they are a-changin'. Nowadays, you don't succeed simply by learning one tool. To be a professional in the modern geospatial environment, you need to know a lot of different tools. So what is on that list? What should we be teaching the students of geographic information studies to prepare them for the workforce?
 
