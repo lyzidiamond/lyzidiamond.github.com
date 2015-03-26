@@ -1,7 +1,8 @@
+gems:
+ - jekyll-redirect-from
 markdown: rdiscount
-pygments: true
+highlighter: pygments
 permalink: /posts/:title
-auto: true
 rdiscount:
   extensions: [smart]
 
@@ -17,3 +18,4 @@ description: Lyzi Diamond writes on the internet sometimes.
 twitter: lyzidiamond
 github: lyzidiamond
 gravatar_url: http://gravatar.com/avatar/029f8c0e50e126f91562b126af9f22dd
+x
