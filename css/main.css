@@ -57,7 +57,7 @@ table {
 
 html, body {
   font-family: 'Open Sans', sans-serif;
-  font-size: 100%;
+  font-size: 105%;
   height: 100%;
 }
 
@@ -87,9 +87,9 @@ h1 {
 }
 
 h2 {
-  font-size: 150%;
+  font-size: 180%;
   font-weight: bold;
-  margin-bottom: 5px;
+  margin-bottom: 25px;
   margin-top: 5px;
   line-height: 1.5;
 }
@@ -142,7 +142,7 @@ img .inline {
 }
 
 .content img {
-  max-width: 800px;
+  max-width: 700px;
 }
 
 #wrapper {
@@ -150,12 +150,12 @@ img .inline {
   margin-right: auto;
   min-width: 600px;
   position: relative;
-  width: 60%;
+  width: 50%;
 }
 
 .navigation ul {
   display: block;
-  margin: 10px;
+  margin: 5px;
   position: relative;
 }
 
@@ -168,14 +168,13 @@ img .inline {
 }
 
 .header {
+  margin: 50px 50px 50px 50px;
   clear: both;
-  display: block;
   position: relative;
 }
 
 .content {
   margin-top: 20px;
-  padding: 10px;
 }
 
 .content code {
@@ -223,18 +222,25 @@ img .inline {
 
 .content .listing li {
   list-style: none;
-  padding: 5px 3px;
+  padding: 7px 3px;
   margin: 0;
   color: #777777;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid #eee; 
 }
 
 .content .listing li span {
   float: right;
+  padding: 0 0 0 50px;
 }
 
 .content .listing a {
   text-decoration: none;
+  max-width: 200px;
+}
+
+.content .nav li {
+  font-size: 110%;
+  font-weight: bold;
 }
 
 .footer {
