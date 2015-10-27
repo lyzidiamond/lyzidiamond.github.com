@@ -80,7 +80,7 @@ a:hover {
 
 h1 {
   color: #000;
-  font-size: 300%;
+  font-size: 275%;
   font-weight: bold;
   margin: 5px;
   text-align: center;
@@ -96,8 +96,10 @@ h2 {
 
 h3 {
   font-size: 125%;
+  font-weight: bold;
   line-height: 1.25;
   margin-top: 5px;
+  margin-bottom: 20px;
 }
 
 p {
@@ -178,11 +180,18 @@ img .inline {
 }
 
 .content code {
-  display: inline-block;
+  display: inline;
   font-family: 'Courier New', serif;
   background-color: #eee;
   margin-bottom: 5px;
-  padding: 2px 3px; }
+  padding: 2px 3px;
+}
+
+.content pre code {
+  display: inline-block;
+  overflow: auto;
+  width: 80%;
+}
 
 .content blockquote {
   color: #444;
