@@ -3,7 +3,9 @@ layout: blog
 title: 'External GeoJSON and Leaflet: The Other Way(s)'
 ---
 
-**_Editor's Note:_** _This post was updated in November 2014 to fix errors and reflect the most recent versions of Leaflet and jQuery._
+**_October 2015:_** _I just published a third blog post in this series, ["Adding External GeoJSON with Mapbox.js"](http://lyzidiamond.com/posts/external-geojson-mapbox/). Check it out!_
+
+**_November 2014:_** _This post was updated in November 2014 to fix errors and reflect the most recent versions of Leaflet and jQuery._
 
 I will always be a student. In the wide world of geospatial technology, we are all going to be students forever. So when someone from Twitter tells me a better way to do something that seems intuitive and worthwhile, I have no problem sharing it with the world, even when it contradicts something I said before.
 
