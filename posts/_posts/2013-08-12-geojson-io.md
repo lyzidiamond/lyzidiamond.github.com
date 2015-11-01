@@ -1,7 +1,7 @@
 ---
 layout: blog
 title: 'geojson.io: In-browser spatial data creation and sharing. Finally.'
-category: blog
+category: posts
 ---
 
 _This post originally appeared on [GIS Collective](http://giscollective.org)._

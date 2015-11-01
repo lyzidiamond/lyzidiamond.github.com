@@ -1,7 +1,7 @@
 ---
 layout: blog
 title: If At First You Don't Succeed...
-category: blog
+category: posts
 ---
 
 _"You're talking a lot, but you're not saying anything."_

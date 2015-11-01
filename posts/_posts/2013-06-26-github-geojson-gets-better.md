@@ -1,7 +1,7 @@
 ---
 layout: blog
 title: 'GitHub and GeoJSON: Just Keeps Getting Better'
-category: blog
+category: posts
 ---
 
 _This post originally appeared on [GIS Collective](http://giscollective.org)._

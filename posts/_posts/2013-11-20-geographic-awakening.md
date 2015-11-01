@@ -1,7 +1,7 @@
 ---
 layout: blog
 title: 'Geographic Awakening'
-category: blog
+category: posts
 ---
 
 <h1><img src="http://education.nationalgeographic.com/media/photos/000/344/custom/34437_610x343.jpg" class="inline"></h1>

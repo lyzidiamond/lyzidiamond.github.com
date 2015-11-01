@@ -1,7 +1,7 @@
 ---
 layout: blog
 title: 'Field Thoughts'
-category: blog
+category: posts
 ---
 
 <blockquote>

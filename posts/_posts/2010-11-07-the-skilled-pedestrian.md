@@ -1,7 +1,7 @@
 ---
 layout: blog
 title: 'The Skilled Pedestrian'
-category: blog
+category: posts
 ---
 
 <blockquote>

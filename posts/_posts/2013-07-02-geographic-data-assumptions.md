@@ -1,7 +1,7 @@
 ---
 layout: blog
 title: 'Geographic Data Assumptions: MAUP and Ecological Fallacies'
-category: blog
+category: posts
 ---
 
 _This post originally appeared on [GIS Collective](http://giscollective.org)._

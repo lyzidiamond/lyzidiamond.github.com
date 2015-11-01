@@ -1,7 +1,7 @@
 ---
 layout: blog
 title: Getting a Good (GIS) Job, Part 1
-category: blog
+category: posts
 ---
 
 Last week, I was asked by the [ORURISA Young Professionals](http://orurisayp.org) to give a short talk about the transition from completing a geogrpahy or GIS degree to becoming employed in the field of geospatial. There were around eight of us who gave short talks, and each of us had good pieces of advice to share. I thought the whole thing was very valuable, albeit poorly-attended, so I'm going to attempt to recreate some of that advice here. Although the talk was GIS-oriented and some of the conversation was specific to geospatial careers, I feel that a lot of the advice is applicable to job hunters regardless of field.

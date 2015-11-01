@@ -1,7 +1,7 @@
 ---
 layout: blog
 title: Circumlocution and Code
-category: blog
+category: posts
 ---
 
 _"¿Cómo se dice 'roommate' en español?"_
