@@ -2,7 +2,7 @@ gems:
  - jekyll-redirect-from
 markdown: rdiscount
 highlighter: pygments
-permalink: /posts/:title
+permalink: /:title
 rdiscount:
   extensions: [smart]
 
