@@ -1,7 +1,6 @@
 ---
 layout: blog
 title: Commit or Quit
-category: posts
 ---
 
 <h1><img src="http://b.vimeocdn.com/ts/130/674/130674832_640.jpg" class="inline"></h1>

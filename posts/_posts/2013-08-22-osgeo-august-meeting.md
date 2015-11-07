@@ -1,7 +1,6 @@
 ---
 layout: blog
 title: 'Adding GeoJSON to Leaflet with Link Relations'
-category: posts
 ---
 
 **_Editor's note:_** _This post was updated in June 2014 to reflect changes in Leaflet and update examples to new versions. Shortly after publishing this post, I discovered [a different way](http://lyzidiamond.com/posts/external-geojson-and-leaflet-the-other-way/) to add GeoJSON to a Leaflet map that I like a lot better. You can read a blog post about that [here](http://lyzidiamond.com/posts/external-geojson-and-leaflet-the-other-way/)._

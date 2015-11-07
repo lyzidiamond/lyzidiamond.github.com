@@ -1,7 +1,6 @@
 ---
 layout: blog
 title: 'Small Things, Big Things'
-category: posts
 ---
 
 Last week was the [2014 Code for America Summit](http://www.codeforamerica.org/summit/), and it was just as incredible as I imagined it would be. I was there last year, but this was _my_ summit. _I_ would be on stage presenting my work. _I_ would be the one talking to next year's fellows, assuring them that it's a struggle, but it's worth it. _I_ would be the one feeling confident.

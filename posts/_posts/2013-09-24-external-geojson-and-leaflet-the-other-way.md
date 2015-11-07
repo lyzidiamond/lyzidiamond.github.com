@@ -1,7 +1,6 @@
 ---
 layout: blog
 title: 'External GeoJSON and Leaflet: The Other Way(s)'
-category: posts
 ---
 
 **_October 2015:_** _I just published a third blog post in this series, ["Adding External GeoJSON with Mapbox.js"](http://lyzidiamond.com/posts/external-geojson-mapbox/). Check it out!_

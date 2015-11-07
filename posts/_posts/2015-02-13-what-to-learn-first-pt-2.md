@@ -1,7 +1,6 @@
 ---
 layout: blog
 title: 'What should I learn first? Part 2'
-category: posts
 ---
 
 <em>Today, I [posted an email](http://lyzidiamond.com/posts/what-to-learn-first) I sent to someone who is new to mapping and unsure where to start. My response touched on some of my thoughts on geographic education, and I remembered that I had sent another email I wanted to share.

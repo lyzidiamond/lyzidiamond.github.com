@@ -1,7 +1,6 @@
 ---
 layout: blog
 title: The Secret To Productivity? Forgiveness.
-category: posts
 ---
 
 

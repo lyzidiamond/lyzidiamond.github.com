@@ -1,7 +1,6 @@
 ---
 layout: blog
 title: 'Open Source FTW!'
-category: posts
 ---
 
 For some time, I've been frustrated with the lack of social spaces for developers to work together on map-related projects here in Portland. There are [language-specific meetups](http://calagator.org), and there are definitely people hacking on spatial projects at those, but it's in the context of the programming language, not the field of geospatial tech. I have also long been fascinated with the pedagogical issues of teaching developers about geographic principles and geographers about computer programming. I began wondering: is there a place for a meetup like this in Portland?

@@ -1,7 +1,6 @@
 ---
 layout: blog
 title: 'GitHub: Bringing GeoJSON To Life Since 2013'
-category: posts
 ---
 
 _This post originally appeared on [GIS Collective](http://giscollective.org)._

@@ -1,7 +1,6 @@
 ---
 layout: blog
 title: 'Building a LocalWiki Changebot'
-category: posts
 ---
 
 <h1><img src="/images/lexwiki.png" class="inline"></h1>

@@ -1,7 +1,6 @@
 ---
 layout: blog
 title: 'Scale Unimaginable: The Intersection of Art and Cart'
-category: posts
 ---
 
 <h1><img src="http://lyzidiamond.files.wordpress.com/2011/11/monarchs.jpeg"></h1>

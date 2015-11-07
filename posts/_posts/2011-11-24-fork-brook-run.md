@@ -1,7 +1,6 @@
 ---
 layout: blog
 title: 'Fork, brook, run? A neat toponym visualization by a UO geographer.'
-category: posts
 ---
 
 <img src="http://lyzidiamond.files.wordpress.com/2011/11/dwatkins_usstreamnames_big.png" class="inline" width="100%">

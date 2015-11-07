@@ -1,7 +1,6 @@
 ---
 layout: blog
 title: 'Maps Can Save Lives: A true story of GPS and the importance of navigation'
-category: posts
 ---
 
 Global positioning systems have ostensibly become the new atlases — most if not all new vehicles have internal GPS mapping devices, rendering old-school paper maps obsolete. But as drivers and navigators become more reliant on these devices, their safety may be put in severe danger.
