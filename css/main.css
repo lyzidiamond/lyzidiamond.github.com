@@ -90,7 +90,7 @@ h2 {
   font-size: 180%;
   font-weight: bold;
   margin-bottom: 25px;
-  margin-top: 5px;
+  margin-top: 15px;
   line-height: 1.5;
 }
 
@@ -98,7 +98,7 @@ h3 {
   font-size: 125%;
   font-weight: bold;
   line-height: 1.25;
-  margin-top: 5px;
+  margin-top: 15px;
   margin-bottom: 20px;
 }
 
@@ -183,14 +183,14 @@ img .inline {
   display: inline;
   font-family: 'Courier New', serif;
   background-color: #eee;
-  margin-bottom: 5px;
+  margin-bottom: 25px;
   padding: 2px 3px;
 }
 
 .content pre code {
   display: inline-block;
   overflow: auto;
-  width: 80%;
+  width: 100%;
 }
 
 .content blockquote {

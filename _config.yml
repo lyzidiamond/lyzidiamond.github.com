@@ -1,20 +1,15 @@
-gems:
- - jekyll-redirect-from
-markdown: rdiscount
-highlighter: pygments
-permalink:
-rdiscount:
-  extensions: [smart]
-
-analytics:
-  provider: google
-  google:
-    tracking_id: 'UA-47757349-1'
-
-
 name: Victory Formation
-url: http://lyzidiamond.com
+url: "http://lyzidiamond.com"
 description: Lyzi Diamond writes on the internet sometimes.
-twitter: lyzidiamond
-github: lyzidiamond
-gravatar_url: http://gravatar.com/avatar/029f8c0e50e126f91562b126af9f22dd
+permalink: /:categories/:title
+highlighter: pygments
+markdown: kramdown
+exclude:
+- package.json
+- node_modules
+kramdown:
+  auto_ids:       true
+  toc_levels:     1..6
+  smart_quotes:   lsquo,rsquo,ldquo,rdquo
+  enable_coderay: false
+  input: GFM
