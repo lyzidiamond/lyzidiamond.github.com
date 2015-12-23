@@ -22,7 +22,7 @@ GitHub adds several [custom headers](https://support.google.com/mail/answer/2943
 - **`state_change`** &mdash; The notification arrived because you changed the thread state (like closing an Issue or merging a Pull Request)
 - **`assign`** &mdash; The notification arrived because you were assigned to the Issue
 
-The _reason_ for receiving a notification is a useful way to categorize messages when you're receiving hundreds of them per day. If you're interested in other options for filtering, see the "Other filtering options" section at the bottom of this post.
+The _reason_ for receiving a notification is a useful way to categorize messages when you're receiving hundreds of them per day.
 
 ## How can you make these work for you in Gmail?
 
