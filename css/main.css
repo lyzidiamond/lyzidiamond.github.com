@@ -44,10 +44,10 @@ q:before, q:after {
   content: '';
   content: none;
 }
-table {
+/*table {
   border-collapse: collapse;
   border-spacing: 0;
-}
+}*/
 
 /* -------------- End Eric Meyers Reset -------------- */
 
@@ -57,7 +57,6 @@ table {
 
 html, body {
   font-family: 'Open Sans', sans-serif;
-  font-size: 105%;
   height: 100%;
 }
 
@@ -103,7 +102,7 @@ h3 {
 }
 
 p {
-  line-height: 1.5;
+  line-height: 1.75;
   margin-bottom: 1.2em;
   margin-top: 1.2em;
 }
@@ -152,7 +151,7 @@ img .inline {
   margin-right: auto;
   min-width: 600px;
   position: relative;
-  width: 50%;
+  width: 55%;
 }
 
 .navigation ul {
@@ -185,12 +184,14 @@ img .inline {
   background-color: #eee;
   margin-bottom: 25px;
   padding: 2px 3px;
+  font-size: 120%;
 }
 
 .content pre code {
   display: inline-block;
   overflow: auto;
   width: 100%;
+  line-height: 1.5;
 }
 
 .content blockquote {
