@@ -178,7 +178,7 @@ img .inline {
   margin-top: 20px;
 }
 
-.content code {
+code {
   display: inline;
   font-family: 'Courier New', serif;
   background-color: #eee;
@@ -187,7 +187,7 @@ img .inline {
   font-size: 120%;
 }
 
-.content pre code {
+pre code {
   display: inline-block;
   overflow: auto;
   width: 100%;
