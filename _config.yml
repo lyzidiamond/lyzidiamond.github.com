@@ -2,7 +2,6 @@ name: Victory Formation
 url: "http://lyzidiamond.com"
 description: Lyzi Diamond writes on the internet sometimes.
 permalink: /:categories/:title
-highlighter: pygments
 markdown: kramdown
 exclude:
 - package.json
