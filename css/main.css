@@ -156,6 +156,10 @@ img .inline {
   width: 100%;
 }
 
+.orig img {
+  max-width: 300px;
+}
+
 #wrapper {
   margin-left: auto;
   margin-right: auto;
