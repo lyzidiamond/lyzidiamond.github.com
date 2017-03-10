@@ -151,7 +151,9 @@ img .inline {
 }
 
 .content img {
+  display: inline;
   max-width: 1000px;
+  width: 100%;
 }
 
 #wrapper {
