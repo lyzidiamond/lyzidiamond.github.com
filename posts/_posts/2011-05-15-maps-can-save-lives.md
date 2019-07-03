@@ -9,7 +9,7 @@ This was the case for Alicia Sanchez and her six-year-old son Carlos, who ventur
 
 Another GPS user faced a similar dilemma when traveling in Glen Canyon National Recreation Area in Utah. After traveling 60 miles into the park, she hit Lake Powell — which had inconveniently not been documented in the GPS.
 
-These stories, as well as the stories of many other GPS-wielding travelers, are documented in [an Oregonian story from yesterday](http://www.oregonlive.com/pacific-northwest-news/index.ssf/2011/05/missing_canadian_couple_experts_say_always_pair_gps_with_paper_map_realize_technology_not_infallible.html), with some advice on how to travel appropriately:
+These stories, as well as the stories of many other GPS-wielding travelers, are documented in [an Oregonian story from yesterday](https://www.oregonlive.com/pacific-northwest-news/index.ssf/2011/05/missing_canadian_couple_experts_say_always_pair_gps_with_paper_map_realize_technology_not_infallible.html), with some advice on how to travel appropriately:
 
 <blockquote>“Never ask the question, ‘What is the shortest route?’ if you are on a dirt road,’” said [Charlie] Callagan, a National Park Service wilderness coordinator in Death Valley, Calif.
 

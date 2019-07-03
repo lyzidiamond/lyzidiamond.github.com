@@ -3,9 +3,9 @@ layout: blog
 title: 'What should I learn first? Part 2'
 ---
 
-<em>Today, I [posted an email](http://lyzidiamond.com/posts/what-to-learn-first) I sent to someone who is new to mapping and unsure where to start. My response touched on some of my thoughts on geographic education, and I remembered that I had sent another email I wanted to share.
+<em>Today, I [posted an email](https://lyzidiamond.com/posts/what-to-learn-first) I sent to someone who is new to mapping and unsure where to start. My response touched on some of my thoughts on geographic education, and I remembered that I had sent another email I wanted to share.
 
-A couple few weeks ago, my friend [Katie Kowalsky](https://twitter.com/katiekowalsky) from the University of Wisconsin and [MaptimeMadison](http://twitter.com/maptimemadison) emailed me to ask about which [Mapbox](https://mapbox.com) tools she and her colleagues should be using to teach [CartoCSS](https://www.mapbox.com/mapbox-studio/style-manual/#cartocss). This got me considering all kinds of questions about tools and teaching, so I replied to Katie with a mini-rant. Some of my comments are the same as those I made in my post earlier today, but the mini-rant is below regardless. Enjoy.</em>
+A couple few weeks ago, my friend [Katie Kowalsky](https://twitter.com/katiekowalsky) from the University of Wisconsin and [MaptimeMadison](https://twitter.com/maptimemadison) emailed me to ask about which [Mapbox](https://mapbox.com) tools she and her colleagues should be using to teach [CartoCSS](https://www.mapbox.com/mapbox-studio/style-manual/#cartocss). This got me considering all kinds of questions about tools and teaching, so I replied to Katie with a mini-rant. Some of my comments are the same as those I made in my post earlier today, but the mini-rant is below regardless. Enjoy.</em>
 
 -------------------------
 
@@ -17,7 +17,7 @@ _A slide from [Vlad](https://twitter.com/mourner)'s [presentation](https://vimeo
 
 As I'm sure you know, the times, they are a-changin'. Nowadays, you don't succeed simply by learning one tool. To be a professional in the modern geospatial environment, you need to know a lot of different tools. So what is on that list? What should we be teaching the students of geographic information studies to prepare them for the workforce?
 
-It's a hard question to answer simply because the field is changing so much all the time. [Mapbox](https://mapbox.com) doesn't have official guidance on which tools to use for what because things move too fast to do that. Someone could have an idea tomorrow, crank on it for a week, and it could be the next [Turf.js](http://turfjs.org) or [Mapbox Studio](https://mapbox.com/mapbox-studio). **The field simply moves too fast to teach a tool now and have it be relevant and useful in a year.**
+It's a hard question to answer simply because the field is changing so much all the time. [Mapbox](https://mapbox.com) doesn't have official guidance on which tools to use for what because things move too fast to do that. Someone could have an idea tomorrow, crank on it for a week, and it could be the next [Turf.js](https://turfjs.org) or [Mapbox Studio](https://mapbox.com/mapbox-studio). **The field simply moves too fast to teach a tool now and have it be relevant and useful in a year.**
 
 If we take a step back for a second, it becomes clear: we have to stop teaching tools and start teaching problem-solving. We need to get the educational train on the same tracks as the field has been on for a little while now. We should be challenging students to figure out how to solve the problems instead of showing them how to use one tool to solve a given set of problems.
 

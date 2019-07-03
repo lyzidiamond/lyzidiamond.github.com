@@ -3,7 +3,7 @@ layout: blog
 title: 'Geographic Data Assumptions: MAUP and Ecological Fallacies'
 ---
 
-_This post originally appeared on [GIS Collective](http://giscollective.org)._
+_This post originally appeared on [GIS Collective](https://giscollective.org)._
 
 Humans are generally adept at critical thinking and deductive reasoning. We tend to understand the world around us fairly easily, because the world operates on a few basic principles. By relying on these principles, we can find the signals through the noise (or at least narrow it down to a few options). To do this, we tend to rely on assumption and inference.
 
@@ -13,29 +13,29 @@ Maps are a little different. Modern society has allowed for the growth of spatia
 
 ---
 
-In 1991, Mark Monmonier wrote a book called [“How to Lie With Maps.”](http://www.amazon.com/How-Lie-Maps-2nd-Edition/dp/0226534219) The book remains essential to any geographic information science curriculum, and for those interested in learning more about the subjects I’m going to touch on here, it’s a great resource. The first paragraph of the introduction reads:
+In 1991, Mark Monmonier wrote a book called [“How to Lie With Maps.”](https://www.amazon.com/How-Lie-Maps-2nd-Edition/dp/0226534219) The book remains essential to any geographic information science curriculum, and for those interested in learning more about the subjects I’m going to touch on here, it’s a great resource. The first paragraph of the introduction reads:
 
 <blockquote><p>Not only is it easy to lie with maps, it’s essential. To portray meaningful relationships for a complex, three-dimensional world on a flat sheet of paper or a video screen, a map must distort reality. As a scale model, the map must use symbols that almost always are proportionally much bigger or thicker than the features they represent. To avoid hiding critical information in a fog of detail, the map must offer a selective, incomplete view of reality. There’s no escape from the cartographic paradox: to present a useful and truthful picture, an accurate map must tell white lies.</p></blockquote>
 
 There’s the first thing to realize: **every map is lying to you all the time**. In an ideal world, the map is lying to you in the hopes of conveying the most information to you that it possibly can, but sometimes maps make generalizations and approximations for sake of the cartographer and not the map’s intended audience. Let’s take a look at an example.
 
-<img src="http://giscollective.org/wp-content/uploads/2013/07/maup2.png" class="inline" width="100%">
+<img src="https://giscollective.org/wp-content/uploads/2013/07/maup2.png" class="inline" width="100%">
 
-This is a map from the [Washington Post](http://www.washingtonpost.com/wp-srv/special/politics/election-map-2012/president/) showing the results of the 2012 presidential election. Considering that presidential races in this country are decided by the electoral college, and each state’s electors all vote for the same candidate, breaking out the data state by state makes sense. Nevada is blue, Mississippi is red, Obama won the election, let’s all go get a beer.
+This is a map from the [Washington Post](https://www.washingtonpost.com/wp-srv/special/politics/election-map-2012/president/) showing the results of the 2012 presidential election. Considering that presidential races in this country are decided by the electoral college, and each state’s electors all vote for the same candidate, breaking out the data state by state makes sense. Nevada is blue, Mississippi is red, Obama won the election, let’s all go get a beer.
 
 But this map doesn’t tell the whole story. Let’s look at another map from the Washington Post of the exact same data, just aggregated differently.
 
-<img src="http://giscollective.org/wp-content/uploads/2013/07/maup3.png" class="inline" width="100%">
+<img src="https://giscollective.org/wp-content/uploads/2013/07/maup3.png" class="inline" width="100%">
 
 Nevada doesn’t look as blue as it did in the previous map, and Mississippi doesn’t look quite as red. By grouping data by states, the map was hiding some of the complexity in the data, causing the reader to make certain assumptions.
 
-This is a common and well-documented spatial data visualization circumstance called the [modifiable areal unit problem](http://en.wikipedia.org/wiki/Modifiable_areal_unit_problem), often acronomized as MAUP. First identified by Gehlke and Biehl in 1934, the MAUP is a statistical bias that is influenced by both the means in which point-based data is aggregated, and the districts into which that data is grouped.
+This is a common and well-documented spatial data visualization circumstance called the [modifiable areal unit problem](https://en.wikipedia.org/wiki/Modifiable_areal_unit_problem), often acronomized as MAUP. First identified by Gehlke and Biehl in 1934, the MAUP is a statistical bias that is influenced by both the means in which point-based data is aggregated, and the districts into which that data is grouped.
 
 The presidential election maps above were (in theory*) generated from point-based data: one vote, one point. But showing 117 million points on a map would take a really long time and it wouldn’t be that useful (plus, it’s a cartographic nightmare). The cartographer is all but obligated to aggregate and group the data for ease of consumption, but every grouping mechanism is going to present its own challenges.
 
 For example, I live in Portland, which is in Multnomah County, Oregon. In the 2012 election, Multnomah County had 367,992 ballots cast in 132 precincts. (Oregon has vote by mail, so that changes things around a bit geographically, but that’s not super relevant here.) 75.37% of the votes cast for president were cast for Barack Obama. When you look at Multnomah County on the presidential map above, you’ll see that it’s pretty blue.
 
-<img src="http://giscollective.org/wp-content/uploads/2013/07/maup4.png" class="inline" width="100%">
+<img src="https://giscollective.org/wp-content/uploads/2013/07/maup4.png" class="inline" width="100%">
 
 But is that map telling you what’s really going on beneath the aggregation? Nope. Could one theoretically assume that all 367,992 ballots in Multnomah County were cast for Obama? Sure. Does it matter? In this case, probably not that much for you and me, but if you’re interested in conducting a political campaign, the MAUP could seriously hinder your strategy: _especially_ if you only have access to aggregated data.
 
@@ -46,7 +46,7 @@ This assumption falls into a category of assumptions called **ecological fallaci
 * Simpson’s Paradox (when comparing two populations divided in groups of different sizes, the average of some variable in the first population can be higher in every group and yet lower in the total population)
 * Confusion between higher average and higher likelihood
 
-_(Believe it or not, [Wikipedia](http://en.wikipedia.org/wiki/Ecological_fallacy) does a really great job breaking each of these down. If you’re interested in learning more about the specifics, head over there.)_
+_(Believe it or not, [Wikipedia](https://en.wikipedia.org/wiki/Ecological_fallacy) does a really great job breaking each of these down. If you’re interested in learning more about the specifics, head over there.)_
 
 Ecological fallacies and modifiable areal unit problems go hand in hand: the methods for aggregating the data tend to highlight certain trends that are potentially damaging to true understanding (MAUP), and the conclusions drawn from the aggregated data can be erroneous (ecological fallacies).
 
@@ -58,4 +58,4 @@ Maps, just like any other information graphic, exist to show signals in the nois
 
 <em>* This is likely false. Election data is aggregated by polling place/ward/district/whatever grouping system is employed where you live. Which creates its own statistical data aggregation problems, no?</em>
 
-<em>** I usually come up with two disparate geographic datasets that are so laughably separate that nobody would ever map them together, and talk about how cool it would be if they were juxtaposed. Like, a map of New York City showing art galleries overlayed with National Flood Insurance Program policy holders. If you’re interested in those sorts of strange map mashups, check out Rebecca Solint’s book, <a href="http://www.amazon.com/Infinite-City-San-Francisco-Atlas/dp/052026506">Infinite City: A San Francisco Atlas."</a></em>
+<em>** I usually come up with two disparate geographic datasets that are so laughably separate that nobody would ever map them together, and talk about how cool it would be if they were juxtaposed. Like, a map of New York City showing art galleries overlayed with National Flood Insurance Program policy holders. If you’re interested in those sorts of strange map mashups, check out Rebecca Solint’s book, <a href="https://www.amazon.com/Infinite-City-San-Francisco-Atlas/dp/052026506">Infinite City: A San Francisco Atlas."</a></em>

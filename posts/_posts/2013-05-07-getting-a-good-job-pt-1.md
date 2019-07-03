@@ -3,7 +3,7 @@ layout: blog
 title: Getting a Good (GIS) Job, Part 1
 ---
 
-Last week, I was asked by the [ORURISA Young Professionals](http://orurisayp.org) to give a short talk about the transition from completing a geogrpahy or GIS degree to becoming employed in the field of geospatial. There were around eight of us who gave short talks, and each of us had good pieces of advice to share. I thought the whole thing was very valuable, albeit poorly-attended, so I'm going to attempt to recreate some of that advice here. Although the talk was GIS-oriented and some of the conversation was specific to geospatial careers, I feel that a lot of the advice is applicable to job hunters regardless of field.
+Last week, I was asked by the [ORURISA Young Professionals](https://orurisayp.org) to give a short talk about the transition from completing a geogrpahy or GIS degree to becoming employed in the field of geospatial. There were around eight of us who gave short talks, and each of us had good pieces of advice to share. I thought the whole thing was very valuable, albeit poorly-attended, so I'm going to attempt to recreate some of that advice here. Although the talk was GIS-oriented and some of the conversation was specific to geospatial careers, I feel that a lot of the advice is applicable to job hunters regardless of field.
 
 Part 1 is included here. Parts 2, 3, and 4 will be included in future blog posts, which I will link to from this blog post when they're up.
 <br>
@@ -30,7 +30,7 @@ Creating a life inventory not only helps you figure out where you're at and what
 <br>
 ### The Job Search
 
-So now you've figured out where you're at and where you want to go. How do you figure out what jobs to apply for? Even in geospatial, there are a multitude of options: GIS Technician, GIS Developer, Cartographer, GIS Databse Administrator, government, private sector, nonprofits... the list goes on and on. [Idealist](http://idealist.org) has identified what it calls the ["Five Lens Framework"](http://www.idealist.org/info/Careers/SelfKnowledge/Lenses) for determining the frames through which individuals see their careers. That list is specifically geared toward nonprofit job seekers, so it doesn't include what I think is an important part of many job searches: money. The framework (with my addendum) involves the following six lenses:
+So now you've figured out where you're at and where you want to go. How do you figure out what jobs to apply for? Even in geospatial, there are a multitude of options: GIS Technician, GIS Developer, Cartographer, GIS Databse Administrator, government, private sector, nonprofits... the list goes on and on. [Idealist](https://idealist.org) has identified what it calls the ["Five Lens Framework"](https://www.idealist.org/info/Careers/SelfKnowledge/Lenses) for determining the frames through which individuals see their careers. That list is specifically geared toward nonprofit job seekers, so it doesn't include what I think is an important part of many job searches: money. The framework (with my addendum) involves the following six lenses:
 
 * Organization: You want to work at Specific Company X. It is less important what you do there, so long as you are working there.
 * Role: It is not so important which company you work at, so long as you get to do Job Duty Y.
@@ -41,7 +41,7 @@ So now you've figured out where you're at and where you want to go. How do you f
 
 In the exercise above, when you were taking a life inventory, one of the things you wrote down was a list of what you want to get out of a job. Take a look at this list and try to identify which of these categories your goals fit into. **It's also okay to want more than one thing.** For me, it is a combination of role, system, and population: I want to conduct specific job tasks, I like certain types of organizations and work environments, and I care that my work is affecting a certain population. The spcific company I work for, the problems I'm solving, and my compensation are less important. Still important, but less so. Identifying which of these lenses is more prevalent for you can be extremely helpful in deciding which jobs to apply for, and if you get lucky enough to have to choose between multiple offers, your self-knowledge about these lenses will certainly come in handy.
 
-For more information and advice about what to do once you've identified which lenses you value, see the [Idealist page on the Five Lenses Framework.](http://www.idealist.org/info/Careers/SelfKnowledge/Lenses)
+For more information and advice about what to do once you've identified which lenses you value, see the [Idealist page on the Five Lenses Framework.](https://www.idealist.org/info/Careers/SelfKnowledge/Lenses)
 <br>
 ### Take A Deep Breath
 

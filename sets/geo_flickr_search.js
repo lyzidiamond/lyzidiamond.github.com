@@ -23,7 +23,7 @@ $('#input').submit(function(e) {
 		if(err) { throw new Error(err); }
 		var returnedList = result.photos.photo;
 		for (var i = 0; i < returnedList.length; i++) {
-			var photoUrl = 'http://farm' + returnedList[i].farm + '.staticflickr.com/' + returnedList[i].server + '/' + returnedList[i].id + '_' + returnedList[i].secret + '.jpg';
+			var photoUrl = 'https://farm' + returnedList[i].farm + '.staticflickr.com/' + returnedList[i].server + '/' + returnedList[i].id + '_' + returnedList[i].secret + '.jpg';
 			document.getElementById('result').innerHTML += '<img src="' + photoUrl + '"><br><h2>' + returnedList[i].title + '</h2><br>';
 		};
 	});

@@ -3,9 +3,9 @@ layout: blog
 title: 'GitHub and GeoJSON: Just Keeps Getting Better'
 ---
 
-_This post originally appeared on [GIS Collective](http://giscollective.org)._
+_This post originally appeared on [GIS Collective](https://giscollective.org)._
 
-<h1><img src="http://giscollective.org/wp-content/uploads/2013/06/cluster.png" class="inline"></h1>
+<h1><img src="https://giscollective.org/wp-content/uploads/2013/06/cluster.png" class="inline"></h1>
 
 GitHub has announced today some [new features](https://github.com/blog/1541-geojson-rendering-improvements) for rendering geographic data, coming off its announcement two weeks ago that GeoJSON data would now be displayed on a map when opened inside a repo. These changes show that the folks over at GitHub are serious about the importance of geospatial, and recognize that more of the world’s developers are turning to maps and coordinates as a way to display, communicate, and analyze data. Spatial is special once again!
 

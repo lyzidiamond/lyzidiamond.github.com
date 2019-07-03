@@ -5,14 +5,14 @@ title: 'Building a LocalWiki Changebot'
 
 <h1><img src="/images/lexwiki.png" class="inline"></h1>
 
-One thing that became obvious soon after becoming part of the Code for America family was the abundance of community-focused wikis – sites where anyone can contribute, intended to facilitate community around shared knowledge. Some cities have very successful and robust wikis (I'm looking at you, [OaklandWiki](http://oaklandwiki.org)), but others have some work to do to catch up.
+One thing that became obvious soon after becoming part of the Code for America family was the abundance of community-focused wikis – sites where anyone can contribute, intended to facilitate community around shared knowledge. Some cities have very successful and robust wikis (I'm looking at you, [OaklandWiki](https://oaklandwiki.org)), but others have some work to do to catch up.
 
-During National Day of Civic Hacking last year in Lexington, [OpenLexington](http://openlexington.org) (the local [Code for America brigade](http://brigade.codeforamerica.org)) launched [LexingtonWiki](http://lexington-wiki.org), which is built on [LocalWiki](http://localwiki.org). Unfortunately, it hasn't yet gotten much traction, which is a huge bummer! The [Lexingteam](http://teambiglex.tumblr.com) thought it might be cool to have [Twitter notifications](http://twitter.com/openlexington) when a page on the wiki is edited/updated to try and publicize the wiki and get more folks editing. Turns out it's a pretty easy thing to set up.
+During National Day of Civic Hacking last year in Lexington, [OpenLexington](https://openlexington.org) (the local [Code for America brigade](https://brigade.codeforamerica.org)) launched [LexingtonWiki](https://lexington-wiki.org), which is built on [LocalWiki](https://localwiki.org). Unfortunately, it hasn't yet gotten much traction, which is a huge bummer! The [Lexingteam](https://teambiglex.tumblr.com) thought it might be cool to have [Twitter notifications](https://twitter.com/openlexington) when a page on the wiki is edited/updated to try and publicize the wiki and get more folks editing. Turns out it's a pretty easy thing to set up.
 
 ## This is how we did it:
 
-- Every LocalWiki instance has a Recent Changes RSS feed, and there's a pretty cool but casually hidden/relatively unknown feed for those changes. It lives at `http://[your wiki's URL]/Recent_Changes/_feed`.
-- Discovering that feed was like, 90% of the challenge. From there, we set up a recipe in [IFTTT](http://ifttt.com) to automatically tweet when that feed was updated.
+- Every LocalWiki instance has a Recent Changes RSS feed, and there's a pretty cool but casually hidden/relatively unknown feed for those changes. It lives at `https://[your wiki's URL]/Recent_Changes/_feed`.
+- Discovering that feed was like, 90% of the challenge. From there, we set up a recipe in [IFTTT](https://ifttt.com) to automatically tweet when that feed was updated.
 
 <h1><img src="/images/wikibot_ifttt.png" class="inline"></h1>
 

@@ -55,7 +55,7 @@ Utils.queryFlickr = function (queryArguments, flickrOptions, security, processRe
     return this.queryFlickrAPI(queryArguments, flickrOptions, security, processResult);
   };
 Utils.queryFlickrAPI = function (queryArguments, flickrOptions, security, processResult) {
-    var url = "http://ycpi.api.flickr.com/services/rest/",
+    var url = "https://ycpi.api.flickr.com/services/rest/",
         queryString = this.formQueryString(queryArguments),
         flickrURL = url + "?" + queryString;
     // Do we need special permissions? (read private, 1, write, 2, or delete, 3)?
@@ -71,7 +71,7 @@ Utils.queryProxyEndpoint = function (queryArguments, flickrOptions, processResul
     this.handleURLRequest("POST", url, processResult, queryArguments);
   };
 Utils.handleURLRequest = function (verb, url, processResult, postdata) {
-    var xhr = new XMLHttpRequest();
+    var xhr = new XMLhttpsRequest();
     xhr.open(verb, url, true);
     if(postdata) {
       xhr.setRequestHeader("Content-Type", "application/json");
@@ -83,7 +83,7 @@ Utils.handleURLRequest = function (verb, url, processResult, postdata) {
               body = xhr.responseText;
           // we get a response, but there's no response body. That's a problem.
           if(!body) {
-            error = "HTTP Error " + response.statusCode + " (" + statusCodes[response.statusCode] + ")";
+            error = "https Error " + response.statusCode + " (" + statusCodes[response.statusCode] + ")";
             return processResult(error);
           }
           // we get a response, and there were no errors
@@ -105,7 +105,7 @@ Utils.handleURLRequest = function (verb, url, processResult, postdata) {
           // handler blindly with both the error and error body.
           processResult(error, body);
         }
-        else { processResult("HTTP status not 200 (received "+xhr.status+")"); }
+        else { processResult("https status not 200 (received "+xhr.status+")"); }
       }
     };
     xhr.send(postdata ? JSON.stringify(postdata) : null);

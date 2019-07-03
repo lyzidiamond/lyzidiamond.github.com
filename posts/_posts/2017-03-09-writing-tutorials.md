@@ -7,7 +7,7 @@ It's easy to feel intimidated by the idea of writing a tutorial -- especially if
 
 In order to get myself un-stuck when I'm feeling this way, I put together a little guide to get myself going. The following steps may not work for everyone, but maybe they'll give you the kick start you need, too.
 
-_Note: As an example throughout this post, I'm going to use the perennial "making a PB&J" exercise. This exercise is often used in computer science classrooms to illustrate how you need to be overly direct, explicit, and detailed when telling a computer to do anything. The same principles apply to technical writing, although not quite as literally as they do in the original exercise. You can see an overview of the exercise from an MIT course [here](http://static.zerorobotics.mit.edu/docs/team-activities/ProgrammingPeanutButterAndJelly.pdf) [PDF]._
+_Note: As an example throughout this post, I'm going to use the perennial "making a PB&J" exercise. This exercise is often used in computer science classrooms to illustrate how you need to be overly direct, explicit, and detailed when telling a computer to do anything. The same principles apply to technical writing, although not quite as literally as they do in the original exercise. You can see an overview of the exercise from an MIT course [here](https://static.zerorobotics.mit.edu/docs/team-activities/ProgrammingPeanutButterAndJelly.pdf) [PDF]._
 
 ### Step one: Ask yourself why
 
@@ -51,4 +51,4 @@ Trying something new is _hard_. It's hard to get started and it's hard to keep g
 
 ## And there you have it
 
-This is a super quick guide to writing an effective tutorial. If you used this to help you get unstuck, I'd love to see what you made! If you want even more words from me about writing tutorials, see my [tutorial on developing tutorials](http://lyzidiamond.com/tutorial-dev) (in tutorial/slide form).
+This is a super quick guide to writing an effective tutorial. If you used this to help you get unstuck, I'd love to see what you made! If you want even more words from me about writing tutorials, see my [tutorial on developing tutorials](https://lyzidiamond.com/tutorial-dev) (in tutorial/slide form).

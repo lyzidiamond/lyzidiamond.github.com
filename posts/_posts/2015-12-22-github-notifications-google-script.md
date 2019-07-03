@@ -26,7 +26,7 @@ The _reason_ for receiving a notification is a useful way to categorize messages
 
 ## How can you make these work for you in Gmail?
 
-Gmail provides lots of handy ways to manage your inbox. I use [multiple inboxes](http://gmailblog.blogspot.com/2009/02/new-in-labs-multiple-inboxes.html) to keep my messages visually separated based on how they're labeled. Multiple inboxes are great because you can set multiple rules for what is to be included in each one -- for example, I can have one inbox that only contains messages from my parents or my sister that are starred and have an "Urgent" label.
+Gmail provides lots of handy ways to manage your inbox. I use [multiple inboxes](https://gmailblog.blogspot.com/2009/02/new-in-labs-multiple-inboxes.html) to keep my messages visually separated based on how they're labeled. Multiple inboxes are great because you can set multiple rules for what is to be included in each one -- for example, I can have one inbox that only contains messages from my parents or my sister that are starred and have an "Urgent" label.
 
 For my work email, my five inboxes are:
 

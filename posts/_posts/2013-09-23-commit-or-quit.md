@@ -3,7 +3,7 @@ layout: blog
 title: Commit or Quit
 ---
 
-<h1><img src="http://b.vimeocdn.com/ts/130/674/130674832_640.jpg" class="inline"></h1>
+<h1><img src="https://b.vimeocdn.com/ts/130/674/130674832_640.jpg" class="inline"></h1>
 
 I am a perfectionist. Scratch that. I am an *ambitious* perfectionist. I want to do everything, and I want to do it perfectly the first time, and I want to do it faster than anyone else has ever done it before. These are unrealistic goals, which means I fail... a lot.
 
@@ -14,11 +14,11 @@ Is this fun? No. I hate it. Does it make me do more or produce better work? Nope
 <blockquote class="twitter-tweet"><p>I&#39;m writing code, not making diamonds. Continuing to apply more and more pressure will not produce a better outcome.</p>&mdash; Dana Jones (@danabrit) <a href="https://twitter.com/danabrit/statuses/382127860753784832">September 23, 2013</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-I often make this joke around [git](http://git-scm.com/) types, but in seeking to curb this pattern of self-degradation, I have started to follow one basic principle:
+I often make this joke around [git](https://git-scm.com/) types, but in seeking to curb this pattern of self-degradation, I have started to follow one basic principle:
 
 <strong>Commit or quit.</strong>
 
-*(If you don't get the git joke, read about making commits [here](http://gitref.org/basic/).)*
+*(If you don't get the git joke, read about making commits [here](https://gitref.org/basic/).)*
 
 Seriously. I have made some _garbage_ commits. Things that broke my entire workflow, things that make my website background bright green, blog posts that are half-written and used as a tool for teaching others about GitHub Pages. And I have learned from every single one of them.
 
@@ -32,7 +32,7 @@ This principle applies to other, non-programming aspects of life, too. Just beca
 
 <strong>Commit or quit.</strong>
 
-It is also important to realize that committing and quitting are not forever. I allow "quit" in my life to mean "pause temporarily" if the situation allows it. I also allow "commit" to have a variable timeline. The idea is that if you force yourself to make a decision about something, you're taking action and not just [engaging in motion](http://lifehacker.com/the-mistake-smart-people-make-being-in-motion-vs-taki-1143223597).
+It is also important to realize that committing and quitting are not forever. I allow "quit" in my life to mean "pause temporarily" if the situation allows it. I also allow "commit" to have a variable timeline. The idea is that if you force yourself to make a decision about something, you're taking action and not just [engaging in motion](https://lifehacker.com/the-mistake-smart-people-make-being-in-motion-vs-taki-1143223597).
 
 <strong>Commit or quit.</strong>
 

@@ -3,7 +3,7 @@ layout: blog
 title: "Adding External GeoJSON with Mapbox.js"
 ---
 
-A couple years ago, I wrote a blog post about [adding external GeoJSON data to your Leaflet map using link relations](http://lyzidiamond.com/posts/osgeo-august-meeting/). Then I wrote another one about [using AJAX tools to do the same thing](http://lyzidiamond.com/posts/external-geojson-and-leaflet-the-other-way/). Here, years later, is the third part of that series: Adding External GeoJSON with Mapbox.js.
+A couple years ago, I wrote a blog post about [adding external GeoJSON data to your Leaflet map using link relations](https://lyzidiamond.com/posts/osgeo-august-meeting/). Then I wrote another one about [using AJAX tools to do the same thing](https://lyzidiamond.com/posts/external-geojson-and-leaflet-the-other-way/). Here, years later, is the third part of that series: Adding External GeoJSON with Mapbox.js.
 
 ## Mapbox.js vs Leaflet
 
@@ -21,7 +21,7 @@ Initializing a map with Mapbox tiles in Leaflet:
 ```
 var map = L.map('map');
 L.tileLayer('https://api.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
-    attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
+    attribution: 'Map data &copy; <a href="https://openstreetmap.org">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://mapbox.com">Mapbox</a>',
     id: 'mapbox.streets',
     accessToken: '<your access token here>'
 }).addTo(map);
@@ -41,7 +41,7 @@ var myLayer = L.mapbox.featureLayer()
   .addTo(map);
 ```
 
-![](http://i.giphy.com/DqSw5gyRQ5yPC.gif)
+![](https://i.giphy.com/DqSw5gyRQ5yPC.gif)
 
 _I seriously have no idea why I didn't write this blog post before now. This is magical stuff._
 
@@ -131,4 +131,4 @@ Give this a try! Check out the [Mapbox.js examples](https://www.mapbox.com/mapbo
 
 Also, here is a puppy:
 
-![](http://i.giphy.com/toBi1QFDo6xAk.gif)
+![](https://i.giphy.com/toBi1QFDo6xAk.gif)

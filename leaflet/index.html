@@ -98,14 +98,14 @@ window.onload = function() {
 <body>
   <div><strong>Hell yes, Leaflet!</strong> (or, <em>Let's Make a Web Map</em>)</div>
   <div><em>PLEASE</em> interrupt me to ask questions.</div>
-  <div>To follow along: <strong>http://lyzidiamond.com/maptimepdx/leaflet/</strong></div>
+  <div>To follow along: <strong>https://lyzidiamond.com/maptimepdx/leaflet/</strong></div>
   <div>While I'm talking, please download a text editor if you don't have one already. I recommend <em>Sublime Text 2</em>.</div>
   <div>First of all: What characterizes a <em>web map</em>?</div>
   <div>1: <em>Tiles*</em></div>
   <div>*(This isn't ALWAYS the case, but we'll pretend it is for now.)</div>
   <div>"... web maps are made up of many small, square images called <em>tiles</em>."</div>
   <div>"These tiles are typically 256x256 pixels and are placed side-by-side in order to create the illusion of a very large seamless image."</div>
-  <div><a href="http://mapbox.com/developers/guide">(Thanks for the explanation, MapBox!)</a></div>
+  <div><a href="https://mapbox.com/developers/guide">(Thanks for the explanation, MapBox!)</a></div>
   <div>You may be asking yourself: <strong>But what about when I zoom in? How come the resolution stays so good?</strong></div>
   <div>Well, each <em>zoom level</em> has its own set of tiles!</div>
   <div>Zoom level 0: <strong>1</strong> tile for the world.</div>
@@ -117,18 +117,18 @@ window.onload = function() {
   <div>Aw yeah, you got it. <strong>64</strong>! Y'all are great at math.</div>
   <div>Map tiles only render when you're looking at them in that moment, so tiles make maps hella fast.</div>
   <div>Map tiles are just images on the web, so you can link to them individually.</div>
-  <div>For example: <a href="http://tile.openstreetmap.org/4/2/3.png">http://tile.openstreetmap.org/4/2/3.png</a></div>
+  <div>For example: <a href="https://tile.openstreetmap.org/4/2/3.png">https://tile.openstreetmap.org/4/2/3.png</a></div>
   <div>In order to understand how this works, let's break down the URL.</div>
-  <div>http://<em>tile.openstreetmap.org</em>/4/2/3.png -- this is the name of the tile server.</div>
-  <div>http://tile.openstreetmap.org/<em>4</em>/2/3.png -- this is the z value, or the zoom level.</div>
-  <div>http://tile.openstreetmap.org/4/<em>2/3</em>.png -- This is the y/x value, or the place in the grid where the tile lives.</div>
+  <div>https://<em>tile.openstreetmap.org</em>/4/2/3.png -- this is the name of the tile server.</div>
+  <div>https://tile.openstreetmap.org/<em>4</em>/2/3.png -- this is the z value, or the zoom level.</div>
+  <div>https://tile.openstreetmap.org/4/<em>2/3</em>.png -- This is the y/x value, or the place in the grid where the tile lives.</div>
   <div>In a little bit, we will look at how to include tiles in our web map.</div>
   <div>2: <em>Feature Layers*</em></div>
   <div>Feature layers are map layers that live on top of your base tiles. Sometimes you can interact with them (clicking to produce a popup, for example).</div>
   <div>They are often <em>vector</em> layers (points, lines, polygons).</div>
   <div>*(Not every web map contains a feature layer, but they are fairly typical.)</div>
   <div>What data types can we use for adding feature layers to a web map?</div>
-  <div><a href="http://github.com/lyzidiamond/learn-geojson">GeoJSON</a> is one.</div>
+  <div><a href="https://github.com/lyzidiamond/learn-geojson">GeoJSON</a> is one.</div>
   <div>KML is another. So is TopoJSON. And even SVG.</div>
   <div>Some mapping libraries allow you to define vector data points <em>within your script itself.</em></div>
   <div>But we're getting ahead of ourselves. There's one more thing that makes a web map:</div>
@@ -137,11 +137,11 @@ window.onload = function() {
   <div>And in order to allow you to zoom and pan and add tooltips, you need some <strong>JavaScript</strong>.</div>
   <div>Fortunately, we have <strong>mapping libraries</strong> that can help us out!</div>
   <div>The one we're going to play with today is called <em>Leaflet</em>.</div>
-  <div><a href="http://leafletjs.com">Let's take a look at what Leaflet can do.</a></div>
+  <div><a href="https://leafletjs.com">Let's take a look at what Leaflet can do.</a></div>
   <div>So with all of that functionality available, it should take us no time to make a map!</div>
   <div>Let's go to it.</div>
-  <div>(This exercise is going to be similar to the <a href="http://leafletjs.com/examples/quick-start.html">Leaflet Quick Start Guide</a>. Some of it is taken directly from there.)</div>
-  <div>The full example is at <em>http://lyzidiamond.com/leaflet.html</em> (map) and <em>http://lyzidiamond.com/leaflet.md</em> (HTML).</div>
+  <div>(This exercise is going to be similar to the <a href="https://leafletjs.com/examples/quick-start.html">Leaflet Quick Start Guide</a>. Some of it is taken directly from there.)</div>
+  <div>The full example is at <em>https://lyzidiamond.com/leaflet.html</em> (map) and <em>https://lyzidiamond.com/leaflet.md</em> (HTML).</div>
   <div>First, open your text editor, create a new file, and save it as an HTML file.</div>
   <div>You can call the file whatever you want, but make sure the file extension is <em>.html</em>.</div>
   <div>An <em>HTML</em> file is broken into two parts: <em>head</em> and <em>body</em>.</div>
@@ -192,10 +192,10 @@ window.onload = function() {
   <div>We <em>made a web map of Portland with a map marker on it</em>!</div>
   <div>This is a <strong>lot</strong>. Give yourself a pat on the back.</div>
   <div>So... <strong>What's next?</strong></div>
-  <div>Check out more tutorials on the Leaflet website, <a href="http://leafletjs.com">leafletjs.com</a>.</div>
-  <div>Learn about GeoJSON with the <strong>Learn GeoJSON</strong> exercise at <a href="http://github.com/lyzidiamond/learn-geojson">github.com/lyzidiamond/learn-geojson</a>, and then add some to your Leaflet map.</div>
-  <div>Learn about other mapping libraries. For example, you can learn about MapBox.js over at <a href="http://mapbox.com/mapbox.js">mapbox.com/mapbox.js</a>.</div>
-  <div>Download TileMill at <a href="http://tilemill.com">tilemill.com</a> and make your own map tiles for use in future maps!</div>
+  <div>Check out more tutorials on the Leaflet website, <a href="https://leafletjs.com">leafletjs.com</a>.</div>
+  <div>Learn about GeoJSON with the <strong>Learn GeoJSON</strong> exercise at <a href="https://github.com/lyzidiamond/learn-geojson">github.com/lyzidiamond/learn-geojson</a>, and then add some to your Leaflet map.</div>
+  <div>Learn about other mapping libraries. For example, you can learn about MapBox.js over at <a href="https://mapbox.com/mapbox.js">mapbox.com/mapbox.js</a>.</div>
+  <div>Download TileMill at <a href="https://tilemill.com">tilemill.com</a> and make your own map tiles for use in future maps!</div>
   <div>As you saw today, web maps are <strong>totally awesome</strong>. And you know what the best part is?</div>
   <div><em>This is just the beginning.</em></div>
   <div>Thanks.</div>
