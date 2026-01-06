@@ -15,20 +15,42 @@
 body[a="dark"] { @include dark-appearance; }
 
 
-@media (prefers-color-scheme: dark) {
-  body[a="auto"] { @include dark-appearance; }
-}
+// @media (prefers-color-scheme: dark) {
+//   body[a="auto"] { @include dark-appearance; }
+// }
 // -------------------------------------------- //
+
+/**
+ * Solarized colors by Ethan Schoonover
+ */
+
+// Solarized colors
+$base03:    #002b36;
+$base02:    #073642;
+$base01:    #586e75;
+$base00:    #657b83;
+$base0:     #839496;
+$base1:     #93a1a1;
+$base2:     #eee8d5;
+$base3:     #fdf6e3;
+$yellow:    #b58900;
+$orange:    #cb4b16;
+$red:       #dc322f;
+$magenta:   #d33682;
+$violet:    #6c71c4;
+$blue:      #268bd2;
+$cyan:      #2aa198;
+$green:     #859900;
 
 // bg color is also needed in html in order to
 // block body's background propagation
 // see: https://stackoverflow.com/a/61265706
-html, body { background: white; }
+html, body { background: $base3; }
 
 html { height: 100%; scroll-behavior: smooth; }
 
 body {
-  color: black;
+  color: $base00;
   font-family: monospace;
   font-size: 16px;
   line-height: 1.4;
@@ -47,7 +69,10 @@ p { margin: 1rem 0; }
 
 li { margin: 0.4rem 0; }
 
-*:target { background: yellow; }
+a { color: $blue; }
+a:visited { color: $cyan;}
+
+*:target { background: $blue; }
 
 .w {
   max-width: 640px;
@@ -66,14 +91,14 @@ hr {
 table { width: 100%; }
 
 table, th, td {
-  border: thin solid black;
+  border: thin solid $base01;
   border-collapse: collapse;
   padding: 0.4rem;
 }
 
 code {
-  color: white;
-  background: black;
+  color: $base0;
+  background: $base2;
 }
 
 div.highlighter-rouge code {
@@ -85,7 +110,7 @@ div.highlighter-rouge code {
 
 blockquote {
   font-style: italic;
-  border: thin solid black;
+  border: thin solid $base03;
   padding: 1rem;
 
   p { margin: 0; }
@@ -95,4 +120,15 @@ img {
   max-width: 100%;
   display: block;
   margin: 0 auto;
+}
+
+.important {
+  color: $magenta;
+  font-weight: bold;
+}
+
+.description {
+  font-size: 1.3rem;
+  margin-bottom: 2.5rem;
+  margin-top: -1rem;
 }

@@ -18,11 +18,10 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Hi! My name is Lyzi Diamond.
+title: Lyzi Diamond
 email: lyzidiamond@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Lyzi Diamond's personal website and blog.
-  I'm a documentation engineer and technical writer in New York City.
+  Lyzi is a documentation engineer and technical writer based in New York City.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: lyzidiamond
