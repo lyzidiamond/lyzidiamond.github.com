@@ -1,3 +1,14 @@
+GIT
+  remote: https://github.com/riggraz/no-style-please
+  revision: 2f8dba2c23633b21e45dce0fe2e34ec2d79bb1ca
+  branch: master
+  specs:
+    no-style-please (0.4.9)
+      jektex (~> 0.1.1)
+      jekyll (~> 3.10.0)
+      jekyll-feed (~> 0.17.0)
+      jekyll-seo-tag (~> 2.8.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -27,6 +38,7 @@ GEM
     concurrent-ruby (1.3.6)
     connection_pool (3.0.2)
     csv (3.3.5)
+    digest (3.1.1)
     dnsruby (1.73.1)
       base64 (>= 0.2)
       logger (~> 1.6)
@@ -113,9 +125,14 @@ GEM
     html-pipeline (2.14.3)
       activesupport (>= 2)
       nokogiri (>= 1.4)
+    htmlentities (4.4.2)
     http_parser.rb (0.8.1)
     i18n (1.14.8)
       concurrent-ruby (~> 1.0)
+    jektex (0.1.1)
+      digest (~> 3.1.1, >= 3.1.1)
+      execjs (~> 2.1, >= 2.9.1)
+      htmlentities (~> 4.3, >= 4.3.4)
     jekyll (3.10.0)
       addressable (~> 2.4)
       colorator (~> 1.0)
@@ -246,10 +263,6 @@ GEM
       prism (~> 1.5)
     net-http (0.9.1)
       uri (>= 0.11.1)
-    no-style-please (0.4.9)
-      jekyll (~> 3.10.0)
-      jekyll-feed (~> 0.17.0)
-      jekyll-seo-tag (~> 2.8.0)
     nokogiri (1.19.0)
       mini_portile2 (~> 2.8.2)
       racc (~> 1.4)
@@ -329,7 +342,7 @@ DEPENDENCIES
   github-pages
   http_parser.rb (~> 0.6.0)
   jekyll-feed (~> 0.12)
-  no-style-please (~> 0.4.9)
+  no-style-please!
   tzinfo (>= 1, < 3)
   tzinfo-data
   wdm (~> 0.1)
@@ -346,6 +359,7 @@ CHECKSUMS
   concurrent-ruby (1.3.6) sha256=6b56837e1e7e5292f9864f34b69c5a2cbc75c0cf5338f1ce9903d10fa762d5ab
   connection_pool (3.0.2) sha256=33fff5ba71a12d2aa26cb72b1db8bba2a1a01823559fb01d29eb74c286e62e0a
   csv (3.3.5) sha256=6e5134ac3383ef728b7f02725d9872934f523cb40b961479f69cf3afa6c8e73f
+  digest (3.1.1) sha256=81a6fd1da320e03d60f730df90b0b002eaf4b29c023aede3b87120dce7ba1307
   dnsruby (1.73.1) sha256=6cf327f5fe2768deadb5e3f3e899ff1ae110aefcef43fef32e1e55e71289e992
   drb (2.2.3) sha256=0b00d6fdb50995fe4a45dea13663493c841112e4068656854646f418fda13373
   em-websocket (0.5.3) sha256=f56a92bde4e6cb879256d58ee31f124181f68f8887bd14d53d5d9a292758c6a8
@@ -370,8 +384,10 @@ CHECKSUMS
   github-pages (232) sha256=2b40493d7327627e4ce45c47f4a9d4394e5eaa151f9d29bb924ff424c3132287
   github-pages-health-check (1.18.2) sha256=df893d4f5a4161477e8525b993dbe1c1eb63fbb86fb07b6e80996fd37a18843d
   html-pipeline (2.14.3) sha256=8a1d4d7128b2141913387cac0f8ba898bb6812557001acc0c2b46910f59413a0
+  htmlentities (4.4.2) sha256=bbafbdf69f2eca9262be4efef7e43e6a1de54c95eb600f26984f71d2fe96c5c3
   http_parser.rb (0.8.1) sha256=9ae8df145b39aa5398b2f90090d651c67bd8e2ebfe4507c966579f641e11097a
   i18n (1.14.8) sha256=285778639134865c5e0f6269e0b818256017e8cde89993fdfcbfb64d088824a5
+  jektex (0.1.1) sha256=a82d04f6b60cad06ed1add426c62718af6121d5c06fee8859ac7bee6e834470f
   jekyll (3.10.0) sha256=c4213b761dc7dfe7d499eb742d0476a02d8503e440c2610e19774ee7f0db8d90
   jekyll-avatar (0.8.0) sha256=ea736277c2de54a21300122096700517972a722d5c68ca83f8723b4999abfd4b
   jekyll-coffeescript (1.2.2) sha256=894e71c2071a834e76eb7e8044944440a0c81c2c7092532fed1503b13d331110
@@ -420,7 +436,7 @@ CHECKSUMS
   minima (2.5.1) sha256=520e52bc631fb16cbb8100660f6caa44f97859e2fa7e397d508deb18739567be
   minitest (6.0.1) sha256=7854c74f48e2e975969062833adc4013f249a4b212f5e7b9d5c040bf838d54bb
   net-http (0.9.1) sha256=25ba0b67c63e89df626ed8fac771d0ad24ad151a858af2cc8e6a716ca4336996
-  no-style-please (0.4.9) sha256=3ac33b0a4aa77e742f8ae7d3c96242e88487974be80cea77fb946e3ebd99ef66
+  no-style-please (0.4.9)
   nokogiri (1.19.0) sha256=e304d21865f62518e04f2bf59f93bd3a97ca7b07e7f03952946d8e1c05f45695
   nokogiri (1.19.0-aarch64-linux-gnu) sha256=11a97ecc3c0e7e5edcf395720b10860ef493b768f6aa80c539573530bc933767
   nokogiri (1.19.0-aarch64-linux-musl) sha256=eb70507f5e01bc23dad9b8dbec2b36ad0e61d227b42d292835020ff754fb7ba9
