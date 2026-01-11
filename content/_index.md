@@ -1,6 +1,3 @@
-+++
-title =  "Hi! My name is Lyzi"
-date = 2022-08-25T21:30:04+08:00
-draft = false
-+++
-Editing
+I'm a documentation engineer and technical writer based in Brooklyn, NY.
+
+<!-- The rest of the content on the homepage lives in menu.toml -->

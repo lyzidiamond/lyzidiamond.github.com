@@ -1,3 +1,21 @@
 [submodule "themes/hugo-theme-nostyleplease"]
 	path = themes/hugo-theme-nostyleplease
 	url = git@github.com:hanwenguo/hugo-theme-nostyleplease.git
+[submodule "themes/adritian-free-hugo-theme"]
+	path = themes/adritian-free-hugo-theme
+	url = git@github.com:zetxek/adritian-free-hugo-theme.git
+[submodule "themes/hugo-discaptive"]
+	path = themes/hugo-discaptive
+	url = git@github.com:discaptive/hugo-discaptive.git
+[submodule "themes/hugo-mana-theme"]
+	path = themes/hugo-mana-theme
+	url = git@github.com:Livour/hugo-mana-theme.git
+[submodule "themes/hugo-theme-gruvbox"]
+	path = themes/hugo-theme-gruvbox
+	url = git@github.com:schnerring/hugo-theme-gruvbox.git
+[submodule "themes/hugo-mod-json-resume"]
+	path = themes/hugo-mod-json-resume
+	url = git@github.com:schnerring/hugo-mod-json-resume.git
+[submodule "themes/black-and-light"]
+	path = themes/black-and-light
+	url = https://github.com/davidhampgonsalves/hugo-black-and-light-theme.git

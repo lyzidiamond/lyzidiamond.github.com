@@ -1,0 +1,12 @@
+[[entries]]
+title = "all posts"
+
+  [entries.post_list]
+  limit = 5
+  show_more = true
+  show_more_text = "more posts"
+  show_more_url = "posts"
+
+[[entries]]
+  title = "rss"
+  url = "index.xml"
