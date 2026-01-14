@@ -3,6 +3,10 @@ title = "about me"
 url = "about"
 
 [[entries]]
+title = "portfolio"
+url = "writing"
+
+[[entries]]
 title = "all posts"
 url = "posts"
 
