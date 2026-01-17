@@ -3,22 +3,16 @@ title = "about me"
 url = "about"
 
 [[entries]]
-title = "portfolio"
+title = "writing"
 url = "writing"
 
 [[entries]]
-title = "all posts"
+title = "blog"
 url = "posts"
 
-  [entries.post_list]
-  limit = 5
-  show_more = true
-  show_more_text = "more posts"
-  show_more_url = "posts"
-
-  [[entries.entries]]
-  title = "rss"
-  url = "index.xml"
+[[entries]]
+title = "resume"
+url = "resume"
 
 # [[entries]]
 # title = "posts by category"
@@ -33,21 +27,21 @@ url = "posts"
 # title = "rss"
 # url = "index.xml"
 
-[[entries]]
-title = "another list"
+# [[entries]]
+# title = "another list"
 
-  [[entries.entries]]
-  title = "with subitems"
+#   [[entries.entries]]
+#   title = "with subitems"
 
-    [[entries.entries.entries]]
-    title = "with subsubitems"
+#     [[entries.entries.entries]]
+#     title = "with subsubitems"
 
-    [[entries.entries.entries]]
-    title = "example page"
-    url = "about"
+#     [[entries.entries.entries]]
+#     title = "example page"
+#     url = "about"
 
-[[entries]]
-title = "PRO TIP"
-entries = [
-   { title = "to edit this menu, edit data/menu.toml file" }
-  ]
+# [[entries]]
+# title = "PRO TIP"
+# entries = [
+#    { title = "to edit this menu, edit data/menu.toml file" }
+#   ]
