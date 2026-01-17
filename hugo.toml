@@ -11,3 +11,7 @@ theme = 'hugo-theme-nostyleplease'
 #   # Hero section title (optional - defaults to site.Title)
 #   heroTitleLine1 = "Your Site Name"  # First line of hero title
 #   heroTitleLine2 = "Your Tagline"    # Second line of hero title (optional)
+
+# Global permalinks: keep date prefixes in filenames but use only the slug in URLs
+[permalinks]
+	posts = "/:slug/"
