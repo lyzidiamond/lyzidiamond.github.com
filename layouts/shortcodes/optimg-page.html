@@ -1,0 +1,19 @@
+{{/*
+Shortcode: optimg-page
+Usage: {{< optimg-page src="lyzi.jpg" width="300" alt="Lyzi" >}}
+This uses the current page's resources (page bundle). It expects the image to be a Page Resource.
+*/}}
+{{ $src := .Get "src" | default "" }}
+{{ if eq $src "" }}
+  {{ errorf "optimg-page shortcode: missing 'src' parameter" }}
+{{ end }}
+{{ $width := .Get "width" | default "800" }}
+
+{{ $img := .Page.Resources.GetMatch (printf "%s" $src) }}
+{{ if not $img }}
+  {{ errorf "optimg-page shortcode: image '%s' not found in page resources" $src }}
+{{ end }}
+
+{{ $resized := $img.Fit (printf "%sx" $width) }}
+
+<img src="{{ $resized.Permalink }}" width="{{ $resized.Width }}" height="{{ $resized.Height }}" alt="{{ .Get "alt" | default "" }}" loading="lazy" decoding="async">
