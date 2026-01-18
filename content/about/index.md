@@ -4,7 +4,7 @@ title: about me
 
 Hi, I'm Lyzi.
 
-{{< optimg-page src="lyzi.jpg" width="300" alt="Lyzi" >}}
+{{< optimg-page src="lyzi.jpg" width="300" alt="Lyzi" align="right" >}}
 
 I'm a documentation engineer and technical writer with experience in developer relations, software engineering, geospatial technology, product support and enablement, and community management.
 

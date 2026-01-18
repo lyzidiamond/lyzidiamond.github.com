@@ -26,5 +26,8 @@ This uses the current page's resources (page bundle). It expects the image to be
 {{ if eq $align "left" }}
   {{ $classes = $classes | append "align-left" }}
 {{ end }}
+{{ if eq $align "right" }}
+  {{ $classes = $classes | append "align-right" }}
+{{ end }}
 
 <img {{ if gt (len $classes) 0 }}class="{{ delimit $classes " " }}"{{ end }} src="{{ $resized.Permalink }}" width="{{ $resized.Width }}" height="{{ $resized.Height }}" alt="{{ .Get "alt" | default "" }}" loading="lazy" decoding="async">

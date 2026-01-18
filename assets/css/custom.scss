@@ -36,3 +36,18 @@ details { border: none; }
     margin: 0 0 1rem 0;
   }
 }
+
+/* Right-aligned image variant */
+.align-right {
+  float: right;
+  margin: 0 0 1rem 1rem;
+  max-width: 50%;
+}
+@media (max-width: 640px) {
+  .align-right {
+    float: none;
+    width: 100%;
+    max-width: 100%;
+    margin: 0 0 1rem 0;
+  }
+}
