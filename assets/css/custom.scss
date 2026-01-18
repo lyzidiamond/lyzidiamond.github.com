@@ -31,8 +31,11 @@ details { border: none; }
 @media (max-width: 640px) {
   .align-left {
     float: none;
-    width: 100%;
+    /* Don't force the image to fill the container; let it keep its intrinsic size
+       but scale down if the viewport is narrower than the image. */
+    width: auto;
     max-width: 100%;
+    height: auto;
     margin: 0 0 1rem 0;
   }
 }
@@ -46,8 +49,9 @@ details { border: none; }
 @media (max-width: 640px) {
   .align-right {
     float: none;
-    width: 100%;
+    width: auto;
     max-width: 100%;
+    height: auto;
     margin: 0 0 1rem 0;
   }
 }
