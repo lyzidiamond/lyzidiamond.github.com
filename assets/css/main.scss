@@ -1,0 +1,5 @@
+// Top-level entrypoint that imports the theme's SCSS and your custom overrides.
+// This compiles everything in the same Sass scope so custom.scss can use theme vars/mixins.
+
+@import "../../themes/hugo-theme-nostyleplease/assets/css/main.scss";
+@import "custom.scss";

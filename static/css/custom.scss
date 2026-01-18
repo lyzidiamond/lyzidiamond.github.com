@@ -1,0 +1,23 @@
+/* Overrides that differ from `hugo-theme-nostyleplease-original` -> `hugo-theme-nostyleplease` */
+
+/* 1) Slightly smaller base font-size in nostyleplease */
+body { font-size: 15px; }
+
+/* 2) Theme-toggle button styles (nostyleplease adds a theme toggle) */
+#theme-toggle {
+  background: none;
+  border: none;
+  color: inherit;
+  padding: 0.4rem 0.6rem;
+  cursor: pointer;
+  font-size: 1.3rem;
+}
+
+/* Pseudo-content used by the added theme_switcher.js */
+body[a="dark"] #theme-toggle::after { content: "○"; }
+body[a="light"] #theme-toggle::after { content: "☾"; }
+body[a="auto"] #theme-toggle::after { content: "𓇷"; }
+
+/* 3) Remove the details border that the original theme applied in its mixin
+   (nostyleplease commented that out) */
+details { border: none; }
