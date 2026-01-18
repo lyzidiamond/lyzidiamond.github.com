@@ -8,12 +8,23 @@ This uses the current page's resources (page bundle). It expects the image to be
   {{ errorf "optimg-page shortcode: missing 'src' parameter" }}
 {{ end }}
 {{ $width := .Get "width" | default "800" }}
+{{ $classParam := .Get "class" | default "" }}
+{{ $align := .Get "align" | default "" }}
 
 {{ $img := .Page.Resources.GetMatch (printf "%s" $src) }}
 {{ if not $img }}
   {{ errorf "optimg-page shortcode: image '%s' not found in page resources" $src }}
 {{ end }}
 
-{{ $resized := $img.Fit (printf "%sx" $width) }}
+{{ $resized := $img.Resize (printf "%sx" $width) }}
 
-<img src="{{ $resized.Permalink }}" width="{{ $resized.Width }}" height="{{ $resized.Height }}" alt="{{ .Get "alt" | default "" }}" loading="lazy" decoding="async">
+{{/* Build class attribute: allow passing a custom class, or use align=left to add align-left */}}
+{{ $classes := slice }}
+{{ if ne $classParam "" }}
+  {{ $classes = $classes | append $classParam }}
+{{ end }}
+{{ if eq $align "left" }}
+  {{ $classes = $classes | append "align-left" }}
+{{ end }}
+
+<img {{ if gt (len $classes) 0 }}class="{{ delimit $classes " " }}"{{ end }} src="{{ $resized.Permalink }}" width="{{ $resized.Width }}" height="{{ $resized.Height }}" alt="{{ .Get "alt" | default "" }}" loading="lazy" decoding="async">

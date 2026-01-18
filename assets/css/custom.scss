@@ -21,3 +21,18 @@ body[a="auto"] #theme-toggle::after { content: "𓇷"; }
 /* 3) Remove the details border that the original theme applied in its mixin
    (nostyleplease commented that out) */
 details { border: none; }
+
+/* Utility: left-aligned image used with the optimg-page shortcode */
+.align-left {
+  float: left;
+  margin: 0 1rem 1rem 0;
+  max-width: 50%;
+}
+@media (max-width: 640px) {
+  .align-left {
+    float: none;
+    width: 100%;
+    max-width: 100%;
+    margin: 0 0 1rem 0;
+  }
+}
