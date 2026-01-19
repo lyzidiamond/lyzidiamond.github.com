@@ -2,8 +2,9 @@
 date: '2011-05-15'
 slug: maps-can-save-lives
 title: 'Maps Can Save Lives: A true story of GPS and the importance of navigation'
----
+categories: ['older']
 
+---
 Global positioning systems have ostensibly become the new atlases — most if not all new vehicles have internal GPS mapping devices, rendering old-school paper maps obsolete. But as drivers and navigators become more reliant on these devices, their safety may be put in severe danger.
 
 This was the case for Alicia Sanchez and her six-year-old son Carlos, who ventured into Death Valley National Park in August of 2009, equipped with a GPS device and no paper maps to verify her surroundings. When the two traveled twenty miles into the park and got their vehicle stuck deep in sand, with little to no cell phone service available to call for help, Carlos passed away when their water supply dwindled and they did not receive assistance.

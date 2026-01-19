@@ -2,6 +2,7 @@
 date: '2013-07-02'
 slug: geographic-data-assumptions
 title: 'Geographic Data Assumptions: MAUP and Ecological Fallacies'
+categories: ['older']
 ---
 
 _This post originally appeared on [GIS Collective](https://giscollective.org)._

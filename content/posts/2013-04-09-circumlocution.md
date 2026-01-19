@@ -2,6 +2,7 @@
 date: '2013-04-09'
 slug: circumlocution
 title: Circumlocution and Code
+categories: ['older']
 ---
 
 _"¿Cómo se dice 'roommate' en español?"_

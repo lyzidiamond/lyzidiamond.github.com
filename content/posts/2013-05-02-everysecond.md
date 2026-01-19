@@ -2,6 +2,7 @@
 date: '2013-05-02'
 slug: everysecond
 title: Every Second
+categories: ['older']
 ---
 
 _This is an email I just sent to my sister, Kimberly. I thought some of you might enjoy it as well. (Note: I may or may not have been inspired by [this xkcd comic](https://xkcd.com/1205/))._

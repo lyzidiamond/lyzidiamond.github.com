@@ -2,6 +2,7 @@
 date: '2013-09-23'
 slug: commit-or-quit
 title: Commit or Quit
+categories: ['older']
 ---
 
 <h1><img src="https://b.vimeocdn.com/ts/130/674/130674832_640.jpg" class="inline"></h1>

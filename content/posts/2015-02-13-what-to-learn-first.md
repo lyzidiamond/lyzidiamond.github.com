@@ -2,6 +2,7 @@
 date: '2015-02-13'
 slug: what-to-learn-first
 title: 'What should I learn first?'
+categories: ['older']
 ---
 
 It's Friday the 13th, which means all kinds of weird stuff is happening: pigs are flying, water is running uphill, and Lyzi is publishing a blog post. Happy 2015, y'all. Enjoy.

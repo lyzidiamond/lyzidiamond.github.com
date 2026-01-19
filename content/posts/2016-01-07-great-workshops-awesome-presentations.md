@@ -2,6 +2,7 @@
 date: '2016-01-07'
 slug: great-workshops-awesome-presentations
 title: "8 tips for teaching great workshops and giving awesome presentations"
+categories: ['older']
 ---
 
 Here are eight tips for teaching great workshops and giving awesome presentations:

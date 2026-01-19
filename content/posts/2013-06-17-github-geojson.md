@@ -2,6 +2,7 @@
 date: '2013-06-17'
 slug: github-geojson
 title: 'GitHub: Bringing GeoJSON To Life Since 2013'
+categories: ['older']
 ---
 
 _This post originally appeared on [GIS Collective](https://giscollective.org)._

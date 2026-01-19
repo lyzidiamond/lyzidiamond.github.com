@@ -2,6 +2,7 @@
 date: '2014-05-08'
 slug: why-maptime
 title: 'Maptime: Changing culture in geospatial tech learning, one meetup at a time'
+categories: ['older']
 ---
 
 There has long been a need for **organized community around learning and teaching geospatial open source**. It's way too hard hard to learn about maps and geographic concepts. It's way too hard to learn about geospatial technology. And it's a huge bummer.

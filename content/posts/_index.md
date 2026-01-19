@@ -1,5 +1,6 @@
 ---
 title: blog posts
+categories: ['older']
 ---
 
 ### an important note

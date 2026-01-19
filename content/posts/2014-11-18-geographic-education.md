@@ -2,6 +2,7 @@
 date: '2014-11-18'
 slug: geographic-education
 title: 'On Geographic Education'
+categories: ['older']
 ---
 
 Happy [Geography Awareness Week](https://education.nationalgeographic.com/education/programs/geographyawarenessweek/?ar_a=1)! Each year, the third week of November is dedicated to the study of geography and understanding the world through a spatial lens. The week was designated by presidential decree in 1987 to promote geographic education in schools and in life.

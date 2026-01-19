@@ -2,6 +2,7 @@
 date: '2015-10-27'
 slug: external-geojson-mapbox
 title: "Adding External GeoJSON with Mapbox.js"
+categories: ['older']
 ---
 
 A couple years ago, I wrote a blog post about [adding external GeoJSON data to your Leaflet map using link relations](https://lyzidiamond.com/posts/osgeo-august-meeting/). Then I wrote another one about [using AJAX tools to do the same thing](https://lyzidiamond.com/posts/external-geojson-and-leaflet-the-other-way/). Here, years later, is the third part of that series: Adding External GeoJSON with Mapbox.js.

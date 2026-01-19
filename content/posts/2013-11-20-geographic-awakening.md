@@ -2,6 +2,7 @@
 date: '2013-11-20'
 slug: geographic-awakening
 title: 'Geographic Awakening'
+categories: ['older']
 ---
 
 <h1><img src="https://education.nationalgeographic.com/media/photos/000/344/custom/34437_610x343.jpg" class="inline"></h1>

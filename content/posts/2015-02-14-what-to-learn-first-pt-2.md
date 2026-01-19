@@ -2,6 +2,7 @@
 date: '2015-02-14'
 slug: what-to-learn-first-pt-2
 title: 'What should I learn first? Part 2'
+categories: ['older']
 ---
 
 <em>Today, I [posted an email](https://lyzidiamond.com/posts/what-to-learn-first) I sent to someone who is new to mapping and unsure where to start. My response touched on some of my thoughts on geographic education, and I remembered that I had sent another email I wanted to share.

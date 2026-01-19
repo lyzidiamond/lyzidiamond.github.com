@@ -2,6 +2,7 @@
 date: '2013-06-26'
 slug: github-geojson-gets-better
 title: 'GitHub and GeoJSON: Just Keeps Getting Better'
+categories: ['older']
 ---
 
 _This post originally appeared on [GIS Collective](https://giscollective.org)._

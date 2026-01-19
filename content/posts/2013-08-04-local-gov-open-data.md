@@ -2,6 +2,7 @@
 date: '2013-08-04'
 slug: local-gov-open-data
 title: 'Local Governments and Open Data'
+categories: ['older']
 ---
 
 _I wrote this on Facebook the other day, and my friend [Sarah](https://twitter.com/mapadelphia) asked me to write it as a blog post so she could share it with others. I do agree that it's something others need to read: local governments aren't going to move toward shared/open data models until a) they've received funding to do so, or b) they're convinced it's mutually beneficial. The latter is likelier than the former. Let's start some conversations._

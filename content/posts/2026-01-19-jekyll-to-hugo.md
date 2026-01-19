@@ -1,6 +1,7 @@
 ---
 title: Migrating from Jekyll to Hugo
 draft: true
+categories: ['older']
 ---
 
 - Why I did it

@@ -2,6 +2,7 @@
 date: '2015-12-22'
 slug: github-notifications-google-script
 title: "Manage GitHub notification messages in Gmail with Google Apps Scripts"
+categories: ['older']
 ---
 
 A couple weeks ago, my colleague [Bryan Housel](https://twitter.com/bhousel) posted an internal note at work about GitHub's custom mail headers and how to use them to filter email notifications in Mail.app. [Mapbox has a lot of GitHub repos](https://github.com/mapbox), so we happily welcome any methods for managing what we call the "firehose." But not all of us use Mail.app, so I took his workflow and figured out how to make it work in the Gmail web interface using [Google Apps Scripts](https://developers.google.com/apps-script/?hl=en)! Here's how you can do that, too.

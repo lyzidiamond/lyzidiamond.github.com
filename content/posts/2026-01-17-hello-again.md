@@ -3,6 +3,7 @@ title: Hello again! + my adventures with Hugo
 date: 2026-01-17
 slug: hello-again
 draft: true
+categories: ['older']
 ---
 
 **Well hello there.** It's been a while. It's nice to see you. It's nice to be back.

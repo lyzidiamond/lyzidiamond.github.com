@@ -2,6 +2,7 @@
 date: 2010-11-17
 slug: the-skilled-pedestrian
 title: 'The Skilled Pedestrian'
+categories: ['older']
 ---
 
 <blockquote>

@@ -2,6 +2,7 @@
 date: '2013-06-03'
 slug: stephen-person
 title: Remembering an Old Friend
+categories: ['older']
 ---
 
 _Note: Stephen Alan Person, one of my very good friends, passed away from injuries sustained in a drunk driving incident on Tuesday, May 28, 2013. I've been trying to write about him since it happened, but it's been so difficult. This is my first attempt, some assorted thoughts on the passing of a special man who touched a lot of lives. Stephen, I miss you so much. I can't wait for all of the adventures we'll have again someday. You're in my thoughts always._

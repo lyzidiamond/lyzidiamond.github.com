@@ -2,6 +2,7 @@
 date: '2017-03-09'
 slug: writing-tutorials
 title: A super quick guide to writing an effective tutorial
+categories: ['older']
 ---
 
 It's easy to feel intimidated by the idea of writing a tutorial -- especially if it's for a project you love and care about. Tutorials need to be friendly and inviting, provide information clearly and concisely, and leave out any assumptions about the reader. This is a hard thing.

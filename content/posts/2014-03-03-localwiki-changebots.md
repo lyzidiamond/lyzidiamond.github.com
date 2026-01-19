@@ -2,6 +2,7 @@
 date: '2014-03-03'
 slug: localwiki-changebots
 title: 'Building a LocalWiki Changebot'
+categories: ['older']
 ---
 
 <h1><img src="/images/lexwiki.png" class="inline"></h1>

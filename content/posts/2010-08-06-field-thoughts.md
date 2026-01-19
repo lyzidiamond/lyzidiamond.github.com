@@ -2,6 +2,7 @@
 date: 2010-08-06
 slug: field-thoughts
 title: 'Field Thoughts'
+categories: ['older']
 ---
 
 <blockquote>

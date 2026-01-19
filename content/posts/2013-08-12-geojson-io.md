@@ -2,6 +2,7 @@
 date: '2013-08-12'
 slug: geojson-io
 title: 'geojson.io: In-browser spatial data creation and sharing. Finally.'
+categories: ['older']
 ---
 
 _This post originally appeared on [GIS Collective](https://giscollective.org)._

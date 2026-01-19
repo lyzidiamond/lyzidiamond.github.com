@@ -2,6 +2,7 @@
 date: '2014-02-04'
 slug: wtf-tilemill
 title: 'What even is TileMill?'
+categories: ['older']
 ---
 
 _The other day, my friend [Dave](https://twitter.com/allafarce) asked me, "Okay. So what does [TileMill](https://tilemill.com) **actually do**?" This was my response (with the curse words edited out, and a few links thrown in). I was told it'd be useful to people. Enjoy!_
