@@ -27,7 +27,7 @@ In my non-computer life, I enjoy playing music (handbells/bass), making art (dra
 
 _Updated February 2026_
 
-This website has currently has:
+This website currently has:
 
 - [a portfolio](/writing)
 - this page

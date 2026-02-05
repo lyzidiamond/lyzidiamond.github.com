@@ -4,7 +4,7 @@ title: selected work samples (mostly writing)
 
 This page has some selected work samples. They're mostly writing samples, but I've also included some tutorials. _It is not everything I've ever done, just some things I want to highlight._ Eventually I'll put the rest of it here.
 
-I've included both articles and written tutorials. Some tutorials have accompanying videos/slides. Some of these docs are old and refer to things that don't work anymore. You'll also notice some differences in writing style between earlier and later work. As time has gone on, more of my writing has had to conform to the style of the company or project I'm writing for. I've also abandoned some of my earlier "fun-gaging" style (with lots of exclamation points!) in favor of a clearer, more direct flow. I think it's important to show that change and growth. I've included approximate publish dates so you can see this change over time and have some reference (hehe reference get it).
+I've included articles, blog posts, and written tutorials. Some tutorials have accompanying videos/slides. Some of these docs are old and refer to things that don't work anymore. You'll also notice some differences in writing style between earlier and later work. As time has gone on, more of my writing has had to conform to the style of the company or project I'm writing for. I've also abandoned some of my earlier "fun-gaging" style (with lots of exclamation points!) in favor of a clearer, more direct flow. I think it's important to show that change and growth. I've included approximate publish dates so you can see this change over time and have some reference (hehe reference get it).
 
 ## articles
 
