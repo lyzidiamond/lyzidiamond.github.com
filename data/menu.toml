@@ -3,14 +3,19 @@ title = "about me"
 url = "about"
 
 [[entries]]
-title = "writing (coming soon)"
+title = "selected work samples (mostly writing)"
+url = "writing"
 
 [[entries]]
-title = "blog"
+title = "blog (old)"
 url = "posts"
 
 [[entries]]
-title = "resume (coming soon)"
+title = "linkedin"
+url = "https://www.linkedin.com/in/lyzidiamond/"
+
+# [[entries]]
+# title = "resume (coming soon)"
 
 # [[entries]]
 # title = "posts by category"

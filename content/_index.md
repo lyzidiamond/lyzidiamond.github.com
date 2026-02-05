@@ -1,7 +1,7 @@
-Welcome to my website!
-
 I'm a documentation engineer and technical writer based in Brooklyn, NY.
 
-I'm currently in the process of migrating this site from Jekyll to Hugo and it's definitely a work in progress, so consider it ⚠️ under construction ⚠️.
+I believe that **words are work**, but it's important work. Helping users succeed is done through clear, kind instructions that meet people where they are.
+
+_This website is ⚠️ under construction ⚠️ as I migrate from Jekyll to Hugo._
 
 <!-- The rest of the content on the homepage lives in menu.toml -->

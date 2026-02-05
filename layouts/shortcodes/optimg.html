@@ -14,7 +14,7 @@ Looks for the image under assets/images and outputs a resized version using Hugo
   {{ errorf "optimg shortcode: image '%s' not found in assets/images" $src }}
 {{ end }}
 
-{{/* Use Fit by width (e.g. 300 -> "300x") so aspect ratio is preserved */}}
-{{ $resized := $img.Fit (printf "%sx" $width) }}
+{{/* Use Resize by width (e.g. 300 -> "300x") so aspect ratio is preserved */}}
+{{ $resized := $img.Resize (printf "%sx" $width) }}
 
 <img src="{{ $resized.Permalink }}" width="{{ $resized.Width }}" height="{{ $resized.Height }}" alt="{{ .Get "alt" | default "" }}" loading="lazy" decoding="async">

@@ -1,7 +1,253 @@
 /* Overrides that differ from `hugo-theme-nostyleplease-original` -> `hugo-theme-nostyleplease` */
 
+// -------------- THEME SWITCHER -------------- //
+@mixin theme($--bg-color, $--primary-text-color, $--secondary-text-color, $--strong-color, $--link-color, $--highlight, $--header-color, $--emphasis-color) {
+  background-color: $--bg-color;
+
+  color: $--primary-text-color;
+
+  a {
+    color: $--link-color;
+    // &:visited { color: $--visited-link-color; }
+  }
+
+  // details {
+  //   border-bottom: thin solid $--primary-text-color;
+  // }
+
+  details summary {
+    color: $--primary-text-color;
+  }
+
+  details[open] summary {
+    border-bottom: 1px solid $--primary-text-color;
+  }
+
+  pre {
+    background: $--bg-color;
+  }
+
+  strong, b {
+    color: $--strong-color;
+  }
+
+  em, i {
+    color: $--emphasis-color;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    color: $--header-color;
+  }
+
+  time {
+    color: $--header-color;
+    font-weight: bold;
+    font-size: 1.2em;
+  }
+
+  code:not(pre > code) {
+    background-color: $--primary-text-color;
+    color: $--bg-color;
+  }
+
+  *:target {
+    background: $--highlight;
+    color: $--primary-text-color;
+   }
+
+  table, th, td {
+    border: thin solid $--primary-text-color;
+  }
+
+  .toc {
+    border: thin solid $--primary-text-color;
+    padding: 1rem;
+  }
+
+  figcaption { color: $--secondary-text-color; }
+
+  blockquote {
+    border: thin solid $--primary-text-color;
+  }
+}
+
+@mixin dark-appearance {
+  @include theme($base02, $base1, $base1, $yellow, $cyan, $base02, $blue, $orange); // modus-vivendi
+}
+
+@mixin light-appearance {
+  @include theme($base3, $base00, $base1, $magenta, $green, $base2, $blue, $orange); // modus-operandi
+}
+
+$base03: #002b36;
+$base02: #073642;
+$base01: #586e75;
+$base00: #657b83;
+$base0:   #839496;
+$base1:   #93a1a1;
+$base2:   #eee8d5;
+$base3:   #fdf6e3;
+
+$yellow:  #b58900;
+$orange:  #cb4b16;
+$red:     #dc322f;
+$magenta: #d33682;
+$violet:  #6c71c4;
+$blue:    #268bd2;
+$cyan:    #2aa198;
+$green:   #859900;
+
+// if $solarized is dark
+//   $fg =      $base0
+//   $bg =      $base03
+//   $hl =      $base02
+//   $emph =    $base1
+//   $comment = $base01
+// // else
+//   $fg =      $base00
+//   $bg =      $base3
+//   $hl =      $base2
+//   $emph =    $base01
+//   $comment = $base1
+
+body[a="dark"] { @include dark-appearance; }
+body[a="light"] { @include light-appearance; }
+body[a="dark"] #theme-toggle::after { content: "○"; }
+body[a="light"] #theme-toggle::after { content: "☾"; }
+body[a="auto"] #theme-toggle::after { content: "𓇷"; }
+
+@media (prefers-color-scheme: dark) {
+  body[a="auto"] { @include dark-appearance; }
+}
+
+@media (prefers-color-scheme: light) {
+  body[a="auto"] { @include light-appearance; }
+}
+
+// -------------------------------------------- //
+
+html { height: 100%; }
+
+body {
+  font-family: monospace;
+  font-size: 15px;
+  line-height: 1.4;
+  margin: 0;
+  min-height: 100%;
+  overflow-wrap: break-word;
+}
+
+h2, h3, h4, h5, h6 { margin-top: 1.5rem; }
+
+p { margin: 1rem 0; }
+
+li { margin: 0.4rem 0; }
+
+a {
+  text-decoration: none;
+  &:hover { text-decoration: underline; }
+}
+
+hr {
+  text-align: center;
+  border: 0;
+  margin: 2rem 0;
+
+  &:before { content: '/////' }
+  &:after { content: attr(data-content) '/////' }
+}
+
+pre {
+  padding: 1em;
+  overflow-x: auto; /* Fix pre content overflowing parent without scroll bar */
+}
+
+table { width: 100%; }
+
+table, th, td {
+  border-collapse: collapse;
+  padding: 0.4rem;
+}
+
+code {
+  text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+code:not(pre > code) {
+  padding: 0.1em 0.2em;
+  font-size: 90%;
+}
+
+code.has-jax {
+  -webkit-font-smoothing: antialiased;
+  background: inherit !important;
+  border: none !important;
+  font-size: 100%;
+}
+
+blockquote {
+  padding: 1rem;
+
+  p { margin: 0; }
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
+figcaption {
+  text-align: center;
+  opacity: 0.5;
+}
+
+details {
+  padding: 1rem;
+}
+
+details summary {
+  text-decoration: none;
+}
+
+details[open] summary {
+  margin-bottom: 0.5em;
+  padding-bottom: 0.5em;
+}
+
+.post-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.w {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+}
+
+.toc {
+  padding: 1rem;
+}
+
+#theme-toggle {
+  background: none;
+  border: none;
+  color: inherit;
+  padding: 0.4rem 0.6rem;
+  cursor: pointer;
+  font-size: 1.3rem;
+}
+
 /* 1) Slightly smaller base font-size in nostyleplease */
-body { font-size: 15px; }
+body { 
+  font-size: 16px;
+  font-family: "DM Mono", monospace, "Open Sans", sans-serif;
+}
 
 /* 2) Theme-toggle button styles (nostyleplease adds a theme toggle) */
 #theme-toggle {
