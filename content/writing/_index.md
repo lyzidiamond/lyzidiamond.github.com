@@ -10,7 +10,7 @@ I've included articles, blog posts, and written tutorials. Some tutorials have a
 
 - **2025** [Use Loop](https://www.braintrust.dev/docs/observe/loop) - _Braintrust documentation_ - article on Braintrust's AI assistant
 - **2024** [Improve Datatable Performance](https://developer.salesforce.com/docs/platform/lwc/guide/data-table-performance.html) - _Salesforce Lightning Web Components Developer Guide_ - best practices for using datatable web components
-- **2022** [Quick Start: Salesforce Functions](https://developer.salesforce.com/docs/platform/functions/guide/quick-start.html) - _Salesfroce Functions documentation_ - quickstart guide for setting up Salesforce Functions (see **documentation projects** below for more information on the Salesforce Functions documentation project)
+- **2022** [Quick Start: Salesforce Functions](https://developer.salesforce.com/docs/platform/functions/guide/quick-start.html) - Salesforce Functions documentation_ - quickstart guide for setting up Salesforce Functions (see **documentation projects** below for more information on the Salesforce Functions documentation project)
 - **2021** [Monitoring Heroku Apps](https://devcenter.heroku.com/articles/monitoring-apps) - _Heroku Dev Center_ - best practices article for setting up logging and monitoring for Heroku applications
 - **2019** [Vector Formats and Sources](https://gistbok-ltb.ucgis.org/page/34/concept/10532) - _Geospatial Information Science and Technology Body of Knowledge_ - peer-reviewed textbook chapter on geospatial vector data formats
 - **2018** - [How the internet works](https://lyzidiamond.github.io/explains/how-the-internet-works) - _my own website_ - an article explaining how the internet works
