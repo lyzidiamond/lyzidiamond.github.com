@@ -72,7 +72,7 @@
 }
 
 @mixin dark-appearance {
-  @include theme($base02, $base1, $base1, $yellow, $cyan, $base02, $blue, $orange); // modus-vivendi
+  @include theme($base02, $base1, $base1, $yellow, $cyan, $base02, $blue, $green); // modus-vivendi
 }
 
 @mixin light-appearance {
