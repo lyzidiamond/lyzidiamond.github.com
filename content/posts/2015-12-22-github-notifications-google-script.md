@@ -44,7 +44,7 @@ The script I wrote runs through the new emails in my inbox and labels them appro
 
 Okay! Here it is!
 
-{% highlight js %}
+```js
 function processInbox() {
   var threads = GmailApp.getInboxThreads(0, 50);
   for (var i = 0; i < threads.length; i++) {
@@ -79,7 +79,7 @@ function sortMessage(message, thread) {
     thread.addLabel(GmailApp.getUserLabelByName("Assigned to me"));
   }
 }
-{% endhighlight %}
+```
 
 ### What does this script do, exactly?
 
