@@ -12,8 +12,6 @@ I'm a documentation engineer and technical writer with experience in developer r
 
 My career has taken many different turns, but in every role I've been focused on explaining things clearly to help people learn and grow. I believe writing well is difficult, but worth the effort.
 
-**I am currently looking for a job!** Update on what I'm looking for coming soon, but it's basically technical writer/content engineer roles.
-
 In my non-computer life, I enjoy playing music (handbells/bass), making art (drawing/knitting), and watching football (Oregon Ducks/Buffalo Bills/I'll watch basically any football game tbh).
 
 ## contact
