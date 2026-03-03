@@ -13,14 +13,14 @@ A couple years ago, I wrote a blog post about [adding external GeoJSON data to y
 
 For example, initializing a map with Mapbox tiles in Mapbox.js:
 
-```
+```js
 L.mapbox.accessToken = <your access token here>
 var map = L.mapbox.map('map', 'mapbox.streets');
 ```
 
 Initializing a map with Mapbox tiles in Leaflet:
 
-```
+```js
 var map = L.map('map');
 L.tileLayer('https://api.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
     attribution: 'Map data &copy; <a href="https://openstreetmap.org">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://mapbox.com">Mapbox</a>',
@@ -37,7 +37,7 @@ Mapbox.js adds a few other objects, too. (Hint: anything that starts with `L.map
 
 By far the most fascinating part of `L.mapbox.featureLayer()` for me is the built-in [`loadURL()`](https://www.mapbox.com/mapbox.js/api/v2.2.2/l-mapbox-featurelayer/#section-featurelayer-loadurl) method. It does exactly what you think it does: it takes data from a URL and passes it as data into the `L.mapbox.featureLayer()` object.
 
-```
+```js
 var myLayer = L.mapbox.featureLayer()
   .loadURL('mydata.geojson')
   .addTo(map);
@@ -57,7 +57,7 @@ Because the data is being loaded asynchronously, the code will continue to execu
 
 We can do this with the `on('ready', ...)` [event handler](https://www.mapbox.com/mapbox.js/api/v2.2.2/l-events/):
 
-```
+```js
 var myLayer = L.mapbox.featureLayer()
   .loadURL('mydata.geojson')
   .on('ready', function() {
@@ -72,7 +72,7 @@ With this code, we're saying, "When the data is finished loading, iterate over e
 
 Or, as another example, let's say you want your map to zoom and pan to the bounds of your data:
 
-```
+```js
 var myLayer = L.mapbox.featureLayer()
   .loadURL('mydata.geojson')
   .on('ready', function() {
@@ -83,7 +83,7 @@ var myLayer = L.mapbox.featureLayer()
 
 Ooh, what about the two together?!
 
-```
+```js
 var myLayer = L.mapbox.featureLayer()
   .loadURL('mydata.geojson')
   .on('ready', function() {
@@ -114,7 +114,7 @@ If you add certain properties to your GeoJSON and then load the data as a `L.map
 
 Instead of passing data as the first argument when creating the object, you have the option to add a Mapbox project ID. Projects are what's created when you make a map with [Mapbox Editor](https://mapbox.com/editor) -- if you create a `L.mapbox.featureLayer()` with a project ID, the data loaded in will be whatever data is in that project.
 
-```
+```js
 L.mapbox.featureLayer('mapbox.dc-markers')
   .addTo(map);
 ```
