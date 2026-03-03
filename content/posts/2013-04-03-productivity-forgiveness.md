@@ -1,7 +1,8 @@
+---
 date: '2013-04-03'
 slug: productivity-forgiveness
 title: The Secret To Productivity? Forgiveness.
-categories: ['older']
+---
 
 I have often been given the advice, "Don't try to do everything. You will never succeed. Instead, try to do one or two things at a time, really well."
 
