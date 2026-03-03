@@ -23,7 +23,7 @@ In my non-computer life, I enjoy playing music (handbells/bass), making art (dra
 
 ## about this site
 
-_Updated February 2026_
+<!-- _Updated February 2026_
 
 This website currently has:
 
@@ -38,6 +38,6 @@ This website is soon to have:
 - a collection of old projects
 - links to stuff I think is worth checking out
 
-### colophon
+### colophon -->
 
 I built this website with [Hugo](https://gohugo.io). It uses a modified version of the [no-style-please](https://github.com/hanwenguo/hugo-theme-nostyleplease) theme and the [solarized](https://ethanschoonover.com/solarized/) color palette. I added a theme switcher, too: the button in the top left corner toggles between light and dark mode. (I personally like light mode better because it's the theme I use for my text editor but I'm not the boss of you do what feels right.)

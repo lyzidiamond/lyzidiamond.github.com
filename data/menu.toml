@@ -6,9 +6,9 @@ url = "about"
 title = "selected work samples (mostly writing)"
 url = "writing"
 
-[[entries]]
-title = "blog (old)"
-url = "posts"
+# [[entries]]
+# title = "blog (old)"
+# url = "posts"
 
 [[entries]]
 title = "linkedin"
