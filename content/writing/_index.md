@@ -2,9 +2,14 @@
 title: selected work samples (mostly writing)
 ---
 
-This page has some selected work samples. They're mostly writing samples, but I've also included some tutorials. _It is not everything I've ever done, just some things I want to highlight._ Eventually I'll put the rest of it here.
+This page has some selected work samples. They're mostly writing samples, but I've also included some tutorials and projects. _It is not everything I've ever done, just some things I want to highlight._
 
-I've included articles, blog posts, and written tutorials. Some tutorials have accompanying videos/slides. Some of these docs are old and refer to things that don't work anymore. You'll also notice some differences in writing style between earlier and later work. As time has gone on, more of my writing has had to conform to the style of the company or project I'm writing for. I've also abandoned some of my earlier "fun-gaging" style (with lots of exclamation points!) in favor of a clearer, more direct flow. I think it's important to show that change and growth. I've included approximate publish dates so you can see this change over time and have some reference (hehe reference get it).
+Notes:
+
+- I've included [articles](#articles), [tutorials](#tutorials), and [projects](#projects).
+- The projects section includes programming projects with significant writing content, usually in the README.
+- Some tutorials have accompanying videos/slides.
+- Some of these docs are old and refer to things that don't work anymore. I've included approximate publish dates to highlight that context.
 
 ## articles
 
@@ -28,8 +33,9 @@ I've included articles, blog posts, and written tutorials. Some tutorials have a
 - **2015** [Creating rainbow borders with Mapbox Studio Classic](https://blog.mapbox.com/creating-rainbow-borders-with-mapbox-studio-classic-74615ed419b6) - _Mapbox blog_ - step-by-step tutorial
 
 
-## documentation projects
+## projects
 
+- **2026** [Hazard Viewer](github.com/lyzidiamond/hazard-viewer) - a Python web app that takes a location and uses FEMA data and AI to generate a natural hazard risk assessment. The README describes how to deploy the app to Render and some of the project's limitations and ideas for future improvements.
 - **2022** [Salesforce Functions documentation](https://developer.salesforce.com/docs/platform/functions/overview)
   - Spearheaded and published documentation for the Salesforce Functions product
   - This was the first documentation site at Salesforce using the new "Salesforce Docs" framework, using Markdown and a git-based workflow
