@@ -35,7 +35,7 @@ Notes:
 
 ## projects
 
-- **2026** [Hazard Viewer](github.com/lyzidiamond/hazard-viewer) - a Python web app that takes a location and uses FEMA data and AI to generate a natural hazard risk assessment. The README describes how to deploy the app to Render and some of the project's limitations and ideas for future improvements.
+- **2026** [Hazard Viewer](https://github.com/lyzidiamond/hazard-viewer) - a deployed multiservice web app using FastAPI, PostGIS, and the Claude API. The README documents the architecture, deployment process, and design tradeoffs.
 - **2022** [Salesforce Functions documentation](https://developer.salesforce.com/docs/platform/functions/overview)
   - Spearheaded and published documentation for the Salesforce Functions product
   - This was the first documentation site at Salesforce using the new "Salesforce Docs" framework, using Markdown and a git-based workflow
