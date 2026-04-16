@@ -7,6 +7,7 @@ This page has some selected work samples. They're mostly writing samples, but I'
 Notes:
 
 - I've included [articles](#articles), [tutorials](#tutorials), and [projects](#projects).
+- Looking for talks and workshops? See the [talks & workshops](/speaking) page.
 - The projects section includes programming projects with significant writing content, usually in the README.
 - Some tutorials have accompanying videos/slides.
 - Some of these docs are old and refer to things that don't work anymore. I've included approximate publish dates to highlight that context.
@@ -28,9 +29,10 @@ Notes:
   - note: Glitch sunsetted in 2025. This blog post has an accompanying project which I will deploy elsewhere and link to here.
   - This was part of a series of "challenges" where we created an app and asked users to create their own by "remixing" the app and making changes. For each challenge we created an app, wrote a blog post, and did a live stream showing how the app works and how to customize it. The [accompanying video](www.youtube.com/watch?v=k2YCvY_IGms) shows the app in action.
 - **2017** [Analyze data with Turf.js and Mapbox GL JS](https://docs.mapbox.com/help/tutorials/analysis-with-turf/?step=0) - _Mapbox documentation_ - step-by-step tutorial on running spatial analysis with Turf.js and displaying results on a map using Mapbox GL JS
-- **2016** [Make a choropleth map, part 1: create a style](https://docs.mapbox.com/help/tutorials/choropleth-studio-gl-pt-1/) - _Mapbox documentation_ - step-by-step tutorial
-- **2016** [Make a choropleth map, part 2: add interactivity](https://docs.mapbox.com/help/tutorials/choropleth-studio-gl-pt-2/) - _Mapbox documentation_ - step-by-step tutorial
-- **2015** [Creating rainbow borders with Mapbox Studio Classic](https://blog.mapbox.com/creating-rainbow-borders-with-mapbox-studio-classic-74615ed419b6) - _Mapbox blog_ - step-by-step tutorial
+- **2016** [Make a choropleth map, part 1: create a style](https://docs.mapbox.com/help/tutorials/choropleth-studio-gl-pt-1/) - _Mapbox documentation_ - step-by-step tutorial on making a choropleth map using Mapbox Studio
+- **2016** [Make a choropleth map, part 2: add interactivity](https://docs.mapbox.com/help/tutorials/choropleth-studio-gl-pt-2/) - _Mapbox documentation_ - step-by-step tutorial on adding interactivity to your choropleth map in Mapbox Studio
+- **2015** [Manage GitHub notification messages in Gmail with Google Apps Scripts](/github-notifications-google-script/) - _personal blog_ - step-by-step tutorial on using GitHub's custom headers to create dynamic filters in Gmail using a Google Apps script 
+- **2015** [Creating rainbow borders with Mapbox Studio Classic](https://blog.mapbox.com/creating-rainbow-borders-with-mapbox-studio-classic-74615ed419b6) - _Mapbox blog_ - step-by-step tutorial on custom styling with Mapbox Studio Classic
 
 
 ## projects
