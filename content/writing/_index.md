@@ -7,14 +7,14 @@ This page has some selected work samples. They're mostly writing samples, but I'
 Notes:
 
 - I've included [articles](#articles), [tutorials](#tutorials), and [projects](#projects).
-- Looking for talks and workshops? See the [talks & workshops](/speaking) page.
+- I also have a [talks & workshops](/speaking) page with... talks and workshops.
 - The projects section includes programming projects with significant writing content, usually in the README.
 - Some tutorials have accompanying videos/slides.
 - Some of these docs are old and refer to things that don't work anymore. I've included approximate publish dates to highlight that context.
 
 ## articles
 
-- **2025** [Use Loop](https://www.braintrust.dev/docs/observe/loop) - _Braintrust documentation_ - article on Braintrust's AI assistant
+- **2025** [Loop agent](https://www.braintrust.dev/docs/loop) - _Braintrust documentation_ - article on Braintrust's AI assistant
 - **2024** [Improve Datatable Performance](https://developer.salesforce.com/docs/platform/lwc/guide/data-table-performance.html) - _Salesforce Lightning Web Components Developer Guide_ - best practices for using datatable web components
 - **2022** [Quick Start: Salesforce Functions](https://developer.salesforce.com/docs/platform/functions/guide/quick-start.html) - _Salesforce Functions documentation_ - quickstart guide for setting up Salesforce Functions (see **documentation projects** below for more information on the Salesforce Functions documentation project)
 - **2021** [Monitoring Heroku Apps](https://devcenter.heroku.com/articles/monitoring-apps) - _Heroku Dev Center_ - best practices article for setting up logging and monitoring for Heroku applications
