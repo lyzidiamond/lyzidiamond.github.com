@@ -9,7 +9,7 @@ _Note: This list is in progress. Talks from 2018 onward are still being added._
 ## conference talks & workshops
 
 - **2023**
-  - NACIS, November 2023 - **"How to talk about the thing you made"** | [Slides](https://docs.google.com/presentation/d/1iJbjA8kNm4HZ4Pz2I-pmUEUkwr-rRPVEHFsNC8UyF9k/edit?usp=sharing) | [Video](https://www.youtube.com/watch?v=gIkrlaII3OY)
+  - NACIS, October 2023 - **"How to talk about the thing you made"** | [Slides](https://docs.google.com/presentation/d/1iJbjA8kNm4HZ4Pz2I-pmUEUkwr-rRPVEHFsNC8UyF9k/edit?usp=sharing) | [Video](https://www.youtube.com/watch?v=gIkrlaII3OY)
 
 - **2017**
   - NACIS, October 2017 - **"Projections and datums in web mapping: an introduction"** | [Slides](https://lyzidiamond.github.io/nacis-2017/) | [Video](https://www.youtube.com/watch?v=fh80VWT2ANw)
