@@ -6,6 +6,10 @@ url = "about"
 title = "selected work samples (mostly writing)"
 url = "writing"
 
+[[entries]]
+title = "talks & workshops"
+url = "speaking"
+
 # [[entries]]
 # title = "blog (old)"
 # url = "posts"
