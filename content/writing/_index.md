@@ -2,12 +2,12 @@
 title: selected work samples (mostly writing)
 ---
 
-This page has some selected work samples. They're mostly writing samples, but I've also included some tutorials and projects. _It is not everything I've ever done, just some things I want to highlight._
+This page has some selected work samples. They're mostly writing samples, but I've also included some tutorials and projects.
 
 Notes:
 
 - I've included [articles](#articles), [tutorials](#tutorials), and [projects](#projects).
-- I also have a [talks & workshops](/speaking) page with... talks and workshops.
+- I also have a [talks & workshops](/speaking) page!
 - The projects section includes programming projects with significant writing content, usually in the README.
 - Some tutorials have accompanying videos/slides.
 - Some of these docs are old and refer to things that don't work anymore. I've included approximate publish dates to highlight that context.
