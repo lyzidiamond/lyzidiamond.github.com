@@ -2,11 +2,13 @@
 title: talks & workshops
 ---
 
-I like to talk in front of people sometimes. Here are some slides and videos!
-
-_Note: This list is in progress. Talks from 2018 onward are still being added._
+This page has slides and videos from conference talks and workshops, as well as a couple interview videos.
 
 ## conference talks & workshops
+
+- **2026**
+  - NACIS, October 2026 - **"Don't offload your brain: Using AI tools to build geospatial apps without becoming a copy-paste automaton"** | [Slides](https://docs.google.com/presentation/d/1MGgMJpksaIUdGDHIGFpV57RvooI1nbIiSvh7_ZMdleA/edit?slide=id.p#slide=id.p) | Video forthcoming
+
 
 - **2023**
   - NACIS, October 2023 - **"How to talk about the thing you made"** | [Slides](https://docs.google.com/presentation/d/1iJbjA8kNm4HZ4Pz2I-pmUEUkwr-rRPVEHFsNC8UyF9k/edit?usp=sharing) | [Video](https://www.youtube.com/watch?v=gIkrlaII3OY)
@@ -55,9 +57,10 @@ _Note: This list is in progress. Talks from 2018 onward are still being added._
 
 ## panels
 
-- [Panel on Building Communities](https://www.youtube.com/watch?v=S949k3tO0kA) [video] - FOSS4G SofM Oceania 2019
-- [Geographic Education in a Modern World](https://nacis2015.sched.com/event/3l8F/geographic-education-in-a-modern-world) - NACIS 2015
+- FOSS4G State of the Map Oceania, November 2019 - **Panel on Building Communities** - [Video](https://www.youtube.com/watch?v=S949k3tO0kA)
+- NACIS 2015 - **Geographic Education in a Modern World** - [Panel description](https://nacis2015.sched.com/event/3l8F/geographic-education-in-a-modern-world) - NACIS 2015
 
 ## interviews
 
-- GeoHipster, February 2014 - [Make things. Put them on the internet.](https://www.geohipster.com/2014/02/11/lyzi-diamond-make-things-put-internet/)
+- Hangouts with James Fee, March 2015 - **"Lyzi Diamond of Mapbox"** | [Video](https://www.youtube.com/watch?v=NlTt1K_1bhI)
+- GeoHipster, February 2014 - **"Make things. Put them on the internet."** [Blog post](https://www.geohipster.com/2014/02/11/lyzi-diamond-make-things-put-internet/)

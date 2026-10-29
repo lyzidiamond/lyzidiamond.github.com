@@ -4,14 +4,6 @@ title: selected work samples (mostly writing)
 
 This page has some selected work samples. They're mostly writing samples, but I've also included some tutorials and projects.
 
-Notes:
-
-- I've included [articles](#articles), [tutorials](#tutorials), and [projects](#projects).
-- I also have a [talks & workshops](/speaking) page!
-- The projects section includes programming projects with significant writing content, usually in the README.
-- Some tutorials have accompanying videos/slides.
-- Some of these docs are old and refer to things that don't work anymore. I've included approximate publish dates to highlight that context.
-
 ## articles
 
 - **2025** [Loop agent](https://www.braintrust.dev/docs/loop) - _Braintrust documentation_ - article on Braintrust's AI assistant
@@ -27,7 +19,7 @@ Notes:
 
 - **2019** [Make Your Data Work for You with CSV Parsing](https://blog.glitch.com/post/make-your-data-work-for-you-with-csv-parsing/) - _Glitch blog_ - tutorial on using d3-dsv for parsing and serializing CSV files
   - note: Glitch sunsetted in 2025. This blog post has an accompanying project which I will deploy elsewhere and link to here.
-  - This was part of a series of "challenges" where we created an app and asked users to create their own by "remixing" the app and making changes. For each challenge we created an app, wrote a blog post, and did a live stream showing how the app works and how to customize it. The [accompanying video](www.youtube.com/watch?v=k2YCvY_IGms) shows the app in action.
+  - This was part of a series of "challenges" where we created an app and asked users to create their own by "remixing" the app and making changes. For each challenge we created an app, wrote a blog post, and did a live stream showing how the app works and how to customize it. The [accompanying video](https://www.youtube.com/watch?v=k2YCvY_IGms) shows the app in action.
 - **2017** [Analyze data with Turf.js and Mapbox GL JS](https://docs.mapbox.com/help/tutorials/analysis-with-turf/?step=0) - _Mapbox documentation_ - step-by-step tutorial on running spatial analysis with Turf.js and displaying results on a map using Mapbox GL JS
 - **2016** [Make a choropleth map, part 1: create a style](https://docs.mapbox.com/help/tutorials/choropleth-studio-gl-pt-1/) - _Mapbox documentation_ - step-by-step tutorial on making a choropleth map using Mapbox Studio
 - **2016** [Make a choropleth map, part 2: add interactivity](https://docs.mapbox.com/help/tutorials/choropleth-studio-gl-pt-2/) - _Mapbox documentation_ - step-by-step tutorial on adding interactivity to your choropleth map in Mapbox Studio
